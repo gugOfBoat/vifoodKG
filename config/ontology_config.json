@@ -1,0 +1,77 @@
+{
+  "relationships": [
+    {
+      "name": "hasIngredient",
+      "question_type": "ingredients",
+      "markdown_section": "Ingredients & Side Dishes",
+      "description": "Nguyên liệu chính của món ăn"
+    },
+    {
+      "name": "servedWith",
+      "question_type": "side_dish",
+      "markdown_section": "Ingredients & Side Dishes",
+      "description": "Món ăn kèm / nước chấm đi kèm"
+    },
+    {
+      "name": "originRegion",
+      "question_type": "origin",
+      "markdown_section": "Origin & History",
+      "description": "Nguồn gốc vùng miền của món ăn"
+    },
+    {
+      "name": "dishType",
+      "question_type": "type_of_dish",
+      "markdown_section": "Overview",
+      "description": "Loại món ăn (món cơm, món nước, bánh, bún khô,...)"
+    },
+    {
+      "name": "ingredientCategory",
+      "question_type": "category_of_ingredient",
+      "markdown_section": "Ingredients & Side Dishes",
+      "description": "Loại nguyên liệu (hải sản, thịt, rau,...)"
+    },
+    {
+      "name": "hasAllergen",
+      "question_type": "allergens_restrictions",
+      "markdown_section": "Ingredients & Side Dishes",
+      "description": "Chất gây dị ứng trong món ăn"
+    },
+    {
+      "name": "cookingTechnique",
+      "question_type": "cooking_technique",
+      "markdown_section": "Cooking Technique & Taste",
+      "description": "Kỹ thuật nấu nướng (chiên, xào, luộc,...)"
+    },
+    {
+      "name": "flavorProfile",
+      "question_type": "taste_and_flavor_profile",
+      "markdown_section": "Cooking Technique & Taste",
+      "description": "Hương vị và đặc điểm mùi vị"
+    },
+    {
+      "name": "healthNutrition",
+      "question_type": "health_and_nutritional_aspects",
+      "markdown_section": "Overview",
+      "description": "Lợi ích sức khỏe và dinh dưỡng"
+    },
+    {
+      "name": "hasDietary",
+      "question_type": "dietary_restrictions",
+      "markdown_section": "Ingredients & Side Dishes",
+      "description": "Chế độ ăn phù hợp (chay, Địa Trung Hải,...)"
+    },
+    {
+      "name": "hasSubRule",
+      "question_type": "ingredient_substitutions",
+      "markdown_section": "Ingredients & Side Dishes",
+      "description": "Quy tắc thay thế nguyên liệu"
+    }
+  ],
+  "markdown_sections": [
+    "Overview",
+    "Ingredients & Side Dishes",
+    "Origin & History",
+    "Cooking Technique & Taste",
+    "References"
+  ]
+}

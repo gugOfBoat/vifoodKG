@@ -1,0 +1,44 @@
+# Git
+.git/
+*.orig
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Testing & Linting
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+htmlcov/
+.coverage
+*.cover
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+*.env.local
+
+# Data (raw scraped data - ignore from git)
+data/raw_data/*.md
+
+# OS
+.DS_Store
+Thumbs.db
