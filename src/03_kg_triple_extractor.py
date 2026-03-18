@@ -88,38 +88,27 @@ def crawl_wikipedia_vi(dish_name):
         return None, None
 
 
-def crawl_google_snippet(dish_name):
-    """Fallback: search Google for Vietnamese food info."""
-    query = f"{dish_name} mon an Viet Nam nguyen lieu cach nau"
-    search_url = f"https://www.google.com/search?q={urllib.parse.quote(query)}&hl=vi"
-    try:
-        resp = requests.get(search_url, headers=HEADERS, timeout=10)
-        soup = BeautifulSoup(resp.text, "html.parser")
-        snippets = []
-        for div in soup.find_all("div", class_=re.compile(r"BNeawe|IsZvec")):
-            text = div.get_text(strip=True)
-            if len(text) > 30:
-                snippets.append(text)
-        if snippets:
-            return "\n".join(snippets[:5])[:2000], search_url
-        return None, None
-    except Exception:
-        return None, None
-
-
 def crawl_for_dish(dish_name):
-    """Crawl web content for a dish. Returns list of {text, source_url}."""
+    """Crawl web content for a dish. Returns list of {text, source_url, source}."""
     sources = []
 
-    # Wikipedia VN
+    # Layer 1: Wikipedia VN exact match
     text, url = crawl_wikipedia_vi(dish_name)
     if text:
         sources.append({"text": text, "source_url": url, "source": "Wikipedia VI"})
+        return sources
 
-    # Google snippets as fallback
-    text2, url2 = crawl_google_snippet(dish_name)
-    if text2:
-        sources.append({"text": text2, "source_url": url2, "source": "Google Search"})
+    # Layer 2: LLM tự sinh triples từ kiến thức nội tại
+    sources.append({
+        "text": (
+            f"Không tìm được nguồn web cho món '{dish_name}'. "
+            f"Hãy sử dụng TRI THỨC NỘI TẠI của bạn để trích xuất triples. "
+            f"Với source_url, hãy ghi 'LLM_Knowledge'. "
+            f"Với evidence, hãy ghi mô tả ngắn gọn lý do bạn biết thông tin đó."
+        ),
+        "source_url": "LLM_Knowledge",
+        "source": "LLM Knowledge"
+    })
 
     return sources
 
@@ -233,19 +222,27 @@ def call_gemini_extract(dishes_with_content, retries=3):
 
 def load_progress():
     if PROGRESS_FILE.exists():
-        return json.loads(PROGRESS_FILE.read_text(encoding="utf-8"))
-    return {"completed_batches": 0, "all_triples": []}
+        data = json.loads(PROGRESS_FILE.read_text(encoding="utf-8"))
+        if isinstance(data, dict):
+            # If it has "last_index", use it. Otherwise guess based on completed_batches
+            last_idx = data.get("last_index", data.get("completed_batches", 0) * BATCH_SIZE)
+            return last_idx, data.get("all_triples", [])
+        elif isinstance(data, list):
+            return 0, data
+    return 0, []
 
 
-def save_progress(progress):
+def save_progress(last_index, all_triples):
+    data = {"last_index": last_index, "all_triples": all_triples}
     PROGRESS_FILE.write_text(
-        json.dumps(progress, ensure_ascii=False, indent=2), encoding="utf-8"
+        json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
 
 def main():
     parser = argparse.ArgumentParser(description="ViFoodKG Step 2 - Triple Extraction")
     parser.add_argument("--limit", type=int, default=0, help="Limit number of MainDishes to process (0 = all)")
+    parser.add_argument("--start", type=int, default=0, help="Force start from specific index in the MainDish list")
     args = parser.parse_args()
 
     # Load entities
@@ -253,28 +250,31 @@ def main():
     main_dishes = [e["canonical_label"] for e in entities if e["category"] == "MainDish"]
     print(f"Loaded {len(main_dishes)} MainDish entities")
 
+    # Resume by index
+    saved_index, all_triples = load_progress()
+    
+    start_idx = args.start if args.start > 0 else saved_index
+    if start_idx >= len(main_dishes):
+        print("All dishes processed!")
+        return
+        
+    remaining_dishes = main_dishes[start_idx:]
+    print(f"Resuming from index {start_idx} ({len(remaining_dishes)} dishes remaining)\n")
+
     if args.limit > 0:
-        main_dishes = main_dishes[:args.limit]
-        print(f"  --limit {args.limit}: processing only {len(main_dishes)} dishes")
+        remaining_dishes = remaining_dishes[:args.limit]
+        print(f"  --limit {args.limit}: processing only {len(remaining_dishes)} dishes")
 
     # Create batches
-    batches = [main_dishes[i:i + BATCH_SIZE] for i in range(0, len(main_dishes), BATCH_SIZE)]
+    batches = [remaining_dishes[i:i + BATCH_SIZE] for i in range(0, len(remaining_dishes), BATCH_SIZE)]
     total_batches = len(batches)
     print(f"Batches: {total_batches} x {BATCH_SIZE} | Model: {GEMINI_MODEL}\n")
 
-    # Resume
-    progress = load_progress()
-    start = progress["completed_batches"]
-    all_triples = progress["all_triples"]
-
-    if start > 0:
-        print(f"Resuming from batch {start + 1}/{total_batches}\n")
-
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    for idx in range(start, total_batches):
-        batch = batches[idx]
-        print(f"[{idx + 1}/{total_batches}] {', '.join(batch)}")
+    current_idx = start_idx
+    for idx, batch in enumerate(batches):
+        print(f"[{idx + 1}/{total_batches}] (Index {current_idx} -> {current_idx + len(batch) - 1}): {', '.join(batch)}")
 
         # Step 1: Crawl web for each dish
         dishes_with_content = []
@@ -293,11 +293,10 @@ def main():
         print(f"{triple_count} triples")
 
         all_triples.extend(results)
-
-        # Checkpoint
-        progress["completed_batches"] = idx + 1
-        progress["all_triples"] = all_triples
-        save_progress(progress)
+        
+        # Advance index and save checkpoint
+        current_idx += len(batch)
+        save_progress(current_idx, all_triples)
 
         if idx + 1 < total_batches:
             time.sleep(2)
@@ -306,10 +305,6 @@ def main():
     TRIPLES_FILE.write_text(
         json.dumps(all_triples, ensure_ascii=False, indent=2), encoding="utf-8"
     )
-
-    # Cleanup
-    if PROGRESS_FILE.exists():
-        PROGRESS_FILE.unlink()
 
     # Summary
     total_t = sum(len(r.get("triples", [])) for r in all_triples)
