@@ -1,0 +1,169 @@
+[
+  {
+    "dish": "Bánh Bèo",
+    "triples": [
+      {
+        "relation": "hasIngredient",
+        "target": "Bột Gạo",
+        "target_type": "Ingredient",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20b%C3%A8o",
+        "evidence": "Bánh bèo là sự kết hợp của 3 yếu tố chính đó là bánh làm từ bột gạo"
+      },
+      {
+        "relation": "hasIngredient",
+        "target": "Tôm",
+        "target_type": "Ingredient",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20b%C3%A8o",
+        "evidence": "nhân để rắc lên bánh làm bằng tôm xay nhuyễn"
+      },
+      {
+        "relation": "servedWith",
+        "target": "Nước Mắm",
+        "target_type": "Condiment",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20b%C3%A8o",
+        "evidence": "Nước chấm bánh bèo là một hỗn hợp với thành phần chính là nước mắm"
+      },
+      {
+        "relation": "originRegion",
+        "target": "Miền Trung",
+        "target_type": "Region",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20b%C3%A8o",
+        "evidence": "Bánh bèo là một món bánh xuất thân từ Cố Đô Huế rất thịnh hành ở miền Trung"
+      },
+      {
+        "relation": "dishType",
+        "target": "Bánh",
+        "target_type": "DishType",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20b%C3%A8o",
+        "evidence": "Bánh bèo là một món bánh xuất thân từ Cố Đô Huế"
+      },
+      {
+        "relation": "ingredientCategory",
+        "subject": "Tôm",
+        "target": "Hải Sản",
+        "target_type": "IngredientCategory",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20b%C3%A8o",
+        "evidence": "nhân để rắc lên bánh làm bằng tôm xay nhuyễn"
+      },
+      {
+        "relation": "hasDietaryTag",
+        "subject": "Tôm",
+        "target": "animal_product",
+        "target_type": "DietaryTag",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20b%C3%A8o",
+        "evidence": "nhân để rắc lên bánh làm bằng tôm xay nhuyễn"
+      }
+    ]
+  },
+  {
+    "dish": "Bánh Chưng",
+    "triples": [
+      {
+        "relation": "hasIngredient",
+        "target": "Gạo Nếp",
+        "target_type": "Ingredient",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20ch%C6%B0ng",
+        "evidence": "Nguyên liệu làm bánh chưng gồm gạo nếp, đậu xanh, thịt lợn, lá dong."
+      },
+      {
+        "relation": "hasIngredient",
+        "target": "Đậu Xanh",
+        "target_type": "Ingredient",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20ch%C6%B0ng",
+        "evidence": "Nguyên liệu làm bánh chưng gồm gạo nếp, đậu xanh, thịt lợn, lá dong."
+      },
+      {
+        "relation": "hasIngredient",
+        "target": "Thịt Lợn",
+        "target_type": "Ingredient",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20ch%C6%B0ng",
+        "evidence": "Nguyên liệu làm bánh chưng gồm gạo nếp, đậu xanh, thịt lợn, lá dong."
+      },
+      {
+        "relation": "cookingTechnique",
+        "target": "Luộc",
+        "target_type": "CookingTechnique",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20ch%C6%B0ng",
+        "evidence": "bánh được nấu bằng cách luộc"
+      },
+      {
+        "relation": "dishType",
+        "target": "Bánh",
+        "target_type": "DishType",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20ch%C6%B0ng",
+        "evidence": "Bánh chưng là một loại bánh truyền thống"
+      },
+      {
+        "relation": "ingredientCategory",
+        "subject": "Gạo Nếp",
+        "target": "Ngũ Cốc",
+        "target_type": "IngredientCategory",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20ch%C6%B0ng",
+        "evidence": "Nguyên liệu làm bánh chưng gồm gạo nếp"
+      },
+      {
+        "relation": "ingredientCategory",
+        "subject": "Thịt Lợn",
+        "target": "Thịt",
+        "target_type": "IngredientCategory",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20ch%C6%B0ng",
+        "evidence": "Nguyên liệu làm bánh chưng gồm thịt lợn"
+      }
+    ]
+  },
+  {
+    "dish": "Bánh Cuốn",
+    "triples": [
+      {
+        "relation": "hasIngredient",
+        "target": "Bột Gạo",
+        "target_type": "Ingredient",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20cu%E1%BB%91n",
+        "evidence": "Được làm từ bột gạo, bánh cuốn được tráng mỏng"
+      },
+      {
+        "relation": "hasIngredient",
+        "target": "Thịt Lợn",
+        "target_type": "Ingredient",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20cu%E1%BB%91n",
+        "evidence": "nó được cuốn với thịt lợn băm và mộc nhĩ"
+      },
+      {
+        "relation": "hasIngredient",
+        "target": "Mộc Nhĩ",
+        "target_type": "Ingredient",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20cu%E1%BB%91n",
+        "evidence": "nó được cuốn với thịt lợn băm và mộc nhĩ"
+      },
+      {
+        "relation": "servedWith",
+        "target": "Nước Mắm",
+        "target_type": "Condiment",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20cu%E1%BB%91n",
+        "evidence": "ăn kèm với rau thơm, hành phi và nước mắm chua ngọt."
+      },
+      {
+        "relation": "cookingTechnique",
+        "target": "Hấp",
+        "target_type": "CookingTechnique",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20cu%E1%BB%91n",
+        "evidence": "bánh cuốn được tráng mỏng trên một miếng vải và hấp chín"
+      },
+      {
+        "relation": "dishType",
+        "target": "Bánh",
+        "target_type": "DishType",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20cu%E1%BB%91n",
+        "evidence": "Bánh cuốn, còn gọi là bánh mướt hay bánh ướt"
+      },
+      {
+        "relation": "ingredientCategory",
+        "subject": "Thịt Lợn",
+        "target": "Thịt",
+        "target_type": "IngredientCategory",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20cu%E1%BB%91n",
+        "evidence": "nó được cuốn với thịt lợn băm"
+      }
+    ]
+  }
+]

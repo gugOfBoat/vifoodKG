@@ -1,0 +1,2376 @@
+{
+  "completed_batches": 23,
+  "all_triples": [
+    {
+      "dish": "Bánh Bèo",
+      "triples": [
+        {
+          "subject": "Bánh Bèo",
+          "relation": "originRegion",
+          "target": "Huế",
+          "target_type": "Region",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20b%C3%A8o",
+          "evidence": "Bánh bèo là một món bánh xuất thân từ Cố Đô Huế"
+        },
+        {
+          "subject": "Bánh Bèo",
+          "relation": "hasIngredient",
+          "target": "Bột Gạo",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20b%C3%A8o",
+          "evidence": "Bánh bèo là sự kết hợp của 3 yếu tố chính đó là bánh làm từ bột gạo"
+        },
+        {
+          "subject": "Bánh Bèo",
+          "relation": "hasIngredient",
+          "target": "Tôm",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20b%C3%A8o",
+          "evidence": "nhân để rắc lên bánh làm bằng tôm xay nhuyễn"
+        },
+        {
+          "subject": "Tôm",
+          "relation": "ingredientCategory",
+          "target": "Hải Sản",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20b%C3%A8o",
+          "evidence": "nhân để rắc lên bánh làm bằng tôm xay nhuyễn"
+        },
+        {
+          "subject": "Tôm",
+          "relation": "hasAllergen",
+          "target": "Giáp Xác",
+          "target_type": "Allergen",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20b%C3%A8o",
+          "evidence": "nhân để rắc lên bánh làm bằng tôm xay nhuyễn"
+        },
+        {
+          "subject": "Bánh Bèo",
+          "relation": "servedWith",
+          "target": "Nước Mắm",
+          "target_type": "Condiment",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20b%C3%A8o",
+          "evidence": "Nước chấm bánh bèo là một hỗn hợp với thành phần chính là nước mắm"
+        }
+      ]
+    },
+    {
+      "dish": "Bánh Chưng",
+      "triples": [
+        {
+          "subject": "Bánh Chưng",
+          "relation": "cookingTechnique",
+          "target": "Luộc",
+          "target_type": "CookingTechnique",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20ch%C6%B0ng",
+          "evidence": "bánh được nấu bằng cách luộc"
+        },
+        {
+          "subject": "Bánh Chưng",
+          "relation": "hasIngredient",
+          "target": "Gạo Nếp",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20ch%C6%B0ng",
+          "evidence": "Nguyên liệu làm bánh chưng gồm gạo nếp, đậu xanh, thịt lợn, lá dong."
+        },
+        {
+          "subject": "Bánh Chưng",
+          "relation": "hasIngredient",
+          "target": "Thịt Lợn",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20ch%C6%B0ng",
+          "evidence": "Nguyên liệu làm bánh chưng gồm gạo nếp, đậu xanh, thịt lợn, lá dong."
+        },
+        {
+          "subject": "Thịt Lợn",
+          "relation": "hasDietaryTag",
+          "target": "Mặn",
+          "target_type": "DietaryTag",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20ch%C6%B0ng",
+          "evidence": "Nguyên liệu làm bánh chưng gồm gạo nếp, đậu xanh, thịt lợn, lá dong."
+        }
+      ]
+    },
+    {
+      "dish": "Bánh Cuốn",
+      "triples": [
+        {
+          "subject": "Bánh Cuốn",
+          "relation": "cookingTechnique",
+          "target": "Hấp",
+          "target_type": "CookingTechnique",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20cu%E1%BB%91n",
+          "evidence": "Bánh cuốn, còn gọi là bánh mướt hay bánh ướt (khi không có nhân), là một món ăn làm từ bột gạo hấp tráng mỏng"
+        },
+        {
+          "subject": "Bánh Cuốn",
+          "relation": "hasIngredient",
+          "target": "Thịt Lợn",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20cu%E1%BB%91n",
+          "evidence": "nó được cuốn với thịt lợn băm và mộc nhĩ"
+        },
+        {
+          "subject": "Bánh Cuốn",
+          "relation": "servedWith",
+          "target": "Nước Mắm",
+          "target_type": "Condiment",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20cu%E1%BB%91n",
+          "evidence": "ăn kèm với rau thơm, hành phi và nước mắm chua ngọt."
+        }
+      ]
+    },
+    {
+      "dish": "Bánh Mì",
+      "triples": [
+        {
+          "subject": "Bánh Mì",
+          "relation": "hasIngredient",
+          "target": "Bột Mì",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20m%C3%AC",
+          "evidence": "Bánh mì là thực phẩm được chế biến từ bột mì hoặc từ ngũ cốc"
+        },
+        {
+          "subject": "Bánh Mì",
+          "relation": "cookingTechnique",
+          "target": "Nướng",
+          "target_type": "CookingTechnique",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20m%C3%AC",
+          "evidence": "thường là bằng cách nướng."
+        }
+      ]
+    },
+    {
+      "dish": "Bánh Pâté Chaud",
+      "triples": [
+        {
+          "subject": "Bánh Pâté Chaud",
+          "relation": "originRegion",
+          "target": "Pháp",
+          "target_type": "Region",
+          "source_url": "https://vi.wikipedia.org/wiki/Pa%20t%C3%AA%20s%C3%B4",
+          "evidence": "Pa tê sô (tiếng Pháp: paté chaud) là một loại bánh có nguồn gốc từ Pháp"
+        },
+        {
+          "subject": "Bánh Pâté Chaud",
+          "relation": "hasIngredient",
+          "target": "Thịt Heo",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Pa%20t%C3%AA%20s%C3%B4",
+          "evidence": "bên trong có nhân thịt heo, nấm mèo và hành khô."
+        },
+        {
+          "subject": "Bánh Pâté Chaud",
+          "relation": "hasSubRule",
+          "target": "Thay Thế Thịt",
+          "target_type": "SubstitutionRule",
+          "source_url": "https://vi.wikipedia.org/wiki/Pa%20t%C3%AA%20s%C3%B4",
+          "evidence": "Nếu muốn thay đổi vị, có thể thay thế thịt heo bằng thịt bò, gà hoặc bất kỳ loại thịt nào tuỳ thích."
+        },
+        {
+          "subject": "Thay Thế Thịt",
+          "relation": "fromIngredient",
+          "target": "Thịt Heo",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Pa%20t%C3%AA%20s%C3%B4",
+          "evidence": "thay thế thịt heo bằng thịt bò, gà"
+        },
+        {
+          "subject": "Thay Thế Thịt",
+          "relation": "toIngredient",
+          "target": "Thịt Bò",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Pa%20t%C3%AA%20s%C3%B4",
+          "evidence": "thay thế thịt heo bằng thịt bò"
+        }
+      ]
+    },
+    {
+      "dish": "Bánh Rau Câu",
+      "triples": [
+        {
+          "subject": "Bánh Rau Câu",
+          "relation": "hasIngredient",
+          "target": "Gelatin",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20c%C3%A2u",
+          "evidence": "Rau câu hay còn gọi là thạch, thạch rau câu hay đông sương (cách gọi theo tiếng địa phương miền Trung Việt Nam) là một món ăn nhẹ làm từ gelatin có thêm mùi vị"
+        },
+        {
+          "subject": "Bánh Rau Câu",
+          "relation": "hasIngredient",
+          "target": "Nước Trái Cây",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20c%C3%A2u",
+          "evidence": "Món rau câu làm từ bột rau câu hòa tan trong nước nóng và thêm hương liệu từ nước trái cây, sữa..."
+        },
+        {
+          "subject": "Bánh Rau Câu",
+          "relation": "hasIngredient",
+          "target": "Sữa",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20c%C3%A2u",
+          "evidence": "Món rau câu làm từ bột rau câu hòa tan trong nước nóng và thêm hương liệu từ nước trái cây, sữa..."
+        },
+        {
+          "subject": "Bánh Rau Câu",
+          "relation": "dishType",
+          "target": "Món Tráng Miệng",
+          "target_type": "DishType",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20c%C3%A2u",
+          "evidence": "Rau câu là một món tráng miệng rất ngon và mát vào mùa hè"
+        },
+        {
+          "subject": "Bánh Rau Câu",
+          "relation": "servedWith",
+          "target": "Bánh Kem",
+          "target_type": "SideDish/Condiment",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20c%C3%A2u",
+          "evidence": "Rau câu thường ăn lạnh như một món ngọt hoặc kết hợp với các loại món ngọt khác như bánh kem."
+        }
+      ]
+    },
+    {
+      "dish": "Bánh Xèo",
+      "triples": [
+        {
+          "subject": "Bánh Xèo",
+          "relation": "hasIngredient",
+          "target": "Tôm",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20x%C3%A8o",
+          "evidence": "bên trong có nhân là tôm, thịt, giá đỗ, kim chi, khoai tây, hẹ"
+        },
+        {
+          "subject": "Tôm",
+          "relation": "ingredientCategory",
+          "target": "Hải Sản",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20x%C3%A8o",
+          "evidence": "bên trong có nhân là tôm"
+        },
+        {
+          "subject": "Tôm",
+          "relation": "hasAllergen",
+          "target": "Giáp Xác",
+          "target_type": "Allergen",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20x%C3%A8o",
+          "evidence": "Tôm là loại hải sản thuộc nhóm giáp xác"
+        },
+        {
+          "subject": "Bánh Xèo",
+          "relation": "cookingTechnique",
+          "target": "Chiên",
+          "target_type": "CookingTechnique",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20x%C3%A8o",
+          "evidence": "được rán màu vàng"
+        },
+        {
+          "subject": "Bánh Xèo",
+          "relation": "servedWith",
+          "target": "Rau Diếp",
+          "target_type": "SideDish/Condiment",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20x%C3%A8o",
+          "evidence": "Các loại rau ăn kèm với bánh xèo rất đa dạng gồm rau diếp, cải xanh"
+        }
+      ]
+    },
+    {
+      "dish": "Bít Tết Bò",
+      "triples": [
+        {
+          "subject": "Bít Tết Bò",
+          "relation": "hasIngredient",
+          "target": "Thịt Bò",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ADt%20t%E1%BA%BFt",
+          "evidence": "Bít tết (tiếng Anh: beefsteak còn gọi tắt là steak... là một lát thịt bò cắt phẳng"
+        },
+        {
+          "subject": "Thịt Bò",
+          "relation": "ingredientCategory",
+          "target": "Thịt",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ADt%20t%E1%BA%BFt",
+          "evidence": "Bít tết là một lát thịt bò"
+        },
+        {
+          "subject": "Bít Tết Bò",
+          "relation": "cookingTechnique",
+          "target": "Nướng",
+          "target_type": "CookingTechnique",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ADt%20t%E1%BA%BFt",
+          "evidence": "Thịt bò bít tết thường được nướng, áp chảo hoặc luộc."
+        },
+        {
+          "subject": "Bít Tết Bò",
+          "relation": "servedWith",
+          "target": "Khoai Tây",
+          "target_type": "SideDish/Condiment",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ADt%20t%E1%BA%BFt",
+          "evidence": "được ăn kèm với bánh mì hoặc trứng ốp la thay vì khoai tây như bít tết."
+        }
+      ]
+    },
+    {
+      "dish": "Canh Củ Tím",
+      "triples": [
+        {
+          "subject": "Canh Củ Tím",
+          "relation": "hasIngredient",
+          "target": "Khoai Mỡ",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Khoai%20m%E1%BB%A1",
+          "evidence": "Khoai mỡ... có thể dùng trong nhiều món ăn quen thuộc như luộc, chiên, hay nấu canh"
+        },
+        {
+          "subject": "Khoai Mỡ",
+          "relation": "ingredientCategory",
+          "target": "Ngũ Cốc",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Khoai%20m%E1%BB%A1",
+          "evidence": "Đây là loại khoai được trồng làm cây lương thực rất lâu đời."
+        },
+        {
+          "subject": "Canh Củ Tím",
+          "relation": "cookingTechnique",
+          "target": "Ninh",
+          "target_type": "CookingTechnique",
+          "source_url": "https://vi.wikipedia.org/wiki/Khoai%20m%E1%BB%A1",
+          "evidence": "Khoai mỡ... hay nấu canh"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Khoai",
+      "triples": [
+        {
+          "subject": "Canh Khoai",
+          "relation": "hasIngredient",
+          "target": "Khoai Mỡ",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Khoai%20m%E1%BB%A1",
+          "evidence": "Khoai mỡ... có thể dùng trong nhiều món ăn quen thuộc như luộc, chiên, hay nấu canh"
+        },
+        {
+          "subject": "Canh Khoai",
+          "relation": "originRegion",
+          "target": "Long An",
+          "target_type": "Region",
+          "source_url": "https://vi.wikipedia.org/wiki/Khoai%20m%E1%BB%A1",
+          "evidence": "Tại Việt Nam, khoai mỡ cũng được trồng làm cây lương thực ở khá nhiều nơi trong đó có tỉnh Long An"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Khoai Lang",
+      "triples": [
+        {
+          "subject": "Canh Khoai Lang",
+          "relation": "hasIngredient",
+          "target": "Khoai Lang",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Khoai%20lang",
+          "evidence": "Khoai lang... được gọi là củ khoai lang và nó là một nguồn cung cấp rau ăn củ quan trọng, được sử dụng trong vai trò của cả rau lẫn lương thực."
+        },
+        {
+          "subject": "Khoai Lang",
+          "relation": "ingredientCategory",
+          "target": "Rau Ăn Củ",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Khoai%20lang",
+          "evidence": "Khoai lang... là một nguồn cung cấp rau ăn củ quan trọng"
+        },
+        {
+          "subject": "Canh Khoai Lang",
+          "relation": "dishType",
+          "target": "Món Canh",
+          "target_type": "DishType",
+          "source_url": "https://vi.wikipedia.org/wiki/Khoai%20lang",
+          "evidence": "Khoai lang... được sử dụng trong vai trò của cả rau lẫn lương thực."
+        }
+      ]
+    },
+    {
+      "dish": "Canh Khoai Môn",
+      "triples": [
+        {
+          "subject": "Canh Khoai Môn",
+          "relation": "hasIngredient",
+          "target": "Khoai Môn",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Khoai%20m%C3%B4n",
+          "evidence": "Củ khoai môn là một loại thực phẩm chủ yếu... được sử dụng làm rau để lấy củ, lá, thân và cuống lá của chúng."
+        },
+        {
+          "subject": "Khoai Môn",
+          "relation": "ingredientCategory",
+          "target": "Rau Ăn Củ",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Khoai%20m%C3%B4n",
+          "evidence": "Khoai môn (; Colocasia esculenta) là một loại rau ăn củ."
+        }
+      ]
+    },
+    {
+      "dish": "Canh Khoai Mỡ",
+      "triples": [
+        {
+          "subject": "Canh Khoai Mỡ",
+          "relation": "hasIngredient",
+          "target": "Khoai Mỡ",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Khoai%20m%E1%BB%A1",
+          "evidence": "Khoai mỡ có thể dùng trong nhiều món ăn quen thuộc như luộc, chiên, hay nấu canh"
+        },
+        {
+          "subject": "Canh Khoai Mỡ",
+          "relation": "cookingTechnique",
+          "target": "Nấu Canh",
+          "target_type": "CookingTechnique",
+          "source_url": "https://vi.wikipedia.org/wiki/Khoai%20m%E1%BB%A1",
+          "evidence": "Khoai mỡ có thể dùng trong nhiều món ăn quen thuộc như luộc, chiên, hay nấu canh"
+        },
+        {
+          "subject": "Khoai Mỡ",
+          "relation": "originRegion",
+          "target": "Long An",
+          "target_type": "Region",
+          "source_url": "https://vi.wikipedia.org/wiki/Khoai%20m%E1%BB%A1",
+          "evidence": "Tại Việt Nam, khoai mỡ cũng được trồng làm cây lương thực ở khá nhiều nơi trong đó có tỉnh Long An"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Khoai Mỡ Thịt Băm",
+      "triples": [
+        {
+          "subject": "Canh Khoai Mỡ Thịt Băm",
+          "relation": "hasIngredient",
+          "target": "Khoai Mỡ",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Khoai%20m%E1%BB%A1",
+          "evidence": "Khoai mỡ có thể dùng trong nhiều món ăn quen thuộc như... nấu canh"
+        },
+        {
+          "subject": "Canh Khoai Mỡ Thịt Băm",
+          "relation": "hasIngredient",
+          "target": "Thịt Lợn",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Khoai%20m%C3%B4n",
+          "evidence": "Chúng thường được chiên hoặc nấu với ngô, thịt lợn hoặc thịt gà trong nước sốt cà chua"
+        },
+        {
+          "subject": "Thịt Lợn",
+          "relation": "ingredientCategory",
+          "target": "Thịt",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Khoai%20m%C3%B4n",
+          "evidence": "thịt lợn hoặc thịt gà"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Khoai Sọ",
+      "triples": [
+        {
+          "subject": "Canh Khoai Sọ",
+          "relation": "hasIngredient",
+          "target": "Khoai Sọ",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Khoai%20s%E1%BB%8D",
+          "evidence": "Khoai sọ dùng để ăn tươi, hoặc nấu canh"
+        },
+        {
+          "subject": "Khoai Sọ",
+          "relation": "ingredientCategory",
+          "target": "Rau Ăn Củ",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Khoai%20s%E1%BB%8D",
+          "evidence": "Khoai sọ (Colocasia antiquorum) là một loài thực vật cũng như một loại rau nhiệt đới"
+        },
+        {
+          "subject": "Canh Khoai Sọ",
+          "relation": "cookingTechnique",
+          "target": "Nấu Canh",
+          "target_type": "CookingTechnique",
+          "source_url": "https://vi.wikipedia.org/wiki/Khoai%20s%E1%BB%8D",
+          "evidence": "Khoai sọ dùng để ăn tươi, hoặc nấu canh"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Khoai Sọ Nấu Xương",
+      "triples": []
+    },
+    {
+      "dish": "Canh Khoai Tây Cà Rốt",
+      "triples": [
+        {
+          "subject": "Canh Khoai Tây Cà Rốt",
+          "relation": "hasIngredient",
+          "target": "Cà Rốt",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/X%C3%BAp%20c%C3%A0%20r%E1%BB%91t",
+          "evidence": "Xúp cà rốt... là món xúp được chế biến từ thành phần chính là cà rốt."
+        },
+        {
+          "subject": "Canh Khoai Tây Cà Rốt",
+          "relation": "hasIngredient",
+          "target": "Khoai Tây",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/X%C3%BAp%20c%C3%A0%20r%E1%BB%91t",
+          "evidence": "Khi chế biến ta có thể bổ sung các loại rau khác nhau, như rau ăn củ, hoặc thêm tỏi, hành tây, hẹ tây, khoai tây, cải củ turnip và những nông sản khác."
+        },
+        {
+          "subject": "Cà Rốt",
+          "relation": "ingredientCategory",
+          "target": "Rau Củ",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/X%C3%BAp%20c%C3%A0%20r%E1%BB%91t",
+          "evidence": "Khi chế biến ta có thể bổ sung các loại rau khác nhau, như rau ăn củ, hoặc thêm tỏi, hành tây, hẹ tây, khoai tây"
+        },
+        {
+          "subject": "Canh Khoai Tây Cà Rốt",
+          "relation": "dishType",
+          "target": "Món Nước",
+          "target_type": "DishType",
+          "source_url": "https://vi.wikipedia.org/wiki/X%C3%BAp%20c%C3%A0%20r%E1%BB%91t",
+          "evidence": "Món ăn được nấu ở dạng xúp kem (đặc sánh) hay xúp canh (nước dùng)."
+        }
+      ]
+    },
+    {
+      "dish": "Canh Khoai Tây Nấu Thịt Viên",
+      "triples": []
+    },
+    {
+      "dish": "Canh Khoai Tây Nấu Xương",
+      "triples": []
+    },
+    {
+      "dish": "Canh Khoai Tây Sườn",
+      "triples": [
+        {
+          "subject": "Canh Khoai Tây Sườn",
+          "relation": "hasIngredient",
+          "target": "Sườn Non",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Các biến thể có thể bao gồm tôm, mực, sườn non, chả cá và trứng cút."
+        },
+        {
+          "subject": "Sườn Non",
+          "relation": "ingredientCategory",
+          "target": "Thịt",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "nguyên liệu chính để nấu canh chua là loại rau củ quả, các loại thịt hay thủy sản"
+        },
+        {
+          "subject": "Canh Khoai Tây Sườn",
+          "relation": "dishType",
+          "target": "Món Nước",
+          "target_type": "DishType",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Canh chua là tên gọi của những món ăn nhiều nước"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Khổ Qua",
+      "triples": [
+        {
+          "subject": "Canh Khổ Qua",
+          "relation": "hasIngredient",
+          "target": "Khổ Qua",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Kh%E1%BB%95%20qua",
+          "evidence": "Khổ qua hay mướp đắng... là một loài thực vật thân thảo nhiệt đới... được trồng rộng rãi ở châu Á, châu Phi và vùng Caribe để trồng lấy quả ăn được."
+        },
+        {
+          "subject": "Khổ Qua",
+          "relation": "ingredientCategory",
+          "target": "Rau Củ",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Kh%E1%BB%95%20qua",
+          "evidence": "Khổ qua hay mướp đắng... là một loài thực vật thân thảo nhiệt đới và cận nhiệt đới thuộc họ Cucurbitaceae"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Khổ Qua Nhồi Thịt",
+      "triples": [
+        {
+          "subject": "Canh Khổ Qua Nhồi Thịt",
+          "relation": "hasIngredient",
+          "target": "Khổ Qua",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Kh%E1%BB%95%20qua",
+          "evidence": "Quả được sử dụng rộng rãi trong các món ăn tại Đông Á, Nam Á và Đông Nam Á."
+        },
+        {
+          "subject": "Canh Khổ Qua Nhồi Thịt",
+          "relation": "hasIngredient",
+          "target": "Thịt Lợn",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn)"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Khổ Qua Nấu Lòng Gà Trứng Non",
+      "triples": [
+        {
+          "subject": "Canh Khổ Qua Nấu Lòng Gà Trứng Non",
+          "relation": "hasIngredient",
+          "target": "Gà",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn), bò, gà, ngan, vịt"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Khổ Qua Nấu Tôm",
+      "triples": [
+        {
+          "subject": "Canh Khổ Qua Nấu Tôm",
+          "relation": "hasIngredient",
+          "target": "Tôm",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là... các loại tôm"
+        },
+        {
+          "subject": "Tôm",
+          "relation": "hasAllergen",
+          "target": "Giáp Xác",
+          "target_type": "Allergen",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là... các loại tôm"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Khổ Qua Đậu Hũ",
+      "triples": [
+        {
+          "subject": "Canh Khổ Qua Đậu Hũ",
+          "relation": "hasIngredient",
+          "target": "Đậu Hũ",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/T%E1%BA%BFt%20Nguy%C3%AAn%20%C4%90%C3%A1n",
+          "evidence": "các món ăn truyền thống như: mứt, hạt dưa và bánh chưng, bánh tét, dưa hành, giò lụa, giò xào"
+        },
+        {
+          "subject": "Đậu Hũ",
+          "relation": "hasDietaryTag",
+          "target": "Chay",
+          "target_type": "DietaryTag",
+          "source_url": "https://vi.wikipedia.org/wiki/T%E1%BA%BFt%20Nguy%C3%AAn%20%C4%90%C3%A1n",
+          "evidence": "các món ăn truyền thống... là những món ăn không thể thiếu trong ngày Tết của người Việt."
+        }
+      ]
+    },
+    {
+      "dish": "Canh Lòng Gà Nấu Giá Đỗ",
+      "triples": []
+    },
+    {
+      "dish": "Canh Lòng Gà Nấu Măng",
+      "triples": []
+    },
+    {
+      "dish": "Canh Miến",
+      "triples": [
+        {
+          "subject": "Canh Miến",
+          "relation": "dishType",
+          "target": "Món Nước",
+          "target_type": "DishType",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Đây là một văn hóa ăn uống sử dụng rất nhiều loại rau (luộc, xào, làm dưa, ăn sống); nhiều loại nước canh đặc biệt là canh chua"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Miến Nấu Rau Cần",
+      "triples": [
+        {
+          "subject": "Canh Miến Nấu Rau Cần",
+          "relation": "dishType",
+          "target": "Món Nước",
+          "target_type": "DishType",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Đây là một văn hóa ăn uống sử dụng rất nhiều loại rau (luộc, xào, làm dưa, ăn sống); nhiều loại nước canh đặc biệt là canh chua"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Móng Giò",
+      "triples": [
+        {
+          "subject": "Canh Móng Giò",
+          "relation": "hasIngredient",
+          "target": "Giò Heo",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%A1nh%20canh",
+          "evidence": "Bánh canh bao gồm nước lèo được nấu từ tôm, cá và giò heo thêm gia vị tùy theo từng loại bánh canh."
+        },
+        {
+          "subject": "Giò Heo",
+          "relation": "ingredientCategory",
+          "target": "Thịt",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn), bò, gà, ngan, vịt"
+        },
+        {
+          "subject": "Giò Heo",
+          "relation": "hasDietaryTag",
+          "target": "Mặn",
+          "target_type": "DietaryTag",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn), bò, gà, ngan, vịt"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Móng Giò Hầm Măng",
+      "triples": [
+        {
+          "subject": "Canh Móng Giò Hầm Măng",
+          "relation": "hasIngredient",
+          "target": "Móng Giò",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Ch%C3%A2n%20gi%C3%B2",
+          "evidence": "Chân giò thúc đẩy quá trình tạo máu đặc biệt là món chân giò ninh măng"
+        },
+        {
+          "subject": "Canh Móng Giò Hầm Măng",
+          "relation": "hasIngredient",
+          "target": "Măng",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Ch%C3%A2n%20gi%C3%B2",
+          "evidence": "Chân giò thúc đẩy quá trình tạo máu đặc biệt là món chân giò ninh măng"
+        },
+        {
+          "subject": "Canh Móng Giò Hầm Măng",
+          "relation": "cookingTechnique",
+          "target": "Ninh",
+          "target_type": "CookingTechnique",
+          "source_url": "https://vi.wikipedia.org/wiki/Ch%C3%A2n%20gi%C3%B2",
+          "evidence": "Chân giò thúc đẩy quá trình tạo máu đặc biệt là món chân giò ninh măng"
+        },
+        {
+          "subject": "Móng Giò",
+          "relation": "ingredientCategory",
+          "target": "Thịt",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Ch%C3%A2n%20gi%C3%B2",
+          "evidence": "Chân giò hay sú giò/giò lợn hay gọi đơn giản là giò hay giò hầm là một món ăn thông dụng được chế biến từ nguyên liệu là giò của heo"
+        },
+        {
+          "subject": "Móng Giò",
+          "relation": "hasDietaryTag",
+          "target": "Mặn",
+          "target_type": "DietaryTag",
+          "source_url": "https://vi.wikipedia.org/wiki/Ch%C3%A2n%20gi%C3%B2",
+          "evidence": "Chân giò hay sú giò/giò lợn hay gọi đơn giản là giò hay giò hầm là một món ăn thông dụng được chế biến từ nguyên liệu là giò của heo"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Chua",
+      "triples": [
+        {
+          "subject": "Canh Chua",
+          "relation": "originRegion",
+          "target": "Nam Bộ",
+          "target_type": "Region",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Là một món canh Việt Nam có nguồn gốc từ vùng đồng bằng sông Cửu Long ở Nam Bộ Việt Nam"
+        },
+        {
+          "subject": "Canh Chua",
+          "relation": "dishType",
+          "target": "Món nước",
+          "target_type": "DishType",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Canh chua là tên gọi của những món ăn nhiều nước"
+        },
+        {
+          "subject": "Canh Chua",
+          "relation": "flavorProfile",
+          "target": "Chua",
+          "target_type": "FlavorProfile",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Canh chua là tên gọi của những món ăn nhiều nước và có vị chua"
+        },
+        {
+          "subject": "Canh Chua",
+          "relation": "hasIngredient",
+          "target": "Cá",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Món này thường được làm từ cá từ đồng bằng sông Cửu Long, dứa, cà chua, giá đỗ và nước cốt me."
+        },
+        {
+          "subject": "Cá",
+          "relation": "ingredientCategory",
+          "target": "Thủy sản",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "nguyên liệu chính để nấu canh chua là loại rau củ quả, các loại thịt hay thủy sản (cá, tôm, cua, ốc, hến, trai, sò)"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Chua",
+      "triples": [
+        {
+          "subject": "Canh Chua",
+          "relation": "hasIngredient",
+          "target": "Cá",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Món này thường được làm từ cá từ đồng bằng sông Cửu Long, dứa, cà chua, giá đỗ và nước cốt me."
+        },
+        {
+          "subject": "Cá",
+          "relation": "ingredientCategory",
+          "target": "Thủy sản",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Rất phổ biến các món canh chua sử dụng nguyên liệu chính là một loại thủy sản, hải sản"
+        },
+        {
+          "subject": "Canh Chua",
+          "relation": "originRegion",
+          "target": "Nam Bộ",
+          "target_type": "Region",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Là một món canh Việt Nam có nguồn gốc từ vùng đồng bằng sông Cửu Long ở Nam Bộ Việt Nam"
+        },
+        {
+          "subject": "Canh Chua",
+          "relation": "flavorProfile",
+          "target": "Chua",
+          "target_type": "FlavorProfile",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Canh chua là tên gọi của những món ăn nhiều nước và có vị chua"
+        },
+        {
+          "subject": "Canh Chua",
+          "relation": "servedWith",
+          "target": "Cơm Trắng",
+          "target_type": "SideDish/Condiment",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Món này có thể được dùng riêng, với cơm trắng, bún hay thậm chí là mì gói."
+        }
+      ]
+    },
+    {
+      "dish": "Canh Măng Tây",
+      "triples": []
+    },
+    {
+      "dish": "Canh Măng Vịt",
+      "triples": []
+    },
+    {
+      "dish": "Canh Khổ Qua Nhồi Thịt",
+      "triples": [
+        {
+          "subject": "Canh Khổ Qua Nhồi Thịt",
+          "relation": "hasIngredient",
+          "target": "Khổ Qua",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20kh%E1%BB%95%20qua%20nh%E1%BB%93i%20th%E1%BB%8Bt",
+          "evidence": "Khổ qua: 2 trái."
+        },
+        {
+          "subject": "Canh Khổ Qua Nhồi Thịt",
+          "relation": "hasIngredient",
+          "target": "Thịt Heo",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20kh%E1%BB%95%20qua%20nh%E1%BB%93i%20th%E1%BB%8Bt",
+          "evidence": "Thịt heo xay: 100 gram."
+        },
+        {
+          "subject": "Thịt Heo",
+          "relation": "ingredientCategory",
+          "target": "Thịt",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20kh%E1%BB%95%20qua%20nh%E1%BB%93i%20th%E1%BB%8Bt",
+          "evidence": "Thịt heo xay: 100 gram."
+        },
+        {
+          "subject": "Canh Khổ Qua Nhồi Thịt",
+          "relation": "originRegion",
+          "target": "Nam Bộ",
+          "target_type": "Region",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20kh%E1%BB%95%20qua%20nh%E1%BB%93i%20th%E1%BB%8Bt",
+          "evidence": "Canh khổ qua nhồi thịt (hoặc canh mướp đắng nhồi thịt) là một món ăn của người dân miền Nam Việt Nam"
+        },
+        {
+          "subject": "Canh Khổ Qua Nhồi Thịt",
+          "relation": "hasSubRule",
+          "target": "Quy Tắc Thay Thế Chay",
+          "target_type": "SubstitutionRule",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20kh%E1%BB%95%20qua%20nh%E1%BB%93i%20th%E1%BB%8Bt",
+          "evidence": "Phiên bản thuần chay của món canh khổ qua có thể dùng mì căn giả thịt heo để nhồi khổ qua"
+        },
+        {
+          "subject": "Quy Tắc Thay Thế Chay",
+          "relation": "fromIngredient",
+          "target": "Thịt Heo",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20kh%E1%BB%95%20qua%20nh%E1%BB%93i%20th%E1%BB%8Bt",
+          "evidence": "Phiên bản thuần chay của món canh khổ qua có thể dùng mì căn giả thịt heo để nhồi khổ qua"
+        },
+        {
+          "subject": "Quy Tắc Thay Thế Chay",
+          "relation": "toIngredient",
+          "target": "Mì Căn",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20kh%E1%BB%95%20qua%20nh%E1%BB%93i%20th%E1%BB%8Bt",
+          "evidence": "Phiên bản thuần chay của món canh khổ qua có thể dùng mì căn giả thịt heo để nhồi khổ qua"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Mướp Mồng Tơi",
+      "triples": []
+    },
+    {
+      "dish": "Canh Mướp Mồng Tơi Tép Mồi",
+      "triples": [
+        {
+          "subject": "Canh Mướp Mồng Tơi Tép Mồi",
+          "relation": "hasIngredient",
+          "target": "Tép",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn), bò, gà, ngan, vịt, các loại tôm, cá, cua, ốc, hến, trai, sò,..."
+        },
+        {
+          "subject": "Tép",
+          "relation": "ingredientCategory",
+          "target": "Hải Sản",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn), bò, gà, ngan, vịt, các loại tôm, cá, cua, ốc, hến, trai, sò,..."
+        },
+        {
+          "subject": "Tép",
+          "relation": "hasAllergen",
+          "target": "Giáp Xác",
+          "target_type": "Allergen",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "các loại tôm, cá, cua, ốc, hến, trai, sò"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Mướp Nấu Hến",
+      "triples": [
+        {
+          "subject": "Canh Mướp Nấu Hến",
+          "relation": "hasIngredient",
+          "target": "Hến",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn), bò, gà, ngan, vịt, các loại tôm, cá, cua, ốc, hến, trai, sò,..."
+        },
+        {
+          "subject": "Hến",
+          "relation": "ingredientCategory",
+          "target": "Hải Sản",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "các loại tôm, cá, cua, ốc, hến, trai, sò"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Mướp Nấu Sườn",
+      "triples": [
+        {
+          "subject": "Canh Mướp Nấu Sườn",
+          "relation": "hasIngredient",
+          "target": "Thịt Heo",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn), bò, gà, ngan, vịt"
+        },
+        {
+          "subject": "Thịt Heo",
+          "relation": "ingredientCategory",
+          "target": "Thịt",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn)"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Mướp Nấu Thịt Băm",
+      "triples": [
+        {
+          "subject": "Canh Mướp Nấu Thịt Băm",
+          "relation": "hasIngredient",
+          "target": "Thịt Lợn",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn)"
+        },
+        {
+          "subject": "Thịt Lợn",
+          "relation": "ingredientCategory",
+          "target": "Thịt",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn)"
+        },
+        {
+          "subject": "Thịt Lợn",
+          "relation": "hasDietaryTag",
+          "target": "Mặn",
+          "target_type": "DietaryTag",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn)"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Mướp Nấu Thịt Viên",
+      "triples": [
+        {
+          "subject": "Canh Mướp Nấu Thịt Viên",
+          "relation": "hasIngredient",
+          "target": "Thịt Lợn",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn)"
+        },
+        {
+          "subject": "Thịt Lợn",
+          "relation": "ingredientCategory",
+          "target": "Thịt",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn)"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Mướp Nấu Tôm",
+      "triples": [
+        {
+          "subject": "Canh Mướp Nấu Tôm",
+          "relation": "hasIngredient",
+          "target": "Tôm",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "các loại tôm, cá, cua, ốc, hến, trai, sò"
+        },
+        {
+          "subject": "Tôm",
+          "relation": "hasAllergen",
+          "target": "Giáp Xác",
+          "target_type": "Allergen",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "các loại tôm"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Mướp Rau Mồng Tơi",
+      "triples": [
+        {
+          "subject": "Canh Mướp Rau Mồng Tơi",
+          "relation": "hasIngredient",
+          "target": "Rau",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Đây là một văn hóa ăn uống sử dụng rất nhiều loại rau"
+        },
+        {
+          "subject": "Rau",
+          "relation": "hasDietaryTag",
+          "target": "Chay",
+          "target_type": "DietaryTag",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Đây là một văn hóa ăn uống sử dụng rất nhiều loại rau"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Mướp Rau Ngót",
+      "triples": [
+        {
+          "subject": "Canh Mướp Rau Ngót",
+          "relation": "hasIngredient",
+          "target": "Rau",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Đây là một văn hóa ăn uống sử dụng rất nhiều loại rau"
+        },
+        {
+          "subject": "Rau",
+          "relation": "ingredientCategory",
+          "target": "Rau Lá",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Đây là một văn hóa ăn uống sử dụng rất nhiều loại rau"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Mướp Trứng",
+      "triples": []
+    },
+    {
+      "dish": "Canh Mướp Tôm Khô",
+      "triples": []
+    },
+    {
+      "dish": "Canh Mọc",
+      "triples": [
+        {
+          "subject": "Canh Mọc",
+          "relation": "hasIngredient",
+          "target": "Dọc Mùng",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/D%E1%BB%8Dc%20m%C3%B9ng",
+          "evidence": "Cuống lá cây dọc mùng thường dùng làm các món canh chua, sườn nấu bung, bún bung, canh cá, bún cá, dưa chua, bạc hà xào hoàng hoa, bạc hà cuộn tía tô v.v."
+        },
+        {
+          "subject": "Dọc Mùng",
+          "relation": "ingredientCategory",
+          "target": "Rau Lá",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/D%E1%BB%8Dc%20m%C3%B9ng",
+          "evidence": "Dọc mùng... là một loài thực vật thuộc họ Ráy"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Mọc Nấm",
+      "triples": []
+    },
+    {
+      "dish": "Canh Mọc Nấu Củ Quả",
+      "triples": []
+    },
+    {
+      "dish": "Canh Mọc Nấu Nấm",
+      "triples": []
+    },
+    {
+      "dish": "Canh Mọc Nấu Rau",
+      "triples": [
+        {
+          "subject": "Canh Mọc Nấu Rau",
+          "relation": "hasIngredient",
+          "target": "Dọc Mùng",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/D%E1%BB%8Dc%20m%C3%B9ng",
+          "evidence": "Cuống lá cây dọc mùng thường dùng làm các món canh chua, sườn nấu bung, bún bung, canh cá, bún cá, dưa chua, bạc hà xào hoàng hoa, bạc hà cuộn tía tô v.v."
+        },
+        {
+          "subject": "Dọc Mùng",
+          "relation": "ingredientCategory",
+          "target": "Rau Lá",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/D%E1%BB%8Dc%20m%C3%B9ng",
+          "evidence": "Dọc mùng... là một loài thực vật thuộc họ Ráy"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Mọc Nấu Sườn",
+      "triples": [
+        {
+          "subject": "Canh Mọc Nấu Sườn",
+          "relation": "hasIngredient",
+          "target": "Dọc Mùng",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/D%E1%BB%8Dc%20m%C3%B9ng",
+          "evidence": "Cuống lá cây dọc mùng thường dùng làm các món canh chua, sườn nấu bung..."
+        }
+      ]
+    },
+    {
+      "dish": "Canh Mọc Sườn",
+      "triples": [
+        {
+          "subject": "Canh Mọc Sườn",
+          "relation": "hasIngredient",
+          "target": "Dọc Mùng",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/D%E1%BB%8Dc%20m%C3%B9ng",
+          "evidence": "Cuống lá cây dọc mùng thường dùng làm các món canh chua, sườn nấu bung..."
+        }
+      ]
+    },
+    {
+      "dish": "Canh Mồng Tơi",
+      "triples": [
+        {
+          "subject": "Canh Mồng Tơi",
+          "relation": "hasIngredient",
+          "target": "Rau Mồng Tơi",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/M%E1%BB%93ng%20t%C6%A1i",
+          "evidence": "Lá và đọt thân non của mồng tơi thường được dùng để nấu canh ăn mát và có tính nhuận trường."
+        },
+        {
+          "subject": "Rau Mồng Tơi",
+          "relation": "ingredientCategory",
+          "target": "Rau Lá",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/M%E1%BB%93ng%20t%C6%A1i",
+          "evidence": "Mồng tơi hay mùng tơi... là một loại dây leo lâu năm ăn được thuộc họ Mồng tơi... nơi nó được sử dụng rộng rãi như một loại rau ăn lá."
+        },
+        {
+          "subject": "Rau Mồng Tơi",
+          "relation": "hasDietaryTag",
+          "target": "Chay",
+          "target_type": "DietaryTag",
+          "source_url": "https://vi.wikipedia.org/wiki/M%E1%BB%93ng%20t%C6%A1i",
+          "evidence": "Lá và đọt thân non của mồng tơi thường được dùng để nấu canh ăn mát và có tính nhuận trường."
+        }
+      ]
+    },
+    {
+      "dish": "Canh Ngao Hoa Nấu Chua",
+      "triples": [
+        {
+          "subject": "Canh Ngao Hoa Nấu Chua",
+          "relation": "hasIngredient",
+          "target": "Nghêu",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Ngh%C3%AAu",
+          "evidence": "Nghêu hay ngao là tên gọi dùng để chỉ các loài động vật thân mềm hai mảnh vỏ (nhuyễn thể) thuộc họ Veneridae"
+        },
+        {
+          "subject": "Nghêu",
+          "relation": "ingredientCategory",
+          "target": "Hải sản",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Ngh%C3%AAu",
+          "evidence": "Đây là loài hải sản có giá trị kinh tế cao"
+        },
+        {
+          "subject": "Nghêu",
+          "relation": "hasAllergen",
+          "target": "Giáp xác",
+          "target_type": "Allergen",
+          "source_url": "https://vi.wikipedia.org/wiki/Ngh%C3%AAu",
+          "evidence": "Nghêu hay ngao là tên gọi dùng để chỉ các loài động vật thân mềm hai mảnh vỏ (nhuyễn thể)"
+        },
+        {
+          "subject": "Nghêu",
+          "relation": "hasDietaryTag",
+          "target": "Mặn",
+          "target_type": "DietaryTag",
+          "source_url": "https://vi.wikipedia.org/wiki/Ngh%C3%AAu",
+          "evidence": "Nghêu hay ngao là tên gọi dùng để chỉ các loài động vật thân mềm hai mảnh vỏ"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Ngao Nấu Chua",
+      "triples": []
+    },
+    {
+      "dish": "Canh Ngao Nấu Cà Chua",
+      "triples": []
+    },
+    {
+      "dish": "Canh Ngao Thì Là",
+      "triples": []
+    },
+    {
+      "dish": "Canh Ngô",
+      "triples": []
+    },
+    {
+      "dish": "Canh Ngô Súp Lơ",
+      "triples": []
+    },
+    {
+      "dish": "Canh Nấm",
+      "triples": [
+        {
+          "subject": "Canh Nấm",
+          "relation": "hasIngredient",
+          "target": "Nấm Tràm",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/N%E1%BA%A5m%20tr%C3%A0m",
+          "evidence": "Nấm tràm (danh pháp khoa học: Tylopilus felleus) là một loài nấm lớn phân bố ở vùng Đông Bắc Châu Âu vùng Bắc Mỹ và một số địa phương ở Việt Nam"
+        },
+        {
+          "subject": "Nấm Tràm",
+          "relation": "ingredientCategory",
+          "target": "Rau",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/N%E1%BA%A5m%20tr%C3%A0m",
+          "evidence": "Nấm tràm (danh pháp khoa học: Tylopilus felleus) là một loài nấm lớn"
+        },
+        {
+          "subject": "Nấm Tràm",
+          "relation": "hasDietaryTag",
+          "target": "Chay",
+          "target_type": "DietaryTag",
+          "source_url": "https://vi.wikipedia.org/wiki/N%E1%BA%A5m%20tr%C3%A0m",
+          "evidence": "Theo quan điểm đông y rất tốt vì chữa được mỏi mệt, cảm cúm, nhức đầu và có tác dụng làm bổ nội tạng"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Nấm Cà Chua",
+      "triples": [
+        {
+          "subject": "Canh Nấm Cà Chua",
+          "relation": "hasIngredient",
+          "target": "Cà Chua",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/C%C3%A0%20chua",
+          "evidence": "Cà chua (danh pháp hai phần: Solanum lycopersicum), thuộc họ Cà (Solanaceae), là một loại rau quả làm thực phẩm."
+        },
+        {
+          "subject": "Cà Chua",
+          "relation": "ingredientCategory",
+          "target": "Rau",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/C%C3%A0%20chua",
+          "evidence": "Cà chua (danh pháp hai phần: Solanum lycopersicum), thuộc họ Cà (Solanaceae), là một loại rau quả làm thực phẩm."
+        },
+        {
+          "subject": "Cà Chua",
+          "relation": "hasDietaryTag",
+          "target": "Chay",
+          "target_type": "DietaryTag",
+          "source_url": "https://vi.wikipedia.org/wiki/C%C3%A0%20chua",
+          "evidence": "Cà chua có vị hơi chua và là một loại thực phẩm bổ dưỡng, tốt cho cơ thể"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau",
+      "triples": [
+        {
+          "subject": "Canh Rau",
+          "relation": "hasIngredient",
+          "target": "Rau Muống",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20mu%E1%BB%91ng",
+          "evidence": "Rau muống (danh pháp hai phần: Ipomoea aquatica) là một loài thực vật nhiệt đới bán thủy sinh thuộc họ Bìm bìm (Convolvulaceae), là một loại rau ăn lá."
+        },
+        {
+          "subject": "Rau Muống",
+          "relation": "ingredientCategory",
+          "target": "Rau",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20mu%E1%BB%91ng",
+          "evidence": "Rau muống (danh pháp hai phần: Ipomoea aquatica) là một loài thực vật nhiệt đới bán thủy sinh thuộc họ Bìm bìm (Convolvulaceae), là một loại rau ăn lá."
+        },
+        {
+          "subject": "Rau Muống",
+          "relation": "hasDietaryTag",
+          "target": "Chay",
+          "target_type": "DietaryTag",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20mu%E1%BB%91ng",
+          "evidence": "Rau muống có 92% nước, 3,2% protit, 2,5% gluxit, 1% xenluloza, 1,3% tro."
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Cải Nấu Cà Chua",
+      "triples": [
+        {
+          "subject": "Canh Rau Cải Nấu Cà Chua",
+          "relation": "hasIngredient",
+          "target": "Cà Chua",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/C%C3%A0%20chua",
+          "evidence": "Cà chua (danh pháp hai phần: Solanum lycopersicum), thuộc họ Cà (Solanaceae), là một loại rau quả làm thực phẩm."
+        },
+        {
+          "subject": "Cà Chua",
+          "relation": "ingredientCategory",
+          "target": "Rau Quả",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/C%C3%A0%20chua",
+          "evidence": "Cà chua (danh pháp hai phần: Solanum lycopersicum), thuộc họ Cà (Solanaceae), là một loại rau quả làm thực phẩm."
+        },
+        {
+          "subject": "Cà Chua",
+          "relation": "hasDietaryTag",
+          "target": "Chay",
+          "target_type": "DietaryTag",
+          "source_url": "https://vi.wikipedia.org/wiki/C%C3%A0%20chua",
+          "evidence": "Cà chua (danh pháp hai phần: Solanum lycopersicum), thuộc họ Cà (Solanaceae), là một loại rau quả làm thực phẩm."
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Cải Nấu Ngao",
+      "triples": [
+        {
+          "subject": "Canh Rau Cải Nấu Ngao",
+          "relation": "hasIngredient",
+          "target": "Ngao",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/M%E1%BA%AFm%20kho",
+          "evidence": "Rất phổ biến các món canh chua sử dụng nguyên liệu chính là một loại thủy sản, hải sản... (trong đó có) sò."
+        },
+        {
+          "subject": "Ngao",
+          "relation": "ingredientCategory",
+          "target": "Hải Sản",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/M%E1%BA%AFm%20kho",
+          "evidence": "Rất phổ biến các món canh chua sử dụng nguyên liệu chính là một loại thủy sản, hải sản, do chất tạo chua có tác dụng khử mùi vị tanh của nguyên liệu này."
+        },
+        {
+          "subject": "Ngao",
+          "relation": "hasAllergen",
+          "target": "Giáp Xác",
+          "target_type": "Allergen",
+          "source_url": "https://vi.wikipedia.org/wiki/M%E1%BA%AFm%20kho",
+          "evidence": "Rất phổ biến các món canh chua sử dụng nguyên liệu chính là một loại thủy sản, hải sản, do chất tạo chua có tác dụng khử mùi vị tanh của nguyên liệu này."
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Cải Nấu Sườn",
+      "triples": [
+        {
+          "subject": "Canh Rau Cải Nấu Sườn",
+          "relation": "hasIngredient",
+          "target": "Sườn Non",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Các biến thể có thể bao gồm tôm, mực, sườn non, chả cá và trứng cút."
+        },
+        {
+          "subject": "Sườn Non",
+          "relation": "ingredientCategory",
+          "target": "Thịt",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "nguyên liệu chính để nấu canh chua là loại rau củ quả, các loại thịt hay thủy sản"
+        },
+        {
+          "subject": "Sườn Non",
+          "relation": "hasDietaryTag",
+          "target": "Mặn",
+          "target_type": "DietaryTag",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "nguyên liệu chính để nấu canh chua là loại rau củ quả, các loại thịt hay thủy sản"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Cải Nấu Thịt Băm",
+      "triples": [
+        {
+          "subject": "Canh Rau Cải Nấu Thịt Băm",
+          "relation": "hasIngredient",
+          "target": "Thịt Lợn",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20d%E1%BB%9Bn",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn)"
+        },
+        {
+          "subject": "Thịt Lợn",
+          "relation": "ingredientCategory",
+          "target": "Thịt",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20d%E1%BB%9Bn",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn)"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Cải Nấu Trứng",
+      "triples": [
+        {
+          "subject": "Canh Rau Cải Nấu Trứng",
+          "relation": "hasIngredient",
+          "target": "Trứng",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Các biến thể có thể bao gồm tôm, mực, sườn non, chả cá và trứng cút."
+        },
+        {
+          "subject": "Trứng",
+          "relation": "ingredientCategory",
+          "target": "Thịt",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "số lượng các món ăn có dinh dưỡng từ động vật thường ít hơn. Những loại thịt được dùng phổ biến nhất là thịt heo (lợn), bò, gà, ngan, vịt, các loại tôm, cá, cua, ốc, hến, trai, sò,..."
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Cải Nấu Tôm",
+      "triples": [
+        {
+          "subject": "Canh Rau Cải Nấu Tôm",
+          "relation": "hasIngredient",
+          "target": "Rau Cải",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn), bò, gà, ngan, vịt, các loại tôm, cá, cua, ốc, hến, trai, sò,..."
+        },
+        {
+          "subject": "Canh Rau Cải Nấu Tôm",
+          "relation": "hasIngredient",
+          "target": "Tôm",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn), bò, gà, ngan, vịt, các loại tôm, cá, cua, ốc, hến, trai, sò,..."
+        },
+        {
+          "subject": "Tôm",
+          "relation": "ingredientCategory",
+          "target": "Hải Sản",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "các loại tôm, cá, cua, ốc, hến, trai, sò"
+        },
+        {
+          "subject": "Tôm",
+          "relation": "hasAllergen",
+          "target": "Giáp Xác",
+          "target_type": "Allergen",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "các loại tôm"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Cải Nấu Xương",
+      "triples": [
+        {
+          "subject": "Canh Rau Cải Nấu Xương",
+          "relation": "hasIngredient",
+          "target": "Rau Cải",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn)"
+        },
+        {
+          "subject": "Canh Rau Cải Nấu Xương",
+          "relation": "hasIngredient",
+          "target": "Thịt Lợn",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn)"
+        },
+        {
+          "subject": "Thịt Lợn",
+          "relation": "ingredientCategory",
+          "target": "Thịt",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn)"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Cải Thịt Băm",
+      "triples": [
+        {
+          "subject": "Canh Rau Cải Thịt Băm",
+          "relation": "hasIngredient",
+          "target": "Rau Cải",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20d%E1%BB%9Bn",
+          "evidence": "Rau dớn hay còn gọi là ráng song quần rau... được chế biến thành nhiều món ăn đặc sản."
+        },
+        {
+          "subject": "Canh Rau Cải Thịt Băm",
+          "relation": "hasIngredient",
+          "target": "Thịt Lợn",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20d%E1%BB%9Bn",
+          "evidence": "Rau dớn... được chế biến thành nhiều món ăn đặc sản."
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Cải Thịt Hộp",
+      "triples": [
+        {
+          "subject": "Canh Rau Cải Thịt Hộp",
+          "relation": "hasIngredient",
+          "target": "Rau Cải",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau",
+          "evidence": "Rau là tên gọi chung cho những bộ phận của thực vật được con người hay động vật dùng làm thực phẩm."
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Cải Thịt Viên",
+      "triples": [
+        {
+          "subject": "Canh Rau Cải Thịt Viên",
+          "relation": "hasIngredient",
+          "target": "Rau Cải",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20th%C6%A1m",
+          "evidence": "Một số loại lá của những cây trồng khác trong nhà cũng có thể coi là một dạng rau thơm như rau cải non"
+        },
+        {
+          "subject": "Canh Rau Cải Thịt Viên",
+          "relation": "hasIngredient",
+          "target": "Thịt Lợn",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20th%C6%A1m",
+          "evidence": "xương sông, lá lốt: thường đi với thịt gia súc như thịt lợn, thịt bò (làm chả viên)"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Củ",
+      "triples": [
+        {
+          "subject": "Canh Rau Củ",
+          "relation": "hasIngredient",
+          "target": "Rau",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau",
+          "evidence": "Trong tiếng Việt, chữ Nôm có các gốc 蒌 và 蔞 đều đọc là rau, và rau có thể được gọi bằng rau củ, rau quả, rau củ quả"
+        },
+        {
+          "subject": "Rau",
+          "relation": "ingredientCategory",
+          "target": "Rau Lá",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau",
+          "evidence": "Rau là tên gọi chung cho những bộ phận của thực vật được con người hay động vật dùng làm thực phẩm... bao gồm hoa, quả, thân, lá, rễ và hạt."
+        },
+        {
+          "subject": "Rau",
+          "relation": "hasDietaryTag",
+          "target": "Chay",
+          "target_type": "DietaryTag",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau",
+          "evidence": "Rau có thể ăn sống (rau sống) hay nấu chín, đóng vai trò quan trọng trong việc bổ sung dinh dưỡng của con người"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Củ Bì Heo",
+      "triples": [
+        {
+          "subject": "Canh Rau Củ Bì Heo",
+          "relation": "hasIngredient",
+          "target": "Thịt Heo",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn), bò, gà, ngan, vịt"
+        },
+        {
+          "subject": "Thịt Heo",
+          "relation": "ingredientCategory",
+          "target": "Thịt",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn)"
+        },
+        {
+          "subject": "Thịt Heo",
+          "relation": "hasDietaryTag",
+          "target": "Mặn",
+          "target_type": "DietaryTag",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn)"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Củ Nấu Thịt",
+      "triples": [
+        {
+          "subject": "Canh Rau Củ Nấu Thịt",
+          "relation": "hasIngredient",
+          "target": "Rau",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau",
+          "evidence": "Rau có thể được gọi bằng rau củ, rau quả, rau củ quả"
+        },
+        {
+          "subject": "Canh Rau Củ Nấu Thịt",
+          "relation": "cookingTechnique",
+          "target": "Nấu",
+          "target_type": "CookingTechnique",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau",
+          "evidence": "Rau có thể ăn sống (rau sống) hay nấu chín"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Củ Thịt Băm",
+      "triples": [
+        {
+          "subject": "Canh Rau Củ Thịt Băm",
+          "relation": "hasIngredient",
+          "target": "Rau Dớn",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20d%E1%BB%9Bn",
+          "evidence": "Rau dớn hay còn gọi là ráng song quần rau, dớn rừng, rau dớn rừng, thái quyết... được chế biến thành nhiều món ăn đặc sản."
+        },
+        {
+          "subject": "Rau Dớn",
+          "relation": "ingredientCategory",
+          "target": "Rau Lá",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20d%E1%BB%9Bn",
+          "evidence": "Rau dớn là loài dương xỉ có thân rễ nghiêng... Phiến lá kép lông chim 1 lần (lá non) hay 2 lần (lá già)"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Dền",
+      "triples": [
+        {
+          "subject": "Canh Rau Dền",
+          "relation": "hasIngredient",
+          "target": "Rau Dền",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Chi%20D%E1%BB%81n",
+          "evidence": "Ở Việt Nam, rau dền thường thấy là dền đỏ (dền tía - Amaranthus tricolor), dền cơm (dền trắng - Amaranthus viridis) làm rau ăn"
+        },
+        {
+          "subject": "Rau Dền",
+          "relation": "ingredientCategory",
+          "target": "Rau Lá",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Chi%20D%E1%BB%81n",
+          "evidence": "Thân và lá rau dền có vị ngọt, chứa sắt, vitamin B2, vitamin C"
+        },
+        {
+          "subject": "Rau Dền",
+          "relation": "hasDietaryTag",
+          "target": "Chay",
+          "target_type": "DietaryTag",
+          "source_url": "https://vi.wikipedia.org/wiki/Chi%20D%E1%BB%81n",
+          "evidence": "Chi Dền gồm những loài đều có hoa không tàn, một số mọc hoang dại nhưng nhiều loài được sử dụng làm lương thực, rau"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Dền Thịt Băm",
+      "triples": []
+    },
+    {
+      "dish": "Canh Rau Luộc",
+      "triples": [
+        {
+          "subject": "Canh Rau Luộc",
+          "relation": "dishType",
+          "target": "Món nước",
+          "target_type": "DishType",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "nhiều loại nước canh đặc biệt là canh chua"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Muống",
+      "triples": [
+        {
+          "subject": "Canh Rau Muống",
+          "relation": "hasIngredient",
+          "target": "Rau Muống",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20mu%E1%BB%91ng",
+          "evidence": "Từ rau muống, cách đơn giản nhất là luộc lên."
+        },
+        {
+          "subject": "Rau Muống",
+          "relation": "ingredientCategory",
+          "target": "Rau lá",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20mu%E1%BB%91ng",
+          "evidence": "là một loại rau ăn lá."
+        },
+        {
+          "subject": "Canh Rau Muống",
+          "relation": "servedWith",
+          "target": "Nước Mắm",
+          "target_type": "SideDish/Condiment",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20mu%E1%BB%91ng",
+          "evidence": "người ta có thể chấm với nước mắm"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Muống Nấu Cà Chua",
+      "triples": [
+        {
+          "subject": "Canh Rau Muống Nấu Cà Chua",
+          "relation": "hasIngredient",
+          "target": "Rau Muống",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Các loại rau củ: ớt, đậu bắp, bạc hà, đậu rồng, dọc mùng, rau muống"
+        },
+        {
+          "subject": "Canh Rau Muống Nấu Cà Chua",
+          "relation": "hasIngredient",
+          "target": "Cà Chua",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Món này thường được làm từ cá từ đồng bằng sông Cửu Long, dứa, cà chua"
+        },
+        {
+          "subject": "Canh Rau Muống Nấu Cà Chua",
+          "relation": "flavorProfile",
+          "target": "Chua",
+          "target_type": "FlavorProfile",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Canh chua là tên gọi của những món ăn nhiều nước và có vị chua"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Muống Nấu Tôm",
+      "triples": [
+        {
+          "subject": "Canh Rau Muống Nấu Tôm",
+          "relation": "hasIngredient",
+          "target": "Tôm",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Các biến thể có thể bao gồm tôm"
+        },
+        {
+          "subject": "Tôm",
+          "relation": "ingredientCategory",
+          "target": "Hải sản",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "nguyên liệu chính để nấu canh chua là loại rau củ quả, các loại thịt hay thủy sản (cá, tôm, cua...)"
+        },
+        {
+          "subject": "Tôm",
+          "relation": "hasAllergen",
+          "target": "Giáp xác",
+          "target_type": "Allergen",
+          "source_url": "https://vi.wikipedia.org/wiki/Ti%E1%BA%BFt%20canh",
+          "evidence": "tiết tôm (có thể dùng tôm sú, tôm hùm, tôm thẻ nhưng thường là tôm hùm)"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Má Thịt Băm",
+      "triples": [
+        {
+          "subject": "Canh Rau Má Thịt Băm",
+          "relation": "dishType",
+          "target": "Món Nước",
+          "target_type": "DishType",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "nhiều loại nước canh đặc biệt là canh chua"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Mồng Tơi",
+      "triples": [
+        {
+          "subject": "Canh Rau Mồng Tơi",
+          "relation": "hasIngredient",
+          "target": "Rau Mồng Tơi",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/M%E1%BB%93ng%20t%C6%A1i",
+          "evidence": "Lá và đọt thân non của mồng tơi thường được dùng để nấu canh"
+        },
+        {
+          "subject": "Rau Mồng Tơi",
+          "relation": "ingredientCategory",
+          "target": "Rau Lá",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/M%E1%BB%93ng%20t%C6%A1i",
+          "evidence": "nơi nó được sử dụng rộng rãi như một loại rau ăn lá."
+        },
+        {
+          "subject": "Rau Mồng Tơi",
+          "relation": "hasDietaryTag",
+          "target": "Chay",
+          "target_type": "DietaryTag",
+          "source_url": "https://vi.wikipedia.org/wiki/M%E1%BB%93ng%20t%C6%A1i",
+          "evidence": "Lá và đọt thân non của mồng tơi thường được dùng để nấu canh ăn mát"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Ngót",
+      "triples": [
+        {
+          "subject": "Canh Rau Ngót",
+          "relation": "hasIngredient",
+          "target": "Rau Ngót",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20ng%C3%B3t",
+          "evidence": "Ẩm thực Việt Nam dùng rau ngót nấu canh với thịt băm, hoặc có khi chỉ nấu suông"
+        },
+        {
+          "subject": "Rau Ngót",
+          "relation": "ingredientCategory",
+          "target": "Rau Lá",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20ng%C3%B3t",
+          "evidence": "được trồng làm một loại rau ăn ở một số nước"
+        },
+        {
+          "subject": "Rau Ngót",
+          "relation": "hasDietaryTag",
+          "target": "Chay",
+          "target_type": "DietaryTag",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20ng%C3%B3t",
+          "evidence": "có khi chỉ nấu suông vì rau có sẵn vị ngọt"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Ngót Nấu Mướp",
+      "triples": [
+        {
+          "subject": "Canh Rau Ngót Nấu Mướp",
+          "relation": "dishType",
+          "target": "Món Nước",
+          "target_type": "DishType",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "nhiều loại nước canh đặc biệt là canh chua"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Ngót Nấu Thịt Băm",
+      "triples": [
+        {
+          "subject": "Canh Rau Ngót Nấu Thịt Băm",
+          "relation": "hasIngredient",
+          "target": "Rau Ngót",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20ng%C3%B3t",
+          "evidence": "Ẩm thực Việt Nam dùng rau ngót nấu canh với thịt băm"
+        },
+        {
+          "subject": "Canh Rau Ngót Nấu Thịt Băm",
+          "relation": "hasIngredient",
+          "target": "Thịt Băm",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20ng%C3%B3t",
+          "evidence": "Ẩm thực Việt Nam dùng rau ngót nấu canh với thịt băm"
+        },
+        {
+          "subject": "Thịt Băm",
+          "relation": "ingredientCategory",
+          "target": "Thịt",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20ng%C3%B3t",
+          "evidence": "Ẩm thực Việt Nam dùng rau ngót nấu canh với thịt băm"
+        },
+        {
+          "subject": "Thịt Băm",
+          "relation": "hasDietaryTag",
+          "target": "Mặn",
+          "target_type": "DietaryTag",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20ng%C3%B3t",
+          "evidence": "Ẩm thực Việt Nam dùng rau ngót nấu canh với thịt băm"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Ngót Thịt Băm",
+      "triples": [
+        {
+          "subject": "Canh Rau Ngót Thịt Băm",
+          "relation": "hasIngredient",
+          "target": "Rau Ngót",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20ng%C3%B3t",
+          "evidence": "Ẩm thực Việt Nam dùng rau ngót nấu canh với thịt băm"
+        },
+        {
+          "subject": "Canh Rau Ngót Thịt Băm",
+          "relation": "hasIngredient",
+          "target": "Thịt Băm",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20ng%C3%B3t",
+          "evidence": "Ẩm thực Việt Nam dùng rau ngót nấu canh với thịt băm"
+        },
+        {
+          "subject": "Rau Ngót",
+          "relation": "ingredientCategory",
+          "target": "Rau Lá",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20ng%C3%B3t",
+          "evidence": "Rau ngót, bù ngót, bồ ngót, hay rau tuốt (danh pháp hai phần: Sauropus androgynus) là một loài cây bụi mọc hoang ở vùng nhiệt đới Á châu nhưng cũng được trồng làm một loại rau ăn"
+        },
+        {
+          "subject": "Thịt Băm",
+          "relation": "ingredientCategory",
+          "target": "Thịt",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn), bò, gà, ngan, vịt"
+        },
+        {
+          "subject": "Canh Rau Ngót Thịt Băm",
+          "relation": "dishType",
+          "target": "Món Canh",
+          "target_type": "DishType",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20ng%C3%B3t",
+          "evidence": "Ẩm thực Việt Nam dùng rau ngót nấu canh với thịt băm"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Ngót Tôm Khô",
+      "triples": [
+        {
+          "subject": "Canh Rau Ngót Tôm Khô",
+          "relation": "hasIngredient",
+          "target": "Rau Ngót",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Rau%20s%E1%BA%AFng",
+          "evidence": "người Việt còn gọi là rau mì chính, rau ngót rừng, rau ngót quế"
+        },
+        {
+          "subject": "Canh Rau Ngót Tôm Khô",
+          "relation": "hasIngredient",
+          "target": "Tôm Khô",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn), bò, gà, ngan, vịt, các loại tôm"
+        },
+        {
+          "subject": "Tôm Khô",
+          "relation": "hasAllergen",
+          "target": "Giáp Xác",
+          "target_type": "Allergen",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Những loại thịt được dùng phổ biến nhất là thịt heo (lợn), bò, gà, ngan, vịt, các loại tôm"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Nấu Thịt Bằm",
+      "triples": [
+        {
+          "subject": "Canh Rau Nấu Thịt Bằm",
+          "relation": "hasIngredient",
+          "target": "Rau",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Cũng không hiếm khi canh chua chỉ là một tô nước luộc rau"
+        },
+        {
+          "subject": "Canh Rau Nấu Thịt Bằm",
+          "relation": "hasIngredient",
+          "target": "Thịt Bằm",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "nguyên liệu chính để nấu canh chua là loại rau củ quả, các loại thịt hay thủy sản"
+        },
+        {
+          "subject": "Canh Rau Nấu Thịt Bằm",
+          "relation": "dishType",
+          "target": "Món Canh",
+          "target_type": "DishType",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Canh chua là tên gọi của những món ăn nhiều nước"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Nấu Tôm",
+      "triples": [
+        {
+          "subject": "Canh Rau Nấu Tôm",
+          "relation": "hasIngredient",
+          "target": "Tôm",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Ti%E1%BA%BFt%20canh",
+          "evidence": "tiết tôm (có thể dùng tôm sú, tôm hùm, tôm thẻ nhưng thường là tôm hùm)."
+        },
+        {
+          "subject": "Tôm",
+          "relation": "ingredientCategory",
+          "target": "Hải Sản",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Ti%E1%BA%BFt%20canh",
+          "evidence": "tiết tôm (có thể dùng tôm sú, tôm hùm, tôm thẻ nhưng thường là tôm hùm)."
+        },
+        {
+          "subject": "Tôm",
+          "relation": "hasAllergen",
+          "target": "Giáp Xác",
+          "target_type": "Allergen",
+          "source_url": "https://vi.wikipedia.org/wiki/Ti%E1%BA%BFt%20canh",
+          "evidence": "tiết tôm (có thể dùng tôm sú, tôm hùm, tôm thẻ nhưng thường là tôm hùm)."
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Sắn Nấu Cá",
+      "triples": [
+        {
+          "subject": "Canh Rau Sắn Nấu Cá",
+          "relation": "hasIngredient",
+          "target": "Sắn",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/S%E1%BA%AFn",
+          "evidence": "Sắn (phương ngữ miền Bắc) hay khoai mì (củ mì) (phương ngữ miền Nam, sắn ở miền Nam là củ đậu)"
+        },
+        {
+          "subject": "Sắn",
+          "relation": "ingredientCategory",
+          "target": "Ngũ Cốc",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/S%E1%BA%AFn",
+          "evidence": "Sắn (phương ngữ miền Bắc) hay khoai mì (củ mì)... là cây lương thực ăn củ"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Thịt Bằm",
+      "triples": [
+        {
+          "subject": "Canh Rau Thịt Bằm",
+          "relation": "dishType",
+          "target": "Món Nước",
+          "target_type": "DishType",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Canh chua là tên gọi của những món ăn nhiều nước"
+        },
+        {
+          "subject": "Canh Rau Thịt Bằm",
+          "relation": "originRegion",
+          "target": "Nam Bộ",
+          "target_type": "Region",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Là một món canh Việt Nam có nguồn gốc từ vùng đồng bằng sông Cửu Long ở Nam Bộ Việt Nam"
+        },
+        {
+          "subject": "Canh Rau Thịt Bằm",
+          "relation": "flavorProfile",
+          "target": "Chua",
+          "target_type": "FlavorProfile",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Canh chua là tên gọi của những món ăn nhiều nước và có vị chua"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Vặt",
+      "triples": [
+        {
+          "subject": "Canh Rau Vặt",
+          "relation": "hasIngredient",
+          "target": "Rau",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Đây là một văn hóa ăn uống sử dụng rất nhiều loại rau (luộc, xào, làm dưa, ăn sống); nhiều loại nước canh"
+        },
+        {
+          "subject": "Rau",
+          "relation": "ingredientCategory",
+          "target": "Rau Lá",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Đây là một văn hóa ăn uống sử dụng rất nhiều loại rau"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rau Xanh",
+      "triples": [
+        {
+          "subject": "Canh Rau Xanh",
+          "relation": "hasIngredient",
+          "target": "Rau",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Ti%E1%BA%BFt%20canh",
+          "evidence": "Các loại rau gia vị (rau húng thơm, tía tô, rau mùi)"
+        },
+        {
+          "subject": "Rau",
+          "relation": "hasDietaryTag",
+          "target": "Chay",
+          "target_type": "DietaryTag",
+          "source_url": "https://vi.wikipedia.org/wiki/Ti%E1%BA%BFt%20canh",
+          "evidence": "Các loại rau gia vị (rau húng thơm, tía tô, rau mùi)"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Riêu",
+      "triples": [
+        {
+          "subject": "Canh Riêu",
+          "relation": "dishType",
+          "target": "Món nước",
+          "target_type": "DishType",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Canh chua là tên gọi của những món ăn nhiều nước và có vị chua"
+        },
+        {
+          "subject": "Canh Riêu",
+          "relation": "flavorProfile",
+          "target": "Chua",
+          "target_type": "FlavorProfile",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Canh chua là tên gọi của những món ăn nhiều nước và có vị chua"
+        },
+        {
+          "subject": "Canh Riêu",
+          "relation": "hasIngredient",
+          "target": "Cua",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Theo định nghĩa của Từ điển tiếng Việt thì riêu là món ăn lỏng nấu bằng cua hoặc cá với chất chua và gia vị."
+        },
+        {
+          "subject": "Cua",
+          "relation": "ingredientCategory",
+          "target": "Hải sản",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Rất phổ biến các món canh chua sử dụng nguyên liệu chính là một loại thủy sản, hải sản"
+        },
+        {
+          "subject": "Cua",
+          "relation": "hasAllergen",
+          "target": "Giáp xác",
+          "target_type": "Allergen",
+          "source_url": "https://vi.wikipedia.org/wiki/Canh%20chua",
+          "evidence": "Rất phổ biến các món canh chua sử dụng nguyên liệu chính là một loại thủy sản, hải sản, do chất tạo chua có tác dụng khử mùi vị tanh của nguyên liệu này."
+        }
+      ]
+    },
+    {
+      "dish": "Bún Riêu Cua",
+      "triples": [
+        {
+          "subject": "Bún Riêu Cua",
+          "relation": "originRegion",
+          "target": "Đồng bằng sông Hồng",
+          "target_type": "Region",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%BAn%20ri%C3%AAu%20cua",
+          "evidence": "Bún riêu cua là một món ăn truyền thống Việt Nam, có nguồn gốc từ vùng đồng bằng sông Hồng của Việt Nam"
+        },
+        {
+          "subject": "Bún Riêu Cua",
+          "relation": "hasIngredient",
+          "target": "Cua đồng",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%BAn%20ri%C3%AAu%20cua",
+          "evidence": "Cua đồng (thịt cua giã nhuyễn và gạch cua);"
+        },
+        {
+          "subject": "Bún Riêu Cua",
+          "relation": "hasIngredient",
+          "target": "Mắm tôm",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%BAn%20ri%C3%AAu%20cua",
+          "evidence": "Bún riêu thường thêm chút mắm tôm để tăng thêm vị đậm đà"
+        },
+        {
+          "subject": "Mắm tôm",
+          "relation": "hasAllergen",
+          "target": "Giáp xác",
+          "target_type": "Allergen",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%BAn%20ri%C3%AAu%20cua",
+          "evidence": "Bún riêu thường thêm chút mắm tôm để tăng thêm vị đậm đà"
+        },
+        {
+          "subject": "Bún Riêu Cua",
+          "relation": "servedWith",
+          "target": "Rau sống",
+          "target_type": "SideDish/Condiment",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%BAn%20ri%C3%AAu%20cua",
+          "evidence": "thường ăn kèm với rau sống."
+        }
+      ]
+    },
+    {
+      "dish": "Bún Riêu Ốc",
+      "triples": [
+        {
+          "subject": "Bún Riêu Ốc",
+          "relation": "originRegion",
+          "target": "Đồng bằng sông Cửu Long",
+          "target_type": "Region",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%BAn%20ri%C3%AAu%20cua",
+          "evidence": "Bún riêu ốc là một món ăn đặc sản của vùng Đồng bằng sông Cửu Long, Việt Nam."
+        },
+        {
+          "subject": "Bún Riêu Ốc",
+          "relation": "hasIngredient",
+          "target": "Ốc",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%BAn%20ri%C3%AAu%20cua",
+          "evidence": "riêng với phần ốc để tan đá xong rửa sạch với rượu và gừng cho khỏi tanh"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rong Biển",
+      "triples": [
+        {
+          "subject": "Canh Rong Biển",
+          "relation": "hasIngredient",
+          "target": "Rong biển",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Miyeok%20guk",
+          "evidence": "Miyeok nghĩa là thứ rong biển wakame; còn guk nghĩa là \"canh\"."
+        },
+        {
+          "subject": "Canh Rong Biển",
+          "relation": "hasIngredient",
+          "target": "Thịt bò",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/Miyeok%20guk",
+          "evidence": "cái có thể được làm từ thịt bò hoặc hải sản như trai, sò và cá."
+        },
+        {
+          "subject": "Thịt bò",
+          "relation": "ingredientCategory",
+          "target": "Thịt",
+          "target_type": "IngredientCategory",
+          "source_url": "https://vi.wikipedia.org/wiki/Miyeok%20guk",
+          "evidence": "cái có thể được làm từ thịt bò"
+        }
+      ]
+    },
+    {
+      "dish": "Canh Rong Biển Trứng Đậu Hũ",
+      "triples": [
+        {
+          "subject": "Canh Rong Biển Trứng Đậu Hũ",
+          "relation": "hasIngredient",
+          "target": "Rong biển",
+          "target_type": "Ingredient",
+          "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam",
+          "evidence": "Nền văn minh lúa nước của Việt Nam khiến rất nhiều món ăn và nguyên liệu nấu ăn có nguồn gốc từ lúa gạo"
+        }
+      ]
+    }
+  ]
+}

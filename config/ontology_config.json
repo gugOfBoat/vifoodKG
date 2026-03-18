@@ -1,77 +1,292 @@
 {
+  "entity_classes": [
+    {
+      "name": "Dish",
+      "description": "Món ăn Việt Nam hoàn chỉnh, có thể gọi riêng tại quán",
+      "source_category": "MainDish",
+      "examples": [
+        "Phở Bò",
+        "Bún Chả",
+        "Cơm Tấm",
+        "Bánh Cuốn"
+      ]
+    },
+    {
+      "name": "Ingredient",
+      "description": "Nguyên liệu/thành phần riêng lẻ nhìn thấy được trong ảnh",
+      "source_category": "Component/Ingredient",
+      "examples": [
+        "Thịt Bò",
+        "Tôm",
+        "Giá Đỗ",
+        "Hành Lá",
+        "Bánh Phở"
+      ]
+    },
+    {
+      "name": "IngredientCategory",
+      "description": "Phân loại nguyên liệu theo nhóm thực phẩm",
+      "examples": [
+        "Thịt",
+        "Hải sản",
+        "Rau lá",
+        "Củ quả",
+        "Gia vị",
+        "Ngũ cốc"
+      ]
+    },
+    {
+      "name": "Region",
+      "description": "Vùng miền / tỉnh thành xuất xứ món ăn",
+      "examples": [
+        "Hà Nội",
+        "Huế",
+        "Hội An",
+        "Miền Tây Nam Bộ",
+        "Sài Gòn"
+      ]
+    },
+    {
+      "name": "DishType",
+      "description": "Loại/phân loại món ăn theo hình thức",
+      "examples": [
+        "Món nước",
+        "Món khô",
+        "Bánh",
+        "Lẩu",
+        "Món cơm",
+        "Xào",
+        "Kho"
+      ]
+    },
+    {
+      "name": "CookingTechnique",
+      "description": "Kỹ thuật chế biến chính",
+      "examples": [
+        "Ninh",
+        "Xào",
+        "Chiên",
+        "Hấp",
+        "Nướng",
+        "Luộc",
+        "Kho"
+      ]
+    },
+    {
+      "name": "FlavorProfile",
+      "description": "Đặc trưng hương vị",
+      "examples": [
+        "Cay",
+        "Chua",
+        "Ngọt",
+        "Mặn",
+        "Umami",
+        "Béo ngậy"
+      ]
+    },
+    {
+      "name": "DietaryTag",
+      "description": "Nhãn chế độ ăn dựa trên nguồn gốc nguyên liệu",
+      "values": [
+        "animal_product",
+        "plant_based"
+      ]
+    },
+    {
+      "name": "Allergen",
+      "description": "Chất gây dị ứng tiềm ẩn trong nguyên liệu",
+      "examples": [
+        "Giáp xác",
+        "Gluten",
+        "Đậu nành",
+        "Trứng",
+        "Sữa",
+        "Đậu phộng"
+      ]
+    },
+    {
+      "name": "SideDish",
+      "description": "Món ăn kèm / nước chấm / rau sống / đồ phụ",
+      "source_category": "SideDish",
+      "examples": [
+        "Rau Sống",
+        "Quẩy",
+        "Đồ Chua",
+        "Chả Lụa"
+      ]
+    }
+  ],
   "relationships": [
     {
       "name": "hasIngredient",
-      "question_type": "ingredients",
-      "markdown_section": "Ingredients & Side Dishes",
-      "description": "Nguyên liệu chính của món ăn"
-    },
-    {
-      "name": "servedWith",
-      "question_type": "side_dish",
-      "markdown_section": "Ingredients & Side Dishes",
-      "description": "Món ăn kèm / nước chấm đi kèm"
-    },
-    {
-      "name": "originRegion",
-      "question_type": "origin",
-      "markdown_section": "Origin & History",
-      "description": "Nguồn gốc vùng miền của món ăn"
-    },
-    {
-      "name": "dishType",
-      "question_type": "type_of_dish",
-      "markdown_section": "Overview",
-      "description": "Loại món ăn (món cơm, món nước, bánh, bún khô,...)"
+      "domain": "Dish",
+      "range": "Ingredient",
+      "description": "Món ăn có nguyên liệu này",
+      "hop": "1-hop"
     },
     {
       "name": "ingredientCategory",
-      "question_type": "category_of_ingredient",
-      "markdown_section": "Ingredients & Side Dishes",
-      "description": "Loại nguyên liệu (hải sản, thịt, rau,...)"
+      "domain": "Ingredient",
+      "range": "IngredientCategory",
+      "description": "Nguyên liệu thuộc phân loại nào",
+      "hop": "2-hop (Dish → Ingredient → IngredientCategory)"
     },
     {
-      "name": "hasAllergen",
-      "question_type": "allergens_restrictions",
-      "markdown_section": "Ingredients & Side Dishes",
-      "description": "Chất gây dị ứng trong món ăn"
+      "name": "originRegion",
+      "domain": "Dish",
+      "range": "Region",
+      "description": "Vùng miền xuất xứ / nơi nổi tiếng nhất",
+      "hop": "1-hop"
+    },
+    {
+      "name": "dishType",
+      "domain": "Dish",
+      "range": "DishType",
+      "description": "Loại món ăn (món nước, món khô, bánh...)",
+      "hop": "1-hop"
+    },
+    {
+      "name": "servedWith",
+      "domain": "Dish",
+      "range": "SideDish",
+      "description": "Món ăn kèm / nước chấm đi kèm",
+      "hop": "1-hop"
     },
     {
       "name": "cookingTechnique",
-      "question_type": "cooking_technique",
-      "markdown_section": "Cooking Technique & Taste",
-      "description": "Kỹ thuật nấu nướng (chiên, xào, luộc,...)"
+      "domain": "Dish",
+      "range": "CookingTechnique",
+      "description": "Kỹ thuật chế biến chính",
+      "hop": "1-hop"
     },
     {
       "name": "flavorProfile",
-      "question_type": "taste_and_flavor_profile",
-      "markdown_section": "Cooking Technique & Taste",
-      "description": "Hương vị và đặc điểm mùi vị"
+      "domain": "Dish",
+      "range": "FlavorProfile",
+      "description": "Hương vị đặc trưng",
+      "hop": "1-hop"
     },
     {
-      "name": "healthNutrition",
-      "question_type": "health_and_nutritional_aspects",
-      "markdown_section": "Overview",
-      "description": "Lợi ích sức khỏe và dinh dưỡng"
+      "name": "hasAllergen",
+      "domain": "Ingredient",
+      "range": "Allergen",
+      "description": "Nguyên liệu chứa chất gây dị ứng",
+      "hop": "2-hop (Dish → Ingredient → Allergen)"
     },
     {
-      "name": "hasDietary",
-      "question_type": "dietary_restrictions",
-      "markdown_section": "Ingredients & Side Dishes",
-      "description": "Chế độ ăn phù hợp (chay, Địa Trung Hải,...)"
+      "name": "hasDietaryTag",
+      "domain": "Ingredient",
+      "range": "DietaryTag",
+      "description": "Nguyên liệu là animal_product hay plant_based",
+      "hop": "2-hop (Dish → Ingredient → DietaryTag)"
     },
     {
       "name": "hasSubRule",
-      "question_type": "ingredient_substitutions",
-      "markdown_section": "Ingredients & Side Dishes",
-      "description": "Quy tắc thay thế nguyên liệu"
+      "domain": "Dish",
+      "range": "SubstitutionRule",
+      "description": "Món ăn có quy tắc thay thế nguyên liệu",
+      "hop": "1-hop (reification)"
+    },
+    {
+      "name": "fromIngredient",
+      "domain": "SubstitutionRule",
+      "range": "Ingredient",
+      "description": "Nguyên liệu gốc cần thay thế",
+      "hop": "part of SubstitutionRule reification"
+    },
+    {
+      "name": "toIngredient",
+      "domain": "SubstitutionRule",
+      "range": "Ingredient",
+      "description": "Nguyên liệu thay thế",
+      "hop": "part of SubstitutionRule reification"
     }
   ],
-  "markdown_sections": [
-    "Overview",
-    "Ingredients & Side Dishes",
-    "Origin & History",
-    "Cooking Technique & Taste",
-    "References"
-  ]
+  "question_types": [
+    {
+      "type": "ingredients",
+      "relationship_path": "Dish -[hasIngredient]-> Ingredient",
+      "hops": 1,
+      "keywords": "nguyên liệu, thành phần, hương vị, mùi thơm",
+      "template": "Nguyên liệu chính của {dish} là gì?"
+    },
+    {
+      "type": "side_dish",
+      "relationship_path": "Dish -[servedWith]-> SideDish",
+      "hops": 1,
+      "keywords": "món ăn kèm, nước chấm, dùng kèm",
+      "template": "{dish} thường được ăn kèm với món gì?"
+    },
+    {
+      "type": "origin",
+      "relationship_path": "Dish -[originRegion]-> Region",
+      "hops": 1,
+      "keywords": "địa phương, vùng miền, nguồn gốc",
+      "template": "{dish} có nguồn gốc từ đâu?"
+    },
+    {
+      "type": "dish_type",
+      "relationship_path": "Dish -[dishType]-> DishType",
+      "hops": 1,
+      "keywords": "loại món ăn",
+      "template": "{dish} thuộc loại món ăn gì?"
+    },
+    {
+      "type": "ingredient_category",
+      "relationship_path": "Dish -[hasIngredient]-> Ingredient -[ingredientCategory]-> IngredientCategory",
+      "hops": 2,
+      "keywords": "loại nguyên liệu, hải sản, thịt, rau",
+      "template": "Nguyên liệu trong {dish} thuộc loại nào?"
+    },
+    {
+      "type": "allergen_restrictions",
+      "relationship_path": "Dish -[hasIngredient]-> Ingredient -[hasAllergen]-> Allergen",
+      "hops": 2,
+      "keywords": "dị ứng, chất gây dị ứng, thay thế",
+      "template": "{dish} có chứa chất gây dị ứng nào không?"
+    },
+    {
+      "type": "cooking_technique",
+      "relationship_path": "Dish -[cookingTechnique]-> CookingTechnique",
+      "hops": 1,
+      "keywords": "kỹ thuật nấu, chiên, xào, luộc, hấp",
+      "template": "Kỹ thuật nấu {dish} là gì?"
+    },
+    {
+      "type": "flavor_profile",
+      "relationship_path": "Dish -[flavorProfile]-> FlavorProfile",
+      "hops": 1,
+      "keywords": "hương vị, cay, chua, ngọt, mặn",
+      "template": "Hương vị đặc trưng của {dish} là gì?"
+    },
+    {
+      "type": "health_nutrition",
+      "relationship_path": "Dish -[hasIngredient]-> Ingredient",
+      "hops": 1,
+      "keywords": "dinh dưỡng, protein, chất xơ, khoáng chất",
+      "template": "Lợi ích dinh dưỡng của {dish} là gì?"
+    },
+    {
+      "type": "dietary_restrictions",
+      "relationship_path": "Dish -[hasIngredient]-> Ingredient -[hasDietaryTag]-> DietaryTag",
+      "hops": 2,
+      "keywords": "chế độ ăn, chay, thực vật",
+      "template": "{dish} có phù hợp với chế độ ăn chay không?"
+    },
+    {
+      "type": "ingredient_substitution",
+      "relationship_path": "Dish -[hasSubRule]-> SubstitutionRule -[fromIngredient]-> Ingredient_A; SubstitutionRule -[toIngredient]-> Ingredient_B",
+      "hops": 2,
+      "keywords": "thay thế nguyên liệu, tương tự",
+      "template": "Có thể thay thế nguyên liệu nào trong {dish}?"
+    }
+  ],
+  "triple_extraction_requirements": {
+    "mandatory_properties": {
+      "source_url": "URL nguồn web đã trích dẫn (bắt buộc cho mỗi triple)",
+      "evidence": "Đoạn văn bản gốc từ nguồn chứng minh triple này đúng",
+      "confidence": "Mức độ tin cậy: high / medium / low"
+    },
+    "note": "Mỗi triple phải có source_url và evidence để đảm bảo tính minh bạch (web-grounded). Không chấp nhận triple không có nguồn."
+  }
 }

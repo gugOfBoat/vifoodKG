@@ -1,0 +1,28 @@
+{
+  "count": 1,
+  "cols": [
+    "image_id",
+    "image_url",
+    "food_items",
+    "is_checked",
+    "image_desc",
+    "is_drop",
+    "last_modified"
+  ],
+  "row": {
+    "image_id": "image000001",
+    "image_url": "https://cvdoasxazyruytejluvv.supabase.co/storage/v1/object/public/images/image000001.png",
+    "food_items": [
+      "Cá kho",
+      "Bầu luộc",
+      "Bắp cải xào",
+      "Dưa chuột",
+      "Bò xào đậu cô ve",
+      "Nước mắm"
+    ],
+    "is_checked": true,
+    "image_desc": null,
+    "is_drop": false,
+    "last_modified": "2026-03-17T02:51:35.320013+00:00"
+  }
+}
