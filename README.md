@@ -1,177 +1,94 @@
-# ViFoodKG - Knowledge Graph cho Ẩm thực Việt Nam
+<div align="center">
+  <img src="https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white" />
+  <img src="https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=google-gemini&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Sentence_Transformers-FF9D00?style=for-the-badge&logo=huggingface&logoColor=white" />
 
-## Mô tả
-
-**ViFoodKG** là hệ thống xây dựng Knowledge Graph (đồ thị tri thức) về ẩm thực Việt Nam, phục vụ bài toán **Visual Question Answering (VQA)**. Pipeline bao gồm 3 bước chính:
-
-1. **Entity Extraction** — Trích xuất nhãn thực thể thức ăn từ Supabase.
-2. **Entity Classification** — Chuẩn hóa & phân loại thực thể bằng Gemini LLM.
-3. **Triple Extraction** — Thu thập dữ liệu web + trích xuất bộ ba tri thức (triples) theo ontology.
-
-> Dự án sử dụng **Google Gemini API** cho các bước LLM, **Supabase** làm nguồn dữ liệu ảnh, và lược đồ ontology tùy chỉnh với **12 quan hệ** & **11 loại câu hỏi** cho VQA.
+  # 🍜 ViFoodKG: Vietnamese Food Knowledge Graph
+  ### *Hệ thống Tri thức Ẩm thực Việt Nam phục vụ Visual Question Answering (VQA)*
+</div>
 
 ---
 
-## Cấu trúc dự án
+**ViFoodKG** là một Knowledge Graph (Đồ thị Tri thức) chuyên sâu về ẩm thực Việt Nam, được thiết kế đặc biệt để làm nền tảng lưu trữ và truy xuất cho hệ thống RAG (Retrieval-Augmented Generation) phục vụ bài toán Visual Question Answering (VQA).
 
-```
-ViFoodKG/
-├── src/
-│   ├── 01_kg_entity_extractor.py   # Bước 1: Trích xuất nhãn food entities từ Supabase
-│   ├── 02_kg_entity_classifier.py  # Bước 2: Chuẩn hóa & phân loại bằng Gemini
-│   └── 03_kg_triple_extractor.py   # Bước 3: Crawl web + trích xuất triples bằng Gemini
-├── config/
-│   ├── dishes.txt                  # Danh sách 78 món ăn Việt Nam
-│   ├── ontology_config.json        # Lược đồ ontology (entity classes, relations, question types)
-│   └── test_dishes.json            # Dữ liệu test nhỏ
-├── data/
-│   ├── raw_unique_labels.json      # Output Bước 1: nhãn thực thể unique
-│   ├── master_entities.json        # Output Bước 2: thực thể đã chuẩn hóa & phân loại
-│   ├── raw_data/                   # Dữ liệu .md crawled cho 78 món ăn
-│   ├── triples/
-│   │   └── extracted_triples.json  # Output Bước 3: bộ ba tri thức
-│   └── extracted/
-│       └── Question Type.md        # Tài liệu phân loại câu hỏi
-├── tests/
-├── monan.txt                       # Danh sách 78 món ăn (plain text)
-├── .env.example                    # Template biến môi trường
-├── pyproject.toml                  # Cấu hình project & dependencies
-├── .gitignore
-└── README.md
-```
+Dự án này tự động khai phá tri thức từ web tĩnh (Wikipedia), trích xuất các bộ ba tri thức (triples) thông qua LLM (Google Gemini), lưu trữ cấu trúc Topology trên hệ quản trị cơ sở dữ liệu đồ thị **Neo4j**, và tích hợp **Vector Search** trên đồ thị (Hybrid Retrieval).
 
 ---
 
-## Yêu cầu
+## 🌟 Tính năng nổi bật
 
-- **Python** ≥ 3.11
-- API keys: **Supabase**, **Google Gemini**
-- *(Tùy chọn)* Firecrawl API, Exa API (fallback scraper)
+1. **Web-Grounded Extraction:** 100% tri thức trích xuất đều được neo với Nguồn (URL) và Bằng chứng (Evidence textual snippet), chống hội chứng "ảo giác" (hallucination) của LLM.
+2. **Comprehensive Ontology:** Mô hình hóa 11 loại thực thể (Dish, Ingredient, Region, Allergen, v.v.) và 10 mối quan hệ phức tạp (1-hop, 2-hop, và reification qua quy tắc thay thế nguyên liệu).
+3. **Graph-Vector Hybrid Retrieval:** Chiến lược truy xuất kết hợp Lược đồ Đồ thị (Neo's Graph Traversal) và Không gian Vector (Cosine Similarity) để đem lại độ chính xác cục bộ cao nhất.
+---
+
+## 🏗️ Kiến trúc & Quy trình (The Pipeline)
+
+Dự án được chia thành 5 giai đoạn liên tiếp. Mỗi giai đoạn đại diện cho một script trong thư mục `src/`:
+
+### 1. Trích xuất Thực thể (Entity Extraction)
+**Script:** `01_kg_entity_extractor.py`
+- Lọc danh sách món ăn từ các nhãn thô (raw labels) có trong cơ sở dữ liệu ảnh (Supabase). Output: `raw_unique_labels.json`.
+
+### 2. Phân loại & Chuẩn hóa Thực thể (Entity Classification)
+**Script:** `02_kg_entity_classifier.py`
+- Sử dụng Gemini API để làm sạch dữ liệu nhiễu, chuyển các nhãn thô thành tên món ăn chuẩn (ví dụ "bun_bo" → "Bún Bò Huế") và phân loại thành các danh mục (MainDish, Ingredient, Region...). Output: `master_entities.json`.
+
+### 3. Khai phá Tri thức (Web-Grounded Triple Extraction)
+**Script:** `03_kg_triple_extractor.py`
+- Thu thập dữ liệu từ Wikipedia Tiếng Việt cho từng món ăn.
+- Prompt LLM Gemini đọc hiểu văn bản web và trích xuất thành các Knowledge Triples `(Subject) -[Relation]-> (Target)`.
+- Fallback: Nếu không tìm thấy thông tin trên Web, yêu cầu LLM tự dùng kiến thức nội bộ để sinh bộ ba (đánh dấu source là `LLM_Knowledge`).
+
+### 4. Đổ dữ liệu lên Neo4j (Neo4j Ingestion)
+**Script:** `04_kg_neo4j_ingestor.py`
+- Parse file JSON để tạo các Nodes và Relationships tren Neo4j Cloud (AuraDB).
+- Xử lý phức tạp: **Reification** (Vật hóa) đối với quy tắc mô tả linh hoạt sự thay thế nguyên liệu (ví dụ: *Bún Chả có thể thay thịt lợn bằng thịt bò* tạo thành chuỗi 3 nodes `Dish → SubstitutionRule → Ingredient`).
+- Văn bản hóa (Verbalization) các cung (edges) phục vụ cho Vectorization sau này.
+
+### 5. Nhúng Vector & Indexing (NeoEdge Vectorization)
+**Script / Notebook:** `05_kg_vectorizer.py` & `notebooks/05_vectorizer_colab.py`
+- Sử dụng mô hình `intfloat/multilingual-e5-small` để biến các thuộc tính `verbalized_text` nằm trên Edge (Mối quan hệ) thành Vector 384 chiều.
+- Lưu lại vào thuộc tính `embedding` của cạnh và tạo **Vector Index** trên Neo4j bằng thuật toán độ đo Cosine.
 
 ---
 
-## Cài đặt
+## 🔍 Chiến lược trích xuất triples
 
-```bash
-# Tạo virtual environment
-python -m venv .venv
-.venv\Scripts\activate       # Windows
-# source .venv/bin/activate  # Linux/macOS
+Dữ liệu đầu vào: `danh_sách_thực_thể_trong_ảnh` (từ mô hình CV) + `câu_hỏi_của_user` (Text).
 
-# Cài đặt dependencies
-pip install -e ".[dev]"
+1. **Neo (Anchor):** 
+   Thay vì chạy "Vector Search" toàn bộ cơ sở dữ liệu làm nhiễu thông tin, chúng ta giới hạn vùng không gian đồ thị bằng cách neo (MATCH) vào những Node Thực thể đang xuất hiện cụ thể trong ảnh.
+2. **Traverse (Mở rộng):**
+   Tìm tất cả các mối quan hệ xuất phát từ những Node được neo. Hỗ trợ quét các mối quan hệ trực tiếp (1-hop) lẫn các quan hệ bắc cầu nâng cao (2-hop) như *Dish → Ingredient → Allergen*.
+3. **Rank (Xếp hạng):**
+   Cộng gộp danh sách thực thể với câu hỏi của người dùng để tạo thành một Vector Ý định (Query Vector). Dùng tích Vô hướng Cosine so sánh Vector Ý định này với các Vector của cung (Edge Embeddings) đã thu được ở bước 2. Đặc biệt, nếu một cung nối 2 đầu là 2 thực thể cùng có mặt trong ảnh (Internal Link), cung đó sẽ được cộng điểm thưởng ưu tiên.
 
-# Cấu hình environment
-cp .env.example .env
-# Chỉnh sửa .env với API keys thực
-```
-
-### Biến môi trường (`.env`)
-
-| Biến | Mô tả | Bắt buộc |
-|------|--------|----------|
-| `SUPABASE_URL` | URL project Supabase | ✅ |
-| `SUPABASE_KEY` | Anon/Service key Supabase | ✅ |
-| `GEMINI_API_KEY` | Google Gemini API key | ✅ |
-| `NEO4J_URI` | Neo4j bolt URI | ⬜ *(chưa dùng)* |
-| `NEO4J_USERNAME` | Neo4j username | ⬜ *(chưa dùng)* |
-| `NEO4J_PASSWORD` | Neo4j password | ⬜ *(chưa dùng)* |
-| `FIRECRAWL_API_KEY` | Firecrawl API key (fallback) | ⬜ |
-| `EXA_API_KEY` | Exa API key (fallback) | ⬜ |
+Kết quả cuối cùng là **Top K Knowledge Triples** phù hợp nhất theo cả ngữ cảnh thị giác và ngữ nghĩa để đẩy vào LLM sinh câu trả lời VQA. 
 
 ---
 
-## Pipeline chạy
+## ⚙️ Cài đặt & Cấu hình (Local)
 
-### Bước 1 — Entity Extraction (Supabase → JSON)
+1. **Clone dự án & Cài đặt môi trường:**
+   ```bash
+   git clone https://github.com/gugOfBoat/vifoodKG.git
+   cd vifoodKG
+   # Cài đặt qua uv hoặc pip
+   pip install -r requirements.txt # (nếu có)
+   # Hoặc cài module tay
+   pip install neo4j sentence-transformers python-dotenv google-generativeai requests beautifulsoup4
+   ```
 
-```bash
-python src/01_kg_entity_extractor.py
-```
+2. **Tạo biến môi trường `.env`:**
+   Dựa vào file `.env.example`, tạo file `.env` tại thư mục gốc và điền các khóa bảo mật (API keys, Neo4j credentials).
 
-- Kết nối Supabase, đọc cột `food_items` từ bảng `image`.
-- Deduplicate & chuẩn hóa Unicode NFC.
-- **Output:** `data/raw_unique_labels.json`
-
-### Bước 2 — Entity Classification (Gemini LLM)
-
-```bash
-python src/02_kg_entity_classifier.py
-```
-
-- Gửi nhãn thô theo batch (50 nhãn/batch) đến Gemini để chuẩn hóa & phân loại.
-- Phân loại thành 5 categories: **MainDish**, **Component/Ingredient**, **SideDish**, **Condiment**, **Discard**.
-- Hỗ trợ **checkpoint/resume** tự động (lưu progress vào `_classifier_progress.json`).
-- **Output:** `data/master_entities.json`
-
-### Bước 3 — Triple Extraction (Web-Grounded)
-
-```bash
-python src/03_kg_triple_extractor.py               # Chạy toàn bộ MainDishes
-python src/03_kg_triple_extractor.py --limit 3      # Test với 3 món
-```
-
-- Với mỗi MainDish, crawl nội dung từ **Wikipedia tiếng Việt** + **Google Search** (fallback).
-- Gửi nội dung crawled + ontology schema đến Gemini để trích xuất triples.
-- Mỗi triple bắt buộc có `source_url` + `evidence` (web-grounded, không hallucination).
-- Batch 5 món/lần, checkpoint-resumable.
-- **Output:** `data/triples/extracted_triples.json`
-
----
-
-## Ontology Schema
-
-### Entity Classes
-
-| Class | Mô tả | Ví dụ |
-|-------|--------|-------|
-| `Dish` | Món ăn hoàn chỉnh | Phở Bò, Bún Chả, Cơm Tấm |
-| `Ingredient` | Nguyên liệu riêng lẻ | Thịt Bò, Tôm, Giá Đỗ |
-| `IngredientCategory` | Phân loại nguyên liệu | Thịt, Hải sản, Rau lá |
-| `Region` | Vùng miền xuất xứ | Hà Nội, Huế, Sài Gòn |
-| `DishType` | Loại món | Món nước, Món khô, Bánh |
-| `CookingTechnique` | Kỹ thuật chế biến | Ninh, Chiên, Xào, Hấp |
-| `FlavorProfile` | Hương vị đặc trưng | Cay, Chua, Ngọt, Mặn |
-| `DietaryTag` | Chế độ ăn | animal_product, plant_based |
-| `Allergen` | Chất gây dị ứng | Giáp xác, Gluten, Đậu nành |
-| `SideDish` | Món ăn kèm | Rau Sống, Quẩy, Đồ Chua |
-
-### Quan hệ (Relations)
-
-| Relation | Domain → Range | Hops |
-|----------|---------------|------|
-| `hasIngredient` | Dish → Ingredient | 1 |
-| `servedWith` | Dish → SideDish | 1 |
-| `originRegion` | Dish → Region | 1 |
-| `dishType` | Dish → DishType | 1 |
-| `cookingTechnique` | Dish → CookingTechnique | 1 |
-| `flavorProfile` | Dish → FlavorProfile | 1 |
-| `ingredientCategory` | Ingredient → IngredientCategory | 2 |
-| `hasAllergen` | Ingredient → Allergen | 2 |
-| `hasDietaryTag` | Ingredient → DietaryTag | 2 |
-| `hasSubRule` | Dish → SubstitutionRule | 1 |
-| `fromIngredient` | SubstitutionRule → Ingredient | — |
-| `toIngredient` | SubstitutionRule → Ingredient | — |
-
----
-
-## Trạng thái phát triển
-
-| Bước | Mô tả | Trạng thái |
-|------|-------|------------|
-| 1 | Entity Extraction (Supabase) | ✅ Done |
-| 2 | Entity Classification (Gemini LLM) | ✅ Done |
-| 3 | Web-Grounded Triple Extraction | 🔄 In Progress |
-| 4 | Neo4j Graph Loading | ⏳ Pending |
-
----
-
-## Tech Stack
-
-- **Python 3.11+** — Ngôn ngữ chính
-- **Google Gemini API** (`google-generativeai`) — LLM cho classification & triple extraction
-- **Supabase** (`supabase-py`) — Nguồn dữ liệu ảnh thực phẩm
-- **BeautifulSoup4** + **lxml** — Web scraping
-- **Pydantic** — Data validation
-- **Rich** — Console output formatting
-- **Ruff** / **MyPy** / **Pytest** — Linting, type checking, testing
+3. **Thực thi Query Testing:**
+   ```bash
+   # Truy vấn xem nguyên liệu món ăn
+   python src/query.py -i "Phở Bò" "Thịt Bò" -q "nguyên liệu chính" -k 5
+   
+   # Cần xuất JSON để pipe cho các service khác
+   python src/query.py -i "Bánh Xèo" -q "chất gây dị ứng" -k 3 --json
+   ```
