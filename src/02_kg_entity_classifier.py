@@ -90,24 +90,23 @@ CHỈ JSON array, KHÔNG giải thích, KHÔNG markdown.
 
 
 def call_gemini(labels, retries=3):
-    import google.generativeai as genai
-
-    api_key = os.getenv("GEMINI_API_KEY")
-    if not api_key:
+    from google import genai
+    
+    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+    if not GEMINI_API_KEY:
         print("GEMINI_API_KEY missing")
         sys.exit(1)
-
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel(GEMINI_MODEL)
+    client = genai.Client(api_key=GEMINI_API_KEY)
 
     numbered = "\n".join(f"{i+1}. {lbl}" for i, lbl in enumerate(labels))
     user_msg = f"Xu ly {len(labels)} nhan sau:\n\n{numbered}"
 
     for attempt in range(1, retries + 1):
         try:
-            resp = model.generate_content(
-                SYSTEM_PROMPT + "\n\n" + user_msg,
-                generation_config=genai.types.GenerationConfig(
+            resp = client.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=SYSTEM_PROMPT + "\n\n" + user_msg,
+                config=genai.types.GenerateContentConfig(
                     temperature=0.05,
                     max_output_tokens=8192,
                     response_mime_type="application/json",
