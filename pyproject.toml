@@ -1,7 +1,7 @@
 [project]
-name = "vifoodvqa"
+name = "ViFoodKG"
 version = "0.1.0"
-description = "ViFood-VQA: A Knowledge Graph for Vietnamese Cuisine Questions & Answers powered by Neo4j and Gemini"
+description = "ViFoodKG: A Knowledge Graph for Vietnamese Cuisine Questions & Answers powered by Neo4j and Gemini"
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [

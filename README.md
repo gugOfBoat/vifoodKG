@@ -1,12 +1,12 @@
-# ViFoodVQA - Knowledge Graph for Vietnamese Cuisine
+# ViFoodKG - Knowledge Graph for Vietnamese Cuisine
 
 ## Mô tả
-**ViFoodVQA** là hệ thống Knowledge Graph về ẩm thực Việt Nam, được xây dựng trên Neo4j. Hệ thống sử dụng Gemini API để trích xuất bộ triple ngữ nghĩa từ dữ liệu thu thập được, phục vụ bài toán Visual Question Answering (VQA) cho ẩm thực Việt.
+**ViFoodKG** là hệ thống Knowledge Graph về ẩm thực Việt Nam, được xây dựng trên Neo4j. Hệ thống sử dụng Gemini API để trích xuất bộ triple ngữ nghĩa từ dữ liệu thu thập được, phục vụ bài toán Visual Question Answering (VQA) cho ẩm thực Việt.
 
 ## Cấu trúc dự án
 
 ```
-ViFoodVQA/
+ViFoodKG/
 ├── src/
 │   ├── 01_scraper.py       # Thu thập dữ liệu từ Wikipedia + Fallback
 │   ├── 02_extractor.py     # (Phase 3) Trích xuất triple bằng Gemini
