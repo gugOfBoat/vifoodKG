@@ -15,8 +15,8 @@ Expected input file shape (from 05_generate_vqa.py):
 ]
 
 Usage:
-  python src/08_import_vqa.py
-  python src/08_import_vqa.py --input data/vqa/generated_vqa.json
+  python src/upsert_supabase/08_import_vqa.py
+  python src/upsert_supabase/08_import_vqa.py --input data/vqa/generated_vqa.json
 """
 
 from __future__ import annotations

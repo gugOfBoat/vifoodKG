@@ -26,6 +26,7 @@ Usage
   python src/06_generate_vqa.py --limit-images 20 --qtypes-per-image 2
   python src/06_generate_vqa.py --qtypes ingredients origin side_dish
   python src/06_generate_vqa.py --start-page 3 --top-k 10
+  python src/06_generate_vqa.py --output-dir /content/drive/MyDrive/ViFoodKG_outputs/vqa
 """
 
 import argparse
@@ -46,9 +47,9 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(PROJECT_ROOT / ".env")
 
 QUESTION_TYPES_FILE = PROJECT_ROOT / "data" / "question_types.csv"
-OUTPUT_DIR = PROJECT_ROOT / "data" / "vqa"
-OUTPUT_FILE = OUTPUT_DIR / "generated_vqa.json"
-PROGRESS_FILE = OUTPUT_DIR / "_generate_vqa_progress.json"
+DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "data" / "vqa"
+DEFAULT_OUTPUT_FILE = DEFAULT_OUTPUT_DIR / "generated_vqa.json"
+DEFAULT_PROGRESS_FILE = DEFAULT_OUTPUT_DIR / "_generate_vqa_progress.json"
 
 GEMINI_MODEL = os.getenv("VQA_GEMINI_MODEL", "gemini-3.1-flash-lite-preview")
 PAGE_SIZE = 200
@@ -284,9 +285,18 @@ def load_question_types(path: Path) -> list[dict[str, Any]]:
     return qtypes
 
 
-def load_progress() -> dict[str, Any]:
-    if PROGRESS_FILE.exists():
-        data = json.loads(PROGRESS_FILE.read_text(encoding="utf-8"))
+def resolve_output_paths(output_dir: str | Path | None = None) -> tuple[Path, Path, Path]:
+    base_dir = Path(output_dir) if output_dir else DEFAULT_OUTPUT_DIR
+    return (
+        base_dir,
+        base_dir / "generated_vqa.json",
+        base_dir / "_generate_vqa_progress.json",
+    )
+
+
+def load_progress(progress_file: Path) -> dict[str, Any]:
+    if progress_file.exists():
+        data = json.loads(progress_file.read_text(encoding="utf-8"))
         data.setdefault("page", 0)
         data.setdefault("generated", [])
         data.setdefault("question_keys", [])
@@ -294,9 +304,9 @@ def load_progress() -> dict[str, Any]:
     return {"page": 0, "generated": [], "question_keys": []}
 
 
-def save_progress(progress: dict[str, Any]) -> None:
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    PROGRESS_FILE.write_text(json.dumps(progress, ensure_ascii=False, indent=2), encoding="utf-8")
+def save_progress(progress: dict[str, Any], output_dir: Path, progress_file: Path) -> None:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    progress_file.write_text(json.dumps(progress, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def make_supabase_client():
@@ -930,6 +940,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--desc-col", default="image_desc")
     parser.add_argument("--items-col", default="food_items")
     parser.add_argument("--question-types-csv", default=str(QUESTION_TYPES_FILE))
+    parser.add_argument("--output-dir", default=str(DEFAULT_OUTPUT_DIR))
     parser.add_argument("--start-image-id", default="")
     parser.add_argument("--end-image-id", default="")
     parser.add_argument("--limit-samples", type=int, default=0)
@@ -940,7 +951,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--top-k", type=int, default=TOP_K)
     parser.add_argument("--seed", type=int, default=DEFAULT_SEED)
     parser.add_argument("--device", default="auto", choices=["auto", "cuda", "cpu"])
-    parser.add_argument("--questions-per-qtype", type=int, default=1)
+    parser.add_argument("--questions-per-qtype", type=int, default=3)
     parser.add_argument("--only-approved-images", action="store_true", default=True)
     return parser.parse_args()
 
@@ -948,6 +959,7 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
     rng = random.Random(args.seed)
+    output_dir, output_file, progress_file = resolve_output_paths(args.output_dir)
 
     all_qtypes = load_question_types(Path(args.question_types_csv))
     qmeta_by_key = {q["canonical_qtype"]: q for q in all_qtypes}
@@ -967,7 +979,7 @@ def main() -> None:
         print("No supported question types selected.")
         sys.exit(1)
 
-    progress = load_progress()
+    progress = load_progress(progress_file)
     limit_samples = args.limit_samples or args.limit_images
     if args.start_page >= 0:
         progress["page"] = args.start_page
@@ -1102,23 +1114,23 @@ def main() -> None:
                             "generated": generated,
                             "question_keys": sorted(question_keys),
                         }
-                        save_progress(progress)
+                        save_progress(progress, output_dir, progress_file)
 
             page += 1
             progress["page"] = page
-            save_progress(progress)
+            save_progress(progress, output_dir, progress_file)
 
             if limit_samples > 0 and len(generated) >= limit_samples:
                 break
 
-        OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-        OUTPUT_FILE.write_text(json.dumps(generated, ensure_ascii=False, indent=2), encoding="utf-8")
+        output_dir.mkdir(parents=True, exist_ok=True)
+        output_file.write_text(json.dumps(generated, ensure_ascii=False, indent=2), encoding="utf-8")
 
         print("\n-- Done --")
         print(f"Attempted images: {attempted_images}")
         print(f"Generated samples: {len(generated)}")
-        print(f"Saved: {OUTPUT_FILE}")
-        print(f"Checkpoint: {PROGRESS_FILE}")
+        print(f"Saved: {output_file}")
+        print(f"Checkpoint: {progress_file}")
 
     finally:
         kg.close()
