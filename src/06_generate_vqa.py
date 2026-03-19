@@ -951,7 +951,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--top-k", type=int, default=TOP_K)
     parser.add_argument("--seed", type=int, default=DEFAULT_SEED)
     parser.add_argument("--device", default="auto", choices=["auto", "cuda", "cpu"])
-    parser.add_argument("--questions-per-qtype", type=int, default=3)
+    parser.add_argument("--questions-per-qtype", type=int, default=1)
     parser.add_argument("--only-approved-images", action="store_true", default=True)
     return parser.parse_args()
 
