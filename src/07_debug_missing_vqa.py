@@ -57,7 +57,7 @@ def fetch_rows_by_ids(
     items_col: str,
     image_ids: list[str],
     only_approved_images: bool,
-    batch_size: int = 100,
+    batch_size: int = 500,
 ) -> list[dict[str, Any]]:
     select_cols = f"{id_col}, {image_col}, {desc_col}, {items_col}, is_checked, is_drop"
     rows: list[dict[str, Any]] = []
@@ -78,9 +78,55 @@ def fetch_rows_by_ids(
         resp = query.execute()
         rows.extend(resp.data or [])
 
-    # giữ thứ tự theo file input
     order = {img_id: idx for idx, img_id in enumerate(image_ids)}
     rows.sort(key=lambda r: order.get(base.norm_text(r.get(id_col)), 10**9))
+    return rows
+
+
+def fetch_image_rows_by_range(
+    client,
+    table: str,
+    id_col: str,
+    image_col: str,
+    desc_col: str,
+    items_col: str,
+    page: int,
+    size: int,
+    only_approved_images: bool,
+    start_image_id: str = "",
+    end_image_id: str = "",
+) -> list[dict[str, Any]]:
+    return base.fetch_image_rows(
+        client=client,
+        table=table,
+        id_col=id_col,
+        image_col=image_col,
+        desc_col=desc_col,
+        items_col=items_col,
+        page=page,
+        size=size,
+        only_approved_images=only_approved_images,
+        start_image_id=start_image_id,
+        end_image_id=end_image_id,
+    )
+
+
+def fetch_existing_vqa_rows(
+    client,
+    image_ids: list[str],
+    vqa_table: str,
+    batch_size: int = 500,
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for i in range(0, len(image_ids), batch_size):
+        batch = image_ids[i:i + batch_size]
+        resp = (
+            client.table(vqa_table)
+            .select("image_id, qtype, question")
+            .in_("image_id", batch)
+            .execute()
+        )
+        rows.extend(resp.data or [])
     return rows
 
 
@@ -121,6 +167,48 @@ def describe_invalid_generation(result: dict[str, Any]) -> str:
         f"has_reason={has_reason}; "
         f"nonempty_choices={nonempty_choices}"
     )
+
+
+def build_existing_maps_from_vqa_rows(
+    rows: list[dict[str, Any]],
+) -> tuple[dict[tuple[str, str], list[str]], dict[tuple[str, str], int], set[str]]:
+    questions_by_key: dict[tuple[str, str], list[str]] = {}
+    counts_by_key: dict[tuple[str, str], int] = {}
+    question_keys: set[str] = set()
+
+    for row in rows:
+        image_id = base.norm_text(row.get("image_id"))
+        qtype = base.norm_text(row.get("qtype"))
+        question = base.norm_text(row.get("question"))
+        if not image_id or not qtype or not question:
+            continue
+        pair_key = (image_id, qtype)
+        questions_by_key.setdefault(pair_key, []).append(question)
+        counts_by_key[pair_key] = counts_by_key.get(pair_key, 0) + 1
+        question_keys.add(base.question_signature(image_id, qtype, question))
+
+    return questions_by_key, counts_by_key, question_keys
+
+
+def resolve_target_qtypes_for_image(
+    image_id: str,
+    requested_qtypes: list[dict[str, Any]],
+    existing_counts_by_pair: dict[tuple[str, str], int],
+    questions_per_qtype: int,
+) -> tuple[list[dict[str, Any]], list[str]]:
+    missing_qtypes: list[dict[str, Any]] = []
+    existing_enough: list[str] = []
+
+    for qmeta in requested_qtypes:
+        qtype = qmeta["canonical_qtype"]
+        pair_key = (image_id, qtype)
+        existing_count = existing_counts_by_pair.get(pair_key, 0)
+        if existing_count >= questions_per_qtype:
+            existing_enough.append(qtype)
+            continue
+        missing_qtypes.append(qmeta)
+
+    return missing_qtypes, existing_enough
 
 
 def generate_one_sample_debug(
@@ -312,22 +400,28 @@ def generate_one_sample_debug(
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Debug missing VQA image_ids")
-    parser.add_argument("--image-ids-file", required=True)
+    parser = argparse.ArgumentParser(
+        description="Generate missing VQA per image by checking which qtypes are still absent in Supabase"
+    )
+    parser.add_argument("--image-ids-file", default="")
+    parser.add_argument("--start-image-id", default="")
+    parser.add_argument("--end-image-id", default="")
     parser.add_argument("--table", default="image")
     parser.add_argument("--id-col", default="image_id")
     parser.add_argument("--image-col", default="image_url")
     parser.add_argument("--desc-col", default="image_desc")
     parser.add_argument("--items-col", default="food_items")
+    parser.add_argument("--vqa-table", default="vqa")
     parser.add_argument("--question-types-csv", default=str(base.QUESTION_TYPES_FILE))
     parser.add_argument("--output-dir", default=str(PROJECT_ROOT / "data" / "vqa_debug"))
-    parser.add_argument("--qtypes-per-image", type=int, default=0, help="0 = use all selected qtypes")
     parser.add_argument("--qtypes", nargs="*", default=[])
     parser.add_argument("--top-k", type=int, default=base.TOP_K)
     parser.add_argument("--seed", type=int, default=base.DEFAULT_SEED)
     parser.add_argument("--device", default="auto", choices=["auto", "cuda", "cpu"])
     parser.add_argument("--questions-per-qtype", type=int, default=1)
-    parser.add_argument("--only-approved-images", action="store_true", default=True)
+    parser.add_argument("--only-approved-images", dest="only_approved_images", action="store_true")
+    parser.add_argument("--all-images", dest="only_approved_images", action="store_false")
+    parser.set_defaults(only_approved_images=True)
     return parser.parse_args()
 
 
@@ -338,11 +432,14 @@ def main():
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
     debug_csv = output_dir / "debug_failures.csv"
-    generated_json = output_dir / "debug_generated_vqa.json"
+    generated_json = output_dir / "generated_vqa.json"
 
-    image_ids = load_image_ids(args.image_ids_file)
-    if not image_ids:
-        raise RuntimeError("No image ids found in file")
+    image_ids_from_file = load_image_ids(args.image_ids_file) if base.norm_text(args.image_ids_file) else []
+    start_image_id = base.norm_text(args.start_image_id)
+    end_image_id = base.norm_text(args.end_image_id)
+
+    if not image_ids_from_file and not start_image_id and not end_image_id:
+        raise RuntimeError("Provide --image-ids-file or at least one of --start-image-id / --end-image-id")
 
     all_qtypes = base.load_question_types(Path(args.question_types_csv))
     qmeta_by_key = {q["canonical_qtype"]: q for q in all_qtypes}
@@ -388,113 +485,204 @@ def main():
         print(f"Loaded {len(dish_aliases)} dishes from Neo4j")
         print(f"Embedded relationships: {embedded_edges}")
         print("Question types:", ", ".join(q["canonical_qtype"] for q in requested_qtypes))
-        print(f"Target image ids: {len(image_ids)}")
+        if image_ids_from_file:
+            print(f"Target image ids from file: {len(image_ids_from_file)}")
+        if start_image_id or end_image_id:
+            print("Image range:", start_image_id or "<min>", "->", end_image_id or "<max>")
         print(f"Questions per qtype: {args.questions_per_qtype}")
 
-        rows = fetch_rows_by_ids(
-            client=supabase,
-            table=args.table,
-            id_col=args.id_col,
-            image_col=args.image_col,
-            desc_col=args.desc_col,
-            items_col=args.items_col,
-            image_ids=image_ids,
-            only_approved_images=args.only_approved_images,
-        )
-
-        print(f"Fetched image rows from Supabase: {len(rows)}")
-
-        fetched_ids = {base.norm_text(r.get(args.id_col)) for r in rows}
-        not_found_ids = [img_id for img_id in image_ids if img_id not in fetched_ids]
-        for img_id in not_found_ids:
-            append_debug(debug_rows, img_id, "", "not_fetched_from_supabase", "No matching approved row returned")
-
         attempted_images = 0
+        skipped_all_present = 0
 
-        for raw in rows:
-            image_row = {
-                "image_id": base.norm_text(raw.get(args.id_col)),
-                "image": base.norm_text(raw.get(args.image_col)),
-                "image_description": base.norm_text(raw.get(args.desc_col)),
-                "food_items": [base.norm_text(x) for x in (raw.get(args.items_col) or []) if base.norm_text(x)],
-            }
-            attempted_images += 1
+        if image_ids_from_file:
+            rows = fetch_rows_by_ids(
+                client=supabase,
+                table=args.table,
+                id_col=args.id_col,
+                image_col=args.image_col,
+                desc_col=args.desc_col,
+                items_col=args.items_col,
+                image_ids=image_ids_from_file,
+                only_approved_images=args.only_approved_images,
+            )
+            print(f"Fetched image rows from Supabase: {len(rows)}")
 
-            if not image_row["image_id"] or not image_row["image_description"] or not image_row["food_items"]:
-                append_debug(
-                    debug_rows,
-                    image_row["image_id"],
-                    "",
-                    "missing_required_fields",
-                    f"has_image_id={bool(image_row['image_id'])}; "
-                    f"has_desc={bool(image_row['image_description'])}; "
-                    f"food_items={len(image_row['food_items'])}",
+            fetched_ids = {base.norm_text(r.get(args.id_col)) for r in rows}
+            not_found_ids = [img_id for img_id in image_ids_from_file if img_id not in fetched_ids]
+            for img_id in not_found_ids:
+                append_debug(debug_rows, img_id, "", "not_fetched_from_supabase", "No matching image row returned")
+
+            all_existing_vqa_rows = fetch_existing_vqa_rows(
+                client=supabase,
+                image_ids=[base.norm_text(r.get(args.id_col)) for r in rows if base.norm_text(r.get(args.id_col))],
+                vqa_table=args.vqa_table,
+            )
+            db_questions_by_pair, db_counts_by_pair, db_question_keys = build_existing_maps_from_vqa_rows(
+                all_existing_vqa_rows
+            )
+            questions_by_pair.update(db_questions_by_pair)
+            question_keys.update(db_question_keys)
+
+            row_batches = [rows]
+        else:
+            row_batches = None
+
+        page = 0
+        while True:
+            if row_batches is not None:
+                if page >= len(row_batches):
+                    break
+                rows = row_batches[page]
+            else:
+                rows = fetch_image_rows_by_range(
+                    client=supabase,
+                    table=args.table,
+                    id_col=args.id_col,
+                    image_col=args.image_col,
+                    desc_col=args.desc_col,
+                    items_col=args.items_col,
+                    page=page,
+                    size=base.PAGE_SIZE,
+                    only_approved_images=args.only_approved_images,
+                    start_image_id=start_image_id,
+                    end_image_id=end_image_id,
                 )
-                continue
+                if not rows:
+                    break
 
-            anchor_dish = base.choose_anchor_dish(image_row["food_items"], dish_aliases)
-            if not anchor_dish:
-                append_debug(
-                    debug_rows,
-                    image_row["image_id"],
-                    "",
-                    "no_anchor_dish",
-                    f"food_items={image_row['food_items'][:12]}",
+                batch_image_ids = [base.norm_text(r.get(args.id_col)) for r in rows if base.norm_text(r.get(args.id_col))]
+                existing_vqa_rows = fetch_existing_vqa_rows(
+                    client=supabase,
+                    image_ids=batch_image_ids,
+                    vqa_table=args.vqa_table,
                 )
-                continue
+                db_questions_by_pair, db_counts_by_pair, db_question_keys = build_existing_maps_from_vqa_rows(
+                    existing_vqa_rows
+                )
+                for pair_key, questions in db_questions_by_pair.items():
+                    dest = questions_by_pair.setdefault(pair_key, [])
+                    for question in questions:
+                        if question not in dest:
+                            dest.append(question)
+                question_keys.update(db_question_keys)
+            
+            print(f"\nPage {page}: {len(rows)} image rows")
 
-            qtypes_for_image = requested_qtypes[:]
-            rng.shuffle(qtypes_for_image)
-            if args.qtypes_per_image and args.qtypes_per_image > 0:
-                qtypes_for_image = qtypes_for_image[: args.qtypes_per_image]
+            current_counts_by_pair: dict[tuple[str, str], int] = {}
+            if row_batches is not None:
+                # db_counts_by_pair already defined above for the whole file list
+                current_counts_by_pair = db_counts_by_pair
+            else:
+                current_counts_by_pair = db_counts_by_pair
 
-            for qmeta in qtypes_for_image:
-                pair_key = (image_row["image_id"], qmeta["canonical_qtype"])
-                existing_questions = questions_by_pair.get(pair_key, [])
-                used_answer_keys = answers_by_pair.get(pair_key, set())
+            for raw in rows:
+                image_row = {
+                    "image_id": base.norm_text(raw.get(args.id_col)),
+                    "image": base.norm_text(raw.get(args.image_col)),
+                    "image_description": base.norm_text(raw.get(args.desc_col)),
+                    "food_items": [base.norm_text(x) for x in (raw.get(args.items_col) or []) if base.norm_text(x)],
+                }
+                attempted_images += 1
 
-                while len(existing_questions) < args.questions_per_qtype:
-                    sample, logs = generate_one_sample_debug(
-                        gemini_client=gemini_client,
-                        kg=kg,
-                        rng=rng,
-                        image_row=image_row,
-                        qmeta=qmeta,
-                        anchor_dish=anchor_dish,
-                        top_k=args.top_k,
-                        existing_questions_same_qtype=existing_questions,
-                        used_answer_keys=used_answer_keys,
-                        generation_slot=len(existing_questions) + 1,
+                if not image_row["image_id"] or not image_row["image_description"] or not image_row["food_items"]:
+                    append_debug(
+                        debug_rows,
+                        image_row["image_id"],
+                        "",
+                        "missing_required_fields",
+                        f"has_image_id={bool(image_row['image_id'])}; "
+                        f"has_desc={bool(image_row['image_description'])}; "
+                        f"food_items={len(image_row['food_items'])}",
                     )
+                    continue
 
-                    debug_rows.extend(logs)
+                anchor_dish = base.choose_anchor_dish(image_row["food_items"], dish_aliases)
+                if not anchor_dish:
+                    append_debug(
+                        debug_rows,
+                        image_row["image_id"],
+                        "",
+                        "no_anchor_dish",
+                        f"food_items={image_row['food_items'][:12]}",
+                    )
+                    continue
 
-                    if not sample:
-                        break
+                target_qtypes, existing_enough = resolve_target_qtypes_for_image(
+                    image_id=image_row["image_id"],
+                    requested_qtypes=requested_qtypes,
+                    existing_counts_by_pair=current_counts_by_pair,
+                    questions_per_qtype=args.questions_per_qtype,
+                )
 
-                    qsig = base.question_signature(sample["image_id"], sample["qtype"], sample["question_vi"])
-                    if qsig in question_keys:
-                        append_debug(
-                            debug_rows,
-                            sample["image_id"],
-                            sample["qtype"],
-                            "duplicate_question_signature",
-                            base.norm_text(sample["question_vi"])[:250],
+                if not target_qtypes:
+                    skipped_all_present += 1
+                    append_debug(
+                        debug_rows,
+                        image_row["image_id"],
+                        "",
+                        "all_qtypes_already_present",
+                        f"existing_qtypes={existing_enough}",
+                    )
+                    continue
+
+                append_debug(
+                    debug_rows,
+                    image_row["image_id"],
+                    "",
+                    "target_missing_qtypes",
+                    f"missing_qtypes={[q['canonical_qtype'] for q in target_qtypes]}",
+                )
+
+                for qmeta in target_qtypes:
+                    pair_key = (image_row["image_id"], qmeta["canonical_qtype"])
+                    existing_questions = questions_by_pair.get(pair_key, [])
+                    used_answer_keys = answers_by_pair.get(pair_key, set())
+                    existing_count = current_counts_by_pair.get(pair_key, 0)
+
+                    while len(existing_questions) < args.questions_per_qtype:
+                        sample, logs = generate_one_sample_debug(
+                            gemini_client=gemini_client,
+                            kg=kg,
+                            rng=rng,
+                            image_row=image_row,
+                            qmeta=qmeta,
+                            anchor_dish=anchor_dish,
+                            top_k=args.top_k,
+                            existing_questions_same_qtype=existing_questions,
+                            used_answer_keys=used_answer_keys,
+                            generation_slot=len(existing_questions) + 1,
                         )
-                        break
 
-                    generated.append(sample)
-                    question_keys.add(qsig)
-                    existing_questions = questions_by_pair.setdefault(pair_key, [])
-                    existing_questions.append(sample["question_vi"])
-                    if base.norm_text(sample.get("answer_key")):
-                        answers_by_pair.setdefault(pair_key, set()).add(base.norm_text(sample.get("answer_key")))
-                        used_answer_keys = answers_by_pair[pair_key]
+                        debug_rows.extend(logs)
 
-                    print(
-                        f"  ✓ {sample['image_id']}::{sample['qtype']}::{len(existing_questions)} "
-                        f"-> {sample['answer']} | {sample['question_vi'][:90]}"
-                    )
+                        if not sample:
+                            break
+
+                        qsig = base.question_signature(sample["image_id"], sample["qtype"], sample["question_vi"])
+                        if qsig in question_keys:
+                            append_debug(
+                                debug_rows,
+                                sample["image_id"],
+                                sample["qtype"],
+                                "duplicate_question_signature",
+                                base.norm_text(sample["question_vi"])[:250],
+                            )
+                            break
+
+                        generated.append(sample)
+                        question_keys.add(qsig)
+                        existing_questions = questions_by_pair.setdefault(pair_key, [])
+                        existing_questions.append(sample["question_vi"])
+                        if base.norm_text(sample.get("answer_key")):
+                            answers_by_pair.setdefault(pair_key, set()).add(base.norm_text(sample.get("answer_key")))
+                            used_answer_keys = answers_by_pair[pair_key]
+
+                        print(
+                            f"  ✓ {sample['image_id']}::{sample['qtype']}::{len(existing_questions)} "
+                            f"-> {sample['answer']} | {sample['question_vi'][:90]}"
+                        )
+
+            page += 1
 
         generated_json.write_text(json.dumps(generated, ensure_ascii=False, indent=2), encoding="utf-8")
         save_debug_csv(debug_rows, debug_csv)
@@ -502,6 +690,7 @@ def main():
         stage_counts = Counter(row["fail_stage"] for row in debug_rows)
         print("\n-- Done --")
         print(f"Attempted images: {attempted_images}")
+        print(f"Skipped images with all qtypes already present: {skipped_all_present}")
         print(f"Generated samples: {len(generated)}")
         print(f"Debug rows: {len(debug_rows)}")
         print(f"Saved generated JSON: {generated_json}")

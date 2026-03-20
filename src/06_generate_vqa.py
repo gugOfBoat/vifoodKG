@@ -52,7 +52,7 @@ DEFAULT_OUTPUT_FILE = DEFAULT_OUTPUT_DIR / "generated_vqa.json"
 DEFAULT_PROGRESS_FILE = DEFAULT_OUTPUT_DIR / "_generate_vqa_progress.json"
 
 GEMINI_MODEL = os.getenv("VQA_GEMINI_MODEL", "gemini-3.1-flash-lite-preview")
-PAGE_SIZE = 200
+PAGE_SIZE = 500
 TOP_K = 8
 DEFAULT_SEED = 42
 
@@ -438,14 +438,14 @@ def build_retrieval_query(qmeta: dict[str, Any], dish: str, image_desc: str, foo
     visible = ", ".join(food_items[:12])
     short_desc = image_desc[:240]
     return (
-        f"Loai cau hoi: {qmeta['canonical_qtype']}. "
-        f"Mon neo: {dish}. "
-        f"Tu khoa: {keywords}. "
-        f"Mo ta: {detail}. "
-        f"Duong di quan he: {rel_path}. "
-        f"Chuoi quan he: {rel_seq}. "
-        f"Vat the thay duoc: {visible}. "
-        f"Ngu canh anh: {short_desc}"
+        f"Loại câu hỏi: {qmeta['canonical_qtype']}. "
+        f"Món neo: {dish}. "
+        f"Từ khóa: {keywords}. "
+        f"Mô tả: {detail}. "
+        f"Đường đi quan hệ: {rel_path}. "
+        f"Chuỗi quan hệ: {rel_seq}. "
+        f"Vật thể thay được: {visible}. "
+        f"Ngữ cảnh ảnh: {short_desc}"
     )
 
 
@@ -972,7 +972,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--limit-samples", type=int, default=0)
     parser.add_argument("--limit-images", type=int, default=0, help=argparse.SUPPRESS)
     parser.add_argument("--start-page", type=int, default=-1)
-    parser.add_argument("--qtypes-per-image", type=int, default=7, help="0 = use all selected qtypes for each image")
+    parser.add_argument("--qtypes-per-image", type=int, default=0, help="0 = use all selected qtypes for each image")
     parser.add_argument("--qtypes", nargs="*", default=[])
     parser.add_argument("--top-k", type=int, default=TOP_K)
     parser.add_argument("--seed", type=int, default=DEFAULT_SEED)
