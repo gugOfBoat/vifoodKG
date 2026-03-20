@@ -1,30 +1,662 @@
 [
   {
+    "canonical_label": "Ba Ba Om Chuối Đậu",
+    "category": "MainDish",
+    "raw_labels": [
+      "Ba ba om chuối đậu"
+    ]
+  },
+  {
+    "canonical_label": "Ba Chỉ Cháy Cạnh",
+    "category": "MainDish",
+    "raw_labels": [
+      "BA CHỈ CHÁY CẠNH",
+      "Ba chỉ cháy cạnh"
+    ]
+  },
+  {
+    "canonical_label": "Ba Chỉ Kho Dừa",
+    "category": "MainDish",
+    "raw_labels": [
+      "Ba chỉ kho dừa"
+    ]
+  },
+  {
+    "canonical_label": "Ba Chỉ Kho Trám",
+    "category": "MainDish",
+    "raw_labels": [
+      "Ba chỉ kho trám"
+    ]
+  },
+  {
+    "canonical_label": "Ba Chỉ Luộc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Ba chỉ luộc"
+    ]
+  },
+  {
+    "canonical_label": "Ba Chỉ Luộc Dưa Giá",
+    "category": "MainDish",
+    "raw_labels": [
+      "Ba chỉ luộc dưa giá"
+    ]
+  },
+  {
+    "canonical_label": "Ba Chỉ Nướng Nổ Bì",
+    "category": "MainDish",
+    "raw_labels": [
+      "Ba chỉ nướng nổ bì"
+    ]
+  },
+  {
+    "canonical_label": "Ba Chỉ Quay",
+    "category": "MainDish",
+    "raw_labels": [
+      "BA CHỈ QUAY"
+    ]
+  },
+  {
+    "canonical_label": "Ba Chỉ Rang",
+    "category": "MainDish",
+    "raw_labels": [
+      "Ba chỉ rang (2 người)",
+      "Ba chỉ rang (5-6 người)"
+    ]
+  },
+  {
+    "canonical_label": "Ba Chỉ Rang Tôm Đồng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Ba chỉ rang tôm đồng"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Bao",
+    "category": "MainDish",
+    "raw_labels": [
+      "Banh bao",
+      "Bánh bao"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Bao Chiên",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh bao chiên"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Bao Kẹp",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh bao kẹp"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Bao Kẹp Thịt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh bao kẹp thịt"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Bao Nhỏ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh bao nhỏ"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Bao Thịt Lợn",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh bao thịt lợn hấp"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Bao Đào",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh bao đào"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Bao Đào Tiên",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh bao đào tiên"
+    ]
+  },
+  {
     "canonical_label": "Bánh Bèo",
     "category": "MainDish",
     "raw_labels": [
+      "Banh beo",
+      "Bánh Bèo",
+      "Bánh bèo",
       "bánh bèo"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Bèo Bì",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh bèo bì Bình Dương"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Bèo Nhân Tôm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh bèo nhân tôm"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Bò",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh bò"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Bột Lọc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh Bột Lọc",
+      "Bánh bột lọc"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Cam",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh cam"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Canh",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh canh"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Canh Chả Cá",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh canh chả cá Quy Nhơn - Bình Định"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Canh Cua",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh canh cua"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Canh Cá Lóc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Banh Canh Ca Loc"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Canh Hải Sản",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh canh hải sản (Tôm, Mực, Cá)"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Canh Hẹ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh canh hẹ"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Canh Thập Cẩm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh canh thập cẩm (Tôm, Mực, Cá, Sườn, Mọc)"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Chiên",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh chiên"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Chuối Chiên",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh chuối chiên"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Chuối Hấp",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh Chuối Hấp",
+      "Bánh chuối hấp"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Chuối Nướng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh chuối nướng"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Chuối Vòng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh chuối vòng"
     ]
   },
   {
     "canonical_label": "Bánh Chưng",
     "category": "MainDish",
     "raw_labels": [
+      "Banh chung",
+      "Bánh Chưng",
+      "Bánh chưng",
       "Chung Cake"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Chưng Chiên",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh chưng chiên"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Chưng Gù",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh chưng gù"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Chưng Nếp Cẩm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh chưng nếp cẩm"
     ]
   },
   {
     "canonical_label": "Bánh Cuốn",
     "category": "MainDish",
     "raw_labels": [
+      "BANH CUON",
+      "Banh Cuon",
+      "Banh cuon",
+      "Bánh cuốn",
       "bánh cuốn"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Cuốn Nhân Thịt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh cuốn nhân thịt"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Cuốn Tôm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh cuốn tôm"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Căn",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh căn"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Căn Mực",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh căn mực"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Căn Thịt Bằm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh căn thịt bằm"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Căn Trứng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh căn trứng"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Căn Tôm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh căn tôm"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Cốm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh cốm"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Da Lợn",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh da lợn"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Flan",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh Flan",
+      "Bánh flan"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Gai",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh gai"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Gio",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh gio"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Giò",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh giò"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Gói Lá",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh gói lá"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Gạo",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh gạo"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Gối",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh gối"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Hỏi",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh hỏi"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Hỏi Thịt Nướng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh hỏi thịt nướng"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Kem",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh kem"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Khoai Chiên",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh khoai chiên"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Khoai Lang Chiên",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh khoai lang chiên"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Khoai Mì Nướng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh Khoai Mì Nướng",
+      "Bánh khoai mì nướng"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Khoái",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh khoái"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Khúc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh khúc"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Khúc Cây",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh khúc cây"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Khọt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Banh Khot",
+      "Banh khot",
+      "Bánh Khọt",
+      "Bánh Khọt Vũng Tàu",
+      "Bánh khọt"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Khọt Tôm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh khọt tôm"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Lá",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh lá"
     ]
   },
   {
     "canonical_label": "Bánh Mì",
     "category": "MainDish",
     "raw_labels": [
+      "BANH MI",
+      "Banh Mi",
+      "Banh mi",
+      "Bread/ Banh Mi",
+      "Bánh Mi",
+      "Bánh Mì",
+      "Bánh mì",
+      "Bánh mì Việt Nam",
+      "Bánh mì dẹt",
       "bánh mì"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Mì Bò Kho",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh mì bò kho"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Mì Chả Cá",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh mì chả cá"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Mì Chả Lụa",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh mì chả lụa"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Mì Nướng Muối Ớt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh mì nướng muối ớt"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Mì Pate",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh mì pate"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Mì Phá Lấu",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh mì phá lấu"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Mì Que",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh mì que"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Mì Thịt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh mì thịt"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Mì Thịt Bò",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh mì thịt bò"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Mì Thịt Nướng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh mì thịt nướng"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Mì Trứng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh mì trứng"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Mì Xíu Mại",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh mì xíu mại"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Mì Ép",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh mì ép"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Mướt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh mướt"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Ngô",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh ngô"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Ngô Chiên",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh ngô chiên"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Nhãn",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh nhãn"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Nướng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh nướng"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Nậm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh nậm"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Phu Thê",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh phu thê"
     ]
   },
   {
@@ -35,6 +667,28 @@
     ]
   },
   {
+    "canonical_label": "Bánh Pía",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh Pía",
+      "Bánh pía"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Quế",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh quế"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Ram Ít",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh ram ít"
+    ]
+  },
+  {
     "canonical_label": "Bánh Rau Câu",
     "category": "MainDish",
     "raw_labels": [
@@ -42,17 +696,1858 @@
     ]
   },
   {
+    "canonical_label": "Bánh Rán",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh rán"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Su Kem",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh su kem"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Tai",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh tai"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Tiêu",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh tiêu"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Tro",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh tro"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Trung Thu",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh trung thu"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Tráng Cuốn",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh tráng cuốn"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Tráng Cuốn Thịt Heo",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh tráng cuốn thịt heo"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Tráng Nướng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh tráng nướng"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Tráng Trộn",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh tráng trộn"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Tét",
+    "category": "MainDish",
+    "raw_labels": [
+      "Banh tet",
+      "Bánh Tét",
+      "Bánh tét"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Tét Cốm Dẹp",
+    "category": "MainDish",
+    "raw_labels": [
+      "Banh Tet Com Dep"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Tét Lá Cẩm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh tét lá cẩm"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Tôm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh tôm",
+      "Bánh tôm chiên"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Tằm Khoai Mì",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh tằm khoai mì"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Vạc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh vạc"
+    ]
+  },
+  {
     "canonical_label": "Bánh Xèo",
     "category": "MainDish",
     "raw_labels": [
+      "Banh Xeo",
+      "Banh xeo",
+      "Bánh Xèo",
+      "Bánh xèo",
       "bánh xèo"
     ]
   },
   {
-    "canonical_label": "Bít Tết Bò",
+    "canonical_label": "Bánh Xíu Páo",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh xíu páo"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Ít",
+    "category": "MainDish",
+    "raw_labels": [
+      "Banh it",
+      "Bánh ít"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Ít Trần",
+    "category": "MainDish",
+    "raw_labels": [
+      "Banh It Tran",
+      "Bánh ít trần"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Đa Cua",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bahn Da Cua",
+      "Bánh Đa Cua Hải Phòng",
+      "Bánh đa cua"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Đa Trộn",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh đa trộn"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Đúc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh Đúc",
+      "Bánh đúc"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Đúc Ngọt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh đúc ngọt"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Đúc Đậu",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh đúc đậu"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Đậu Xanh",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh đậu xanh Hải Dương"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Đậu Xanh Trái Cây",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bánh đậu xanh trái cây"
+    ]
+  },
+  {
+    "canonical_label": "Bê Thui",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bê thui"
+    ]
+  },
+  {
+    "canonical_label": "Bí Ngòi Hấp",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bí ngòi vàng hấp"
+    ]
+  },
+  {
+    "canonical_label": "Bí Ngòi Luộc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bí ngòi vàng luộc"
+    ]
+  },
+  {
+    "canonical_label": "Bí Ngòi Xào",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bí ngòi xào"
+    ]
+  },
+  {
+    "canonical_label": "Bí Ngô Xào Tỏi",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bí ngô xào tỏi"
+    ]
+  },
+  {
+    "canonical_label": "Bí Nụ Xào Tỏi",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bí nụ xào tỏi"
+    ]
+  },
+  {
+    "canonical_label": "Bí Xanh Cà Rốt Hấp",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bí xanh, cà rốt hấp"
+    ]
+  },
+  {
+    "canonical_label": "Bí Xanh Luộc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bí xanh luộc"
+    ]
+  },
+  {
+    "canonical_label": "Bí Đao Xào Thịt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bí đao xào thịt"
+    ]
+  },
+  {
+    "canonical_label": "Bí Đỏ Hấp",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bí đỏ hấp"
+    ]
+  },
+  {
+    "canonical_label": "Bí Đỏ Kho",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bí đỏ kho"
+    ]
+  },
+  {
+    "canonical_label": "Bí Đỏ Luộc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bí đỏ luộc"
+    ]
+  },
+  {
+    "canonical_label": "Bí Đỏ Xào",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bí đỏ xào"
+    ]
+  },
+  {
+    "canonical_label": "Bí Đỏ Xào Thịt Viên",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bí đỏ xào thịt viên"
+    ]
+  },
+  {
+    "canonical_label": "Bí Đỏ Xào Tôm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bí đỏ xào tôm"
+    ]
+  },
+  {
+    "canonical_label": "Bít Tết",
     "category": "MainDish",
     "raw_labels": [
       "Steak bò"
+    ]
+  },
+  {
+    "canonical_label": "Bò Bít Tết",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bít tết",
+      "Bò bít tết"
+    ]
+  },
+  {
+    "canonical_label": "Bò Cuốn Nấm Kim Châm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò cuốn nấm kim châm"
+    ]
+  },
+  {
+    "canonical_label": "Bò Cuộn Hành Lá",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò cuộn hành lá"
+    ]
+  },
+  {
+    "canonical_label": "Bò Cuộn Sả",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò cuộn sả"
+    ]
+  },
+  {
+    "canonical_label": "Bò Kho",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bo kho",
+      "Bò kho"
+    ]
+  },
+  {
+    "canonical_label": "Bò Kho Tàu",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò kho tàu"
+    ]
+  },
+  {
+    "canonical_label": "Bò Lá Lốt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bo la lot",
+      "Bò lá lốt"
+    ]
+  },
+  {
+    "canonical_label": "Bò Lúc Lắc",
+    "category": "MainDish",
+    "raw_labels": [
+      "BÒ LÚC LẮC KHOAI TÂY",
+      "Bò lúc lắc"
+    ]
+  },
+  {
+    "canonical_label": "Bò Nhúng Giấm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò nhúng giấm"
+    ]
+  },
+  {
+    "canonical_label": "Bò Né",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò né"
+    ]
+  },
+  {
+    "canonical_label": "Bò Nướng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò nướng"
+    ]
+  },
+  {
+    "canonical_label": "Bò Nướng Lá Lốt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò nướng lá lốt"
+    ]
+  },
+  {
+    "canonical_label": "Bò Nướng Vừng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò nướng vừng"
+    ]
+  },
+  {
+    "canonical_label": "Bò Nướng Đá",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò nướng đá"
+    ]
+  },
+  {
+    "canonical_label": "Bò Sốt Nấm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò sốt nấm"
+    ]
+  },
+  {
+    "canonical_label": "Bò Sốt Vang",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò sốt vang"
+    ]
+  },
+  {
+    "canonical_label": "Bò Trộn Salad",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò trộn salad"
+    ]
+  },
+  {
+    "canonical_label": "Bò Tái Chanh",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò tái chanh"
+    ]
+  },
+  {
+    "canonical_label": "Bò Xào",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò xào"
+    ]
+  },
+  {
+    "canonical_label": "Bò Xào Bí Nụ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò xào bí nụ"
+    ]
+  },
+  {
+    "canonical_label": "Bò Xào Bông Cải",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò xào bông cải"
+    ]
+  },
+  {
+    "canonical_label": "Bò Xào Bông Thiên Lý",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò xào bông thiên lý",
+      "Bò xào hoa thiên lý",
+      "Bò xào thiên lý"
+    ]
+  },
+  {
+    "canonical_label": "Bò Xào Cần Nước",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò xào cần nước"
+    ]
+  },
+  {
+    "canonical_label": "Bò Xào Cần Tỏi Măng Trúc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò xào cần tỏi/ măng trúc"
+    ]
+  },
+  {
+    "canonical_label": "Bò Xào Dưa Chua",
+    "category": "MainDish",
+    "raw_labels": [
+      "BÒ XÀO DƯA CHUA"
+    ]
+  },
+  {
+    "canonical_label": "Bò Xào Giá Đỗ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò xào giá"
+    ]
+  },
+  {
+    "canonical_label": "Bò Xào Hành Cần",
+    "category": "MainDish",
+    "raw_labels": [
+      "BÒ XÀO HÀNH CẦN"
+    ]
+  },
+  {
+    "canonical_label": "Bò Xào Khoai Tây",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò xào khoai tây"
+    ]
+  },
+  {
+    "canonical_label": "Bò Xào Ngồng Tỏi",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò xào ngồng tỏi"
+    ]
+  },
+  {
+    "canonical_label": "Bò Xào Rau Củ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò xào rau củ"
+    ]
+  },
+  {
+    "canonical_label": "Bò Xào Su Hào",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò xào su hào"
+    ]
+  },
+  {
+    "canonical_label": "Bò Xào Sả Ớt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò xào sả ớt"
+    ]
+  },
+  {
+    "canonical_label": "Bò Xào Tiêu Xanh",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò xào tiêu xanh"
+    ]
+  },
+  {
+    "canonical_label": "Bò Xào Đậu Cô Ve",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò xào đậu cô ve"
+    ]
+  },
+  {
+    "canonical_label": "Bò Xào Đậu Hà Lan Cà Rốt Nấm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò xào đậu hà lan cà rốt nấm"
+    ]
+  },
+  {
+    "canonical_label": "Bò Xào Đậu Que",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò xào đậu que"
+    ]
+  },
+  {
+    "canonical_label": "Bò Xào Ớt Chuông",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò xào ớt chuông"
+    ]
+  },
+  {
+    "canonical_label": "Bò Xào Ớt Chuông và Đậu Que",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò xào ớt chuông và đậu que"
+    ]
+  },
+  {
+    "canonical_label": "Bò Xào Ớt Ngũ Sắc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bò xào ớt ngũ sắc"
+    ]
+  },
+  {
+    "canonical_label": "Bông Cải Trắng Xào Thịt Bò",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bông cải trắng xào thịt bò"
+    ]
+  },
+  {
+    "canonical_label": "Bông Cải Xanh Xào Cật Heo",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bông cải xanh xào cật heo"
+    ]
+  },
+  {
+    "canonical_label": "Bông Cải Xào Thịt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bông cải xào thịt"
+    ]
+  },
+  {
+    "canonical_label": "Bông Thiên Lý Xào Thịt Bò",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bông thiên lý xào thịt bò"
+    ]
+  },
+  {
+    "canonical_label": "Bún Bò",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún bò"
+    ]
+  },
+  {
+    "canonical_label": "Bún Bò Huế",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bun Bo Hue",
+      "Bun bo Hue",
+      "Bún bò Huế"
+    ]
+  },
+  {
+    "canonical_label": "Bún Bò Nam Bộ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún bò Nam Bộ",
+      "Bún bò nam bộ"
+    ]
+  },
+  {
+    "canonical_label": "Bún Bò Trộn",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún bò trộn"
+    ]
+  },
+  {
+    "canonical_label": "Bún Bò Xào Sả",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún bò xào sả"
+    ]
+  },
+  {
+    "canonical_label": "Bún Chả",
+    "category": "MainDish",
+    "raw_labels": [
+      "BUN CHA",
+      "Bun Cha",
+      "Bun Cha Hanoi",
+      "Bun cha",
+      "Bún chả",
+      "Bún chả Hà Nội"
+    ]
+  },
+  {
+    "canonical_label": "Bún Chả Cá",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún chả cá"
+    ]
+  },
+  {
+    "canonical_label": "Bún Chả Giò",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún chả giò"
+    ]
+  },
+  {
+    "canonical_label": "Bún Chả Quạt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún chả quạt"
+    ]
+  },
+  {
+    "canonical_label": "Bún Cá",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún Cá SEN",
+      "Bún cá"
+    ]
+  },
+  {
+    "canonical_label": "Bún Cá Châu Đốc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún cá Châu Đốc An Giang"
+    ]
+  },
+  {
+    "canonical_label": "Bún Cá Lóc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún cá lóc (Cá, Tôm)"
+    ]
+  },
+  {
+    "canonical_label": "Bún Cá Rô Đồng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún cá rô đồng Hải Dương"
+    ]
+  },
+  {
+    "canonical_label": "Bún Gỏi Già",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún gỏi già"
+    ]
+  },
+  {
+    "canonical_label": "Bún Hải Sản",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún hải sản"
+    ]
+  },
+  {
+    "canonical_label": "Bún Măng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún măng"
+    ]
+  },
+  {
+    "canonical_label": "Bún Măng Vịt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún măng vịt"
+    ]
+  },
+  {
+    "canonical_label": "Bún Mắm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún mắm"
+    ]
+  },
+  {
+    "canonical_label": "Bún Mọc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún mọc"
+    ]
+  },
+  {
+    "canonical_label": "Bún Nem",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún nem"
+    ]
+  },
+  {
+    "canonical_label": "Bún Riêu",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bun rieu",
+      "Bún riêu"
+    ]
+  },
+  {
+    "canonical_label": "Bún Riêu Cua",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún riêu cua"
+    ]
+  },
+  {
+    "canonical_label": "Bún Suông",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún suông",
+      "Bún suông (đuông) Trà Vinh"
+    ]
+  },
+  {
+    "canonical_label": "Bún Sứa",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún sứa"
+    ]
+  },
+  {
+    "canonical_label": "Bún Thang",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bun Thang",
+      "Bún Thang Hà Nội",
+      "Bún thang"
+    ]
+  },
+  {
+    "canonical_label": "Bún Thịt Nướng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bun thit nuong",
+      "Bún thịt nướng"
+    ]
+  },
+  {
+    "canonical_label": "Bún Thịt Nướng Chả Giò",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún thịt nướng chả giò"
+    ]
+  },
+  {
+    "canonical_label": "Bún Thịt Quay",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún thịt quay"
+    ]
+  },
+  {
+    "canonical_label": "Bún Trộn",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún trộn"
+    ]
+  },
+  {
+    "canonical_label": "Bún Trộn Xì Dầu",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún trộn xì dầu"
+    ]
+  },
+  {
+    "canonical_label": "Bún Tôm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún tôm"
+    ]
+  },
+  {
+    "canonical_label": "Bún Tôm Thịt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún tôm thịt"
+    ]
+  },
+  {
+    "canonical_label": "Bún Tôm Trứng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún tôm trứng"
+    ]
+  },
+  {
+    "canonical_label": "Bún Xào Thịt Bò",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún xào thịt bò"
+    ]
+  },
+  {
+    "canonical_label": "Bún Đầu Cá",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún đầu cá đặc biệt (Đầu cá lóc, Tôm)"
+    ]
+  },
+  {
+    "canonical_label": "Bún Đậu Hũ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún đậu hũ"
+    ]
+  },
+  {
+    "canonical_label": "Bún Đậu Mắm Tôm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bún đậu mắm tôm"
+    ]
+  },
+  {
+    "canonical_label": "Bạch Tuộc Nướng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bạch tuộc nướng"
+    ]
+  },
+  {
+    "canonical_label": "Bạch Tuộc Xào",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bạch tuộc xào"
+    ]
+  },
+  {
+    "canonical_label": "Bạch Tuộc Xào Cay",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bạch tuộc xào cay"
+    ]
+  },
+  {
+    "canonical_label": "Bạch Tuộc Xào Súp Lơ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bạch tuộc xào súp lơ"
+    ]
+  },
+  {
+    "canonical_label": "Bạch Tuộc Xào Ớt Chuông",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bạch tuộc xào ớt chuông"
+    ]
+  },
+  {
+    "canonical_label": "Bầu Luộc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bầu luộc"
+    ]
+  },
+  {
+    "canonical_label": "Bầu Xào",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bầu xào"
+    ]
+  },
+  {
+    "canonical_label": "Bầu Xào Tôm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bầu xào tôm"
+    ]
+  },
+  {
+    "canonical_label": "Bắp Bò Luộc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bắp bò luộc"
+    ]
+  },
+  {
+    "canonical_label": "Bắp Bò Ngâm Mắm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bắp bò ngâm mắm"
+    ]
+  },
+  {
+    "canonical_label": "Bắp Chiên",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bắp chiên"
+    ]
+  },
+  {
+    "canonical_label": "Bắp Cải Cuốn Thịt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bắp cải cuốn thịt",
+      "Bắp cải cuộn thịt"
+    ]
+  },
+  {
+    "canonical_label": "Bắp Cải Cuốn Thịt Sốt Cà Chua",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bắp cải cuốn thịt sốt cà chua"
+    ]
+  },
+  {
+    "canonical_label": "Bắp Cải Luộc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bắp cải luộc"
+    ]
+  },
+  {
+    "canonical_label": "Bắp Cải Luộc Chấm Trứng",
+    "category": "MainDish",
+    "raw_labels": [
+      "BẮP CẢI LUỘC CHẤM TRỨNG"
+    ]
+  },
+  {
+    "canonical_label": "Bắp Cải Xào",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bắp cải xào"
+    ]
+  },
+  {
+    "canonical_label": "Bắp Cải Xào Cà Chua",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bắp cải xào cà chua"
+    ]
+  },
+  {
+    "canonical_label": "Bắp Cải Xào Cà Rốt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bắp cải xào cà rốt"
+    ]
+  },
+  {
+    "canonical_label": "Bắp Cải Xào Thịt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bắp cải xào thịt"
+    ]
+  },
+  {
+    "canonical_label": "Bắp Cải Xào Tóp Mỡ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bắp cải xào tóp mỡ"
+    ]
+  },
+  {
+    "canonical_label": "Bắp Giò Luộc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bắp giò luộc"
+    ]
+  },
+  {
+    "canonical_label": "Bắp Nướng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bắp nướng"
+    ]
+  },
+  {
+    "canonical_label": "Bắp Xào",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bap xao",
+      "Bắp xào"
+    ]
+  },
+  {
+    "canonical_label": "Bề Bề Sốt Cay",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bề bề sốt cay"
+    ]
+  },
+  {
+    "canonical_label": "Bột Chiên",
+    "category": "MainDish",
+    "raw_labels": [
+      "Bot chien",
+      "Bột chiên"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bí",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bí"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bí Nấu Sườn",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bí nấu sườn"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bí Nấu Tôm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bí nấu tôm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bí Xanh",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bí xanh"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bí Xanh Cuộn Thịt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bí xanh cuộn thịt"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bí Xanh Nấu Cà Rốt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bí xanh nấu cà rốt"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bí Xanh Nấu Mọc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bí xanh nấu mọc"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bí Xanh Nấu Thịt Băm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bí xanh nấu thịt băm",
+      "Canh bí xanh nấu thịt bằm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bí Xanh Nấu Tôm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bí xanh nấu tôm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bí Đao",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bí đao"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bí Đao Nấu Cá",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bí đao nấu cá"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bí Đao Nấu Thịt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bí đao nấu thịt"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bí Đỏ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bí đỏ"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bí Đỏ Hạt Sen",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bí đỏ hạt sen"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bí Đỏ Nấu Sườn",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bí đỏ nấu sườn"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bí Đỏ Nấu Thịt Băm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bí đỏ nấu thịt bằm",
+      "Canh bí đỏ thịt băm",
+      "Canh bí đỏ thịt bằm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bí Đỏ Nấu Xương",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bí đỏ nấu xương"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bí Đỏ Nấu Đậu",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bí đỏ nấu đậu"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bí Đỏ Đuôi Heo",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bí đỏ đuôi heo"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bóng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bóng"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bóng Thả",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bóng thả"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bóng Thập Cẩm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bóng thập cẩm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bông Bí Nấu Thịt Băm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bông bí nấu thịt băm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bông Cải",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bông cải"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bầu",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bầu"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bầu Luộc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bầu luộc"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bầu Nấu Thịt Băm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bầu nấu thịt băm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bầu Nấu Tôm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bầu nấu tôm",
+      "Canh bầu tôm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bắp Cà Rốt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bắp cà rốt"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bắp Cải",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bắp cải"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bắp Cải Cuộn Thịt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bắp cải cuộn thịt"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bắp Cải Nấu Thịt Băm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bắp cải nấu thịt bằm",
+      "Canh bắp cải thịt băm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bắp Nấm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bắp nấm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Bắp Rau Củ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh bắp rau củ"
+    ]
+  },
+  {
+    "canonical_label": "Canh Chay",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh chay"
+    ]
+  },
+  {
+    "canonical_label": "Canh Chua",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh chua"
+    ]
+  },
+  {
+    "canonical_label": "Canh Chua Bông Điên Điển",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh chua bông điên điển"
+    ]
+  },
+  {
+    "canonical_label": "Canh Chua Chay",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh chua chay"
+    ]
+  },
+  {
+    "canonical_label": "Canh Chua Cá",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh chua cá"
+    ]
+  },
+  {
+    "canonical_label": "Canh Chua Cá Chốt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh chua cá chốt"
+    ]
+  },
+  {
+    "canonical_label": "Canh Chua Cá Chốt Điên Điển",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh chua cá chốt điên điển"
+    ]
+  },
+  {
+    "canonical_label": "Canh Chua Cá Cơm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh chua cá cơm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Chua Cá Hồi",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh chua cá hồi"
+    ]
+  },
+  {
+    "canonical_label": "Canh Chua Cá Đối",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh chua cá đối"
+    ]
+  },
+  {
+    "canonical_label": "Canh Chua Giá Đỗ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh chua giá đỗ"
+    ]
+  },
+  {
+    "canonical_label": "Canh Chua Ngao",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh chua ngao"
+    ]
+  },
+  {
+    "canonical_label": "Canh Chua Sườn",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh chua sườn"
+    ]
+  },
+  {
+    "canonical_label": "Canh Chua Tôm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh chua tôm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Chua Đầu Cá",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh chua đầu cá"
+    ]
+  },
+  {
+    "canonical_label": "Canh Chuối",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh chuối"
+    ]
+  },
+  {
+    "canonical_label": "Canh Chuối Đậu",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh chuối đậu"
+    ]
+  },
+  {
+    "canonical_label": "Canh Chân Giò Hầm Ngô, Bí Đỏ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh chân giò hầm ngô, bí đỏ"
+    ]
+  },
+  {
+    "canonical_label": "Canh Chả Cá",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh chả cá"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cua",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cua"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cua Bầu Mồng Tơi",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cua bầu mồng tơi"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cua Chua",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cua chua"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cua Hoa Thiên Lý",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cua hoa thiên lý"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cua Mướp",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cua mướp",
+      "Canh cua nấu mướp"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cua Mướp Mồng Tơi",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cua mướp mồng tơi",
+      "Canh cua mồng tơi mướp",
+      "Canh cua nấu mướp mồng tơi"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cua Mồng Tơi",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cua mồng tơi",
+      "Canh cua rau mồng tơi"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cua Nấu Rau",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cua nấu rau"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cua Rau Dền",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cua rau dền"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cua Rau Muống",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cua rau muống"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cua Rau Ngót",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cua rau ngót"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cua Rau Đay",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cua rau đay"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cua Rau Đay Mướp",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cua rau đay mướp"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cua Rau Đay Mồng Tơi",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cua rau đay mồng tơi"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cà",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cà"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cà Bung",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cà bung"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cà Chua",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cà chua"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cà Chua Thịt Băm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cà chua thịt băm",
+      "Canh cà chua thịt bằm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cà Chua Trứng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cà chua trứng"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cà Chua Đậu Hũ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cà chua đậu phụ"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cà Ri",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cà ri"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cà Rốt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cà rốt"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cà Rốt Khoai Tây",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cà rốt khoai tây"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cà Tím",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cà tím"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cá",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cá"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cá Chua",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cá chua",
+      "Canh cá nấu chua"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cá Chép Giòn Măng Chua",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cá chép giòn măng chua"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cá Nấu Măng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cá nấu măng"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cá Nấu Nghệ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cá nấu nghệ"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cá Nấu Thì Là",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cá nấu thì là"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cá Nấu Thơm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cá nấu thơm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cá Rô",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cá rô"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cải",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cải"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cải Bẹ Xanh Cá Viên",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cải bẹ xanh cá viên"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cải Chua",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cải chua"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cải Cuộn Thịt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cải cuộn thịt"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cải Cà Chua",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cải cà chua"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cải Cúc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cải cúc"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cải Cúc Nấu Thịt Băm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cải cúc nấu thịt băm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cải Nấu Mọc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cải nấu mọc"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cải Nấu Thịt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cải nấu thịt",
+      "Canh cải thịt"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cải Nấu Thịt Băm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cải nấu thịt bằm",
+      "Canh cải thịt băm",
+      "Canh cải thịt bằm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cải Nấu Tôm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cải nấu tôm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cải Thìa",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cải thìa"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cải Thảo",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cải thảo"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cải Thảo Cà Rốt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cải thảo cà rốt"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cải Xanh",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cải xanh"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cải Xanh Tôm Khô",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cải xanh tôm khô"
+    ]
+  },
+  {
+    "canonical_label": "Canh Cải Đậu Hũ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh cải đậu phụ"
+    ]
+  },
+  {
+    "canonical_label": "Canh Củ Cải",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh củ cải"
+    ]
+  },
+  {
+    "canonical_label": "Canh Củ Cải Trắng Thịt Băm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh củ cải trắng thịt băm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Củ Dền",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh củ dền"
+    ]
+  },
+  {
+    "canonical_label": "Canh Củ Dền Nấu Sườn",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh củ dền nấu sườn"
+    ]
+  },
+  {
+    "canonical_label": "Canh Củ Quả",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh củ quả"
+    ]
+  },
+  {
+    "canonical_label": "Canh Củ Quả Hầm Xương",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh củ quả hầm xương"
+    ]
+  },
+  {
+    "canonical_label": "Canh Củ Sen",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh củ sen"
+    ]
+  },
+  {
+    "canonical_label": "Canh Củ Sen Hầm Sườn Non",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh củ sen hầm sườn non"
     ]
   },
   {
@@ -60,6 +2555,209 @@
     "category": "MainDish",
     "raw_labels": [
       "canh củ tím"
+    ]
+  },
+  {
+    "canonical_label": "Canh Dưa Bò",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh dưa bò"
+    ]
+  },
+  {
+    "canonical_label": "Canh Dưa Chua",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh dưa chua"
+    ]
+  },
+  {
+    "canonical_label": "Canh Dưa Chua Nấu Mọc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh dưa chua nấu mọc"
+    ]
+  },
+  {
+    "canonical_label": "Canh Dưa Chua Nấu Sườn",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh dưa chua nấu sườn"
+    ]
+  },
+  {
+    "canonical_label": "Canh Dưa Chua Nấu Thịt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh dưa chua nấu thịt"
+    ]
+  },
+  {
+    "canonical_label": "Canh Dưa Cải",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh dưa cải"
+    ]
+  },
+  {
+    "canonical_label": "Canh Dưa Cải Chua",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh dưa cải chua"
+    ]
+  },
+  {
+    "canonical_label": "Canh Dưa Leo Nấu Thịt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh dưa leo nấu thịt"
+    ]
+  },
+  {
+    "canonical_label": "Canh Dưa Nấu Tôm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh dưa nấu tôm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Ghẹ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh ghẹ"
+    ]
+  },
+  {
+    "canonical_label": "Canh Giò Heo",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh giò heo"
+    ]
+  },
+  {
+    "canonical_label": "Canh Giò Heo Bí Đao",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh giò heo bí đao"
+    ]
+  },
+  {
+    "canonical_label": "Canh Giò Heo Hầm Cà Rốt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh giò heo hầm cà rốt"
+    ]
+  },
+  {
+    "canonical_label": "Canh Giò Heo Hầm Táo Đỏ Hạt Sen",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh giò heo hầm táo đỏ hạt sen"
+    ]
+  },
+  {
+    "canonical_label": "Canh Gà",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh gà"
+    ]
+  },
+  {
+    "canonical_label": "Canh Gà Nấu Khoai",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh gà nấu khoai"
+    ]
+  },
+  {
+    "canonical_label": "Canh Gà Sen Nấm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh gà sen nấm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Hoa Thiên Lý",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh hoa thiên lý"
+    ]
+  },
+  {
+    "canonical_label": "Canh Hoa Thiên Lý Nấu Mọc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh hoa thiên lý nấu mọc"
+    ]
+  },
+  {
+    "canonical_label": "Canh Hoa Thiên Lý Nấu Tôm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh hoa thiên lý nấu tôm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Hành",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh hành"
+    ]
+  },
+  {
+    "canonical_label": "Canh Hàu",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh hàu"
+    ]
+  },
+  {
+    "canonical_label": "Canh Hải Sản",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh hải sản"
+    ]
+  },
+  {
+    "canonical_label": "Canh Hẹ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh hẹ"
+    ]
+  },
+  {
+    "canonical_label": "Canh Hẹ Nấu Thịt Băm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh hẹ nấu thịt băm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Hẹ Đậu Hũ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh hẹ đậu phụ"
+    ]
+  },
+  {
+    "canonical_label": "Canh Hẹ Đậu Hũ Nấm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh hẹ đậu hũ nấm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Hẹ Đậu Nấm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh hẹ đậu nấm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Hến Nấu Khế",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh hến nấu khế"
     ]
   },
   {
@@ -119,10 +2817,10 @@
     ]
   },
   {
-    "canonical_label": "Canh Khoai Tây Nấu Thịt Viên",
+    "canonical_label": "Canh Khoai Tây Cà Rốt Nấu Thịt Viên",
     "category": "MainDish",
     "raw_labels": [
-      "Canh khoai tây nấu thịt viên"
+      "Canh khoai tây cà rốt nấu thịt viên"
     ]
   },
   {
@@ -151,6 +2849,7 @@
     "canonical_label": "Canh Khổ Qua Nhồi Thịt",
     "category": "MainDish",
     "raw_labels": [
+      "Canh Khổ Qua Nhồi Thịt",
       "Canh khổ qua nhồi thịt"
     ]
   },
@@ -167,6 +2866,13 @@
     "raw_labels": [
       "Canh khổ qua nấu tôm",
       "Canh mướp đắng nấu tôm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Khổ Qua Thịt Viên",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh khổ qua thịt viên"
     ]
   },
   {
@@ -222,6 +2928,7 @@
     "canonical_label": "Canh Măng",
     "category": "MainDish",
     "raw_labels": [
+      "Bamboo Shoots Soup",
       "Canh măng"
     ]
   },
@@ -307,13 +3014,6 @@
     "category": "MainDish",
     "raw_labels": [
       "Canh mướp nấu nấm kim châm"
-    ]
-  },
-  {
-    "canonical_label": "Canh Mướp Nấu Sườn",
-    "category": "MainDish",
-    "raw_labels": [
-      "Canh mướp nấu sườn"
     ]
   },
   {
@@ -429,6 +3129,13 @@
     ]
   },
   {
+    "canonical_label": "Canh Ngao Bầu",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh nghêu bầu"
+    ]
+  },
+  {
     "canonical_label": "Canh Ngao Chua",
     "category": "MainDish",
     "raw_labels": [
@@ -453,7 +3160,6 @@
     "canonical_label": "Canh Ngao Nấu Bầu",
     "category": "MainDish",
     "raw_labels": [
-      "Canh nghêu bầu",
       "Canh nghêu nấu bầu"
     ]
   },
@@ -483,13 +3189,6 @@
     "category": "MainDish",
     "raw_labels": [
       "Canh ngô"
-    ]
-  },
-  {
-    "canonical_label": "Canh Ngô Súp Lơ",
-    "category": "MainDish",
-    "raw_labels": [
-      "Canh ngô súp lơ"
     ]
   },
   {
@@ -606,13 +3305,6 @@
     ]
   },
   {
-    "canonical_label": "Canh Rau Củ Bì Heo",
-    "category": "MainDish",
-    "raw_labels": [
-      "Mixed Vegetable and Pork Skin Soup"
-    ]
-  },
-  {
     "canonical_label": "Canh Rau Củ Nấu Thịt",
     "category": "MainDish",
     "raw_labels": [
@@ -624,6 +3316,13 @@
     "category": "MainDish",
     "raw_labels": [
       "Canh rau củ thịt bằm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Rau Dầm Me",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh Rau Dầm Me"
     ]
   },
   {
@@ -674,6 +3373,13 @@
     "raw_labels": [
       "Canh rau má thịt băm",
       "Canh rau má thịt bằm"
+    ]
+  },
+  {
+    "canonical_label": "Canh Rau Mướp Mồng Tơi",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh rau mướp mồng tơi"
     ]
   },
   {
@@ -945,6 +3651,13 @@
     ]
   },
   {
+    "canonical_label": "Canh Sườn Nấu Bí Đao",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh sườn nấu bí đao"
+    ]
+  },
+  {
     "canonical_label": "Canh Sườn Nấu Củ Quả",
     "category": "MainDish",
     "raw_labels": [
@@ -1022,17 +3735,17 @@
     ]
   },
   {
-    "canonical_label": "Canh Thịt Băm Rau Củ",
-    "category": "MainDish",
-    "raw_labels": [
-      "Canh thịt bằm rau củ"
-    ]
-  },
-  {
     "canonical_label": "Canh Thịt Băm Rau Ngót",
     "category": "MainDish",
     "raw_labels": [
       "Canh thịt băm rau ngót"
+    ]
+  },
+  {
+    "canonical_label": "Canh Thịt Bằm Rau Củ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Canh thịt bằm rau củ"
     ]
   },
   {
@@ -1186,8 +3899,7 @@
       "Cao Lầu",
       "Cao lau",
       "Cao lầu",
-      "Cao lầu Hội An Quảng Nam",
-      "Mì Cao Lầu"
+      "Cao lầu Hội An Quảng Nam"
     ]
   },
   {
@@ -1202,20 +3914,6 @@
     "category": "MainDish",
     "raw_labels": [
       "Chim bồ câu hầm ngải cứu"
-    ]
-  },
-  {
-    "canonical_label": "Chim Bồ Câu Hầm Thuốc Bắc",
-    "category": "MainDish",
-    "raw_labels": [
-      "Chim bồ câu hầm thuốc bắc"
-    ]
-  },
-  {
-    "canonical_label": "Chim Bồ Câu Quay",
-    "category": "MainDish",
-    "raw_labels": [
-      "Chim bồ câu quay"
     ]
   },
   {
@@ -1314,7 +4012,7 @@
     ]
   },
   {
-    "canonical_label": "Cháo Lươn Nghệ An",
+    "canonical_label": "Cháo Lươn",
     "category": "MainDish",
     "raw_labels": [
       "Cháo Lươn Nghệ An"
@@ -1418,6 +4116,7 @@
     "canonical_label": "Chân Giò Luộc",
     "category": "MainDish",
     "raw_labels": [
+      "CHÂN GIÒ LUỘC",
       "Chân giò luộc"
     ]
   },
@@ -1656,13 +4355,7 @@
     "canonical_label": "Chả Băm Nướng",
     "category": "MainDish",
     "raw_labels": [
-      "Chả băm nướng"
-    ]
-  },
-  {
-    "canonical_label": "Chả Băm Rán",
-    "category": "MainDish",
-    "raw_labels": [
+      "Chả băm nướng",
       "Chả băm rán"
     ]
   },
@@ -1670,8 +4363,7 @@
     "canonical_label": "Chả Bề Bề",
     "category": "MainDish",
     "raw_labels": [
-      "Chả bề bề",
-      "Chả bề bề chiên"
+      "Chả bề bề"
     ]
   },
   {
@@ -1696,16 +4388,17 @@
       "Chả cá",
       "Chả cá chiên",
       "Chả cá mỏng Hải Phòng",
-      "Chả cá rán",
-      "Chả cá rán hành thì là"
+      "Chả cá rán"
     ]
   },
   {
     "canonical_label": "Chả Cá Lã Vọng",
     "category": "MainDish",
     "raw_labels": [
+      "CHA CA LA VONG",
       "Chả cá Lã Vọng",
-      "Chả cá Lã Vọng Hà Nội"
+      "Chả cá Lã Vọng Hà Nội",
+      "Chả cá rán hành thì là"
     ]
   },
   {
@@ -1857,10 +4550,22 @@
     "canonical_label": "Chả Viên",
     "category": "MainDish",
     "raw_labels": [
-      "Chả viên",
+      "Chả viên"
+    ]
+  },
+  {
+    "canonical_label": "Chả Viên Chiên",
+    "category": "MainDish",
+    "raw_labels": [
       "Chả viên chiên",
-      "Chả viên nướng",
       "Chả viên rán"
+    ]
+  },
+  {
+    "canonical_label": "Chả Viên Nướng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Chả viên nướng"
     ]
   },
   {
@@ -1951,8 +4656,7 @@
     "canonical_label": "Cà Ri",
     "category": "MainDish",
     "raw_labels": [
-      "Cà ri",
-      "Karê"
+      "Cà ri"
     ]
   },
   {
@@ -1975,6 +4679,13 @@
     "category": "MainDish",
     "raw_labels": [
       "Cà ri vàng"
+    ]
+  },
+  {
+    "canonical_label": "Cà Rốt Súp Lơ Xào Tôm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Cà rốt súp lơ xào tôm"
     ]
   },
   {
@@ -2037,6 +4748,7 @@
     "canonical_label": "Cá Chiên",
     "category": "MainDish",
     "raw_labels": [
+      "Ca chien",
       "Cá chiên"
     ]
   },
@@ -2310,6 +5022,7 @@
     "canonical_label": "Cá Kho",
     "category": "MainDish",
     "raw_labels": [
+      "Braised Fish",
       "Cá kho",
       "Stew fish"
     ]
@@ -2329,11 +5042,23 @@
     ]
   },
   {
+    "canonical_label": "Cá Kho Dưa",
+    "category": "MainDish",
+    "raw_labels": [
+      "Cá kho dưa"
+    ]
+  },
+  {
     "canonical_label": "Cá Kho Dưa Chua",
     "category": "MainDish",
     "raw_labels": [
-      "Cá kho dưa",
-      "Cá kho dưa chua",
+      "Cá kho dưa chua"
+    ]
+  },
+  {
+    "canonical_label": "Cá Kho Dưa Cải",
+    "category": "MainDish",
+    "raw_labels": [
       "Cá kho dưa cải"
     ]
   },
@@ -2369,6 +5094,7 @@
     "canonical_label": "Cá Kho Tộ",
     "category": "MainDish",
     "raw_labels": [
+      "Ca kho to",
       "Cá kho tộ",
       "ca kho to",
       "cá kho tộ"
@@ -2382,7 +5108,7 @@
     ]
   },
   {
-    "canonical_label": "Cá Kèo Kho",
+    "canonical_label": "Cá Kèo Kho Khô",
     "category": "MainDish",
     "raw_labels": [
       "Cá kèo kho khô"
@@ -2712,6 +5438,13 @@
     ]
   },
   {
+    "canonical_label": "Cơm Chiên Cua",
+    "category": "MainDish",
+    "raw_labels": [
+      "Cơm chiên cua"
+    ]
+  },
+  {
     "canonical_label": "Cơm Chiên Dương Châu",
     "category": "MainDish",
     "raw_labels": [
@@ -2766,6 +5499,13 @@
     "category": "MainDish",
     "raw_labels": [
       "Cơm chiên trứng"
+    ]
+  },
+  {
+    "canonical_label": "Cơm Cháy Chả Cá",
+    "category": "MainDish",
+    "raw_labels": [
+      "Cơm cháy chả cá"
     ]
   },
   {
@@ -2868,13 +5608,6 @@
     ]
   },
   {
-    "canonical_label": "Cơm Ngũ Cốc",
-    "category": "MainDish",
-    "raw_labels": [
-      "Cơm ngũ cốc"
-    ]
-  },
-  {
     "canonical_label": "Cơm Niêu",
     "category": "MainDish",
     "raw_labels": [
@@ -2974,6 +5707,13 @@
     ]
   },
   {
+    "canonical_label": "Cơm Trứng Cuộn",
+    "category": "MainDish",
+    "raw_labels": [
+      "Cơm trứng cuộn"
+    ]
+  },
+  {
     "canonical_label": "Cơm Tôm Xào",
     "category": "MainDish",
     "raw_labels": [
@@ -2987,14 +5727,8 @@
       "Com Tam",
       "Com tam",
       "Cơm Tấm",
+      "Cơm Tấm Sài Gòn",
       "Cơm tấm"
-    ]
-  },
-  {
-    "canonical_label": "Cơm Tấm Sài Gòn",
-    "category": "MainDish",
-    "raw_labels": [
-      "Cơm Tấm Sài Gòn"
     ]
   },
   {
@@ -3012,7 +5746,7 @@
     ]
   },
   {
-    "canonical_label": "Cật Lợn Xào Hành Tây",
+    "canonical_label": "Cật Heo Xào Hành Tây",
     "category": "MainDish",
     "raw_labels": [
       "Cật heo xào hành tây"
@@ -3339,7 +6073,8 @@
     "canonical_label": "Gà Hấp",
     "category": "MainDish",
     "raw_labels": [
-      "Gà hấp"
+      "Gà hấp",
+      "Steamed chicken"
     ]
   },
   {
@@ -3385,6 +6120,13 @@
     ]
   },
   {
+    "canonical_label": "Gà Hầm Ngô Súp Lơ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Gà hầm ngô súp lơ"
+    ]
+  },
+  {
     "canonical_label": "Gà Hầm Ngũ Quả",
     "category": "MainDish",
     "raw_labels": [
@@ -3396,6 +6138,13 @@
     "category": "MainDish",
     "raw_labels": [
       "Gà hầm nấm đông cô"
+    ]
+  },
+  {
+    "canonical_label": "Gà Hầm Rau Củ",
+    "category": "MainDish",
+    "raw_labels": [
+      "Gà hầm rau củ"
     ]
   },
   {
@@ -3466,9 +6215,9 @@
     "canonical_label": "Gà Luộc",
     "category": "MainDish",
     "raw_labels": [
+      "Boiled Chicken",
       "Gà Luộc",
-      "Gà luộc",
-      "Steamed chicken"
+      "Gà luộc"
     ]
   },
   {
@@ -3554,7 +6303,13 @@
     "canonical_label": "Gà Rán",
     "category": "MainDish",
     "raw_labels": [
-      "Gà rán",
+      "Gà rán"
+    ]
+  },
+  {
+    "canonical_label": "Gà Rán và Đồ Chiên",
+    "category": "MainDish",
+    "raw_labels": [
       "Gà rán và đồ chiên"
     ]
   },
@@ -3569,7 +6324,13 @@
     "canonical_label": "Gà Xiên Nướng",
     "category": "MainDish",
     "raw_labels": [
-      "Gà xiên nướng",
+      "Gà xiên nướng"
+    ]
+  },
+  {
+    "canonical_label": "Gà Xiên Que",
+    "category": "MainDish",
+    "raw_labels": [
       "Gà xiên que"
     ]
   },
@@ -3606,6 +6367,20 @@
     "category": "MainDish",
     "raw_labels": [
       "Gà xé phay"
+    ]
+  },
+  {
+    "canonical_label": "Gà Ác Chặt Miếng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Gà ác chặt miếng"
+    ]
+  },
+  {
+    "canonical_label": "Gà Ác Nguyên Con",
+    "category": "MainDish",
+    "raw_labels": [
+      "Gà ác nguyên con"
     ]
   },
   {
@@ -3679,8 +6454,21 @@
       "Goi cuon",
       "Gỏi Cuốn",
       "Gỏi cuốn",
-      "Gỏi cuốn (Spring Rolls)",
+      "Gỏi cuốn (Spring Rolls)"
+    ]
+  },
+  {
+    "canonical_label": "Gỏi Cuốn Sài Gòn",
+    "category": "MainDish",
+    "raw_labels": [
       "Gỏi cuốn Sài Gòn"
+    ]
+  },
+  {
+    "canonical_label": "Gỏi Cuốn Tôm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Gỏi cuốn tôm"
     ]
   },
   {
@@ -3905,6 +6693,13 @@
     "category": "MainDish",
     "raw_labels": [
       "Gỏi xoài"
+    ]
+  },
+  {
+    "canonical_label": "Gỏi Xoài Cà Rốt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Gỏi xoài cà rốt"
     ]
   },
   {
@@ -4212,13 +7007,6 @@
     ]
   },
   {
-    "canonical_label": "Khổ Qua Chà Bông",
-    "category": "MainDish",
-    "raw_labels": [
-      "Khổ qua chà bông"
-    ]
-  },
-  {
     "canonical_label": "Khổ Qua Cà Ớt",
     "category": "MainDish",
     "raw_labels": [
@@ -4230,13 +7018,6 @@
     "category": "MainDish",
     "raw_labels": [
       "Khổ qua nhồi thịt"
-    ]
-  },
-  {
-    "canonical_label": "Khổ Qua Xào",
-    "category": "MainDish",
-    "raw_labels": [
-      "Khổ qua xào"
     ]
   },
   {
@@ -4252,20 +7033,6 @@
     "raw_labels": [
       "KHỔ QUA XÀO TRỨNG",
       "Khổ qua xào trứng"
-    ]
-  },
-  {
-    "canonical_label": "Kẹo Dừa",
-    "category": "MainDish",
-    "raw_labels": [
-      "Kẹo dừa"
-    ]
-  },
-  {
-    "canonical_label": "Kẹo Lạc",
-    "category": "MainDish",
-    "raw_labels": [
-      "Kẹo lạc"
     ]
   },
   {
@@ -4425,13 +7192,6 @@
     ]
   },
   {
-    "canonical_label": "Lạp Xưởng Chiên",
-    "category": "MainDish",
-    "raw_labels": [
-      "Lạp xưởng chiên"
-    ]
-  },
-  {
     "canonical_label": "Lẩu",
     "category": "MainDish",
     "raw_labels": [
@@ -4466,13 +7226,6 @@
     "category": "MainDish",
     "raw_labels": [
       "Lẩu cá linh"
-    ]
-  },
-  {
-    "canonical_label": "Lẩu Gà Lá Giang",
-    "category": "MainDish",
-    "raw_labels": [
-      "Lẩu gà lá giang"
     ]
   },
   {
@@ -4546,6 +7299,13 @@
     ]
   },
   {
+    "canonical_label": "Miến Tôm Khô",
+    "category": "MainDish",
+    "raw_labels": [
+      "Miến tôm khô"
+    ]
+  },
+  {
     "canonical_label": "Miến Xào",
     "category": "MainDish",
     "raw_labels": [
@@ -4574,10 +7334,17 @@
     ]
   },
   {
-    "canonical_label": "Miến Xào Tôm Khô",
+    "canonical_label": "Má Đùi Gà Quay",
     "category": "MainDish",
     "raw_labels": [
-      "Miến xào tôm khô"
+      "Má đùi gà quay"
+    ]
+  },
+  {
+    "canonical_label": "Mì Cao Lầu",
+    "category": "MainDish",
+    "raw_labels": [
+      "Mì Cao Lầu"
     ]
   },
   {
@@ -4631,6 +7398,13 @@
       "Mì Quảng Quảng Nam",
       "Mì quảng",
       "Mỳ Quảng"
+    ]
+  },
+  {
+    "canonical_label": "Mì Quảng Khô",
+    "category": "MainDish",
+    "raw_labels": [
+      "Mì Quảng khô"
     ]
   },
   {
@@ -4781,6 +7555,14 @@
     ]
   },
   {
+    "canonical_label": "Móng Giò Luộc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Móng giò luộc",
+      "Móng heo luộc"
+    ]
+  },
+  {
     "canonical_label": "Măng Hầm",
     "category": "MainDish",
     "raw_labels": [
@@ -4792,13 +7574,6 @@
     "category": "MainDish",
     "raw_labels": [
       "Măng kho cà chua"
-    ]
-  },
-  {
-    "canonical_label": "Măng Luộc",
-    "category": "MainDish",
-    "raw_labels": [
-      "Măng luộc"
     ]
   },
   {
@@ -4841,13 +7616,6 @@
     "category": "MainDish",
     "raw_labels": [
       "Măng xào trứng"
-    ]
-  },
-  {
-    "canonical_label": "Mướp Luộc",
-    "category": "MainDish",
-    "raw_labels": [
-      "Mướp luộc"
     ]
   },
   {
@@ -4992,6 +7760,13 @@
     ]
   },
   {
+    "canonical_label": "Mực Kho",
+    "category": "MainDish",
+    "raw_labels": [
+      "Mực kho"
+    ]
+  },
+  {
     "canonical_label": "Mực Một Nắng Chiên Nước Mắm",
     "category": "MainDish",
     "raw_labels": [
@@ -5107,11 +7882,18 @@
     ]
   },
   {
-    "canonical_label": "Mực Xào Dưa Leo",
+    "canonical_label": "Mực Xào Dưa Chuột",
     "category": "MainDish",
     "raw_labels": [
       "Mực xào dưa chuột",
       "Mực xào dưa leo"
+    ]
+  },
+  {
+    "canonical_label": "Mực Xào Dưa Chuột Cà Chua",
+    "category": "MainDish",
+    "raw_labels": [
+      "Mực xào dưa leo cà chua"
     ]
   },
   {
@@ -5185,6 +7967,13 @@
     ]
   },
   {
+    "canonical_label": "Mực Xào Ớt Chuông Hành Tây",
+    "category": "MainDish",
+    "raw_labels": [
+      "Mực xào ớt chuông hành tây"
+    ]
+  },
+  {
     "canonical_label": "Nem Cua Bể",
     "category": "MainDish",
     "raw_labels": [
@@ -5245,20 +8034,6 @@
     "category": "MainDish",
     "raw_labels": [
       "Nem rán chay"
-    ]
-  },
-  {
-    "canonical_label": "Nem Tai Thính",
-    "category": "MainDish",
-    "raw_labels": [
-      "Nem tai thính"
-    ]
-  },
-  {
-    "canonical_label": "Nem Thính",
-    "category": "MainDish",
-    "raw_labels": [
-      "Nem thính"
     ]
   },
   {
@@ -5326,6 +8101,13 @@
     ]
   },
   {
+    "canonical_label": "Nhút Mít Xào",
+    "category": "MainDish",
+    "raw_labels": [
+      "Nhút mít Nghệ An xào"
+    ]
+  },
+  {
     "canonical_label": "Nhộng Tằm Rang",
     "category": "MainDish",
     "raw_labels": [
@@ -5351,6 +8133,41 @@
     "category": "MainDish",
     "raw_labels": [
       "Nui xào rau củ"
+    ]
+  },
+  {
+    "canonical_label": "Nước Rau Dền",
+    "category": "MainDish",
+    "raw_labels": [
+      "Nước rau dền"
+    ]
+  },
+  {
+    "canonical_label": "Nước Rau Dền Luộc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Nước rau dền luộc"
+    ]
+  },
+  {
+    "canonical_label": "Nước Rau Luộc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Nước rau luộc"
+    ]
+  },
+  {
+    "canonical_label": "Nước Rau Muống",
+    "category": "MainDish",
+    "raw_labels": [
+      "Nước rau muống"
+    ]
+  },
+  {
+    "canonical_label": "Nước Rau Muống Dầm Sấu",
+    "category": "MainDish",
+    "raw_labels": [
+      "Nước rau muống dầm sấu"
     ]
   },
   {
@@ -5655,13 +8472,6 @@
     ]
   },
   {
-    "canonical_label": "Phô Mai Que",
-    "category": "MainDish",
-    "raw_labels": [
-      "Phô mai que"
-    ]
-  },
-  {
     "canonical_label": "Phở",
     "category": "MainDish",
     "raw_labels": [
@@ -5950,7 +8760,6 @@
     "category": "MainDish",
     "raw_labels": [
       "Rau củ luộc",
-      "Rau củ luộc và tươi",
       "Rau củ quả luộc"
     ]
   },
@@ -6019,17 +8828,17 @@
     ]
   },
   {
-    "canonical_label": "Rau Lang Xào Luộc",
-    "category": "MainDish",
-    "raw_labels": [
-      "Rau lang xào, luộc"
-    ]
-  },
-  {
     "canonical_label": "Rau Lang Xào Tỏi",
     "category": "MainDish",
     "raw_labels": [
       "Rau lang xào tỏi"
+    ]
+  },
+  {
+    "canonical_label": "Rau Lang Xào, Luộc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Rau lang xào, luộc"
     ]
   },
   {
@@ -6063,13 +8872,6 @@
     ]
   },
   {
-    "canonical_label": "Rau Muống Xào Luộc",
-    "category": "MainDish",
-    "raw_labels": [
-      "Rau muống xào, luộc"
-    ]
-  },
-  {
     "canonical_label": "Rau Muống Xào Thịt Bò",
     "category": "MainDish",
     "raw_labels": [
@@ -6081,6 +8883,13 @@
     "category": "MainDish",
     "raw_labels": [
       "Rau muống xào tỏi"
+    ]
+  },
+  {
+    "canonical_label": "Rau Muống Xào, Luộc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Rau muống xào, luộc"
     ]
   },
   {
@@ -6112,158 +8921,10 @@
     ]
   },
   {
-    "canonical_label": "Rau Trộn",
-    "category": "MainDish",
-    "raw_labels": [
-      "Rau trộn"
-    ]
-  },
-  {
-    "canonical_label": "Rau Xanh Luộc",
-    "category": "MainDish",
-    "raw_labels": [
-      "Rau xanh luộc"
-    ]
-  },
-  {
-    "canonical_label": "Rau Xanh Trộn Mè",
-    "category": "MainDish",
-    "raw_labels": [
-      "Rau xanh trộn mè"
-    ]
-  },
-  {
-    "canonical_label": "Rau Xanh Xào",
-    "category": "MainDish",
-    "raw_labels": [
-      "Rau xanh xào"
-    ]
-  },
-  {
-    "canonical_label": "Rau Xào",
-    "category": "MainDish",
-    "raw_labels": [
-      "Rau xào",
-      "Stir-fried Vegetables"
-    ]
-  },
-  {
-    "canonical_label": "Rau Xào Nấm",
-    "category": "MainDish",
-    "raw_labels": [
-      "Rau xào nấm"
-    ]
-  },
-  {
-    "canonical_label": "Rau Xào Thập Cẩm",
-    "category": "MainDish",
-    "raw_labels": [
-      "Rau xào thập cẩm"
-    ]
-  },
-  {
-    "canonical_label": "Rau Xào Thịt",
-    "category": "MainDish",
-    "raw_labels": [
-      "Rau xào thịt"
-    ]
-  },
-  {
-    "canonical_label": "Rau Xào Trứng",
-    "category": "MainDish",
-    "raw_labels": [
-      "Rau xào trứng"
-    ]
-  },
-  {
-    "canonical_label": "Rau Xào Tôm",
-    "category": "MainDish",
-    "raw_labels": [
-      "Rau xào tôm"
-    ]
-  },
-  {
-    "canonical_label": "Rau Xào Tỏi",
-    "category": "MainDish",
-    "raw_labels": [
-      "Rau xào tỏi"
-    ]
-  },
-  {
-    "canonical_label": "Rau Đắng Xào Tỏi",
-    "category": "MainDish",
-    "raw_labels": [
-      "Rau đắng xào tỏi"
-    ]
-  },
-  {
-    "canonical_label": "Rong Biển Cuộn",
-    "category": "MainDish",
-    "raw_labels": [
-      "Rong biển cuộn"
-    ]
-  },
-  {
-    "canonical_label": "Rong Biển Cuộn Sốt",
-    "category": "MainDish",
-    "raw_labels": [
-      "Rong biển cuộn sốt"
-    ]
-  },
-  {
-    "canonical_label": "Salad Bò",
+    "canonical_label": "Salad Trộn Bò",
     "category": "MainDish",
     "raw_labels": [
       "SALAD TRỘN BÒ"
-    ]
-  },
-  {
-    "canonical_label": "Salad Cá Hồi Bơ",
-    "category": "MainDish",
-    "raw_labels": [
-      "Salad cá hồi bơ"
-    ]
-  },
-  {
-    "canonical_label": "Salad Gà",
-    "category": "MainDish",
-    "raw_labels": [
-      "Salad gà"
-    ]
-  },
-  {
-    "canonical_label": "Salad Thịt Cừu Rau Củ",
-    "category": "MainDish",
-    "raw_labels": [
-      "Salad thịt cừu rau củ"
-    ]
-  },
-  {
-    "canonical_label": "Salad Thịt Nướng",
-    "category": "MainDish",
-    "raw_labels": [
-      "Salad thịt nướng"
-    ]
-  },
-  {
-    "canonical_label": "Salad Tôm",
-    "category": "MainDish",
-    "raw_labels": [
-      "Salad tôm"
-    ]
-  },
-  {
-    "canonical_label": "Salad Tôm Cải Bó Xôi",
-    "category": "MainDish",
-    "raw_labels": [
-      "Salad tôm cải bó xôi"
-    ]
-  },
-  {
-    "canonical_label": "Salad Vịt Áp Chảo",
-    "category": "MainDish",
-    "raw_labels": [
-      "Salad vịt áp chảo"
     ]
   },
   {
@@ -6274,24 +8935,17 @@
     ]
   },
   {
-    "canonical_label": "Su Hào Xào Thịt Bò",
-    "category": "MainDish",
-    "raw_labels": [
-      "Su hào xào thịt bò"
-    ]
-  },
-  {
-    "canonical_label": "Su Hào Xào Thịt Lợn",
+    "canonical_label": "Su Hào Xào Thịt",
     "category": "MainDish",
     "raw_labels": [
       "Su hào xào thịt"
     ]
   },
   {
-    "canonical_label": "Su Hào, Cà Rốt Xào",
+    "canonical_label": "Su Hào Xào Thịt Bò",
     "category": "MainDish",
     "raw_labels": [
-      "Xu hào, cà rốt xào"
+      "Su hào xào thịt bò"
     ]
   },
   {
@@ -6387,6 +9041,13 @@
     ]
   },
   {
+    "canonical_label": "Sò Huyết",
+    "category": "MainDish",
+    "raw_labels": [
+      "Sò huyết"
+    ]
+  },
+  {
     "canonical_label": "Sò Lụa Xào",
     "category": "MainDish",
     "raw_labels": [
@@ -6405,6 +9066,13 @@
     "category": "MainDish",
     "raw_labels": [
       "Sò điệp áp chảo"
+    ]
+  },
+  {
+    "canonical_label": "Súp",
+    "category": "MainDish",
+    "raw_labels": [
+      "Súp"
     ]
   },
   {
@@ -6457,6 +9125,62 @@
     ]
   },
   {
+    "canonical_label": "Súp Lơ Hấp",
+    "category": "MainDish",
+    "raw_labels": [
+      "Súp lơ hấp"
+    ]
+  },
+  {
+    "canonical_label": "Súp Lơ Luộc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Súp lơ luộc"
+    ]
+  },
+  {
+    "canonical_label": "Súp Lơ Trắng Xào",
+    "category": "MainDish",
+    "raw_labels": [
+      "Súp lơ trắng xào"
+    ]
+  },
+  {
+    "canonical_label": "Súp Lơ Xanh Luộc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Súp lơ xanh luộc"
+    ]
+  },
+  {
+    "canonical_label": "Súp Lơ Xanh Xào",
+    "category": "MainDish",
+    "raw_labels": [
+      "Súp lơ xanh xào"
+    ]
+  },
+  {
+    "canonical_label": "Súp Lơ Xanh và Cà Rốt Luộc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Súp lơ xanh và cà rốt luộc"
+    ]
+  },
+  {
+    "canonical_label": "Súp Lơ Xào",
+    "category": "MainDish",
+    "raw_labels": [
+      "Súp lơ xào"
+    ]
+  },
+  {
+    "canonical_label": "Súp Lơ Xào Cà Rốt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Súp lơ xào cà rốt"
+    ]
+  },
+  {
     "canonical_label": "Súp Lơ Xào Mực",
     "category": "MainDish",
     "raw_labels": [
@@ -6468,6 +9192,28 @@
     "category": "MainDish",
     "raw_labels": [
       "Súp lơ xào tôm"
+    ]
+  },
+  {
+    "canonical_label": "Súp Lơ và Cà Rốt Luộc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Súp lơ và cà rốt luộc",
+      "Súp lơ, cà rốt luộc"
+    ]
+  },
+  {
+    "canonical_label": "Súp Lơ và Mướp Luộc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Súp lơ và mướp luộc"
+    ]
+  },
+  {
+    "canonical_label": "Súp Lơ và Su Su Luộc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Súp lơ và su su luộc"
     ]
   },
   {
@@ -6516,7 +9262,8 @@
     "canonical_label": "Sườn Chiên",
     "category": "MainDish",
     "raw_labels": [
-      "Sườn chiên"
+      "Sườn chiên",
+      "Sườn rán"
     ]
   },
   {
@@ -6524,13 +9271,6 @@
     "category": "MainDish",
     "raw_labels": [
       "Sườn chiên sả"
-    ]
-  },
-  {
-    "canonical_label": "Sườn Cừu Nướng",
-    "category": "MainDish",
-    "raw_labels": [
-      "Sườn cừu nướng"
     ]
   },
   {
@@ -6594,7 +9334,13 @@
     "canonical_label": "Sườn Ram",
     "category": "MainDish",
     "raw_labels": [
-      "Sườn ram",
+      "Sườn ram"
+    ]
+  },
+  {
+    "canonical_label": "Sườn Ram Mặn",
+    "category": "MainDish",
+    "raw_labels": [
       "Sườn ram mặn"
     ]
   },
@@ -6602,15 +9348,14 @@
     "canonical_label": "Sườn Rim",
     "category": "MainDish",
     "raw_labels": [
-      "Sườn rim",
-      "Sườn rim mặn ngọt"
+      "Sườn rim"
     ]
   },
   {
-    "canonical_label": "Sườn Rán",
+    "canonical_label": "Sườn Rim Mặn Ngọt",
     "category": "MainDish",
     "raw_labels": [
-      "Sườn rán"
+      "Sườn rim mặn ngọt"
     ]
   },
   {
@@ -6677,6 +9422,13 @@
     "category": "MainDish",
     "raw_labels": [
       "Sữa chua mít"
+    ]
+  },
+  {
+    "canonical_label": "Tai Heo Luộc",
+    "category": "MainDish",
+    "raw_labels": [
+      "Tai heo luộc"
     ]
   },
   {
@@ -6926,13 +9678,6 @@
     ]
   },
   {
-    "canonical_label": "Thịt Băm Trang Trí với Dưa Chuột",
-    "category": "MainDish",
-    "raw_labels": [
-      "Thịt băm trang trí với dưa chuột"
-    ]
-  },
-  {
     "canonical_label": "Thịt Băm Xào",
     "category": "MainDish",
     "raw_labels": [
@@ -7074,13 +9819,6 @@
     ]
   },
   {
-    "canonical_label": "Thịt Heo Quay",
-    "category": "MainDish",
-    "raw_labels": [
-      "Heo quay"
-    ]
-  },
-  {
     "canonical_label": "Thịt Heo Quay Kho Tàu",
     "category": "MainDish",
     "raw_labels": [
@@ -7176,7 +9914,8 @@
     "canonical_label": "Thịt Kho Hột Vịt",
     "category": "MainDish",
     "raw_labels": [
-      "Thịt Kho Hột Vịt"
+      "Thịt Kho Hột Vịt",
+      "Thịt kho hột vịt"
     ]
   },
   {
@@ -7194,10 +9933,24 @@
     ]
   },
   {
+    "canonical_label": "Thịt Kho Mắm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Thịt kho mắm"
+    ]
+  },
+  {
     "canonical_label": "Thịt Kho Mắm Ruốc",
     "category": "MainDish",
     "raw_labels": [
       "Thịt kho mắm ruốc"
+    ]
+  },
+  {
+    "canonical_label": "Thịt Kho Quẹt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Thịt kho quẹt"
     ]
   },
   {
@@ -7219,7 +9972,6 @@
     "category": "MainDish",
     "raw_labels": [
       "Caramelized pork and eggs",
-      "Thịt kho hột vịt",
       "Thịt kho trứng"
     ]
   },
@@ -7264,7 +10016,22 @@
     "canonical_label": "Thịt Luộc",
     "category": "MainDish",
     "raw_labels": [
-      "Thịt Luộc"
+      "Thịt Luộc",
+      "Thịt luộc"
+    ]
+  },
+  {
+    "canonical_label": "Thịt Luộc Cà Pháo",
+    "category": "MainDish",
+    "raw_labels": [
+      "Thịt luộc cà pháo"
+    ]
+  },
+  {
+    "canonical_label": "Thịt Luộc Thái Sợi",
+    "category": "MainDish",
+    "raw_labels": [
+      "Thịt luộc thái sợi"
     ]
   },
   {
@@ -7294,9 +10061,6 @@
     "raw_labels": [
       "Thịt heo luộc",
       "Thịt heo luộc Bossam",
-      "Thịt luộc",
-      "Thịt luộc cà pháo",
-      "Thịt luộc thái sợi",
       "Thịt lợn luộc"
     ]
   },
@@ -7311,6 +10075,7 @@
     "canonical_label": "Thịt Lợn Nướng",
     "category": "MainDish",
     "raw_labels": [
+      "Thịt heo  nướng",
       "Thịt heo nướng",
       "Thịt lợn nướng"
     ]
@@ -7363,6 +10128,13 @@
     "category": "MainDish",
     "raw_labels": [
       "Thịt heo xào sả ớt"
+    ]
+  },
+  {
+    "canonical_label": "Thịt Lợn Xá Xíu",
+    "category": "MainDish",
+    "raw_labels": [
+      "Thịt heo xá xíu"
     ]
   },
   {
@@ -7464,7 +10236,7 @@
     ]
   },
   {
-    "canonical_label": "Thịt Sốt Cà và Rau Mầm",
+    "canonical_label": "Thịt Sốt Cà Và Rau Mầm",
     "category": "MainDish",
     "raw_labels": [
       "Thịt sốt cà và rau mầm"
@@ -7635,15 +10407,7 @@
     "canonical_label": "Thịt Xá Xíu",
     "category": "MainDish",
     "raw_labels": [
-      "Thịt heo xá xíu",
       "Thịt xá xíu"
-    ]
-  },
-  {
-    "canonical_label": "Thịt Xông Khói",
-    "category": "MainDish",
-    "raw_labels": [
-      "Thịt xông khói"
     ]
   },
   {
@@ -7678,13 +10442,6 @@
     ]
   },
   {
-    "canonical_label": "Tiết Vịt Luộc",
-    "category": "MainDish",
-    "raw_labels": [
-      "Tiết vịt luộc"
-    ]
-  },
-  {
     "canonical_label": "Trai Xào",
     "category": "MainDish",
     "raw_labels": [
@@ -7692,14 +10449,7 @@
     ]
   },
   {
-    "canonical_label": "Tré",
-    "category": "MainDish",
-    "raw_labels": [
-      "Tré"
-    ]
-  },
-  {
-    "canonical_label": "Trứng Bách Thảo Đậu Hũ",
+    "canonical_label": "Trứng Bắc Thảo Đậu Hũ",
     "category": "MainDish",
     "raw_labels": [
       "Trứng bắc thảo đậu phụ"
@@ -7710,7 +10460,9 @@
     "category": "MainDish",
     "raw_labels": [
       "Fried egg",
-      "Trứng chiên"
+      "Trứng chiên",
+      "Trứng chiên thái sợi",
+      "Trứng rán"
     ]
   },
   {
@@ -7736,21 +10488,21 @@
     ]
   },
   {
-    "canonical_label": "Trứng Chiên Mắm",
+    "canonical_label": "Trứng Chiên Ngải Cứu",
+    "category": "MainDish",
+    "raw_labels": [
+      "Trứng rán ngải cứu"
+    ]
+  },
+  {
+    "canonical_label": "Trứng Chiên Nước Mắm",
     "category": "MainDish",
     "raw_labels": [
       "Trứng chiên mắm"
     ]
   },
   {
-    "canonical_label": "Trứng Chiên Thái Sợi",
-    "category": "MainDish",
-    "raw_labels": [
-      "Trứng chiên thái sợi"
-    ]
-  },
-  {
-    "canonical_label": "Trứng Chiên Thịt Bằm",
+    "canonical_label": "Trứng Chiên Thịt Băm",
     "category": "MainDish",
     "raw_labels": [
       "Trứng chiên thịt bằm"
@@ -7793,17 +10545,17 @@
     ]
   },
   {
-    "canonical_label": "Trứng Cút Bọc Thịt Chiên Xù",
-    "category": "MainDish",
-    "raw_labels": [
-      "Trứng cút bọc thịt chiên xù"
-    ]
-  },
-  {
     "canonical_label": "Trứng Cút Chiên",
     "category": "MainDish",
     "raw_labels": [
       "Trứng cút chiên"
+    ]
+  },
+  {
+    "canonical_label": "Trứng Cút Chiên Xù",
+    "category": "MainDish",
+    "raw_labels": [
+      "Trứng cút chiên xù"
     ]
   },
   {
@@ -7825,6 +10577,13 @@
     "category": "MainDish",
     "raw_labels": [
       "Trứng cút rim"
+    ]
+  },
+  {
+    "canonical_label": "Trứng Dầm Nước Mắm",
+    "category": "MainDish",
+    "raw_labels": [
+      "Trứng dằm nước mắm"
     ]
   },
   {
@@ -7863,23 +10622,10 @@
     ]
   },
   {
-    "canonical_label": "Trứng Luộc Lòng Đào",
-    "category": "MainDish",
-    "raw_labels": [
-      "Trứng luộc lòng đào"
-    ]
-  },
-  {
-    "canonical_label": "Trứng Luộc Ngâm Tương",
-    "category": "MainDish",
-    "raw_labels": [
-      "Trứng luộc ngâm tương"
-    ]
-  },
-  {
     "canonical_label": "Trứng Lòng Đào",
     "category": "MainDish",
     "raw_labels": [
+      "Trứng luộc lòng đào",
       "Trứng lòng đào"
     ]
   },
@@ -7887,6 +10633,7 @@
     "canonical_label": "Trứng Ngâm Tương",
     "category": "MainDish",
     "raw_labels": [
+      "Trứng luộc ngâm tương",
       "Trứng ngâm tương"
     ]
   },
@@ -7902,20 +10649,6 @@
     "category": "MainDish",
     "raw_labels": [
       "Chén trứng nướng"
-    ]
-  },
-  {
-    "canonical_label": "Trứng Rán",
-    "category": "MainDish",
-    "raw_labels": [
-      "Trứng rán"
-    ]
-  },
-  {
-    "canonical_label": "Trứng Rán Ngải Cứu",
-    "category": "MainDish",
-    "raw_labels": [
-      "Trứng rán ngải cứu"
     ]
   },
   {
@@ -7968,13 +10701,6 @@
     ]
   },
   {
-    "canonical_label": "Tu Hài Xào Hành",
-    "category": "MainDish",
-    "raw_labels": [
-      "Tu hài xào hành"
-    ]
-  },
-  {
     "canonical_label": "Tép Rang",
     "category": "MainDish",
     "raw_labels": [
@@ -7986,20 +10712,6 @@
     "category": "MainDish",
     "raw_labels": [
       "Tép rang khế"
-    ]
-  },
-  {
-    "canonical_label": "Tóp Mỡ Giòn Xóc Mắm Tỏi",
-    "category": "MainDish",
-    "raw_labels": [
-      "Tóp mỡ giòn xóc mắm tỏi"
-    ]
-  },
-  {
-    "canonical_label": "Tóp Mỡ Rim",
-    "category": "MainDish",
-    "raw_labels": [
-      "Tóp mỡ rim"
     ]
   },
   {
@@ -8084,6 +10796,13 @@
     "category": "MainDish",
     "raw_labels": [
       "Tôm hấp"
+    ]
+  },
+  {
+    "canonical_label": "Tôm Hấp Mướp",
+    "category": "MainDish",
+    "raw_labels": [
+      "Tôm hấp mướp"
     ]
   },
   {
@@ -8235,10 +10954,31 @@
     ]
   },
   {
+    "canonical_label": "Tôm Thịt Rán",
+    "category": "MainDish",
+    "raw_labels": [
+      "Tôm thịt rán"
+    ]
+  },
+  {
+    "canonical_label": "Tôm Tít Hấp",
+    "category": "MainDish",
+    "raw_labels": [
+      "Tôm tít hấp"
+    ]
+  },
+  {
     "canonical_label": "Tôm Tẩm Bột Chiên",
     "category": "MainDish",
     "raw_labels": [
       "Tôm tẩm bột chiên"
+    ]
+  },
+  {
+    "canonical_label": "Tôm Và Mực",
+    "category": "MainDish",
+    "raw_labels": [
+      "Tôm và mực"
     ]
   },
   {
@@ -8340,10 +11080,10 @@
     ]
   },
   {
-    "canonical_label": "Túi Tiền Chiên",
+    "canonical_label": "Tảo Bẹ Cuộn",
     "category": "MainDish",
     "raw_labels": [
-      "Túi tiền chiên"
+      "Tảo bẹ cuộn"
     ]
   },
   {
@@ -8567,10 +11307,10 @@
     ]
   },
   {
-    "canonical_label": "Xôi Trắng",
+    "canonical_label": "Xôi Trắng Lạp Xưởng",
     "category": "MainDish",
     "raw_labels": [
-      "Xôi trắng"
+      "Xôi trắng lạp xưởng"
     ]
   },
   {
@@ -8711,8 +11451,7 @@
     "category": "MainDish",
     "raw_labels": [
       "Đậu cove luộc",
-      "Đậu cô ve luộc",
-      "Đỗ cove luộc"
+      "Đậu cô ve luộc"
     ]
   },
   {
@@ -8720,8 +11459,7 @@
     "category": "MainDish",
     "raw_labels": [
       "Đậu cove xào",
-      "Đậu cô ve xào",
-      "Đỗ cove xào"
+      "Đậu cô ve xào"
     ]
   },
   {
@@ -8742,23 +11480,16 @@
     "canonical_label": "Đậu Cove Xào Thịt",
     "category": "MainDish",
     "raw_labels": [
-      "Đỗ cove xào thịt"
+      "Đậu cove xào thịt"
     ]
   },
   {
     "canonical_label": "Đậu Cove Xào Thịt Bò",
     "category": "MainDish",
     "raw_labels": [
+      "ĐẬU CÔ VE XÀO THỊT BÒ",
       "Đậu cove xào bò",
-      "Đậu cô ve xào thịt bò",
-      "Đỗ cove xào thịt bò"
-    ]
-  },
-  {
-    "canonical_label": "Đậu Cove Xào Thịt Băm",
-    "category": "MainDish",
-    "raw_labels": [
-      "Đỗ cove xào thịt băm"
+      "Đậu cô ve xào thịt bò"
     ]
   },
   {
@@ -8769,25 +11500,11 @@
     ]
   },
   {
-    "canonical_label": "Đậu Cove Xào Thịt Lợn",
-    "category": "MainDish",
-    "raw_labels": [
-      "Đậu cove xào thịt"
-    ]
-  },
-  {
     "canonical_label": "Đậu Cove Xào Tỏi",
     "category": "MainDish",
     "raw_labels": [
       "Đậu cove xào tỏi",
       "Đậu cô ve xào tỏi"
-    ]
-  },
-  {
-    "canonical_label": "Đậu Cô Ve Xào Thịt Bò",
-    "category": "MainDish",
-    "raw_labels": [
-      "ĐẬU CÔ VE XÀO THỊT BÒ"
     ]
   },
   {
@@ -8843,14 +11560,23 @@
     "canonical_label": "Đậu Hũ Chiên Tẩm Hành",
     "category": "MainDish",
     "raw_labels": [
-      "Đậu hũ chiên tẩm hành"
+      "Đậu hũ chiên tẩm hành",
+      "Đậu phụ rán tẩm hành"
     ]
   },
   {
     "canonical_label": "Đậu Hũ Chiên Tẩm Mỡ Hành",
     "category": "MainDish",
     "raw_labels": [
-      "Đậu phụ chiên tẩm mỡ hành"
+      "Đậu phụ chiên tẩm mỡ hành",
+      "Đậu phụ rán tẩm mỡ hành"
+    ]
+  },
+  {
+    "canonical_label": "Đậu Hũ Chiên Xào Thịt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Đậu phụ rán xào thịt"
     ]
   },
   {
@@ -8858,6 +11584,13 @@
     "category": "MainDish",
     "raw_labels": [
       "Đậu phụ cái bang"
+    ]
+  },
+  {
+    "canonical_label": "Đậu Hũ Dồn Thịt Sốt Cà Chua",
+    "category": "MainDish",
+    "raw_labels": [
+      "Đậu hũ dồn thịt sốt cà chua"
     ]
   },
   {
@@ -8904,13 +11637,7 @@
     "category": "MainDish",
     "raw_labels": [
       "Đậu hũ nhồi thịt chiên",
-      "Đậu phụ nhồi thịt chiên"
-    ]
-  },
-  {
-    "canonical_label": "Đậu Hũ Nhồi Thịt Rán",
-    "category": "MainDish",
-    "raw_labels": [
+      "Đậu phụ nhồi thịt chiên",
       "Đậu phụ nhồi thịt rán"
     ]
   },
@@ -8925,7 +11652,6 @@
     "canonical_label": "Đậu Hũ Nhồi Thịt Sốt Cà Chua",
     "category": "MainDish",
     "raw_labels": [
-      "Đậu hũ dồn thịt sốt cà chua",
       "Đậu hũ nhồi thịt sốt cà chua",
       "Đậu phụ nhồi thịt sốt cà chua"
     ]
@@ -8948,8 +11674,6 @@
     "canonical_label": "Đậu Hũ Rán",
     "category": "MainDish",
     "raw_labels": [
-      "ĐẬU RÁN",
-      "Đậu phụ rán",
       "Đậu rán"
     ]
   },
@@ -8964,22 +11688,7 @@
     "canonical_label": "Đậu Hũ Rán Tẩm Hành",
     "category": "MainDish",
     "raw_labels": [
-      "Đậu phụ rán tẩm hành",
       "Đậu rán tẩm hành"
-    ]
-  },
-  {
-    "canonical_label": "Đậu Hũ Rán Tẩm Mỡ Hành",
-    "category": "MainDish",
-    "raw_labels": [
-      "Đậu phụ rán tẩm mỡ hành"
-    ]
-  },
-  {
-    "canonical_label": "Đậu Hũ Rán Xào Thịt",
-    "category": "MainDish",
-    "raw_labels": [
-      "Đậu phụ rán xào thịt"
     ]
   },
   {
@@ -9036,8 +11745,8 @@
     "raw_labels": [
       "ĐẬU TẨM HÀNH",
       "Đậu hũ tẩm hành",
-      "Đậu phụ tẩm hành",
-      "Đậu tẩm hành"
+      "Đậu hủ tẩm hành",
+      "Đậu phụ tẩm hành"
     ]
   },
   {
@@ -9108,35 +11817,41 @@
     "canonical_label": "Đậu Que Luộc",
     "category": "MainDish",
     "raw_labels": [
-      "Đậu que luộc"
+      "Đậu que luộc",
+      "Đỗ cove luộc"
     ]
   },
   {
     "canonical_label": "Đậu Que Xào",
     "category": "MainDish",
     "raw_labels": [
-      "Đậu que xào"
+      "Đậu que xào",
+      "Đậu ve xào",
+      "Đỗ cove xào"
     ]
   },
   {
     "canonical_label": "Đậu Que Xào Thịt",
     "category": "MainDish",
     "raw_labels": [
-      "Đậu que xào thịt"
+      "Đậu que xào thịt",
+      "Đỗ cove xào thịt"
     ]
   },
   {
     "canonical_label": "Đậu Que Xào Thịt Bò",
     "category": "MainDish",
     "raw_labels": [
-      "Đậu que xào thịt bò"
+      "Đậu que xào thịt bò",
+      "Đỗ cove xào thịt bò"
     ]
   },
   {
     "canonical_label": "Đậu Que Xào Thịt Băm",
     "category": "MainDish",
     "raw_labels": [
-      "Đậu que xào thịt băm"
+      "Đậu que xào thịt băm",
+      "Đỗ cove xào thịt băm"
     ]
   },
   {
@@ -9175,13 +11890,6 @@
     ]
   },
   {
-    "canonical_label": "Đậu Ve Xào",
-    "category": "MainDish",
-    "raw_labels": [
-      "Đậu ve xào"
-    ]
-  },
-  {
     "canonical_label": "Đậu Xanh Luộc",
     "category": "MainDish",
     "raw_labels": [
@@ -9201,27 +11909,6 @@
     "raw_labels": [
       "Đậu xào",
       "Đỗ xào"
-    ]
-  },
-  {
-    "canonical_label": "Đậu Xào Lòng Gà",
-    "category": "MainDish",
-    "raw_labels": [
-      "Đỗ xào lòng gà"
-    ]
-  },
-  {
-    "canonical_label": "Đậu Xào Thịt",
-    "category": "MainDish",
-    "raw_labels": [
-      "Đỗ xào thịt"
-    ]
-  },
-  {
-    "canonical_label": "Đậu Xào Thịt Bò",
-    "category": "MainDish",
-    "raw_labels": [
-      "Đỗ xào thịt bò"
     ]
   },
   {
@@ -9278,6 +11965,34 @@
     "category": "MainDish",
     "raw_labels": [
       "Đồ chiên chay"
+    ]
+  },
+  {
+    "canonical_label": "Đồ Nướng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Đồ nướng"
+    ]
+  },
+  {
+    "canonical_label": "Đỗ Xào Lòng Gà",
+    "category": "MainDish",
+    "raw_labels": [
+      "Đỗ xào lòng gà"
+    ]
+  },
+  {
+    "canonical_label": "Đỗ Xào Thịt",
+    "category": "MainDish",
+    "raw_labels": [
+      "Đỗ xào thịt"
+    ]
+  },
+  {
+    "canonical_label": "Đỗ Xào Thịt Bò",
+    "category": "MainDish",
+    "raw_labels": [
+      "Đỗ xào thịt bò"
     ]
   },
   {
@@ -9358,6 +12073,13 @@
     ]
   },
   {
+    "canonical_label": "Ốc Móng Tay Xào Hành",
+    "category": "MainDish",
+    "raw_labels": [
+      "Ốc móng tay xào hành"
+    ]
+  },
+  {
     "canonical_label": "Ốc Nhồi Thịt",
     "category": "MainDish",
     "raw_labels": [
@@ -9407,6 +12129,13 @@
     ]
   },
   {
+    "canonical_label": "Ức Gà Nướng",
+    "category": "MainDish",
+    "raw_labels": [
+      "Ức gà nướng"
+    ]
+  },
+  {
     "canonical_label": "Ức Gà Rán",
     "category": "MainDish",
     "raw_labels": [
@@ -9414,9 +12143,245 @@
     ]
   },
   {
+    "canonical_label": "Ba Chỉ Bò",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Ba chỉ bò"
+    ]
+  },
+  {
+    "canonical_label": "Ba Chỉ Heo Cuộn",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Ba chỉ heo cuộn"
+    ]
+  },
+  {
+    "canonical_label": "Ba Chỉ Heo Ướp Sống",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Ba chỉ heo ướp sống"
+    ]
+  },
+  {
+    "canonical_label": "Bào Ngư",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bào ngư"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Mì Baguette",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bánh baguette"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Mì Gối",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bánh mì gối"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Phở",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bánh phở",
+      "Bánh phở tươi"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Tráng",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Banh trang",
+      "Bánh tráng"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Tráng Mè",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bánh tráng mè"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Tráng Phơi Sương",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bánh tráng phơi sương Trảng Bàng - Tây Ninh"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Đa",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bánh đa"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Đa Nem",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bánh đa nem"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Đa Đỏ",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bánh đa đỏ"
+    ]
+  },
+  {
+    "canonical_label": "Bì",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bì"
+    ]
+  },
+  {
+    "canonical_label": "Bí Ngòi",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bí ngòi"
+    ]
+  },
+  {
+    "canonical_label": "Bí Đỏ",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bí đỏ"
+    ]
+  },
+  {
+    "canonical_label": "Bò Viên",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bò viên"
+    ]
+  },
+  {
+    "canonical_label": "Bông Cải Xanh",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bông cải xanh"
+    ]
+  },
+  {
+    "canonical_label": "Bông Súng",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bông súng"
+    ]
+  },
+  {
+    "canonical_label": "Bông Điên Điển",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bông điên điển"
+    ]
+  },
+  {
+    "canonical_label": "Bún",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bún",
+      "Bún thêm",
+      "Bún tươi"
+    ]
+  },
+  {
+    "canonical_label": "Bún Gạo Lứt",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bún gạo lứt"
+    ]
+  },
+  {
+    "canonical_label": "Bún Khô",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bún khô"
+    ]
+  },
+  {
+    "canonical_label": "Bún Lá",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bún lá"
+    ]
+  },
+  {
+    "canonical_label": "Bơ",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bơ"
+    ]
+  },
+  {
+    "canonical_label": "Bưởi",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bưởi"
+    ]
+  },
+  {
+    "canonical_label": "Bắp",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bắp"
+    ]
+  },
+  {
+    "canonical_label": "Bắp Bò",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bắp bò"
+    ]
+  },
+  {
+    "canonical_label": "Bắp Chuối",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bắp chuối"
+    ]
+  },
+  {
+    "canonical_label": "Bắp Chuối Bào",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bắp chuối bào"
+    ]
+  },
+  {
+    "canonical_label": "Bắp Cải",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bắp cải"
+    ]
+  },
+  {
+    "canonical_label": "Bắp Cải Bào",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bắp cải bào"
+    ]
+  },
+  {
+    "canonical_label": "Bắp Cải Tím",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Bắp cải tím"
+    ]
+  },
+  {
     "canonical_label": "Cam",
     "category": "Component/Ingredient",
     "raw_labels": [
+      "Cam",
       "Quả cam"
     ]
   },
@@ -9605,7 +12570,7 @@
     ]
   },
   {
-    "canonical_label": "Cá Ngừ",
+    "canonical_label": "Cá Ngừ Đại Dương",
     "category": "Component/Ingredient",
     "raw_labels": [
       "Cá ngừ đại dương"
@@ -9631,6 +12596,8 @@
     "raw_labels": [
       "Cơm",
       "Cơm bát",
+      "Cơm gạo ST",
+      "Cơm gạo tám",
       "Seasoned rice/grain dish"
     ]
   },
@@ -9650,20 +12617,6 @@
     ]
   },
   {
-    "canonical_label": "Cơm Gạo ST",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Cơm gạo ST"
-    ]
-  },
-  {
-    "canonical_label": "Cơm Gạo Tám",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Cơm gạo tám"
-    ]
-  },
-  {
     "canonical_label": "Cơm Hoa Đậu Biếc",
     "category": "Component/Ingredient",
     "raw_labels": [
@@ -9675,6 +12628,13 @@
     "category": "Component/Ingredient",
     "raw_labels": [
       "Cơm nghệ"
+    ]
+  },
+  {
+    "canonical_label": "Cơm Ngũ Cốc",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Cơm ngũ cốc"
     ]
   },
   {
@@ -9859,14 +12819,6 @@
     ]
   },
   {
-    "canonical_label": "Gà Ác",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Gà ác chặt miếng",
-      "Gà ác nguyên con"
-    ]
-  },
-  {
     "canonical_label": "Gạo",
     "category": "Component/Ingredient",
     "raw_labels": [
@@ -10021,10 +12973,46 @@
     ]
   },
   {
+    "canonical_label": "Hạt Óc Chó",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Hạt óc chó"
+    ]
+  },
+  {
+    "canonical_label": "Hạt Điều",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Quả điều"
+    ]
+  },
+  {
     "canonical_label": "Hẹ",
     "category": "Component/Ingredient",
     "raw_labels": [
       "Hẹ"
+    ]
+  },
+  {
+    "canonical_label": "Hồng",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Hồng",
+      "Quả hồng"
+    ]
+  },
+  {
+    "canonical_label": "Hồng Giòn",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Hồng giòn"
+    ]
+  },
+  {
+    "canonical_label": "Hồng Xiêm",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Hồng xiêm"
     ]
   },
   {
@@ -10075,13 +13063,6 @@
     "raw_labels": [
       "Kiwi",
       "Quả kiwi"
-    ]
-  },
-  {
-    "canonical_label": "Kiwi Vàng",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Kiwi vàng"
     ]
   },
   {
@@ -10144,7 +13125,6 @@
     "canonical_label": "Lê",
     "category": "Component/Ingredient",
     "raw_labels": [
-      "Lê",
       "Quả lê"
     ]
   },
@@ -10258,14 +13238,7 @@
     "canonical_label": "Măng Chua",
     "category": "Component/Ingredient",
     "raw_labels": [
-      "Măng"
-    ]
-  },
-  {
-    "canonical_label": "Măng Cụt",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Măng cụt"
+      "Măng chua"
     ]
   },
   {
@@ -10300,22 +13273,7 @@
     "canonical_label": "Mận",
     "category": "Component/Ingredient",
     "raw_labels": [
-      "Mận",
       "Quả mận"
-    ]
-  },
-  {
-    "canonical_label": "Mận Hậu",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Mận hậu"
-    ]
-  },
-  {
-    "canonical_label": "Mận Xanh",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Mận xanh"
     ]
   },
   {
@@ -10340,13 +13298,6 @@
     ]
   },
   {
-    "canonical_label": "Na",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Quả na"
-    ]
-  },
-  {
     "canonical_label": "Ngao",
     "category": "Component/Ingredient",
     "raw_labels": [
@@ -10358,6 +13309,7 @@
     "canonical_label": "Ngò Rí",
     "category": "Component/Ingredient",
     "raw_labels": [
+      "Ngò",
       "Ngò ri",
       "Ngò rí"
     ]
@@ -10388,6 +13340,13 @@
     "category": "Component/Ingredient",
     "raw_labels": [
       "Ngô và rau củ"
+    ]
+  },
+  {
+    "canonical_label": "Ngũ Cốc",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Ngũ cốc"
     ]
   },
   {
@@ -10457,6 +13416,13 @@
     ]
   },
   {
+    "canonical_label": "Nước Luộc",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Nước luộc"
+    ]
+  },
+  {
     "canonical_label": "Nước Luộc Bắp Cải",
     "category": "Component/Ingredient",
     "raw_labels": [
@@ -10478,6 +13444,13 @@
     ]
   },
   {
+    "canonical_label": "Nước Luộc Rau Củ",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Nước canh luộc rau củ"
+    ]
+  },
+  {
     "canonical_label": "Nước Luộc Rau Dền",
     "category": "Component/Ingredient",
     "raw_labels": [
@@ -10489,41 +13462,6 @@
     "category": "Component/Ingredient",
     "raw_labels": [
       "Nước luộc rau muống"
-    ]
-  },
-  {
-    "canonical_label": "Nước Rau Dền",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Nước rau dền"
-    ]
-  },
-  {
-    "canonical_label": "Nước Rau Dền Luộc",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Nước rau dền luộc"
-    ]
-  },
-  {
-    "canonical_label": "Nước Rau Luộc",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Nước rau luộc"
-    ]
-  },
-  {
-    "canonical_label": "Nước Rau Muống",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Nước rau muống"
-    ]
-  },
-  {
-    "canonical_label": "Nước Rau Muống Dầm Sấu",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Nước rau muống dầm sấu"
     ]
   },
   {
@@ -10584,13 +13522,6 @@
     ]
   },
   {
-    "canonical_label": "Quả Tắc",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Tắc"
-    ]
-  },
-  {
     "canonical_label": "Quất",
     "category": "Component/Ingredient",
     "raw_labels": [
@@ -10627,17 +13558,18 @@
     ]
   },
   {
-    "canonical_label": "Rau Củ Tươi",
+    "canonical_label": "Rau Củ",
     "category": "Component/Ingredient",
     "raw_labels": [
-      "Rau củ tươi"
+      "Rau củ"
     ]
   },
   {
     "canonical_label": "Rau Húng Quế",
     "category": "Component/Ingredient",
     "raw_labels": [
-      "Rau húng quế"
+      "Rau húng quế",
+      "Rau quế"
     ]
   },
   {
@@ -10691,16 +13623,10 @@
     ]
   },
   {
-    "canonical_label": "Rau Quế",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Rau quế"
-    ]
-  },
-  {
     "canonical_label": "Rau Răm",
     "category": "Component/Ingredient",
     "raw_labels": [
+      "Rau râm",
       "Rau răm"
     ]
   },
@@ -10716,34 +13642,6 @@
     "category": "Component/Ingredient",
     "raw_labels": [
       "Rau thì là"
-    ]
-  },
-  {
-    "canonical_label": "Rau Thơm",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Rau thơm"
-    ]
-  },
-  {
-    "canonical_label": "Rau Xanh",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Rau xanh"
-    ]
-  },
-  {
-    "canonical_label": "Rau Xà Lách",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Rau xà lách"
-    ]
-  },
-  {
-    "canonical_label": "Rau Ăn Lẩu",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Rau ăn lẩu"
     ]
   },
   {
@@ -10765,13 +13663,6 @@
     "category": "Component/Ingredient",
     "raw_labels": [
       "Quả roi"
-    ]
-  },
-  {
-    "canonical_label": "Roi Đỏ",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Roi đỏ"
     ]
   },
   {
@@ -10810,13 +13701,6 @@
     ]
   },
   {
-    "canonical_label": "Sò Huyết",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Sò huyết"
-    ]
-  },
-  {
     "canonical_label": "Sò Điệp",
     "category": "Component/Ingredient",
     "raw_labels": [
@@ -10842,6 +13726,13 @@
     "category": "Component/Ingredient",
     "raw_labels": [
       "Súp lơ xanh"
+    ]
+  },
+  {
+    "canonical_label": "Sơ Ri",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Sơ ri"
     ]
   },
   {
@@ -10890,8 +13781,7 @@
     "canonical_label": "Thanh Long",
     "category": "Component/Ingredient",
     "raw_labels": [
-      "Thanh long",
-      "dragon fruit"
+      "Thanh long"
     ]
   },
   {
@@ -10910,10 +13800,10 @@
     ]
   },
   {
-    "canonical_label": "Thịt",
+    "canonical_label": "Thảo Quả",
     "category": "Component/Ingredient",
     "raw_labels": [
-      "thịt"
+      "Thảo quả"
     ]
   },
   {
@@ -10943,6 +13833,13 @@
     "category": "Component/Ingredient",
     "raw_labels": [
       "Thịt bò cuộn"
+    ]
+  },
+  {
+    "canonical_label": "Thịt Bò Nạm",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Thịt bò nạm"
     ]
   },
   {
@@ -10977,7 +13874,8 @@
     "canonical_label": "Thịt Băm",
     "category": "Component/Ingredient",
     "raw_labels": [
-      "Thịt băm"
+      "Thịt băm",
+      "Thịt băm trang trí với dưa chuột"
     ]
   },
   {
@@ -10999,9 +13897,7 @@
     "canonical_label": "Thịt Lợn",
     "category": "Component/Ingredient",
     "raw_labels": [
-      "Thịt heo",
-      "Thịt heo mát",
-      "Thịt heo ngon ăn ít"
+      "Thịt heo"
     ]
   },
   {
@@ -11030,8 +13926,7 @@
     "category": "Component/Ingredient",
     "raw_labels": [
       "Grilled meat pieces",
-      "Thịt nướng",
-      "Thịt nướng Satay"
+      "Thịt nướng"
     ]
   },
   {
@@ -11042,10 +13937,17 @@
     ]
   },
   {
+    "canonical_label": "Thịt Xông Khói",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Thịt xông khói"
+    ]
+  },
+  {
     "canonical_label": "Tiết Lợn",
     "category": "Component/Ingredient",
     "raw_labels": [
-      "Tiết canh"
+      "Tiết heo"
     ]
   },
   {
@@ -11056,13 +13958,6 @@
     ]
   },
   {
-    "canonical_label": "Trái Cây",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Đĩa trái cây"
-    ]
-  },
-  {
     "canonical_label": "Trứng",
     "category": "Component/Ingredient",
     "raw_labels": [
@@ -11070,7 +13965,7 @@
     ]
   },
   {
-    "canonical_label": "Trứng Bách Thảo",
+    "canonical_label": "Trứng Bắc Thảo",
     "category": "Component/Ingredient",
     "raw_labels": [
       "Trứng Bắc Thảo",
@@ -11145,6 +14040,7 @@
     "canonical_label": "Táo",
     "category": "Component/Ingredient",
     "raw_labels": [
+      "Quả táo",
       "Táo"
     ]
   },
@@ -11184,13 +14080,6 @@
     ]
   },
   {
-    "canonical_label": "Tóp Mỡ",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Tóp mỡ"
-    ]
-  },
-  {
     "canonical_label": "Tôm",
     "category": "Component/Ingredient",
     "raw_labels": [
@@ -11219,10 +14108,10 @@
     ]
   },
   {
-    "canonical_label": "Tôm và Mực",
+    "canonical_label": "Tắc",
     "category": "Component/Ingredient",
     "raw_labels": [
-      "Tôm và mực"
+      "Tắc"
     ]
   },
   {
@@ -11240,17 +14129,17 @@
     ]
   },
   {
-    "canonical_label": "Tỏi Ớt",
+    "canonical_label": "Tỏi Nướng",
     "category": "Component/Ingredient",
     "raw_labels": [
-      "Tỏi ớt"
+      "Tỏi nướng"
     ]
   },
   {
-    "canonical_label": "Tỏi Ớt Băm",
+    "canonical_label": "Váng Đậu Rán",
     "category": "Component/Ingredient",
     "raw_labels": [
-      "Tỏi ớt băm"
+      "Váng đậu rán"
     ]
   },
   {
@@ -11278,14 +14167,14 @@
     "canonical_label": "Xoài",
     "category": "Component/Ingredient",
     "raw_labels": [
-      "Xoài"
+      "xoài"
     ]
   },
   {
-    "canonical_label": "Xoài Chín",
+    "canonical_label": "Xoài Bào",
     "category": "Component/Ingredient",
     "raw_labels": [
-      "Xoài chín"
+      "Xoài bào"
     ]
   },
   {
@@ -11303,24 +14192,17 @@
     ]
   },
   {
+    "canonical_label": "Xôi Trắng",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Xôi trắng"
+    ]
+  },
+  {
     "canonical_label": "Xương Bò Hầm",
     "category": "Component/Ingredient",
     "raw_labels": [
       "Xương bò hầm"
-    ]
-  },
-  {
-    "canonical_label": "Ô Liu",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Quả ô liu"
-    ]
-  },
-  {
-    "canonical_label": "Điều",
-    "category": "Component/Ingredient",
-    "raw_labels": [
-      "Quả điều"
     ]
   },
   {
@@ -11354,6 +14236,13 @@
     ]
   },
   {
+    "canonical_label": "Đậu",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Đậu"
+    ]
+  },
+  {
     "canonical_label": "Đậu Bắp",
     "category": "Component/Ingredient",
     "raw_labels": [
@@ -11378,7 +14267,6 @@
     "canonical_label": "Đậu Hũ",
     "category": "Component/Ingredient",
     "raw_labels": [
-      "Đậu",
       "Đậu hũ",
       "Đậu phụ"
     ]
@@ -11473,7 +14361,6 @@
     "category": "Component/Ingredient",
     "raw_labels": [
       "Ớt",
-      "Ớt tươi",
       "ớt"
     ]
   },
@@ -11499,6 +14386,20 @@
     ]
   },
   {
+    "canonical_label": "Ớt Thái",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Ớt thái"
+    ]
+  },
+  {
+    "canonical_label": "Ớt Tươi",
+    "category": "Component/Ingredient",
+    "raw_labels": [
+      "Ớt tươi"
+    ]
+  },
+  {
     "canonical_label": "Ớt Xanh",
     "category": "Component/Ingredient",
     "raw_labels": [
@@ -11509,8 +14410,105 @@
     "canonical_label": "Ớt Xắt",
     "category": "Component/Ingredient",
     "raw_labels": [
-      "Ớt thái",
       "Ớt xắt"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Phồng",
+    "category": "SideDish",
+    "raw_labels": [
+      "Bánh phồng"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Phồng Sữa Dừa",
+    "category": "SideDish",
+    "raw_labels": [
+      "Bánh phồng sữa dừa Bến Tre"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Phồng Tôm",
+    "category": "SideDish",
+    "raw_labels": [
+      "Bánh phồng tôm"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Tai Heo",
+    "category": "SideDish",
+    "raw_labels": [
+      "Bánh tai heo"
+    ]
+  },
+  {
+    "canonical_label": "Bánh Đa Mè",
+    "category": "SideDish",
+    "raw_labels": [
+      "Bánh đa mè"
+    ]
+  },
+  {
+    "canonical_label": "Bông Bí Luộc",
+    "category": "SideDish",
+    "raw_labels": [
+      "Bông bí luộc"
+    ]
+  },
+  {
+    "canonical_label": "Bông Bí Xào",
+    "category": "SideDish",
+    "raw_labels": [
+      "Bông bí xào"
+    ]
+  },
+  {
+    "canonical_label": "Bông Bí Xào Tỏi",
+    "category": "SideDish",
+    "raw_labels": [
+      "Bông bí xào tỏi"
+    ]
+  },
+  {
+    "canonical_label": "Bông Cải Xanh Hấp",
+    "category": "SideDish",
+    "raw_labels": [
+      "Bông cải xanh hấp"
+    ]
+  },
+  {
+    "canonical_label": "Bông Cải Xanh Luộc",
+    "category": "SideDish",
+    "raw_labels": [
+      "Bông cải xanh luộc"
+    ]
+  },
+  {
+    "canonical_label": "Bông Cải Xanh Xào",
+    "category": "SideDish",
+    "raw_labels": [
+      "Bông cải xanh xào"
+    ]
+  },
+  {
+    "canonical_label": "Bông Cải Xanh và Cà Rốt Luộc",
+    "category": "SideDish",
+    "raw_labels": [
+      "Bông cải xanh và cà rốt luộc"
+    ]
+  },
+  {
+    "canonical_label": "Bông Cải Xào Trứng",
+    "category": "SideDish",
+    "raw_labels": [
+      "Bông cải xào trứng"
+    ]
+  },
+  {
+    "canonical_label": "Bông Thiên Lý Xào",
+    "category": "SideDish",
+    "raw_labels": [
+      "Bông thiên lý xào"
     ]
   },
   {
@@ -11695,7 +14693,8 @@
     "canonical_label": "Cơm Cháy",
     "category": "SideDish",
     "raw_labels": [
-      "Cơm cháy"
+      "Cơm cháy",
+      "Cơm cháy Ninh Bình"
     ]
   },
   {
@@ -11706,24 +14705,10 @@
     ]
   },
   {
-    "canonical_label": "Cơm Cháy Chả Cá",
-    "category": "SideDish",
-    "raw_labels": [
-      "Cơm cháy chả cá"
-    ]
-  },
-  {
     "canonical_label": "Cơm Cháy Mỡ Hành",
     "category": "SideDish",
     "raw_labels": [
       "Cơm cháy mỡ hành"
-    ]
-  },
-  {
-    "canonical_label": "Cơm Cháy Ninh Bình",
-    "category": "SideDish",
-    "raw_labels": [
-      "Cơm cháy Ninh Bình"
     ]
   },
   {
@@ -11940,7 +14925,13 @@
     "canonical_label": "Da Cá Chiên",
     "category": "SideDish",
     "raw_labels": [
-      "Da cá chiên",
+      "Da cá chiên"
+    ]
+  },
+  {
+    "canonical_label": "Da Cá Chiên Giòn",
+    "category": "SideDish",
+    "raw_labels": [
       "Da cá chiên giòn"
     ]
   },
@@ -12193,7 +15184,13 @@
     "canonical_label": "Giò Thủ",
     "category": "SideDish",
     "raw_labels": [
-      "Giò thủ",
+      "Giò thủ"
+    ]
+  },
+  {
+    "canonical_label": "Giò Xào",
+    "category": "SideDish",
+    "raw_labels": [
       "Giò xào"
     ]
   },
@@ -12205,11 +15202,25 @@
     ]
   },
   {
+    "canonical_label": "Hoa Quả Cắt Miếng",
+    "category": "SideDish",
+    "raw_labels": [
+      "Hoa quả cắt miếng"
+    ]
+  },
+  {
     "canonical_label": "Hành Muối",
     "category": "SideDish",
     "raw_labels": [
       "Hành muối",
       "Pickled Shallots"
+    ]
+  },
+  {
+    "canonical_label": "Hành Muối Ớt",
+    "category": "SideDish",
+    "raw_labels": [
+      "Hành muối ớt"
     ]
   },
   {
@@ -12262,46 +15273,10 @@
     ]
   },
   {
-    "canonical_label": "Hạt Óc Chó",
-    "category": "SideDish",
-    "raw_labels": [
-      "Hạt óc chó"
-    ]
-  },
-  {
     "canonical_label": "Hạt Điều Rang Củi Vị Muối",
     "category": "SideDish",
     "raw_labels": [
       "Hạt điều rang củi vị muối"
-    ]
-  },
-  {
-    "canonical_label": "Hồng",
-    "category": "SideDish",
-    "raw_labels": [
-      "Hồng",
-      "Quả hồng"
-    ]
-  },
-  {
-    "canonical_label": "Hồng Giòn",
-    "category": "SideDish",
-    "raw_labels": [
-      "Hồng giòn"
-    ]
-  },
-  {
-    "canonical_label": "Hồng Xiêm",
-    "category": "SideDish",
-    "raw_labels": [
-      "Hồng xiêm"
-    ]
-  },
-  {
-    "canonical_label": "Khoai Chiên",
-    "category": "SideDish",
-    "raw_labels": [
-      "Khoai chiên"
     ]
   },
   {
@@ -12329,6 +15304,7 @@
     "canonical_label": "Khoai Tây Chiên",
     "category": "SideDish",
     "raw_labels": [
+      "Khoai chiên",
       "Khoai tây chiên",
       "Khoai tây rán"
     ]
@@ -12338,6 +15314,13 @@
     "category": "SideDish",
     "raw_labels": [
       "Khoai tây kén"
+    ]
+  },
+  {
+    "canonical_label": "Khoai Tây Và Cà Rốt Luộc",
+    "category": "SideDish",
+    "raw_labels": [
+      "Khoai tây và cà rốt luộc"
     ]
   },
   {
@@ -12355,10 +15338,24 @@
     ]
   },
   {
-    "canonical_label": "Khế và Chuối Xanh",
+    "canonical_label": "Khế Và Chuối Xanh",
     "category": "SideDish",
     "raw_labels": [
       "Khế và chuối xanh"
+    ]
+  },
+  {
+    "canonical_label": "Khổ Qua Chà Bông",
+    "category": "SideDish",
+    "raw_labels": [
+      "Khổ qua chà bông"
+    ]
+  },
+  {
+    "canonical_label": "Khổ Qua Luộc",
+    "category": "SideDish",
+    "raw_labels": [
+      "Khổ qua luộc"
     ]
   },
   {
@@ -12414,10 +15411,31 @@
     ]
   },
   {
+    "canonical_label": "Lạp Xưởng Chiên",
+    "category": "SideDish",
+    "raw_labels": [
+      "Lạp xưởng chiên"
+    ]
+  },
+  {
     "canonical_label": "Màn Thầu Chiên",
     "category": "SideDish",
     "raw_labels": [
       "Màn thầu chiên"
+    ]
+  },
+  {
+    "canonical_label": "Măng Luộc",
+    "category": "SideDish",
+    "raw_labels": [
+      "Măng luộc"
+    ]
+  },
+  {
+    "canonical_label": "Mướp Luộc",
+    "category": "SideDish",
+    "raw_labels": [
+      "Mướp luộc"
     ]
   },
   {
@@ -12440,6 +15458,14 @@
     "raw_labels": [
       "Mứt Tết",
       "Mứt tết"
+    ]
+  },
+  {
+    "canonical_label": "Na",
+    "category": "SideDish",
+    "raw_labels": [
+      "Na",
+      "Quả na"
     ]
   },
   {
@@ -12471,6 +15497,20 @@
     ]
   },
   {
+    "canonical_label": "Nem Tai Thính",
+    "category": "SideDish",
+    "raw_labels": [
+      "Nem tai thính"
+    ]
+  },
+  {
+    "canonical_label": "Nem Thính",
+    "category": "SideDish",
+    "raw_labels": [
+      "Nem thính"
+    ]
+  },
+  {
     "canonical_label": "Ngô Chiên",
     "category": "SideDish",
     "raw_labels": [
@@ -12499,17 +15539,17 @@
     ]
   },
   {
+    "canonical_label": "Ngọn Su Su Xào Luộc",
+    "category": "SideDish",
+    "raw_labels": [
+      "Ngọn su xào, luộc"
+    ]
+  },
+  {
     "canonical_label": "Ngọn Su Su Xào Tỏi",
     "category": "SideDish",
     "raw_labels": [
       "Ngọn su su xào tỏi"
-    ]
-  },
-  {
-    "canonical_label": "Ngọn Su Su Xào, Luộc",
-    "category": "SideDish",
-    "raw_labels": [
-      "Ngọn su xào, luộc"
     ]
   },
   {
@@ -12534,13 +15574,6 @@
     ]
   },
   {
-    "canonical_label": "Nhút Mít Xào",
-    "category": "SideDish",
-    "raw_labels": [
-      "Nhút mít Nghệ An xào"
-    ]
-  },
-  {
     "canonical_label": "Pate",
     "category": "SideDish",
     "raw_labels": [
@@ -12553,6 +15586,13 @@
     "category": "SideDish",
     "raw_labels": [
       "Pate gan"
+    ]
+  },
+  {
+    "canonical_label": "Phô Mai Que",
+    "category": "SideDish",
+    "raw_labels": [
+      "Phô mai que"
     ]
   },
   {
@@ -12584,10 +15624,24 @@
     ]
   },
   {
+    "canonical_label": "Rau Củ Luộc Và Tươi",
+    "category": "SideDish",
+    "raw_labels": [
+      "Rau củ luộc và tươi"
+    ]
+  },
+  {
     "canonical_label": "Rau Củ Muối",
     "category": "SideDish",
     "raw_labels": [
       "Rau củ muối"
+    ]
+  },
+  {
+    "canonical_label": "Rau Củ Tươi",
+    "category": "SideDish",
+    "raw_labels": [
+      "Rau củ tươi"
     ]
   },
   {
@@ -12605,7 +15659,7 @@
     ]
   },
   {
-    "canonical_label": "Rau Má và Dưa Leo",
+    "canonical_label": "Rau Má Và Dưa Leo",
     "category": "SideDish",
     "raw_labels": [
       "Rau má và dưa leo"
@@ -12627,24 +15681,164 @@
     ]
   },
   {
-    "canonical_label": "Rau Sống và Dưa Chuột",
+    "canonical_label": "Rau Sống Và Dưa Chuột",
     "category": "SideDish",
     "raw_labels": [
       "Rau sống và dưa chuột"
     ]
   },
   {
-    "canonical_label": "Rau Sống và Dưa Leo",
+    "canonical_label": "Rau Sống Và Dưa Leo",
     "category": "SideDish",
     "raw_labels": [
       "Rau sống và dưa leo"
     ]
   },
   {
+    "canonical_label": "Rau Thơm",
+    "category": "SideDish",
+    "raw_labels": [
+      "Rau thơm"
+    ]
+  },
+  {
+    "canonical_label": "Rau Trộn",
+    "category": "SideDish",
+    "raw_labels": [
+      "Rau trộn"
+    ]
+  },
+  {
+    "canonical_label": "Rau Xanh",
+    "category": "SideDish",
+    "raw_labels": [
+      "Rau xanh"
+    ]
+  },
+  {
+    "canonical_label": "Rau Xanh Luộc",
+    "category": "SideDish",
+    "raw_labels": [
+      "Rau xanh luộc"
+    ]
+  },
+  {
+    "canonical_label": "Rau Xanh Trộn Mè",
+    "category": "SideDish",
+    "raw_labels": [
+      "Rau xanh trộn mè"
+    ]
+  },
+  {
+    "canonical_label": "Rau Xanh Xào",
+    "category": "SideDish",
+    "raw_labels": [
+      "Rau xanh xào"
+    ]
+  },
+  {
+    "canonical_label": "Rau Xà Lách",
+    "category": "SideDish",
+    "raw_labels": [
+      "Rau xà lách"
+    ]
+  },
+  {
+    "canonical_label": "Rau Xào",
+    "category": "SideDish",
+    "raw_labels": [
+      "Rau xào",
+      "Stir-fried Vegetables"
+    ]
+  },
+  {
+    "canonical_label": "Rau Xào Nấm",
+    "category": "SideDish",
+    "raw_labels": [
+      "Rau xào nấm"
+    ]
+  },
+  {
+    "canonical_label": "Rau Xào Thập Cẩm",
+    "category": "SideDish",
+    "raw_labels": [
+      "Rau xào thập cẩm"
+    ]
+  },
+  {
+    "canonical_label": "Rau Xào Thịt",
+    "category": "SideDish",
+    "raw_labels": [
+      "Rau xào thịt"
+    ]
+  },
+  {
+    "canonical_label": "Rau Xào Trứng",
+    "category": "SideDish",
+    "raw_labels": [
+      "Rau xào trứng"
+    ]
+  },
+  {
+    "canonical_label": "Rau Xào Tôm",
+    "category": "SideDish",
+    "raw_labels": [
+      "Rau xào tôm"
+    ]
+  },
+  {
+    "canonical_label": "Rau Xào Tỏi",
+    "category": "SideDish",
+    "raw_labels": [
+      "Rau xào tỏi"
+    ]
+  },
+  {
+    "canonical_label": "Rau Ăn Lẩu",
+    "category": "SideDish",
+    "raw_labels": [
+      "Rau ăn lẩu"
+    ]
+  },
+  {
+    "canonical_label": "Rau Đắng Xào Tỏi",
+    "category": "SideDish",
+    "raw_labels": [
+      "Rau đắng xào tỏi"
+    ]
+  },
+  {
+    "canonical_label": "Roi Đỏ",
+    "category": "SideDish",
+    "raw_labels": [
+      "Roi đỏ"
+    ]
+  },
+  {
+    "canonical_label": "Rong Biển Cuộn",
+    "category": "SideDish",
+    "raw_labels": [
+      "Rong biển cuộn"
+    ]
+  },
+  {
+    "canonical_label": "Rong Biển Cuộn Sốt",
+    "category": "SideDish",
+    "raw_labels": [
+      "Rong biển cuộn sốt"
+    ]
+  },
+  {
+    "canonical_label": "Ruốc",
+    "category": "SideDish",
+    "raw_labels": [
+      "Ruốc"
+    ]
+  },
+  {
     "canonical_label": "Ruốc Thịt",
     "category": "SideDish",
     "raw_labels": [
-      "Ruốc",
       "Ruốc thịt"
     ]
   },
@@ -12671,144 +15865,17 @@
     ]
   },
   {
-    "canonical_label": "Salad Bơ và Trứng",
-    "category": "SideDish",
-    "raw_labels": [
-      "Salad bơ và trứng"
-    ]
-  },
-  {
-    "canonical_label": "Salad Bắp Cải",
-    "category": "SideDish",
-    "raw_labels": [
-      "Salad bắp cải"
-    ]
-  },
-  {
-    "canonical_label": "Salad Cà Chua",
-    "category": "SideDish",
-    "raw_labels": [
-      "Salad cà chua"
-    ]
-  },
-  {
-    "canonical_label": "Salad Cà Chua Bi Dưa Chuột",
-    "category": "SideDish",
-    "raw_labels": [
-      "Salad cà chua bi dưa chuột"
-    ]
-  },
-  {
-    "canonical_label": "Salad Cà Chua Dưa Chuột",
-    "category": "SideDish",
-    "raw_labels": [
-      "Salad with tomatoes and cucumbers"
-    ]
-  },
-  {
-    "canonical_label": "Salad Dưa Chuột",
-    "category": "SideDish",
-    "raw_labels": [
-      "Salad dưa chuột"
-    ]
-  },
-  {
-    "canonical_label": "Salad Dưa Chuột Cà Chua",
-    "category": "SideDish",
-    "raw_labels": [
-      "Salad dưa chuột cà chua"
-    ]
-  },
-  {
-    "canonical_label": "Salad Dưa Leo",
-    "category": "SideDish",
-    "raw_labels": [
-      "Salad dưa leo"
-    ]
-  },
-  {
-    "canonical_label": "Salad Dưa Leo Cà Chua",
-    "category": "SideDish",
-    "raw_labels": [
-      "Salad dưa leo cà chua"
-    ]
-  },
-  {
-    "canonical_label": "Salad Dầu Dấm",
-    "category": "SideDish",
-    "raw_labels": [
-      "SALAD TRỘN DẦU DẤM"
-    ]
-  },
-  {
-    "canonical_label": "Salad Hoa Quả",
-    "category": "SideDish",
-    "raw_labels": [
-      "Salad hoa quả"
-    ]
-  },
-  {
-    "canonical_label": "Salad Ngũ Cốc",
-    "category": "SideDish",
-    "raw_labels": [
-      "Salad ngũ cốc"
-    ]
-  },
-  {
-    "canonical_label": "Salad Rau",
-    "category": "SideDish",
-    "raw_labels": [
-      "Salad rau"
-    ]
-  },
-  {
     "canonical_label": "Salad Rau Củ",
     "category": "SideDish",
     "raw_labels": [
-      "Sa lát rau củ",
-      "Salad rau củ"
+      "Sa lát rau củ"
     ]
   },
   {
-    "canonical_label": "Salad Rau Mầm",
+    "canonical_label": "Salad Trộn Dầu Dấm",
     "category": "SideDish",
     "raw_labels": [
-      "Salad rau mầm"
-    ]
-  },
-  {
-    "canonical_label": "Salad Súp Lơ và Dưa Chuột",
-    "category": "SideDish",
-    "raw_labels": [
-      "Salad súp lơ và dưa chuột"
-    ]
-  },
-  {
-    "canonical_label": "Salad Trái Cây",
-    "category": "SideDish",
-    "raw_labels": [
-      "Salad trái cây"
-    ]
-  },
-  {
-    "canonical_label": "Salad Trộn",
-    "category": "SideDish",
-    "raw_labels": [
-      "Salad trộn"
-    ]
-  },
-  {
-    "canonical_label": "Salad Trứng",
-    "category": "SideDish",
-    "raw_labels": [
-      "Salad trứng"
-    ]
-  },
-  {
-    "canonical_label": "Salad Trứng Cà Chua",
-    "category": "SideDish",
-    "raw_labels": [
-      "Salad trứng cà chua"
+      "SALAD TRỘN DẦU DẤM"
     ]
   },
   {
@@ -12819,6 +15886,13 @@
     ]
   },
   {
+    "canonical_label": "Su Hào, Cà Rốt Xào",
+    "category": "SideDish",
+    "raw_labels": [
+      "Xu hào, cà rốt xào"
+    ]
+  },
+  {
     "canonical_label": "Sung Muối",
     "category": "SideDish",
     "raw_labels": [
@@ -12826,87 +15900,10 @@
     ]
   },
   {
-    "canonical_label": "Súp Lơ Hấp",
+    "canonical_label": "Sương Sáo",
     "category": "SideDish",
     "raw_labels": [
-      "Súp lơ hấp"
-    ]
-  },
-  {
-    "canonical_label": "Súp Lơ Luộc",
-    "category": "SideDish",
-    "raw_labels": [
-      "Súp lơ luộc"
-    ]
-  },
-  {
-    "canonical_label": "Súp Lơ Trắng Xào",
-    "category": "SideDish",
-    "raw_labels": [
-      "Súp lơ trắng xào"
-    ]
-  },
-  {
-    "canonical_label": "Súp Lơ Xanh Luộc",
-    "category": "SideDish",
-    "raw_labels": [
-      "Súp lơ xanh luộc"
-    ]
-  },
-  {
-    "canonical_label": "Súp Lơ Xanh Xào",
-    "category": "SideDish",
-    "raw_labels": [
-      "Súp lơ xanh xào"
-    ]
-  },
-  {
-    "canonical_label": "Súp Lơ Xanh và Cà Rốt Luộc",
-    "category": "SideDish",
-    "raw_labels": [
-      "Súp lơ xanh và cà rốt luộc"
-    ]
-  },
-  {
-    "canonical_label": "Súp Lơ Xào",
-    "category": "SideDish",
-    "raw_labels": [
-      "Súp lơ xào"
-    ]
-  },
-  {
-    "canonical_label": "Súp Lơ Xào Cà Rốt",
-    "category": "SideDish",
-    "raw_labels": [
-      "Súp lơ xào cà rốt"
-    ]
-  },
-  {
-    "canonical_label": "Súp Lơ và Cà Rốt Luộc",
-    "category": "SideDish",
-    "raw_labels": [
-      "Súp lơ và cà rốt luộc"
-    ]
-  },
-  {
-    "canonical_label": "Súp Lơ và Mướp Luộc",
-    "category": "SideDish",
-    "raw_labels": [
-      "Súp lơ và mướp luộc"
-    ]
-  },
-  {
-    "canonical_label": "Súp Lơ và Su Su Luộc",
-    "category": "SideDish",
-    "raw_labels": [
-      "Súp lơ và su su luộc"
-    ]
-  },
-  {
-    "canonical_label": "Súp Lơ, Cà Rốt Luộc",
-    "category": "SideDish",
-    "raw_labels": [
-      "Súp lơ, cà rốt luộc"
+      "Sương sáo"
     ]
   },
   {
@@ -12921,20 +15918,6 @@
     "category": "SideDish",
     "raw_labels": [
       "Sấu ngâm"
-    ]
-  },
-  {
-    "canonical_label": "Tai Heo Cuộn",
-    "category": "SideDish",
-    "raw_labels": [
-      "Tai heo cuộn"
-    ]
-  },
-  {
-    "canonical_label": "Tai Heo Luộc",
-    "category": "SideDish",
-    "raw_labels": [
-      "Tai heo luộc"
     ]
   },
   {
@@ -12959,6 +15942,13 @@
     ]
   },
   {
+    "canonical_label": "Thịt Heo Quay",
+    "category": "SideDish",
+    "raw_labels": [
+      "Heo quay"
+    ]
+  },
+  {
     "canonical_label": "Thịt Nguội",
     "category": "SideDish",
     "raw_labels": [
@@ -12966,38 +15956,46 @@
     ]
   },
   {
-    "canonical_label": "Tôm Chua",
+    "canonical_label": "Tiết Vịt Luộc",
     "category": "SideDish",
     "raw_labels": [
-      "Tôm chua"
+      "Tiết vịt luộc"
     ]
   },
   {
-    "canonical_label": "Tỏi Ngâm",
+    "canonical_label": "Trái Cây",
     "category": "SideDish",
     "raw_labels": [
-      "Tỏi ngâm"
+      "Trái cây",
+      "Đĩa trái cây"
     ]
   },
   {
-    "canonical_label": "Tỏi Nướng",
+    "canonical_label": "Tré",
     "category": "SideDish",
     "raw_labels": [
-      "Tỏi nướng"
+      "Tré"
     ]
   },
   {
-    "canonical_label": "Váng Đậu Rán",
+    "canonical_label": "Tóp Mỡ",
     "category": "SideDish",
     "raw_labels": [
-      "Váng đậu rán"
+      "Tóp mỡ"
     ]
   },
   {
-    "canonical_label": "Xoài Ngâm Mắm",
+    "canonical_label": "Tóp Mỡ Giòn Xóc Mắm Tỏi",
     "category": "SideDish",
     "raw_labels": [
-      "xoài ngâm mắm"
+      "Tóp mỡ giòn xóc mắm tỏi"
+    ]
+  },
+  {
+    "canonical_label": "Tóp Mỡ Rim",
+    "category": "SideDish",
+    "raw_labels": [
+      "Tóp mỡ rim"
     ]
   },
   {
@@ -13048,8 +16046,10 @@
     "category": "SideDish",
     "raw_labels": [
       "Fried tofu",
+      "ĐẬU RÁN",
       "Đậu hũ chiên",
-      "Đậu phụ chiên"
+      "Đậu phụ chiên",
+      "Đậu phụ rán"
     ]
   },
   {
@@ -13065,6 +16065,20 @@
     "raw_labels": [
       "Dưa góp",
       "Đồ chua"
+    ]
+  },
+  {
+    "canonical_label": "Bột Gia Vị",
+    "category": "Condiment",
+    "raw_labels": [
+      "Bột gia vị"
+    ]
+  },
+  {
+    "canonical_label": "Bột Ớt",
+    "category": "Condiment",
+    "raw_labels": [
+      "Bột ớt"
     ]
   },
   {
@@ -13092,7 +16106,8 @@
     "canonical_label": "Chẩm Chéo",
     "category": "Condiment",
     "raw_labels": [
-      "Chẩm chéo"
+      "Chẩm chéo",
+      "Chẩm chéo giã tươi"
     ]
   },
   {
@@ -13107,6 +16122,13 @@
     "category": "Condiment",
     "raw_labels": [
       "Dầu ớt giòn"
+    ]
+  },
+  {
+    "canonical_label": "Giấm",
+    "category": "Condiment",
+    "raw_labels": [
+      "Giấm"
     ]
   },
   {
@@ -13142,8 +16164,7 @@
     "canonical_label": "Kho Quẹt",
     "category": "Condiment",
     "raw_labels": [
-      "Kho quẹt",
-      "Thịt kho quẹt"
+      "Kho quẹt"
     ]
   },
   {
@@ -13221,7 +16242,8 @@
     "canonical_label": "Muối Ớt",
     "category": "Condiment",
     "raw_labels": [
-      "Muối ớt"
+      "Muối ớt",
+      "Nước chấm muối ớt"
     ]
   },
   {
@@ -13242,7 +16264,8 @@
     "canonical_label": "Mắm Nêm",
     "category": "Condiment",
     "raw_labels": [
-      "Mắm nêm"
+      "Mắm nêm",
+      "Nước mắm nêm"
     ]
   },
   {
@@ -13279,8 +16302,21 @@
     "category": "Condiment",
     "raw_labels": [
       "Nước chấm",
-      "Sốt chấm",
       "nước chấm"
+    ]
+  },
+  {
+    "canonical_label": "Nước Chấm Cay",
+    "category": "Condiment",
+    "raw_labels": [
+      "Nước chấm cay"
+    ]
+  },
+  {
+    "canonical_label": "Nước Chấm Tiêu Xanh",
+    "category": "Condiment",
+    "raw_labels": [
+      "Nước chấm tiêu xanh"
     ]
   },
   {
@@ -13295,7 +16331,9 @@
     "category": "Condiment",
     "raw_labels": [
       "Mắm",
+      "Nước mắ",
       "Nước mắm",
+      "Nước mắm chấm",
       "nước mắm",
       "nước nắm"
     ]
@@ -13308,24 +16346,18 @@
     ]
   },
   {
-    "canonical_label": "Nước Mắm Chua Cay Ngọt",
-    "category": "Condiment",
-    "raw_labels": [
-      "Nước mắm chua cay ngọt"
-    ]
-  },
-  {
     "canonical_label": "Nước Mắm Chua Ngọt",
     "category": "Condiment",
     "raw_labels": [
+      "Nước mắm chua cay ngọt",
       "Nước mắm chua ngọt"
     ]
   },
   {
-    "canonical_label": "Nước Mắm Chấm",
+    "canonical_label": "Nước Mắm Cá Cơm",
     "category": "Condiment",
     "raw_labels": [
-      "Nước mắm chấm"
+      "Nước mắm cá cơm"
     ]
   },
   {
@@ -13336,10 +16368,10 @@
     ]
   },
   {
-    "canonical_label": "Nước Mắm Nêm",
+    "canonical_label": "Nước Mắm Hành Tỏi Phi",
     "category": "Condiment",
     "raw_labels": [
-      "Nước mắm nêm"
+      "Nước mắm hành tỏi phi"
     ]
   },
   {
@@ -13360,13 +16392,15 @@
     "canonical_label": "Nước Mắm Tỏi Ớt",
     "category": "Condiment",
     "raw_labels": [
-      "Nước mắm tỏi ớt"
+      "Nước mắm tỏi ớt",
+      "Nước mắm ớt tỏi"
     ]
   },
   {
     "canonical_label": "Nước Mắm Ớt",
     "category": "Condiment",
     "raw_labels": [
+      "Mắm ớt",
       "Nước mắm ớt"
     ]
   },
@@ -13374,8 +16408,7 @@
     "canonical_label": "Nước Sốt",
     "category": "Condiment",
     "raw_labels": [
-      "Nước sốt",
-      "Nước xốt"
+      "Nước sốt"
     ]
   },
   {
@@ -13386,17 +16419,17 @@
     ]
   },
   {
-    "canonical_label": "Nước Sốt Chua Ngọt",
-    "category": "Condiment",
-    "raw_labels": [
-      "Nước xốt chua ngọt"
-    ]
-  },
-  {
     "canonical_label": "Nước Tương",
     "category": "Condiment",
     "raw_labels": [
       "Nước tương"
+    ]
+  },
+  {
+    "canonical_label": "Nước Tương Chấm",
+    "category": "Condiment",
+    "raw_labels": [
+      "Nước tương chấm"
     ]
   },
   {
@@ -13414,10 +16447,17 @@
     ]
   },
   {
-    "canonical_label": "Nước Tương Với Ớt",
+    "canonical_label": "Nước Tương với Ớt",
     "category": "Condiment",
     "raw_labels": [
       "Nước tương với ớt"
+    ]
+  },
+  {
+    "canonical_label": "Nước Tương Đậu Phộng",
+    "category": "Condiment",
+    "raw_labels": [
+      "Nước tương đậu phộng"
     ]
   },
   {
@@ -13425,6 +16465,20 @@
     "category": "Condiment",
     "raw_labels": [
       "Nước tương ớt"
+    ]
+  },
+  {
+    "canonical_label": "Nước Xốt",
+    "category": "Condiment",
+    "raw_labels": [
+      "Nước xốt"
+    ]
+  },
+  {
+    "canonical_label": "Nước Xốt Chua Ngọt",
+    "category": "Condiment",
+    "raw_labels": [
+      "Nước xốt chua ngọt"
     ]
   },
   {
@@ -13450,6 +16504,13 @@
     ]
   },
   {
+    "canonical_label": "Sốt Chấm",
+    "category": "Condiment",
+    "raw_labels": [
+      "Sốt chấm"
+    ]
+  },
+  {
     "canonical_label": "Sốt Cà Chua",
     "category": "Condiment",
     "raw_labels": [
@@ -13460,7 +16521,15 @@
     "canonical_label": "Sốt Mayonnaise",
     "category": "Condiment",
     "raw_labels": [
-      "Sốt mayonnaise"
+      "Sốt mayonnaise",
+      "Xốt mayonnaise"
+    ]
+  },
+  {
+    "canonical_label": "Sốt Mayonnaise và Tương Cà",
+    "category": "Condiment",
+    "raw_labels": [
+      "Sốt mayonnaise và tương cà"
     ]
   },
   {
@@ -13478,17 +16547,17 @@
     ]
   },
   {
+    "canonical_label": "Sốt Việt Quất",
+    "category": "Condiment",
+    "raw_labels": [
+      "Sốt việt quất"
+    ]
+  },
+  {
     "canonical_label": "Sốt Đậu Phộng",
     "category": "Condiment",
     "raw_labels": [
       "Sốt đậu phộng"
-    ]
-  },
-  {
-    "canonical_label": "Thảo Quả",
-    "category": "Condiment",
-    "raw_labels": [
-      "Thảo quả"
     ]
   },
   {
@@ -13566,31 +16635,53 @@
     ]
   },
   {
-    "canonical_label": "Tương Ớt và Mayonnaise",
+    "canonical_label": "Tương Ớt Và Mayonnaise",
     "category": "Condiment",
     "raw_labels": [
       "Tương ớt và mayonnaise"
     ]
   },
   {
-    "canonical_label": "Tương Ớt và Tương Cà",
+    "canonical_label": "Tương Ớt Và Tương Cà",
     "category": "Condiment",
     "raw_labels": [
       "Tương ớt và tương cà"
     ]
   },
   {
+    "canonical_label": "Tỏi Ngâm",
+    "category": "Condiment",
+    "raw_labels": [
+      "Tỏi ngâm"
+    ]
+  },
+  {
+    "canonical_label": "Tỏi Ớt",
+    "category": "Condiment",
+    "raw_labels": [
+      "Tỏi ớt"
+    ]
+  },
+  {
+    "canonical_label": "Tỏi Ớt Băm",
+    "category": "Condiment",
+    "raw_labels": [
+      "Tỏi ớt băm"
+    ]
+  },
+  {
     "canonical_label": "Tỏi Ớt Ngâm",
     "category": "Condiment",
     "raw_labels": [
+      "Tỏi  ớt ngâm",
       "Tỏi ớt ngâm"
     ]
   },
   {
-    "canonical_label": "Xốt Mayonnaise",
+    "canonical_label": "Xì Dầu Ớt",
     "category": "Condiment",
     "raw_labels": [
-      "Xốt mayonnaise"
+      "Xì dầu ớt"
     ]
   },
   {
@@ -13601,7 +16692,7 @@
     ]
   },
   {
-    "canonical_label": "Đường Mía",
+    "canonical_label": "Đường Mía Thô",
     "category": "Condiment",
     "raw_labels": [
       "Đường mía thô"
@@ -13647,6 +16738,13 @@
     "category": "Condiment",
     "raw_labels": [
       "Ớt sa tế"
+    ]
+  },
+  {
+    "canonical_label": "Ớt Xay",
+    "category": "Condiment",
+    "raw_labels": [
+      "Ớt xay"
     ]
   }
 ]

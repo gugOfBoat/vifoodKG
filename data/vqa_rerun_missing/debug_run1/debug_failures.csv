@@ -1,0 +1,1115 @@
+﻿image_id,qtype,fail_stage,detail
+image000001,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000001,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000001,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000001,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000001,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000001,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000001,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000001,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000001,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000006,,no_anchor_dish,"food_items=['Bún chả', 'Bún', 'Chả nướng', 'Rau sống', 'Lạc rang', 'Nước chấm']"
+image000011,,no_anchor_dish,"food_items=['Bún chả', 'Bún tươi', 'Chả nướng', 'Rau sống', 'Nước chấm']"
+image000014,,no_anchor_dish,"food_items=['Bún bò Huế', 'Rau sống', 'Chanh', 'Ớt', 'Hành tím', 'Tỏi', 'Chả', 'Xương bò hầm', 'Huyết', 'Thịt bò', 'Bún']"
+image000026,,no_anchor_dish,"food_items=['Canh cua mồng tơi mướp', 'Đậu phụ sốt cà chua', 'Thịt rang cháy cạnh', 'Nem chua', 'Cà pháo muối', 'Nước mắm tỏi ớt', 'Tương ớt']"
+image000029,food_pairings,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000029,flavor_profile,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000029,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000029,ingredient_category,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000029,ingredients,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000029,origin_locality,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000029,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000029,cooking_technique,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000029,dish_classification,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000034,flavor_profile,retrieve_empty,anchor_dish=Canh Măng Vịt; top_k=8
+image000034,dietary_restrictions,retrieve_empty,anchor_dish=Canh Măng Vịt; top_k=8
+image000034,food_pairings,retrieve_empty,anchor_dish=Canh Măng Vịt; top_k=8
+image000034,dish_classification,retrieve_empty,anchor_dish=Canh Măng Vịt; top_k=8
+image000034,ingredient_category,retrieve_empty,anchor_dish=Canh Măng Vịt; top_k=8
+image000034,cooking_technique,retrieve_empty,anchor_dish=Canh Măng Vịt; top_k=8
+image000034,allergen_restrictions,retrieve_empty,anchor_dish=Canh Măng Vịt; top_k=8
+image000034,ingredients,retrieve_empty,anchor_dish=Canh Măng Vịt; top_k=8
+image000034,origin_locality,retrieve_empty,anchor_dish=Canh Măng Vịt; top_k=8
+image000046,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000046,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000046,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000046,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000046,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000046,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000046,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000046,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000046,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000055,,no_anchor_dish,"food_items=['Vịt quay', 'Bún tươi', 'Bánh đa nem', 'Rau sống', 'Dưa chuột', 'Cà rốt', 'Dứa', 'Nước chấm']"
+image000058,allergen_restrictions,retrieve_empty,anchor_dish=Canh Ngao Nấu Cà Chua; top_k=8
+image000058,flavor_profile,retrieve_empty,anchor_dish=Canh Ngao Nấu Cà Chua; top_k=8
+image000058,cooking_technique,retrieve_empty,anchor_dish=Canh Ngao Nấu Cà Chua; top_k=8
+image000058,food_pairings,retrieve_empty,anchor_dish=Canh Ngao Nấu Cà Chua; top_k=8
+image000058,dish_classification,retrieve_empty,anchor_dish=Canh Ngao Nấu Cà Chua; top_k=8
+image000058,ingredient_category,retrieve_empty,anchor_dish=Canh Ngao Nấu Cà Chua; top_k=8
+image000058,ingredients,retrieve_empty,anchor_dish=Canh Ngao Nấu Cà Chua; top_k=8
+image000058,dietary_restrictions,retrieve_empty,anchor_dish=Canh Ngao Nấu Cà Chua; top_k=8
+image000058,origin_locality,retrieve_empty,anchor_dish=Canh Ngao Nấu Cà Chua; top_k=8
+image000079,flavor_profile,retrieve_empty,anchor_dish=Canh Khoai Sọ Nấu Xương; top_k=8
+image000079,ingredient_category,retrieve_empty,anchor_dish=Canh Khoai Sọ Nấu Xương; top_k=8
+image000079,cooking_technique,retrieve_empty,anchor_dish=Canh Khoai Sọ Nấu Xương; top_k=8
+image000079,food_pairings,retrieve_empty,anchor_dish=Canh Khoai Sọ Nấu Xương; top_k=8
+image000079,dish_classification,retrieve_empty,anchor_dish=Canh Khoai Sọ Nấu Xương; top_k=8
+image000079,origin_locality,retrieve_empty,anchor_dish=Canh Khoai Sọ Nấu Xương; top_k=8
+image000079,dietary_restrictions,retrieve_empty,anchor_dish=Canh Khoai Sọ Nấu Xương; top_k=8
+image000079,ingredients,retrieve_empty,anchor_dish=Canh Khoai Sọ Nấu Xương; top_k=8
+image000079,allergen_restrictions,retrieve_empty,anchor_dish=Canh Khoai Sọ Nấu Xương; top_k=8
+image000080,cooking_technique,retrieve_empty,anchor_dish=Xôi; top_k=8
+image000080,ingredients,retrieve_empty,anchor_dish=Xôi; top_k=8
+image000080,origin_locality,retrieve_empty,anchor_dish=Xôi; top_k=8
+image000080,flavor_profile,retrieve_empty,anchor_dish=Xôi; top_k=8
+image000080,food_pairings,retrieve_empty,anchor_dish=Xôi; top_k=8
+image000080,dietary_restrictions,retrieve_empty,anchor_dish=Xôi; top_k=8
+image000080,ingredient_category,retrieve_empty,anchor_dish=Xôi; top_k=8
+image000080,allergen_restrictions,retrieve_empty,anchor_dish=Xôi; top_k=8
+image000080,dish_classification,retrieve_empty,anchor_dish=Xôi; top_k=8
+image000102,,no_anchor_dish,"food_items=['Vịt quay', 'Bí đỏ xào tôm', 'Bắp cải luộc', 'Bò kho', 'Bưởi', 'Cà pháo']"
+image000106,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000106,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000106,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000106,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000106,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000106,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000106,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000106,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000106,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000121,,no_anchor_dish,"food_items=['Bún chả', 'Bún', 'Rau sống', 'Tỏi', 'Ớt', 'Tương ớt', 'Nước mắm']"
+image000128,ingredients,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000128,food_pairings,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000128,dish_classification,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000128,cooking_technique,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000128,flavor_profile,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000128,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000128,origin_locality,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000128,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000128,ingredient_category,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000139,,no_anchor_dish,"food_items=['Bún chả', 'Thịt nướng', 'Chả viên nướng', 'Nước chấm', 'Rau sống', 'Bún']"
+image000150,dish_classification,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000150,food_pairings,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000150,flavor_profile,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000150,cooking_technique,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000150,ingredients,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000150,ingredient_category,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000150,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000150,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000150,origin_locality,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000155,,no_anchor_dish,"food_items=['Canh cà chua trứng', 'Đậu phụ kho nấm', 'Mực xào dưa chuột', 'Cam']"
+image000166,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000166,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000166,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000166,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000166,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000166,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000166,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000166,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000166,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000174,,no_anchor_dish,"food_items=['Cơm trắng', 'Thịt heo nướng', 'Xà lách', 'Cà chua', 'Dưa leo', 'Đồ chua', 'Nước chấm']"
+image000190,allergen_restrictions,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image000190,dietary_restrictions,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image000190,cooking_technique,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image000190,food_pairings,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image000190,flavor_profile,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image000190,dish_classification,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image000190,ingredient_category,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image000190,origin_locality,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image000190,ingredients,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image000208,ingredients,retrieve_empty,anchor_dish=Canh Xương Khoai Tây; top_k=8
+image000208,ingredient_category,retrieve_empty,anchor_dish=Canh Xương Khoai Tây; top_k=8
+image000208,flavor_profile,retrieve_empty,anchor_dish=Canh Xương Khoai Tây; top_k=8
+image000208,allergen_restrictions,retrieve_empty,anchor_dish=Canh Xương Khoai Tây; top_k=8
+image000208,dish_classification,retrieve_empty,anchor_dish=Canh Xương Khoai Tây; top_k=8
+image000208,food_pairings,retrieve_empty,anchor_dish=Canh Xương Khoai Tây; top_k=8
+image000208,cooking_technique,retrieve_empty,anchor_dish=Canh Xương Khoai Tây; top_k=8
+image000208,dietary_restrictions,retrieve_empty,anchor_dish=Canh Xương Khoai Tây; top_k=8
+image000208,origin_locality,retrieve_empty,anchor_dish=Canh Xương Khoai Tây; top_k=8
+image000209,,no_anchor_dish,"food_items=['Rau củ quả luộc', 'Đậu rán', 'Ba chỉ nướng nổ bì', 'Cà pháo muối', 'Nước mắm tỏi ớt', 'Nước luộc']"
+image000210,,no_anchor_dish,"food_items=['Canh cua mồng tơi mướp', 'Cải thảo xào tỏi', 'Ba chỉ kho trám', 'Sung muối']"
+image000211,,no_anchor_dish,"food_items=['Canh cua mồng tơi', 'Gà xiên que', 'Bò xào giá', 'Cà pháo muối', 'Tương ớt', 'Sốt mayonnaise và tương cà']"
+image000213,ingredients,retrieve_empty,anchor_dish=Canh Ốc Chuối Đậu; top_k=8
+image000213,dietary_restrictions,retrieve_empty,anchor_dish=Canh Ốc Chuối Đậu; top_k=8
+image000213,origin_locality,retrieve_empty,anchor_dish=Canh Ốc Chuối Đậu; top_k=8
+image000213,dish_classification,retrieve_empty,anchor_dish=Canh Ốc Chuối Đậu; top_k=8
+image000213,food_pairings,retrieve_empty,anchor_dish=Canh Ốc Chuối Đậu; top_k=8
+image000213,ingredient_category,retrieve_empty,anchor_dish=Canh Ốc Chuối Đậu; top_k=8
+image000213,cooking_technique,retrieve_empty,anchor_dish=Canh Ốc Chuối Đậu; top_k=8
+image000213,allergen_restrictions,retrieve_empty,anchor_dish=Canh Ốc Chuối Đậu; top_k=8
+image000213,flavor_profile,retrieve_empty,anchor_dish=Canh Ốc Chuối Đậu; top_k=8
+image000228,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000228,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000228,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000228,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000228,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000228,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000228,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000228,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000228,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000229,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000229,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000229,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000229,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000229,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000229,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000229,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000229,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000229,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000236,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000236,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000236,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000236,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000236,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000236,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000236,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000236,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000236,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000240,food_pairings,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image000240,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image000240,flavor_profile,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image000240,ingredients,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image000240,ingredient_category,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image000240,dish_classification,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image000240,origin_locality,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image000240,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image000240,cooking_technique,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image000247,ingredient_category,no_candidates,anchor_dish=Cà Tím Kho; retrieved=1; filtered_rows=0; relations=[]
+image000247,origin_locality,no_candidates,anchor_dish=Cà Tím Kho; retrieved=1; filtered_rows=0; relations=[]
+image000247,dietary_restrictions,no_candidates,anchor_dish=Cà Tím Kho; retrieved=1; filtered_rows=0; relations=[]
+image000247,food_pairings,no_candidates,anchor_dish=Cà Tím Kho; retrieved=1; filtered_rows=0; relations=[]
+image000247,ingredients,no_candidates,anchor_dish=Cà Tím Kho; retrieved=1; filtered_rows=0; relations=[]
+image000247,allergen_restrictions,no_candidates,anchor_dish=Cà Tím Kho; retrieved=1; filtered_rows=0; relations=[]
+image000247,flavor_profile,no_candidates,anchor_dish=Cà Tím Kho; retrieved=1; filtered_rows=0; relations=[]
+image000247,dish_classification,no_candidates,anchor_dish=Cà Tím Kho; retrieved=1; filtered_rows=0; relations=[]
+image000254,dietary_restrictions,retrieve_empty,anchor_dish=Trứng Chiên Thái Sợi; top_k=8
+image000254,cooking_technique,retrieve_empty,anchor_dish=Trứng Chiên Thái Sợi; top_k=8
+image000254,ingredient_category,retrieve_empty,anchor_dish=Trứng Chiên Thái Sợi; top_k=8
+image000254,food_pairings,retrieve_empty,anchor_dish=Trứng Chiên Thái Sợi; top_k=8
+image000254,origin_locality,retrieve_empty,anchor_dish=Trứng Chiên Thái Sợi; top_k=8
+image000254,dish_classification,retrieve_empty,anchor_dish=Trứng Chiên Thái Sợi; top_k=8
+image000254,allergen_restrictions,retrieve_empty,anchor_dish=Trứng Chiên Thái Sợi; top_k=8
+image000254,ingredients,retrieve_empty,anchor_dish=Trứng Chiên Thái Sợi; top_k=8
+image000254,flavor_profile,retrieve_empty,anchor_dish=Trứng Chiên Thái Sợi; top_k=8
+image000277,,no_anchor_dish,"food_items=['Dồi sụn nướng', 'Canh cà chua', 'Đậu cô ve luộc', 'Dưa chuột', 'Rau sống', 'Nước chấm tỏi ớt']"
+image000287,,no_anchor_dish,"food_items=['Cơm trắng', 'Cá kho tộ', 'Bông bí xào', 'Canh cua mướp mồng tơi', 'Cà pháo muối', 'Nước lọc']"
+image000294,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000294,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000294,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000294,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000294,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000294,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000294,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000294,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000294,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000298,,no_anchor_dish,"food_items=['Bò lúc lắc', 'Canh cà chua', 'Salad rau mầm', 'Cuốn tôm thịt', 'Trái cây', 'Nước chấm']"
+image000305,,no_anchor_dish,"food_items=['Bún chả giò', 'Củ kiệu', 'Đậu phộng rang', 'Nước mắm']"
+image000308,,no_anchor_dish,"food_items=['Bún chả', 'Bún', 'Thịt nướng', 'Nước chấm', 'Rau sống', 'Tỏi', 'Ớt']"
+image000319,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000319,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000319,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000319,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000319,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000319,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000319,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000319,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000319,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000328,,no_anchor_dish,"food_items=['Bún chả', 'Bún', 'Thịt nướng', 'Nước chấm', 'Rau sống', 'Chanh', 'Ớt']"
+image000336,ingredients,retrieve_empty,anchor_dish=Canh Mướp Mồng Tơi; top_k=8
+image000336,allergen_restrictions,retrieve_empty,anchor_dish=Canh Mướp Mồng Tơi; top_k=8
+image000336,cooking_technique,retrieve_empty,anchor_dish=Canh Mướp Mồng Tơi; top_k=8
+image000336,ingredient_category,retrieve_empty,anchor_dish=Canh Mướp Mồng Tơi; top_k=8
+image000336,food_pairings,retrieve_empty,anchor_dish=Canh Mướp Mồng Tơi; top_k=8
+image000336,flavor_profile,retrieve_empty,anchor_dish=Canh Mướp Mồng Tơi; top_k=8
+image000336,dietary_restrictions,retrieve_empty,anchor_dish=Canh Mướp Mồng Tơi; top_k=8
+image000336,dish_classification,retrieve_empty,anchor_dish=Canh Mướp Mồng Tơi; top_k=8
+image000336,origin_locality,retrieve_empty,anchor_dish=Canh Mướp Mồng Tơi; top_k=8
+image000342,,no_anchor_dish,"food_items=['Bánh khọt', 'Rau sống', 'Đu đủ bào']"
+image000344,ingredient_category,retrieve_empty,anchor_dish=Cá Hồi Áp Chảo; top_k=8
+image000344,food_pairings,retrieve_empty,anchor_dish=Cá Hồi Áp Chảo; top_k=8
+image000344,allergen_restrictions,retrieve_empty,anchor_dish=Cá Hồi Áp Chảo; top_k=8
+image000344,dietary_restrictions,retrieve_empty,anchor_dish=Cá Hồi Áp Chảo; top_k=8
+image000344,flavor_profile,retrieve_empty,anchor_dish=Cá Hồi Áp Chảo; top_k=8
+image000344,ingredients,retrieve_empty,anchor_dish=Cá Hồi Áp Chảo; top_k=8
+image000344,dish_classification,retrieve_empty,anchor_dish=Cá Hồi Áp Chảo; top_k=8
+image000344,origin_locality,retrieve_empty,anchor_dish=Cá Hồi Áp Chảo; top_k=8
+image000344,cooking_technique,retrieve_empty,anchor_dish=Cá Hồi Áp Chảo; top_k=8
+image000350,,no_anchor_dish,food_items=['Bò lúc lắc']
+image000352,,no_anchor_dish,"food_items=['Bún riêu', 'Rau sống', 'Chanh', 'Ớt']"
+image000357,,no_anchor_dish,"food_items=['Mì Quảng khô', 'Gà kho', 'Rau sống', 'Đậu phộng']"
+image000371,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000371,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000371,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000371,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000371,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000371,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000371,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000371,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000371,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000384,,no_anchor_dish,"food_items=['Bún bò Huế', 'Xoài bào', 'Tắc', 'Ớt', 'Rau sống', 'Bún thịt nướng chả giò', 'Nước mắm tỏi ớt']"
+image000392,dish_classification,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000392,ingredient_category,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000392,ingredients,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000392,origin_locality,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000392,flavor_profile,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000392,food_pairings,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000392,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000392,cooking_technique,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000392,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000428,,no_anchor_dish,"food_items=['Canh cua nấu rau', 'Giò lụa', 'Cà pháo', 'Súp lơ xanh luộc', 'Lạc rang muối']"
+image000444,allergen_restrictions,retrieve_empty,anchor_dish=Cá Hồi Áp Chảo; top_k=8
+image000444,flavor_profile,retrieve_empty,anchor_dish=Cá Hồi Áp Chảo; top_k=8
+image000444,ingredients,retrieve_empty,anchor_dish=Cá Hồi Áp Chảo; top_k=8
+image000444,cooking_technique,retrieve_empty,anchor_dish=Cá Hồi Áp Chảo; top_k=8
+image000444,dietary_restrictions,retrieve_empty,anchor_dish=Cá Hồi Áp Chảo; top_k=8
+image000444,dish_classification,retrieve_empty,anchor_dish=Cá Hồi Áp Chảo; top_k=8
+image000444,ingredient_category,retrieve_empty,anchor_dish=Cá Hồi Áp Chảo; top_k=8
+image000444,origin_locality,retrieve_empty,anchor_dish=Cá Hồi Áp Chảo; top_k=8
+image000444,food_pairings,retrieve_empty,anchor_dish=Cá Hồi Áp Chảo; top_k=8
+image000457,cooking_technique,retrieve_empty,anchor_dish=Trứng Chiên Lá Hẹ; top_k=8
+image000457,allergen_restrictions,retrieve_empty,anchor_dish=Trứng Chiên Lá Hẹ; top_k=8
+image000457,flavor_profile,retrieve_empty,anchor_dish=Trứng Chiên Lá Hẹ; top_k=8
+image000457,ingredients,retrieve_empty,anchor_dish=Trứng Chiên Lá Hẹ; top_k=8
+image000457,food_pairings,retrieve_empty,anchor_dish=Trứng Chiên Lá Hẹ; top_k=8
+image000457,dish_classification,retrieve_empty,anchor_dish=Trứng Chiên Lá Hẹ; top_k=8
+image000457,origin_locality,retrieve_empty,anchor_dish=Trứng Chiên Lá Hẹ; top_k=8
+image000457,dietary_restrictions,retrieve_empty,anchor_dish=Trứng Chiên Lá Hẹ; top_k=8
+image000457,ingredient_category,retrieve_empty,anchor_dish=Trứng Chiên Lá Hẹ; top_k=8
+image000462,origin_locality,retrieve_empty,anchor_dish=Chân Gà Luộc; top_k=8
+image000462,food_pairings,retrieve_empty,anchor_dish=Chân Gà Luộc; top_k=8
+image000462,allergen_restrictions,retrieve_empty,anchor_dish=Chân Gà Luộc; top_k=8
+image000462,cooking_technique,retrieve_empty,anchor_dish=Chân Gà Luộc; top_k=8
+image000462,dish_classification,retrieve_empty,anchor_dish=Chân Gà Luộc; top_k=8
+image000462,flavor_profile,retrieve_empty,anchor_dish=Chân Gà Luộc; top_k=8
+image000462,dietary_restrictions,retrieve_empty,anchor_dish=Chân Gà Luộc; top_k=8
+image000462,ingredient_category,retrieve_empty,anchor_dish=Chân Gà Luộc; top_k=8
+image000462,ingredients,retrieve_empty,anchor_dish=Chân Gà Luộc; top_k=8
+image000466,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000466,ingredients,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000466,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000466,flavor_profile,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000466,ingredient_category,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000466,origin_locality,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000466,cooking_technique,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000466,food_pairings,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000466,dish_classification,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000471,,no_anchor_dish,"food_items=['Canh cà chua', 'Cà pháo', 'Bắp cải luộc', 'Thịt rang', 'Nem chua', 'Nước mắm']"
+image000497,,no_anchor_dish,"food_items=['Ớt chuông', 'Rau thơm', 'Chanh', 'Nước chấm', 'Đậu phụ chiên', 'Đậu phộng', 'Dưa chuột', 'Cà rốt']"
+image000563,,no_anchor_dish,"food_items=['Bún', 'Chả nướng', 'Nước chấm', 'Rau sống', 'Ớt', 'Tỏi']"
+image000566,dish_classification,retrieve_empty,anchor_dish=Cá Cơm Rim; top_k=8
+image000566,origin_locality,retrieve_empty,anchor_dish=Cá Cơm Rim; top_k=8
+image000566,flavor_profile,retrieve_empty,anchor_dish=Cá Cơm Rim; top_k=8
+image000566,dietary_restrictions,retrieve_empty,anchor_dish=Cá Cơm Rim; top_k=8
+image000566,ingredients,retrieve_empty,anchor_dish=Cá Cơm Rim; top_k=8
+image000566,allergen_restrictions,retrieve_empty,anchor_dish=Cá Cơm Rim; top_k=8
+image000566,ingredient_category,retrieve_empty,anchor_dish=Cá Cơm Rim; top_k=8
+image000566,food_pairings,retrieve_empty,anchor_dish=Cá Cơm Rim; top_k=8
+image000566,cooking_technique,retrieve_empty,anchor_dish=Cá Cơm Rim; top_k=8
+image000568,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000568,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000568,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000568,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000568,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000568,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000568,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000568,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000568,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image000569,,no_anchor_dish,"food_items=['Canh chân giò hầm ngô, bí đỏ', 'Tôm rang', 'Gan heo xào đỗ', 'Cơm trắng', 'Nước mắm ớt']"
+image000574,,no_anchor_dish,"food_items=['Bún riêu', 'Bún tươi', 'Riêu cua', 'Rau sống', 'Nước chấm']"
+image000579,,no_anchor_dish,"food_items=['Canh cải thịt bằm', 'Dưa chuột', 'Bắp cải xào thịt', 'Đậu phụ rán', 'Nước mắm tỏi ớt']"
+image000592,,no_anchor_dish,"food_items=['Bún thịt quay', 'Nước chấm', 'Hành phi', 'Đậu phộng', 'Rau sống', 'Hành tím', 'Ớt']"
+image000614,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000614,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000614,cooking_technique,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000614,food_pairings,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000614,ingredient_category,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000614,dish_classification,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000614,origin_locality,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000614,flavor_profile,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000614,ingredients,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000638,origin_locality,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000638,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000638,ingredients,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000638,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000638,flavor_profile,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000638,dish_classification,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000638,cooking_technique,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000638,food_pairings,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000638,ingredient_category,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000645,,no_anchor_dish,"food_items=['Bánh hỏi', 'Bò lá lốt', 'Rau sống', 'Đậu phộng']"
+image000651,,no_anchor_dish,"food_items=['Bún chả', 'Bún', 'Thịt nướng', 'Rau sống', 'Tỏi', 'Ớt', 'Nước mắ']"
+image000678,,no_anchor_dish,"food_items=['Bún chả', 'Bún', 'Thịt nướng', 'Rau sống', 'Nước mắm ớt']"
+image000683,dish_classification,retrieve_empty,anchor_dish=Chả Trứng Hấp; top_k=8
+image000683,flavor_profile,retrieve_empty,anchor_dish=Chả Trứng Hấp; top_k=8
+image000683,ingredient_category,retrieve_empty,anchor_dish=Chả Trứng Hấp; top_k=8
+image000683,cooking_technique,retrieve_empty,anchor_dish=Chả Trứng Hấp; top_k=8
+image000683,origin_locality,retrieve_empty,anchor_dish=Chả Trứng Hấp; top_k=8
+image000683,allergen_restrictions,retrieve_empty,anchor_dish=Chả Trứng Hấp; top_k=8
+image000683,food_pairings,retrieve_empty,anchor_dish=Chả Trứng Hấp; top_k=8
+image000683,ingredients,retrieve_empty,anchor_dish=Chả Trứng Hấp; top_k=8
+image000683,dietary_restrictions,retrieve_empty,anchor_dish=Chả Trứng Hấp; top_k=8
+image000699,,no_anchor_dish,"food_items=['Cơm cháy chả cá', 'Dưa leo', 'Cà chua', 'Xà lách', 'Rau thơm']"
+image000704,,no_anchor_dish,"food_items=['Lẩu Thái', 'Tôm', 'Ngao', 'Thịt bò', 'Ba chỉ bò', 'Đậu hũ', 'Nấm', 'Bắp', 'Cà rốt', 'Rau sống']"
+image000708,ingredient_category,retrieve_empty,anchor_dish=Cánh Gà Nướng; top_k=8
+image000708,dish_classification,retrieve_empty,anchor_dish=Cánh Gà Nướng; top_k=8
+image000708,dietary_restrictions,retrieve_empty,anchor_dish=Cánh Gà Nướng; top_k=8
+image000708,origin_locality,retrieve_empty,anchor_dish=Cánh Gà Nướng; top_k=8
+image000708,food_pairings,retrieve_empty,anchor_dish=Cánh Gà Nướng; top_k=8
+image000708,ingredients,retrieve_empty,anchor_dish=Cánh Gà Nướng; top_k=8
+image000708,allergen_restrictions,retrieve_empty,anchor_dish=Cánh Gà Nướng; top_k=8
+image000708,cooking_technique,retrieve_empty,anchor_dish=Cánh Gà Nướng; top_k=8
+image000708,flavor_profile,retrieve_empty,anchor_dish=Cánh Gà Nướng; top_k=8
+image000709,ingredient_category,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image000709,food_pairings,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image000709,flavor_profile,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image000709,allergen_restrictions,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image000709,dietary_restrictions,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image000709,origin_locality,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image000709,cooking_technique,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image000709,ingredients,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image000715,ingredients,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000715,dish_classification,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000715,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000715,ingredient_category,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000715,cooking_technique,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000715,food_pairings,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000715,flavor_profile,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000715,origin_locality,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000715,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000727,,no_anchor_dish,"food_items=['Bánh bột lọc', 'Nước mắm', 'Mỡ hành']"
+image000728,,no_anchor_dish,"food_items=['Bánh tráng cuốn thịt heo', 'Thịt chân giò luộc', 'Bánh tráng', 'Xà lách', 'Rau thơm', 'Giá đỗ', 'Cà rốt', 'Dưa leo', 'Dứa', 'Nước mắm nêm', 'Quất']"
+image000731,,no_anchor_dish,"food_items=['Bún bò Huế', 'Chanh', 'Rau sống', 'Cà chua']"
+image000732,,no_anchor_dish,"food_items=['Bún bò Huế', 'Rau sống', 'Giá đỗ', 'Chanh', 'Cà chua', 'Hành lá', 'Ớt', 'Sa tế', 'Dầu ăn']"
+image000735,dish_classification,retrieve_empty,anchor_dish=Cá Hồi Nướng; top_k=8
+image000735,flavor_profile,retrieve_empty,anchor_dish=Cá Hồi Nướng; top_k=8
+image000735,ingredient_category,retrieve_empty,anchor_dish=Cá Hồi Nướng; top_k=8
+image000735,food_pairings,retrieve_empty,anchor_dish=Cá Hồi Nướng; top_k=8
+image000735,dietary_restrictions,retrieve_empty,anchor_dish=Cá Hồi Nướng; top_k=8
+image000735,allergen_restrictions,retrieve_empty,anchor_dish=Cá Hồi Nướng; top_k=8
+image000735,origin_locality,retrieve_empty,anchor_dish=Cá Hồi Nướng; top_k=8
+image000735,ingredients,retrieve_empty,anchor_dish=Cá Hồi Nướng; top_k=8
+image000735,cooking_technique,retrieve_empty,anchor_dish=Cá Hồi Nướng; top_k=8
+image000737,,no_anchor_dish,"food_items=['Bún', 'Bò lá lốt', 'Rau sống', 'Nước chấm', 'Đồ chua', 'Tỏi băm', 'Ớt băm', 'Lạc rang']"
+image000752,,no_anchor_dish,"food_items=['Thịt rang cháy cạnh', 'Xà lách', 'Nước mắm ớt']"
+image000780,,no_anchor_dish,"food_items=['Bún chả', 'Chả nướng', 'Bún', 'Rau sống', 'Dưa góp']"
+image000810,,no_anchor_dish,"food_items=['Bún cá', 'Rau sống', 'Nước mắm']"
+image000820,food_pairings,retrieve_empty,anchor_dish=Vịt Kho Gừng; top_k=8
+image000820,dietary_restrictions,retrieve_empty,anchor_dish=Vịt Kho Gừng; top_k=8
+image000820,origin_locality,retrieve_empty,anchor_dish=Vịt Kho Gừng; top_k=8
+image000820,ingredient_category,retrieve_empty,anchor_dish=Vịt Kho Gừng; top_k=8
+image000820,ingredients,retrieve_empty,anchor_dish=Vịt Kho Gừng; top_k=8
+image000820,flavor_profile,retrieve_empty,anchor_dish=Vịt Kho Gừng; top_k=8
+image000820,cooking_technique,retrieve_empty,anchor_dish=Vịt Kho Gừng; top_k=8
+image000820,allergen_restrictions,retrieve_empty,anchor_dish=Vịt Kho Gừng; top_k=8
+image000820,dish_classification,retrieve_empty,anchor_dish=Vịt Kho Gừng; top_k=8
+image000828,,no_anchor_dish,"food_items=['Lạc rang', 'Mướp đắng', 'Chân giò', 'Dưa chuột', 'Canh', 'Cá nướng', 'Nho']"
+image000831,origin_locality,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000831,cooking_technique,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000831,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000831,ingredients,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000831,dish_classification,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000831,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000831,ingredient_category,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000831,food_pairings,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000831,flavor_profile,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000832,allergen_restrictions,retrieve_empty,anchor_dish=Cá Chiên Sốt Cà Chua; top_k=8
+image000832,ingredient_category,retrieve_empty,anchor_dish=Cá Chiên Sốt Cà Chua; top_k=8
+image000832,origin_locality,retrieve_empty,anchor_dish=Cá Chiên Sốt Cà Chua; top_k=8
+image000832,dish_classification,retrieve_empty,anchor_dish=Cá Chiên Sốt Cà Chua; top_k=8
+image000832,dietary_restrictions,retrieve_empty,anchor_dish=Cá Chiên Sốt Cà Chua; top_k=8
+image000832,ingredients,retrieve_empty,anchor_dish=Cá Chiên Sốt Cà Chua; top_k=8
+image000832,food_pairings,retrieve_empty,anchor_dish=Cá Chiên Sốt Cà Chua; top_k=8
+image000832,flavor_profile,retrieve_empty,anchor_dish=Cá Chiên Sốt Cà Chua; top_k=8
+image000832,cooking_technique,retrieve_empty,anchor_dish=Cá Chiên Sốt Cà Chua; top_k=8
+image000837,,no_anchor_dish,"food_items=['Thịt rán lá chanh', 'Dưa cải giá muối xổi', 'Canh cua mồng tơi', 'Cà muối', 'Măng cụt']"
+image000839,allergen_restrictions,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image000839,ingredients,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image000839,ingredient_category,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image000839,dish_classification,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image000839,flavor_profile,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image000839,food_pairings,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image000839,cooking_technique,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image000839,dietary_restrictions,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image000839,origin_locality,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image000840,dietary_restrictions,retrieve_empty,anchor_dish=Cá Hồi Sốt; top_k=8
+image000840,origin_locality,retrieve_empty,anchor_dish=Cá Hồi Sốt; top_k=8
+image000840,dish_classification,retrieve_empty,anchor_dish=Cá Hồi Sốt; top_k=8
+image000840,allergen_restrictions,retrieve_empty,anchor_dish=Cá Hồi Sốt; top_k=8
+image000840,ingredients,retrieve_empty,anchor_dish=Cá Hồi Sốt; top_k=8
+image000840,flavor_profile,retrieve_empty,anchor_dish=Cá Hồi Sốt; top_k=8
+image000840,food_pairings,retrieve_empty,anchor_dish=Cá Hồi Sốt; top_k=8
+image000840,ingredient_category,retrieve_empty,anchor_dish=Cá Hồi Sốt; top_k=8
+image000840,cooking_technique,retrieve_empty,anchor_dish=Cá Hồi Sốt; top_k=8
+image000846,,no_anchor_dish,"food_items=['Cà chua nhồi thịt', 'Đậu phụ chiên', 'Bắp cải luộc', 'Cơm gạo lứt', 'Đu đủ', 'Nước xốt']"
+image000852,cooking_technique,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000852,ingredients,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000852,food_pairings,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000852,ingredient_category,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000852,dish_classification,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000852,origin_locality,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000852,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000852,flavor_profile,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000852,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image000858,,no_anchor_dish,"food_items=['Tôm nướng', 'Rau sống', 'Muối ớt', 'Chanh', 'Ớt', 'Rượu']"
+image000884,,no_anchor_dish,"food_items=['Bún chả', 'Bún', 'Thịt nướng', 'Rau sống', 'Quất', 'Ớt']"
+image000902,,no_anchor_dish,"food_items=['Bún', 'Rau sống', 'Nước chấm', 'Tương ớt', 'Bún trộn', 'Món hầm', 'Chanh']"
+image000926,,no_anchor_dish,"food_items=['Thịt nướng', 'Kimchi', 'Trứng gà', 'Cua', 'Tôm mũ ni', 'Xà lách', 'Ớt chuông', 'Thịt bò', 'Thịt heo', 'Xúc xích', 'Nước chấm']"
+image000932,flavor_profile,no_candidates,anchor_dish=Cua Hấp; retrieved=1; filtered_rows=0; relations=[]
+image000932,origin_locality,no_candidates,anchor_dish=Cua Hấp; retrieved=1; filtered_rows=0; relations=[]
+image000932,ingredient_category,no_candidates,anchor_dish=Cua Hấp; retrieved=1; filtered_rows=0; relations=[]
+image000932,ingredients,no_candidates,anchor_dish=Cua Hấp; retrieved=1; filtered_rows=0; relations=[]
+image000932,allergen_restrictions,no_candidates,anchor_dish=Cua Hấp; retrieved=1; filtered_rows=0; relations=[]
+image000932,food_pairings,no_candidates,anchor_dish=Cua Hấp; retrieved=1; filtered_rows=0; relations=[]
+image000932,dietary_restrictions,no_candidates,anchor_dish=Cua Hấp; retrieved=1; filtered_rows=0; relations=[]
+image000932,dish_classification,no_candidates,anchor_dish=Cua Hấp; retrieved=1; filtered_rows=0; relations=[]
+image000933,allergen_restrictions,retrieve_empty,anchor_dish=Xôi; top_k=8
+image000933,origin_locality,retrieve_empty,anchor_dish=Xôi; top_k=8
+image000933,cooking_technique,retrieve_empty,anchor_dish=Xôi; top_k=8
+image000933,dish_classification,retrieve_empty,anchor_dish=Xôi; top_k=8
+image000933,dietary_restrictions,retrieve_empty,anchor_dish=Xôi; top_k=8
+image000933,food_pairings,retrieve_empty,anchor_dish=Xôi; top_k=8
+image000933,ingredients,retrieve_empty,anchor_dish=Xôi; top_k=8
+image000933,flavor_profile,retrieve_empty,anchor_dish=Xôi; top_k=8
+image000933,ingredient_category,retrieve_empty,anchor_dish=Xôi; top_k=8
+image000972,,no_anchor_dish,"food_items=['Cơm trắng', 'Canh bí xanh', 'Món xào', 'Rau sống', 'Nước mắm']"
+image000974,,no_anchor_dish,"food_items=['Bún chả', 'Bún', 'Thịt nướng', 'Rau sống', 'Dưa leo']"
+image000977,dietary_restrictions,retrieve_empty,anchor_dish=Canh Mọc Nấu Nấm; top_k=8
+image000977,ingredient_category,retrieve_empty,anchor_dish=Canh Mọc Nấu Nấm; top_k=8
+image000977,ingredients,retrieve_empty,anchor_dish=Canh Mọc Nấu Nấm; top_k=8
+image000977,food_pairings,retrieve_empty,anchor_dish=Canh Mọc Nấu Nấm; top_k=8
+image000977,dish_classification,retrieve_empty,anchor_dish=Canh Mọc Nấu Nấm; top_k=8
+image000977,allergen_restrictions,retrieve_empty,anchor_dish=Canh Mọc Nấu Nấm; top_k=8
+image000977,flavor_profile,retrieve_empty,anchor_dish=Canh Mọc Nấu Nấm; top_k=8
+image000977,cooking_technique,retrieve_empty,anchor_dish=Canh Mọc Nấu Nấm; top_k=8
+image000977,origin_locality,retrieve_empty,anchor_dish=Canh Mọc Nấu Nấm; top_k=8
+image001000,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001000,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001000,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001000,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001000,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001000,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001000,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001000,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001000,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001019,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001019,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001019,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001019,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001019,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001019,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001019,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001019,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001019,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001024,cooking_technique,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001024,dietary_restrictions,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001024,ingredients,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001024,allergen_restrictions,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001024,flavor_profile,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001024,food_pairings,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001024,ingredient_category,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001024,dish_classification,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001024,origin_locality,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001050,ingredient_category,retrieve_empty,anchor_dish=Canh Lòng Gà Nấu Giá Đỗ; top_k=8
+image001050,allergen_restrictions,retrieve_empty,anchor_dish=Canh Lòng Gà Nấu Giá Đỗ; top_k=8
+image001050,cooking_technique,retrieve_empty,anchor_dish=Canh Lòng Gà Nấu Giá Đỗ; top_k=8
+image001050,dish_classification,retrieve_empty,anchor_dish=Canh Lòng Gà Nấu Giá Đỗ; top_k=8
+image001050,dietary_restrictions,retrieve_empty,anchor_dish=Canh Lòng Gà Nấu Giá Đỗ; top_k=8
+image001050,flavor_profile,retrieve_empty,anchor_dish=Canh Lòng Gà Nấu Giá Đỗ; top_k=8
+image001050,food_pairings,retrieve_empty,anchor_dish=Canh Lòng Gà Nấu Giá Đỗ; top_k=8
+image001050,origin_locality,retrieve_empty,anchor_dish=Canh Lòng Gà Nấu Giá Đỗ; top_k=8
+image001050,ingredients,retrieve_empty,anchor_dish=Canh Lòng Gà Nấu Giá Đỗ; top_k=8
+image001102,,no_anchor_dish,"food_items=['Bánh khọt', 'Rau sống', 'Đồ chua', 'Nước mắm']"
+image001103,,no_anchor_dish,"food_items=['Bánh khọt', 'Rau sống', 'Nước mắm', 'Đồ chua']"
+image001105,,no_anchor_dish,"food_items=['Bánh mì xíu mại', 'Bánh mì thịt bò', 'Bánh mì chả lụa', 'Bánh mì thịt']"
+image001110,,no_anchor_dish,"food_items=['Bánh bột lọc', 'Bánh ram ít', 'Bánh nậm']"
+image001114,,no_anchor_dish,"food_items=['Bánh khọt', 'Rau sống', 'Nước mắm chua ngọt']"
+image001119,,no_anchor_dish,"food_items=['Bún', 'Thịt nướng', 'Rau sống', 'Ớt', 'Bún chả']"
+image001121,,no_anchor_dish,"food_items=['Tôm rang thịt ba chỉ', 'Canh bầu', 'Cà pháo muối']"
+image001149,food_pairings,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001149,cooking_technique,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001149,origin_locality,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001149,ingredients,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001149,flavor_profile,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001149,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001149,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001149,ingredient_category,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001149,dish_classification,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001156,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001156,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001156,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001156,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001156,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001156,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001156,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001156,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001156,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001167,,no_anchor_dish,"food_items=['Vịt quay', 'Canh dưa chua', 'Trứng rán', 'Dưa chuột', 'Măng cụt', 'Nước chấm']"
+image001173,dish_classification,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001173,dietary_restrictions,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001173,ingredients,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001173,flavor_profile,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001173,food_pairings,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001173,allergen_restrictions,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001173,origin_locality,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001173,cooking_technique,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001173,ingredient_category,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001178,,no_anchor_dish,"food_items=['Thịt lợn nướng', 'Canh cua mồng tơi', 'Dưa cà']"
+image001183,,no_anchor_dish,"food_items=['Đậu nhồi thịt', 'Canh nghêu bầu', 'Rau muống chua ngọt']"
+image001189,,no_anchor_dish,"food_items=['Cơm trắng', 'Súp lơ xanh', 'Thịt thái lát', 'Tôm xào', 'Món xào']"
+image001200,,no_anchor_dish,"food_items=['Bún bò Huế', 'Rau sống', 'Chanh', 'Hành lá', 'Ớt', 'Sa tế']"
+image001201,,no_anchor_dish,"food_items=['Bún bò Huế', 'Rau sống', 'Ớt chưng']"
+image001204,,no_anchor_dish,"food_items=['Bún chả', 'Bún', 'Chả nướng', 'Nước mắm', 'Rau sống']"
+image001205,,no_anchor_dish,"food_items=['Bún chả', 'Bún', 'Chả nướng', 'Rau sống', 'Nước chấm']"
+image001208,,no_anchor_dish,"food_items=['Bún chả', 'Rau sống', 'Tỏi ớt băm', 'Nước chấm']"
+image001219,,no_anchor_dish,"food_items=['Giò tai', 'Ruốc tôm nấu chua', 'Canh cua rau đay mướp', 'Cà muối', 'Nước chấm']"
+image001225,allergen_restrictions,retrieve_empty,anchor_dish=Canh Măng Vịt; top_k=8
+image001225,cooking_technique,retrieve_empty,anchor_dish=Canh Măng Vịt; top_k=8
+image001225,dietary_restrictions,retrieve_empty,anchor_dish=Canh Măng Vịt; top_k=8
+image001225,ingredient_category,retrieve_empty,anchor_dish=Canh Măng Vịt; top_k=8
+image001225,dish_classification,retrieve_empty,anchor_dish=Canh Măng Vịt; top_k=8
+image001225,food_pairings,retrieve_empty,anchor_dish=Canh Măng Vịt; top_k=8
+image001225,flavor_profile,retrieve_empty,anchor_dish=Canh Măng Vịt; top_k=8
+image001225,origin_locality,retrieve_empty,anchor_dish=Canh Măng Vịt; top_k=8
+image001225,ingredients,retrieve_empty,anchor_dish=Canh Măng Vịt; top_k=8
+image001233,ingredients,retrieve_empty,anchor_dish=Thịt Kho Gừng; top_k=8
+image001233,ingredient_category,retrieve_empty,anchor_dish=Thịt Kho Gừng; top_k=8
+image001233,dish_classification,retrieve_empty,anchor_dish=Thịt Kho Gừng; top_k=8
+image001233,dietary_restrictions,retrieve_empty,anchor_dish=Thịt Kho Gừng; top_k=8
+image001233,origin_locality,retrieve_empty,anchor_dish=Thịt Kho Gừng; top_k=8
+image001233,flavor_profile,retrieve_empty,anchor_dish=Thịt Kho Gừng; top_k=8
+image001233,food_pairings,retrieve_empty,anchor_dish=Thịt Kho Gừng; top_k=8
+image001233,allergen_restrictions,retrieve_empty,anchor_dish=Thịt Kho Gừng; top_k=8
+image001233,cooking_technique,retrieve_empty,anchor_dish=Thịt Kho Gừng; top_k=8
+image001235,ingredients,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001235,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001235,food_pairings,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001235,ingredient_category,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001235,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001235,origin_locality,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001235,cooking_technique,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001235,flavor_profile,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001235,dish_classification,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001238,,no_anchor_dish,"food_items=['Tôm luộc nước dừa', 'Sườn que nướng BBQ', 'Tim gà xào ớt chuông', 'Canh bắp cải', 'Kim chi', 'Rau mầm']"
+image001242,food_pairings,retrieve_empty,anchor_dish=Cá Hấp Hồng Kông; top_k=8
+image001242,allergen_restrictions,retrieve_empty,anchor_dish=Cá Hấp Hồng Kông; top_k=8
+image001242,dietary_restrictions,retrieve_empty,anchor_dish=Cá Hấp Hồng Kông; top_k=8
+image001242,origin_locality,retrieve_empty,anchor_dish=Cá Hấp Hồng Kông; top_k=8
+image001242,cooking_technique,retrieve_empty,anchor_dish=Cá Hấp Hồng Kông; top_k=8
+image001242,dish_classification,retrieve_empty,anchor_dish=Cá Hấp Hồng Kông; top_k=8
+image001242,flavor_profile,retrieve_empty,anchor_dish=Cá Hấp Hồng Kông; top_k=8
+image001242,ingredients,retrieve_empty,anchor_dish=Cá Hấp Hồng Kông; top_k=8
+image001242,ingredient_category,retrieve_empty,anchor_dish=Cá Hấp Hồng Kông; top_k=8
+image001256,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001256,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001256,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001256,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001256,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001256,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001256,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001256,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001256,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001308,,no_anchor_dish,"food_items=['Cá kho tộ', 'Cơm trắng', 'Rau sống', 'Nước mắm']"
+image001310,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001310,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001310,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001310,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001310,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001310,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001310,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001310,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001310,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001322,,no_anchor_dish,"food_items=['Canh cua mồng tơi mướp', 'Hoa chuối bào', 'Rau húng quế', 'Hành tím', 'Ớt', 'Muối', 'Tiêu', 'Ớt khô']"
+image001345,,no_anchor_dish,"food_items=['Đậu phụ chiên', 'Canh cá nấu chua', 'Cơm lứt', 'Rau sống']"
+image001357,,no_anchor_dish,"food_items=['Bò lá lốt', 'Bún', 'Rau sống', 'Bánh tráng', 'Nước chấm', 'Đồ chua']"
+image001373,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001373,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001373,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001373,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001373,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001373,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001373,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001373,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001373,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001391,ingredients,no_candidates,anchor_dish=Cá Rán; retrieved=1; filtered_rows=0; relations=[]
+image001391,dietary_restrictions,no_candidates,anchor_dish=Cá Rán; retrieved=1; filtered_rows=0; relations=[]
+image001391,flavor_profile,no_candidates,anchor_dish=Cá Rán; retrieved=1; filtered_rows=0; relations=[]
+image001391,dish_classification,no_candidates,anchor_dish=Cá Rán; retrieved=1; filtered_rows=0; relations=[]
+image001391,allergen_restrictions,no_candidates,anchor_dish=Cá Rán; retrieved=1; filtered_rows=0; relations=[]
+image001391,ingredient_category,no_candidates,anchor_dish=Cá Rán; retrieved=1; filtered_rows=0; relations=[]
+image001391,origin_locality,no_candidates,anchor_dish=Cá Rán; retrieved=1; filtered_rows=0; relations=[]
+image001391,food_pairings,no_candidates,anchor_dish=Cá Rán; retrieved=1; filtered_rows=0; relations=[]
+image001403,flavor_profile,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001403,origin_locality,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001403,dietary_restrictions,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001403,allergen_restrictions,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001403,ingredients,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001403,cooking_technique,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001403,ingredient_category,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001403,food_pairings,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001429,,no_anchor_dish,"food_items=['Bắp cải', 'Trứng sống', 'Hành lá', 'Tỏi', 'Nước tương']"
+image001436,,no_anchor_dish,food_items=['Trứng hấp cá']
+image001456,,no_anchor_dish,"food_items=['Bún', 'Thịt bò', 'Rau mùi']"
+image001469,dish_classification,retrieve_empty,anchor_dish=Chả Trứng Hấp; top_k=8
+image001469,origin_locality,retrieve_empty,anchor_dish=Chả Trứng Hấp; top_k=8
+image001469,dietary_restrictions,retrieve_empty,anchor_dish=Chả Trứng Hấp; top_k=8
+image001469,ingredient_category,retrieve_empty,anchor_dish=Chả Trứng Hấp; top_k=8
+image001469,cooking_technique,retrieve_empty,anchor_dish=Chả Trứng Hấp; top_k=8
+image001469,allergen_restrictions,retrieve_empty,anchor_dish=Chả Trứng Hấp; top_k=8
+image001469,ingredients,retrieve_empty,anchor_dish=Chả Trứng Hấp; top_k=8
+image001469,food_pairings,retrieve_empty,anchor_dish=Chả Trứng Hấp; top_k=8
+image001469,flavor_profile,retrieve_empty,anchor_dish=Chả Trứng Hấp; top_k=8
+image001470,,no_anchor_dish,food_items=['Bún tôm thịt']
+image001485,,no_anchor_dish,"food_items=['Cơm trắng', 'Thịt nướng', 'Xà lách', 'Dưa leo', 'Cà chua', 'Đồ chua', 'Nước mắm']"
+image001487,ingredients,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001487,cooking_technique,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001487,flavor_profile,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001487,allergen_restrictions,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001487,origin_locality,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001487,ingredient_category,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001487,dietary_restrictions,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001487,food_pairings,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001496,,no_anchor_dish,"food_items=['Cà chua bi', 'Ớt', 'Quất', 'Rau mầm', 'Hành phi', 'Tiêu hạt', 'Vừng', 'Măng tây', 'Cà rốt', 'Bí ngòi', 'Hoa bí', 'Cà chua']"
+image001508,ingredients,retrieve_empty,anchor_dish=Chân Gà Sả Tắc; top_k=8
+image001508,allergen_restrictions,retrieve_empty,anchor_dish=Chân Gà Sả Tắc; top_k=8
+image001508,ingredient_category,retrieve_empty,anchor_dish=Chân Gà Sả Tắc; top_k=8
+image001508,dietary_restrictions,retrieve_empty,anchor_dish=Chân Gà Sả Tắc; top_k=8
+image001508,cooking_technique,retrieve_empty,anchor_dish=Chân Gà Sả Tắc; top_k=8
+image001508,dish_classification,retrieve_empty,anchor_dish=Chân Gà Sả Tắc; top_k=8
+image001508,origin_locality,retrieve_empty,anchor_dish=Chân Gà Sả Tắc; top_k=8
+image001508,food_pairings,retrieve_empty,anchor_dish=Chân Gà Sả Tắc; top_k=8
+image001508,flavor_profile,retrieve_empty,anchor_dish=Chân Gà Sả Tắc; top_k=8
+image001514,dietary_restrictions,retrieve_empty,anchor_dish=Chim Bồ Câu Hầm Ngải Cứu; top_k=8
+image001514,food_pairings,retrieve_empty,anchor_dish=Chim Bồ Câu Hầm Ngải Cứu; top_k=8
+image001514,ingredient_category,retrieve_empty,anchor_dish=Chim Bồ Câu Hầm Ngải Cứu; top_k=8
+image001514,cooking_technique,retrieve_empty,anchor_dish=Chim Bồ Câu Hầm Ngải Cứu; top_k=8
+image001514,flavor_profile,retrieve_empty,anchor_dish=Chim Bồ Câu Hầm Ngải Cứu; top_k=8
+image001514,ingredients,retrieve_empty,anchor_dish=Chim Bồ Câu Hầm Ngải Cứu; top_k=8
+image001514,dish_classification,retrieve_empty,anchor_dish=Chim Bồ Câu Hầm Ngải Cứu; top_k=8
+image001514,allergen_restrictions,retrieve_empty,anchor_dish=Chim Bồ Câu Hầm Ngải Cứu; top_k=8
+image001514,origin_locality,retrieve_empty,anchor_dish=Chim Bồ Câu Hầm Ngải Cứu; top_k=8
+image001544,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001544,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001544,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001544,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001544,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001544,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001544,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001544,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001544,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001546,allergen_restrictions,retrieve_empty,anchor_dish=Cá Chép Om Dưa; top_k=8
+image001546,ingredients,retrieve_empty,anchor_dish=Cá Chép Om Dưa; top_k=8
+image001546,food_pairings,retrieve_empty,anchor_dish=Cá Chép Om Dưa; top_k=8
+image001546,dietary_restrictions,retrieve_empty,anchor_dish=Cá Chép Om Dưa; top_k=8
+image001546,flavor_profile,retrieve_empty,anchor_dish=Cá Chép Om Dưa; top_k=8
+image001546,ingredient_category,retrieve_empty,anchor_dish=Cá Chép Om Dưa; top_k=8
+image001546,dish_classification,retrieve_empty,anchor_dish=Cá Chép Om Dưa; top_k=8
+image001546,cooking_technique,retrieve_empty,anchor_dish=Cá Chép Om Dưa; top_k=8
+image001546,origin_locality,retrieve_empty,anchor_dish=Cá Chép Om Dưa; top_k=8
+image001549,flavor_profile,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001549,dietary_restrictions,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001549,cooking_technique,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001549,food_pairings,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001549,ingredients,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001549,allergen_restrictions,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001549,dish_classification,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001549,ingredient_category,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001549,origin_locality,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001563,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001563,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001563,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001563,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001563,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001563,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001563,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001563,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001563,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001571,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001571,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001571,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001571,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001571,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001571,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001571,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001571,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001571,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001573,,no_anchor_dish,"food_items=['Bún', 'Dồi sụn nướng', 'Canh măng', 'Tôm nướng', 'Chả Huế', 'Thanh long']"
+image001581,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001581,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001581,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001581,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001581,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001581,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001581,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001581,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001581,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001587,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image001587,flavor_profile,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image001587,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image001587,ingredients,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image001587,food_pairings,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image001587,origin_locality,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image001587,dish_classification,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image001587,ingredient_category,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image001587,cooking_technique,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image001595,ingredients,retrieve_empty,anchor_dish=Canh Sườn Khoai Tây; top_k=8
+image001595,allergen_restrictions,retrieve_empty,anchor_dish=Canh Sườn Khoai Tây; top_k=8
+image001595,cooking_technique,retrieve_empty,anchor_dish=Canh Sườn Khoai Tây; top_k=8
+image001595,ingredient_category,retrieve_empty,anchor_dish=Canh Sườn Khoai Tây; top_k=8
+image001595,dish_classification,retrieve_empty,anchor_dish=Canh Sườn Khoai Tây; top_k=8
+image001595,flavor_profile,retrieve_empty,anchor_dish=Canh Sườn Khoai Tây; top_k=8
+image001595,food_pairings,retrieve_empty,anchor_dish=Canh Sườn Khoai Tây; top_k=8
+image001595,origin_locality,retrieve_empty,anchor_dish=Canh Sườn Khoai Tây; top_k=8
+image001595,dietary_restrictions,retrieve_empty,anchor_dish=Canh Sườn Khoai Tây; top_k=8
+image001624,,no_anchor_dish,"food_items=['Gà chiên khoai tây', 'Canh củ cải trắng thịt băm', 'Bí đao xào thịt', 'Cơm trắng']"
+image001626,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001626,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001626,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001626,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001626,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001626,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001626,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001626,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001626,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001656,,no_anchor_dish,food_items=['Bò lúc lắc']
+image001662,,no_anchor_dish,"food_items=['Cơm trắng', 'Canh măng mọc', 'Ngọn su su luộc', 'Thịt chân giò luộc', 'Cua đồng rang', 'Sấu ngâm', 'Nước chấm tỏi ớt', 'Quả nhãn']"
+image001669,origin_locality,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001669,flavor_profile,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001669,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001669,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001669,dish_classification,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001669,food_pairings,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001669,ingredient_category,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001669,ingredients,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001669,cooking_technique,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001676,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image001676,food_pairings,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image001676,ingredient_category,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image001676,cooking_technique,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image001676,ingredients,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image001676,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image001676,dish_classification,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image001676,flavor_profile,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image001676,origin_locality,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image001681,,no_anchor_dish,"food_items=['Cá kèo kho khô', 'Canh cải thìa', 'Cơm trắng', 'Quả hồng', 'Nước mắm ớt']"
+image001687,food_pairings,retrieve_empty,anchor_dish=Trứng Chiên Thái Sợi; top_k=8
+image001687,dish_classification,retrieve_empty,anchor_dish=Trứng Chiên Thái Sợi; top_k=8
+image001687,origin_locality,retrieve_empty,anchor_dish=Trứng Chiên Thái Sợi; top_k=8
+image001687,cooking_technique,retrieve_empty,anchor_dish=Trứng Chiên Thái Sợi; top_k=8
+image001687,ingredients,retrieve_empty,anchor_dish=Trứng Chiên Thái Sợi; top_k=8
+image001687,ingredient_category,retrieve_empty,anchor_dish=Trứng Chiên Thái Sợi; top_k=8
+image001687,allergen_restrictions,retrieve_empty,anchor_dish=Trứng Chiên Thái Sợi; top_k=8
+image001687,flavor_profile,retrieve_empty,anchor_dish=Trứng Chiên Thái Sợi; top_k=8
+image001687,dietary_restrictions,retrieve_empty,anchor_dish=Trứng Chiên Thái Sợi; top_k=8
+image001688,,no_anchor_dish,"food_items=['Cải thảo cuộn thịt băm cà rốt', 'Canh nấm cải thảo', 'Táo', 'Đào', 'Cơm trắng']"
+image001747,,no_anchor_dish,"food_items=['Canh dưa chua', 'Canh rau cải', 'Đỗ xanh xào thịt bò', 'Thịt chân giò luộc', 'Nước mắm tỏi ớt']"
+image001756,cooking_technique,retrieve_empty,anchor_dish=Thịt Cuộn Nấm Kim Châm; top_k=8
+image001756,dish_classification,retrieve_empty,anchor_dish=Thịt Cuộn Nấm Kim Châm; top_k=8
+image001756,flavor_profile,retrieve_empty,anchor_dish=Thịt Cuộn Nấm Kim Châm; top_k=8
+image001756,ingredient_category,retrieve_empty,anchor_dish=Thịt Cuộn Nấm Kim Châm; top_k=8
+image001756,origin_locality,retrieve_empty,anchor_dish=Thịt Cuộn Nấm Kim Châm; top_k=8
+image001756,dietary_restrictions,retrieve_empty,anchor_dish=Thịt Cuộn Nấm Kim Châm; top_k=8
+image001756,food_pairings,retrieve_empty,anchor_dish=Thịt Cuộn Nấm Kim Châm; top_k=8
+image001756,allergen_restrictions,retrieve_empty,anchor_dish=Thịt Cuộn Nấm Kim Châm; top_k=8
+image001756,ingredients,retrieve_empty,anchor_dish=Thịt Cuộn Nấm Kim Châm; top_k=8
+image001758,dish_classification,retrieve_empty,anchor_dish=Tôm Cuộn Khoai Tây Chiên; top_k=8
+image001758,food_pairings,retrieve_empty,anchor_dish=Tôm Cuộn Khoai Tây Chiên; top_k=8
+image001758,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Cuộn Khoai Tây Chiên; top_k=8
+image001758,ingredient_category,retrieve_empty,anchor_dish=Tôm Cuộn Khoai Tây Chiên; top_k=8
+image001758,flavor_profile,retrieve_empty,anchor_dish=Tôm Cuộn Khoai Tây Chiên; top_k=8
+image001758,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Cuộn Khoai Tây Chiên; top_k=8
+image001758,ingredients,retrieve_empty,anchor_dish=Tôm Cuộn Khoai Tây Chiên; top_k=8
+image001758,origin_locality,retrieve_empty,anchor_dish=Tôm Cuộn Khoai Tây Chiên; top_k=8
+image001758,cooking_technique,retrieve_empty,anchor_dish=Tôm Cuộn Khoai Tây Chiên; top_k=8
+image001761,origin_locality,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001761,cooking_technique,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001761,allergen_restrictions,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001761,food_pairings,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001761,ingredients,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001761,flavor_profile,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001761,ingredient_category,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001761,dietary_restrictions,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001763,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001763,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001763,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001763,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001763,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001763,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001763,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001763,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001763,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001828,ingredients,retrieve_empty,anchor_dish=Chân Gà Sả Tắc; top_k=8
+image001828,flavor_profile,retrieve_empty,anchor_dish=Chân Gà Sả Tắc; top_k=8
+image001828,cooking_technique,retrieve_empty,anchor_dish=Chân Gà Sả Tắc; top_k=8
+image001828,dietary_restrictions,retrieve_empty,anchor_dish=Chân Gà Sả Tắc; top_k=8
+image001828,origin_locality,retrieve_empty,anchor_dish=Chân Gà Sả Tắc; top_k=8
+image001828,ingredient_category,retrieve_empty,anchor_dish=Chân Gà Sả Tắc; top_k=8
+image001828,food_pairings,retrieve_empty,anchor_dish=Chân Gà Sả Tắc; top_k=8
+image001828,allergen_restrictions,retrieve_empty,anchor_dish=Chân Gà Sả Tắc; top_k=8
+image001828,dish_classification,retrieve_empty,anchor_dish=Chân Gà Sả Tắc; top_k=8
+image001830,,no_anchor_dish,"food_items=['Cơm trắng', 'Thịt heo luộc', 'Canh chua cá', 'Đậu rồng', 'Nước mắm tỏi ớt']"
+image001835,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001835,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001835,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001835,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001835,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001835,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001835,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001835,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001835,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001845,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001845,dish_classification,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001845,food_pairings,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001845,cooking_technique,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001845,flavor_profile,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001845,origin_locality,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001845,ingredients,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001845,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001845,ingredient_category,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001846,,no_anchor_dish,"food_items=['Bún trộn xì dầu', 'Đậu phụ rán', 'Dưa leo', 'Rau thơm', 'Nước chấm', 'Bún thêm', 'Đu đủ']"
+image001847,,no_anchor_dish,"food_items=['Canh mướp đắng nấu lòng gà trứng non', 'Cà tím nướng mỡ hành', 'Bông cải trắng xào thịt bò', 'Cơm trắng', 'Nước tương tỏi ớt', 'Quả điều']"
+image001856,cooking_technique,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001856,ingredients,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001856,origin_locality,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001856,dish_classification,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001856,food_pairings,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001856,ingredient_category,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001856,flavor_profile,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001856,allergen_restrictions,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001856,dietary_restrictions,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001870,,no_anchor_dish,"food_items=['Gà kho', 'Bắp cải luộc', 'Bầu luộc', 'Dưa leo', 'Cà pháo muối', 'Quýt', 'Nước mắm tỏi ớt']"
+image001872,,no_anchor_dish,"food_items=['Canh bí đỏ', 'Súp lơ và mướp luộc', 'Cà tím nướng mỡ hành', 'Thịt rang', 'Trứng luộc dầm mắm', 'Nước mắm tỏi ớt']"
+image001884,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001884,ingredient_category,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001884,flavor_profile,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001884,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001884,food_pairings,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001884,cooking_technique,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001884,ingredients,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001884,origin_locality,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001884,dish_classification,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image001892,,no_anchor_dish,"food_items=['Thịt heo luộc', 'Bún gạo lứt', 'Bánh tráng', 'Rau sống', 'Dưa leo', 'Cà rốt', 'Thơm', 'Mắm nêm']"
+image001896,,no_anchor_dish,"food_items=['Chả lụa', 'Nước mắm', 'Cà rốt', 'Rau mùi']"
+image001900,,no_anchor_dish,"food_items=['Bánh khọt tôm', 'Rau sống', 'Đồ chua', 'Nước mắm', 'Ớt', 'Tỏi']"
+image001902,,no_anchor_dish,"food_items=['Bún bò Huế', 'Rau sống', 'Giá đỗ', 'Húng quế', 'Chanh', 'Hành tím muối', 'Ớt xanh']"
+image001916,,no_anchor_dish,"food_items=['Bún bò Huế', 'Rau sống']"
+image001921,,no_anchor_dish,"food_items=['Khoai tây chiên', 'Khoai lang chiên']"
+image001926,ingredient_category,no_candidates,anchor_dish=Gan Xào Tỏi; retrieved=1; filtered_rows=0; relations=[]
+image001926,allergen_restrictions,no_candidates,anchor_dish=Gan Xào Tỏi; retrieved=1; filtered_rows=0; relations=[]
+image001926,flavor_profile,no_candidates,anchor_dish=Gan Xào Tỏi; retrieved=1; filtered_rows=0; relations=[]
+image001926,dietary_restrictions,no_candidates,anchor_dish=Gan Xào Tỏi; retrieved=1; filtered_rows=0; relations=[]
+image001926,ingredients,no_candidates,anchor_dish=Gan Xào Tỏi; retrieved=1; filtered_rows=0; relations=[]
+image001926,origin_locality,no_candidates,anchor_dish=Gan Xào Tỏi; retrieved=1; filtered_rows=0; relations=[]
+image001926,dish_classification,no_candidates,anchor_dish=Gan Xào Tỏi; retrieved=1; filtered_rows=0; relations=[]
+image001926,food_pairings,no_candidates,anchor_dish=Gan Xào Tỏi; retrieved=1; filtered_rows=0; relations=[]
+image001939,ingredients,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001939,cooking_technique,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001939,ingredient_category,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001939,flavor_profile,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001939,food_pairings,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001939,dietary_restrictions,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001939,allergen_restrictions,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001939,origin_locality,no_candidates,anchor_dish=Cơm Niêu; retrieved=1; filtered_rows=0; relations=[]
+image001941,,no_anchor_dish,food_items=['Mực xào dưa leo cà chua']
+image001949,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001949,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001949,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001949,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001949,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001949,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001949,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001949,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001949,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image001950,,no_anchor_dish,"food_items=['Thịt heo luộc', 'Khổ qua luộc', 'Đậu phụ trắng', 'Rau sống', 'Mắm tép', 'Canh hành']"
+image001952,ingredient_category,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001952,dish_classification,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001952,allergen_restrictions,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001952,ingredients,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001952,flavor_profile,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001952,food_pairings,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001952,dietary_restrictions,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001952,cooking_technique,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001952,origin_locality,retrieve_empty,anchor_dish=Xôi; top_k=8
+image001955,,no_anchor_dish,"food_items=['Gỏi cuốn tôm', 'Tương chấm', 'Nước mắm']"
+image001991,cooking_technique,retrieve_empty,anchor_dish=Chả Viên; top_k=8
+image001991,ingredient_category,retrieve_empty,anchor_dish=Chả Viên; top_k=8
+image001991,ingredients,retrieve_empty,anchor_dish=Chả Viên; top_k=8
+image001991,allergen_restrictions,retrieve_empty,anchor_dish=Chả Viên; top_k=8
+image001991,flavor_profile,retrieve_empty,anchor_dish=Chả Viên; top_k=8
+image001991,food_pairings,retrieve_empty,anchor_dish=Chả Viên; top_k=8
+image001991,dietary_restrictions,retrieve_empty,anchor_dish=Chả Viên; top_k=8
+image001991,dish_classification,retrieve_empty,anchor_dish=Chả Viên; top_k=8
+image001991,origin_locality,retrieve_empty,anchor_dish=Chả Viên; top_k=8
+image002023,,no_anchor_dish,"food_items=['Thịt bò thái lát', 'Bánh phở', 'Quẩy', 'Nhân sâm', 'Hành tây', 'Hành lá', 'Rau thơm', 'Chanh', 'Ớt', 'Tỏi', 'Gia vị thảo mộc', 'Thịt nướng']"
+image002046,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002046,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002046,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002046,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002046,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002046,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002046,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002046,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002046,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002047,ingredient_category,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image002047,origin_locality,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image002047,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image002047,cooking_technique,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image002047,flavor_profile,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image002047,dish_classification,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image002047,food_pairings,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image002047,ingredients,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image002047,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image002053,food_pairings,retrieve_empty,anchor_dish=Canh Khoai Tây Nấu Xương; top_k=8
+image002053,dietary_restrictions,retrieve_empty,anchor_dish=Canh Khoai Tây Nấu Xương; top_k=8
+image002053,dish_classification,retrieve_empty,anchor_dish=Canh Khoai Tây Nấu Xương; top_k=8
+image002053,ingredient_category,retrieve_empty,anchor_dish=Canh Khoai Tây Nấu Xương; top_k=8
+image002053,origin_locality,retrieve_empty,anchor_dish=Canh Khoai Tây Nấu Xương; top_k=8
+image002053,flavor_profile,retrieve_empty,anchor_dish=Canh Khoai Tây Nấu Xương; top_k=8
+image002053,allergen_restrictions,retrieve_empty,anchor_dish=Canh Khoai Tây Nấu Xương; top_k=8
+image002053,ingredients,retrieve_empty,anchor_dish=Canh Khoai Tây Nấu Xương; top_k=8
+image002053,cooking_technique,retrieve_empty,anchor_dish=Canh Khoai Tây Nấu Xương; top_k=8
+image002056,dietary_restrictions,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image002056,ingredient_category,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image002056,cooking_technique,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image002056,allergen_restrictions,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image002056,food_pairings,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image002056,origin_locality,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image002056,dish_classification,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image002056,ingredients,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image002056,flavor_profile,retrieve_empty,anchor_dish=Cá Hấp Hành Gừng; top_k=8
+image002130,,no_anchor_dish,"food_items=['Bún chả', 'Bún', 'Thịt nướng', 'Nước chấm', 'Rau sống', 'Đồ chua', 'Tỏi ớt', 'Nước trà']"
+image002146,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002146,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002146,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002146,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002146,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002146,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002146,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002146,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002146,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002149,,no_anchor_dish,"food_items=['Ốc móng tay xào hành', 'Hành lá', 'Nước mắm tỏi ớt']"
+image002152,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002152,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002152,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002152,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002152,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002152,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002152,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002152,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002152,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002153,cooking_technique,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image002153,ingredients,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image002153,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image002153,ingredient_category,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image002153,origin_locality,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image002153,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image002153,flavor_profile,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image002153,dish_classification,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image002153,food_pairings,retrieve_empty,anchor_dish=Tôm Chiên Xù; top_k=8
+image002170,,no_anchor_dish,"food_items=['Bún bò Huế', 'Chả lụa', 'Thịt bò', 'Bún', 'Giá đỗ', 'Rau thơm', 'Chanh', 'Ớt', 'Hành tây', 'Hành phi']"
+image002184,,no_anchor_dish,"food_items=['Gừng', 'Ớt khô', 'Rau mùi', 'Chanh', 'Sả', 'Tiêu xanh', 'Củ cải đỏ', 'Lá chanh', 'Hạt tiêu', 'Quế', 'Tỏi', 'Hoa hồi']"
+image002191,ingredient_category,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002191,allergen_restrictions,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002191,food_pairings,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002191,ingredients,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002191,flavor_profile,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002191,dish_classification,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002191,dietary_restrictions,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002191,origin_locality,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002191,cooking_technique,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002192,,no_anchor_dish,"food_items=['Bún bò Huế', 'Rau sống', 'Chanh', 'Ớt', 'Nước mắm', 'Sa tế']"
+image002213,,no_anchor_dish,"food_items=['Bún bò Huế', 'Rau sống', 'Chanh', 'Ớt']"
+image002229,,no_anchor_dish,"food_items=['Bún bò', 'Giá đỗ', 'Rau sống', 'Chanh', 'Ớt', 'Sa tế']"
+image002237,,no_anchor_dish,"food_items=['Bánh canh cua', 'Quẩy', 'Huyết', 'Nước chấm']"
+image002238,,no_anchor_dish,"food_items=['Bánh khoái', 'Nước lèo', 'Rau sống', 'Đồ chua', 'Xoài xanh', 'Chuối chát', 'Dưa leo', 'Ớt băm']"
+image002241,,no_anchor_dish,"food_items=['Bún bò Huế', 'Rau sống', 'Hành ngâm']"
+image002265,dietary_restrictions,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002265,ingredient_category,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002265,dish_classification,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002265,allergen_restrictions,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002265,origin_locality,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002265,ingredients,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002265,food_pairings,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002265,cooking_technique,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002265,flavor_profile,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002292,,no_anchor_dish,"food_items=['Cá basa kho', 'Canh bầu tôm', 'Cà tím nướng mỡ hành', 'Nước mắm ớt']"
+image002293,ingredient_category,retrieve_empty,anchor_dish=Vịt Kho Gừng; top_k=8
+image002293,dish_classification,retrieve_empty,anchor_dish=Vịt Kho Gừng; top_k=8
+image002293,food_pairings,retrieve_empty,anchor_dish=Vịt Kho Gừng; top_k=8
+image002293,origin_locality,retrieve_empty,anchor_dish=Vịt Kho Gừng; top_k=8
+image002293,dietary_restrictions,retrieve_empty,anchor_dish=Vịt Kho Gừng; top_k=8
+image002293,flavor_profile,retrieve_empty,anchor_dish=Vịt Kho Gừng; top_k=8
+image002293,cooking_technique,retrieve_empty,anchor_dish=Vịt Kho Gừng; top_k=8
+image002293,ingredients,retrieve_empty,anchor_dish=Vịt Kho Gừng; top_k=8
+image002293,allergen_restrictions,retrieve_empty,anchor_dish=Vịt Kho Gừng; top_k=8
+image002295,ingredient_category,retrieve_empty,anchor_dish=Tôm Chiên Bột; top_k=8
+image002295,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Chiên Bột; top_k=8
+image002295,flavor_profile,retrieve_empty,anchor_dish=Tôm Chiên Bột; top_k=8
+image002295,cooking_technique,retrieve_empty,anchor_dish=Tôm Chiên Bột; top_k=8
+image002295,dish_classification,retrieve_empty,anchor_dish=Tôm Chiên Bột; top_k=8
+image002295,ingredients,retrieve_empty,anchor_dish=Tôm Chiên Bột; top_k=8
+image002295,food_pairings,retrieve_empty,anchor_dish=Tôm Chiên Bột; top_k=8
+image002295,origin_locality,retrieve_empty,anchor_dish=Tôm Chiên Bột; top_k=8
+image002295,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Chiên Bột; top_k=8
+image002299,dietary_restrictions,retrieve_empty,anchor_dish=Thịt Xào Mắm Ruốc; top_k=8
+image002299,dish_classification,retrieve_empty,anchor_dish=Thịt Xào Mắm Ruốc; top_k=8
+image002299,origin_locality,retrieve_empty,anchor_dish=Thịt Xào Mắm Ruốc; top_k=8
+image002299,food_pairings,retrieve_empty,anchor_dish=Thịt Xào Mắm Ruốc; top_k=8
+image002299,cooking_technique,retrieve_empty,anchor_dish=Thịt Xào Mắm Ruốc; top_k=8
+image002299,ingredient_category,retrieve_empty,anchor_dish=Thịt Xào Mắm Ruốc; top_k=8
+image002299,ingredients,retrieve_empty,anchor_dish=Thịt Xào Mắm Ruốc; top_k=8
+image002299,flavor_profile,retrieve_empty,anchor_dish=Thịt Xào Mắm Ruốc; top_k=8
+image002299,allergen_restrictions,retrieve_empty,anchor_dish=Thịt Xào Mắm Ruốc; top_k=8
+image002300,,no_anchor_dish,"food_items=['Thịt heo xá xíu', 'Canh cua mồng tơi', 'Dưa cà', 'Nước tương']"
+image002301,allergen_restrictions,no_candidates,anchor_dish=Cá Trê Chiên; retrieved=2; filtered_rows=0; relations=[]
+image002301,dish_classification,no_candidates,anchor_dish=Cá Trê Chiên; retrieved=2; filtered_rows=0; relations=[]
+image002301,flavor_profile,no_candidates,anchor_dish=Cá Trê Chiên; retrieved=2; filtered_rows=0; relations=[]
+image002301,dietary_restrictions,no_candidates,anchor_dish=Cá Trê Chiên; retrieved=2; filtered_rows=0; relations=[]
+image002301,origin_locality,no_candidates,anchor_dish=Cá Trê Chiên; retrieved=2; filtered_rows=0; relations=[]
+image002301,cooking_technique,no_candidates,anchor_dish=Cá Trê Chiên; retrieved=2; filtered_rows=0; relations=[]
+image002301,food_pairings,no_candidates,anchor_dish=Cá Trê Chiên; retrieved=2; filtered_rows=0; relations=[]
+image002302,dietary_restrictions,retrieve_empty,anchor_dish=Cá Chạch Kho Nghệ; top_k=8
+image002302,dish_classification,retrieve_empty,anchor_dish=Cá Chạch Kho Nghệ; top_k=8
+image002302,ingredient_category,retrieve_empty,anchor_dish=Cá Chạch Kho Nghệ; top_k=8
+image002302,flavor_profile,retrieve_empty,anchor_dish=Cá Chạch Kho Nghệ; top_k=8
+image002302,origin_locality,retrieve_empty,anchor_dish=Cá Chạch Kho Nghệ; top_k=8
+image002302,ingredients,retrieve_empty,anchor_dish=Cá Chạch Kho Nghệ; top_k=8
+image002302,allergen_restrictions,retrieve_empty,anchor_dish=Cá Chạch Kho Nghệ; top_k=8
+image002302,cooking_technique,retrieve_empty,anchor_dish=Cá Chạch Kho Nghệ; top_k=8
+image002302,food_pairings,retrieve_empty,anchor_dish=Cá Chạch Kho Nghệ; top_k=8
+image002304,origin_locality,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image002304,ingredient_category,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image002304,flavor_profile,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image002304,dish_classification,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image002304,allergen_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image002304,dietary_restrictions,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image002304,food_pairings,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image002304,cooking_technique,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image002304,ingredients,retrieve_empty,anchor_dish=Tôm Rim; top_k=8
+image002307,dietary_restrictions,retrieve_empty,anchor_dish=Củ Quả Luộc Chấm Lạc Vừng; top_k=8
+image002307,cooking_technique,retrieve_empty,anchor_dish=Củ Quả Luộc Chấm Lạc Vừng; top_k=8
+image002307,dish_classification,retrieve_empty,anchor_dish=Củ Quả Luộc Chấm Lạc Vừng; top_k=8
+image002307,food_pairings,retrieve_empty,anchor_dish=Củ Quả Luộc Chấm Lạc Vừng; top_k=8
+image002307,ingredient_category,retrieve_empty,anchor_dish=Củ Quả Luộc Chấm Lạc Vừng; top_k=8
+image002307,allergen_restrictions,retrieve_empty,anchor_dish=Củ Quả Luộc Chấm Lạc Vừng; top_k=8
+image002307,origin_locality,retrieve_empty,anchor_dish=Củ Quả Luộc Chấm Lạc Vừng; top_k=8
+image002307,flavor_profile,retrieve_empty,anchor_dish=Củ Quả Luộc Chấm Lạc Vừng; top_k=8
+image002307,ingredients,retrieve_empty,anchor_dish=Củ Quả Luộc Chấm Lạc Vừng; top_k=8
+image002312,allergen_restrictions,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002312,ingredients,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002312,dish_classification,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002312,dietary_restrictions,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002312,ingredient_category,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002312,flavor_profile,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002312,origin_locality,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002312,cooking_technique,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002312,food_pairings,retrieve_empty,anchor_dish=Xôi; top_k=8
+image002315,ingredients,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002315,cooking_technique,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002315,allergen_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002315,dish_classification,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002315,ingredient_category,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002315,food_pairings,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002315,origin_locality,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002315,dietary_restrictions,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002315,flavor_profile,retrieve_empty,anchor_dish=Cá Kho; top_k=8
+image002325,,no_anchor_dish,"food_items=['Thịt rang', 'Dưa chuột', 'Sô-cô-la', 'Cam', 'Cơm', 'Canh cà chua']"

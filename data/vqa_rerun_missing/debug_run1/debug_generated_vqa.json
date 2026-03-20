@@ -1,0 +1,527 @@
+[
+  {
+    "image_id": "image000247",
+    "image": "https://giadinh.mediacdn.vn/296230595582509056/2026/3/9/615429246-4390326157869000-1517743371036706873-n-1772595563-1773048744428-1773048745354554980181.jpg",
+    "dish": "Cà Tím Kho",
+    "qtype": "cooking_technique",
+    "question_vi": "Món ăn nằm ở vị trí cao nhất trên bàn gỗ có màu nâu sẫm, khi quan sát kỹ kết cấu mềm nhũn và đậm đà của nó so với đĩa rau muống xào tỏi ở góc phải, phương pháp chế biến nào đã được áp dụng để tạo ra đặc điểm này?",
+    "choices": {
+      "A": "Phương pháp chiên giòn",
+      "B": "Phương pháp kho",
+      "C": "Phương pháp hấp cách thủy",
+      "D": "Phương pháp nướng trực tiếp trên lửa"
+    },
+    "answer": "B",
+    "rationale_vi": "Món ăn ở vị trí cao nhất là cà tím kho. Phương pháp kho là kỹ thuật nấu thực phẩm trong thời gian dài với lửa nhỏ cùng gia vị, giúp nguyên liệu thấm sâu, trở nên mềm nhũn và chuyển sang màu nâu sẫm đặc trưng, khác biệt hoàn toàn với kỹ thuật xào nhanh tay trên lửa lớn giúp giữ độ giòn và màu xanh lục của rau muống.",
+    "triples_used": [
+      {
+        "subject": "Cà Tím Kho",
+        "relation": "cookingTechnique",
+        "target": "Kho"
+      }
+    ],
+    "retrieved_facts": [
+      {
+        "subject": "Cà Tím Kho",
+        "relation": "cookingTechnique",
+        "target": "Kho",
+        "via": null,
+        "hop": 1,
+        "score": 0.904041,
+        "verbalized_text": "Cà Tím Kho được chế biến bằng kỹ thuật Kho",
+        "evidence": "Cà Tím Kho",
+        "source_url": "https://vi.wikipedia.org/wiki/C%C3%A0-sa"
+      }
+    ],
+    "retrieval_query": "Loai cau hoi: cooking_technique. Mon neo: Cà Tím Kho. Tu khoa: kỹ thuật nấu, phương pháp chế biến, kết cấu thực phẩm, biến đổi màu sắc. Mo ta: Phân tích cách phương pháp chế biến (ninh, nướng, hấp...) tạo ra sự khác biệt so với các món tương tự, ảnh hưởng đến độ giòn, mềm và sắc thái thị giác.. Duong di quan he: Dish -[cookingTechnique]-> CookingTechnique. Chuoi quan he: cookingTechnique, CookingTechnique. Vat the thay duoc: Canh kim chi, Cà tím kho, Rau muống xào tỏi, Rong biển cuộn sốt. Ngu canh anh: Hình ảnh hiển thị bốn món ăn được bày trên bàn gỗ. Phía trên cùng là nồi đất chứa cà tím kho màu nâu sẫm. Nằm ở góc trái là bát canh kim chi nước dùng đỏ cam, nổi bật với các miếng cải thảo và đậu phụ trắng. Góc phải là đĩa rau muống xào tỏ",
+    "food_items": [
+      "Canh kim chi",
+      "Cà tím kho",
+      "Rau muống xào tỏi",
+      "Rong biển cuộn sốt"
+    ],
+    "image_description": "Hình ảnh hiển thị bốn món ăn được bày trên bàn gỗ. Phía trên cùng là nồi đất chứa cà tím kho màu nâu sẫm. Nằm ở góc trái là bát canh kim chi nước dùng đỏ cam, nổi bật với các miếng cải thảo và đậu phụ trắng. Góc phải là đĩa rau muống xào tỏi màu xanh lục kết hợp cùng những thanh chả trắng. Ở vị trí dưới cùng bên trái là đĩa rong biển cuộn màu đen, bên trên phủ lớp sốt màu kem và các lát cà chua đỏ. (Lưu ý: Đĩa rau củ nướng cà chua, bí ngòi ở góc dưới cùng bên phải không nằm trong danh sách yêu cầu).",
+    "anchor_entity": "Kho",
+    "answer_key": "Kho"
+  },
+  {
+    "image_id": "image000709",
+    "image": "https://sgtt.thesaigontimes.vn/wp-content/uploads/2024/11/MTCN.jpg",
+    "dish": "Cơm Niêu",
+    "qtype": "dish_classification",
+    "question_vi": "Trong mâm cơm này, món ăn nào được phân loại là món chính tinh bột và đang được đặt ở vị trí cao nhất trong khung hình?",
+    "choices": {
+      "A": "Đĩa măng xào màu trắng ngà",
+      "B": "Hai niêu đất chứa cơm trắng",
+      "C": "Đĩa rau củ luộc gồm su su, cà rốt, bắp",
+      "D": "Bát kho quẹt màu nâu sẫm"
+    },
+    "answer": "B",
+    "rationale_vi": "Dựa trên quan sát hình ảnh, hai niêu đất chứa cơm trắng nằm ở phía trên cùng là thành phần cung cấp tinh bột chính cho bữa ăn. Theo hệ thống phân loại ẩm thực, đây chính là món cơm, một loại món ăn cơ bản đóng vai trò là món chính trong các bữa ăn truyền thống Việt Nam. Các lựa chọn khác như măng xào, rau củ luộc hay kho quẹt đều thuộc nhóm món phụ hoặc món ăn kèm, không phải là món tinh bột chủ đạo.",
+    "triples_used": [
+      {
+        "subject": "Cơm Niêu",
+        "relation": "dishType",
+        "target": "Cơm"
+      }
+    ],
+    "retrieved_facts": [
+      {
+        "subject": "Cơm Niêu",
+        "relation": "dishType",
+        "target": "Cơm",
+        "via": null,
+        "hop": 1,
+        "score": 0.888208,
+        "verbalized_text": "Cơm Niêu là loại món ăn Cơm",
+        "evidence": "Các món cơm đặc sản của Việt Nam khác như: Cơm niêu đập",
+        "source_url": "https://vi.wikipedia.org/wiki/C%C6%A1m%20h%E1%BA%BFn"
+      }
+    ],
+    "retrieval_query": "Loai cau hoi: dish_classification. Mon neo: Cơm Niêu. Tu khoa: phân loại món ăn, cấu trúc trình bày, món nước, món khô. Mo ta: Xác định vị trí của món ăn trong hệ thống phân loại ẩm thực (món bún, món cơm, bánh...) để hướng dẫn người dùng về cách tiếp cận món ăn.. Duong di quan he: Dish -[dishType]-> DishType. Chuoi quan he: dishType, DishType. Vat the thay duoc: Cơm niêu, Cá kho, Canh rau, Rau củ luộc, Kho quẹt, Chà bông, Rau sống, Măng xào. Ngu canh anh: Hai niêu đất chứa cơm trắng đặt ở phía trên cùng. Bên phải là tô canh rau màu xanh lục. Phía dưới canh là bát chà bông vàng nhạt. Góc trái là bát kho quẹt màu nâu sẫm. Ngay cạnh đó là đĩa cá kho màu nâu đỏ đặt trong rổ tre. Phía dưới cùng b",
+    "food_items": [
+      "Cơm niêu",
+      "Cá kho",
+      "Canh rau",
+      "Rau củ luộc",
+      "Kho quẹt",
+      "Chà bông",
+      "Rau sống",
+      "Măng xào"
+    ],
+    "image_description": "Hai niêu đất chứa cơm trắng đặt ở phía trên cùng. Bên phải là tô canh rau màu xanh lục. Phía dưới canh là bát chà bông vàng nhạt. Góc trái là bát kho quẹt màu nâu sẫm. Ngay cạnh đó là đĩa cá kho màu nâu đỏ đặt trong rổ tre. Phía dưới cùng bên trái là đĩa rau củ luộc gồm su su, cà rốt, bắp vàng. Ở giữa là đĩa măng xào màu trắng ngà điểm xuyết ớt đỏ. Góc phải là đĩa rau sống phối hợp giữa dưa leo xanh, bắp cải tím và cà rốt cam.",
+    "anchor_entity": "Cơm",
+    "answer_key": "Cơm"
+  },
+  {
+    "image_id": "image000932",
+    "image": "https://cvdoasxazyruytejluvv.supabase.co/storage/v1/object/public/images/image000932.png",
+    "dish": "Cua Hấp",
+    "qtype": "cooking_technique",
+    "question_vi": "Dựa vào vị trí các món ăn trên bàn gỗ, món nằm ở góc trên bên trái có phương pháp chế biến giúp giữ nguyên hình dáng và màu sắc đỏ cam tự nhiên, trong khi món nằm ở góc dưới bên trái lại được phủ một lớp sốt vàng đậm đặc trưng. Phương pháp chế biến nào đã được áp dụng cho món ăn ở góc trên bên trái để đạt được độ chín mềm mà vẫn giữ được cấu trúc vỏ nguyên vẹn?",
+    "choices": {
+      "A": "Chiên giòn",
+      "B": "Hấp",
+      "C": "Kho tiêu",
+      "D": "Nướng muối ớt"
+    },
+    "answer": "B",
+    "rationale_vi": "Món ăn nằm ở góc trên bên trái là cua, một loại hải sản có vỏ cứng. Phương pháp chế biến được áp dụng cho món này là hấp. Kỹ thuật hấp giúp nhiệt độ lan tỏa đều qua hơi nước, làm chín thịt bên trong mà không làm mất đi màu sắc đỏ cam rực rỡ tự nhiên của vỏ cua, đồng thời giữ được độ ngọt và mềm của thịt so với việc chiên hay kho vốn làm thay đổi hoàn toàn cấu trúc và màu sắc của thực phẩm.",
+    "triples_used": [
+      {
+        "subject": "Cua Hấp",
+        "relation": "cookingTechnique",
+        "target": "Hấp"
+      }
+    ],
+    "retrieved_facts": [
+      {
+        "subject": "Cua Hấp",
+        "relation": "cookingTechnique",
+        "target": "Hấp",
+        "via": null,
+        "hop": 1,
+        "score": 0.882765,
+        "verbalized_text": "Cua Hấp được chế biến bằng kỹ thuật Hấp",
+        "evidence": "Riêng khi ăn cua hấp hoặc luộc thì thường được coi là cao lương mỹ vị.",
+        "source_url": "https://vi.wikipedia.org/wiki/G%E1%BA%A1ch%20%28cua%29"
+      }
+    ],
+    "retrieval_query": "Loai cau hoi: cooking_technique. Mon neo: Cua Hấp. Tu khoa: kỹ thuật nấu, phương pháp chế biến, kết cấu thực phẩm, biến đổi màu sắc. Mo ta: Phân tích cách phương pháp chế biến (ninh, nướng, hấp...) tạo ra sự khác biệt so với các món tương tự, ảnh hưởng đến độ giòn, mềm và sắc thái thị giác.. Duong di quan he: Dish -[cookingTechnique]-> CookingTechnique. Chuoi quan he: cookingTechnique, CookingTechnique. Vat the thay duoc: Cua hấp, Chả cá, Tôm chiên, Ốc hương xốt trứng muối, Bánh mì, Lưỡi heo luộc, Rau xào, Nước chấm. Ngu canh anh: Hình ảnh hiển thị các món ăn được sắp xếp trên bàn gỗ. Góc trên bên trái là đĩa cua hấp vỏ màu cam đỏ rực rỡ. Góc trên bên phải là đĩa chả cá màu nâu vàng xen kẽ tôm chiên màu hồng cam. Ở trung tâm là hai chén nước chấm, một chén màu cam tư",
+    "food_items": [
+      "Cua hấp",
+      "Chả cá",
+      "Tôm chiên",
+      "Ốc hương xốt trứng muối",
+      "Bánh mì",
+      "Lưỡi heo luộc",
+      "Rau xào",
+      "Nước chấm"
+    ],
+    "image_description": "Hình ảnh hiển thị các món ăn được sắp xếp trên bàn gỗ. Góc trên bên trái là đĩa cua hấp vỏ màu cam đỏ rực rỡ. Góc trên bên phải là đĩa chả cá màu nâu vàng xen kẽ tôm chiên màu hồng cam. Ở trung tâm là hai chén nước chấm, một chén màu cam tươi và một chén màu nâu sẫm. Góc dưới bên trái là đĩa ốc hương xốt trứng muối màu vàng đậm kèm các khúc bánh mì vàng nhạt. Góc dưới bên phải là đĩa lưỡi heo luộc màu hồng xám nhạt. Cạnh đó là bát rau xào với các lá màu xanh tươi.",
+    "anchor_entity": "Hấp",
+    "answer_key": "Hấp"
+  },
+  {
+    "image_id": "image001391",
+    "image": "https://cvdoasxazyruytejluvv.supabase.co/storage/v1/object/public/images/image001391.png",
+    "dish": "Cá Rán",
+    "qtype": "cooking_technique",
+    "question_vi": "Xét đĩa thức ăn có màu vàng nâu cánh gián nằm ở góc dưới bên trái, phương pháp chế biến nào đã được áp dụng để tạo nên vẻ ngoài giòn rụm và màu sắc đặc trưng này cho món ăn đó?",
+    "choices": {
+      "A": "Hấp cách thủy",
+      "B": "Chiên ngập dầu",
+      "C": "Luộc chín tới",
+      "D": "Nướng trên than hồng"
+    },
+    "answer": "B",
+    "rationale_vi": "Món ăn nằm ở góc dưới bên trái có màu vàng nâu cánh gián, đây là kết quả đặc trưng của kỹ thuật chiên. Việc sử dụng nhiệt độ cao từ dầu nóng giúp bề mặt thực phẩm chuyển sang màu vàng nâu và tạo độ giòn, khác biệt hoàn toàn với các phương pháp như hấp hay luộc vốn giữ nguyên màu sắc tự nhiên hoặc làm mềm thực phẩm.",
+    "triples_used": [
+      {
+        "subject": "Cá Rán",
+        "relation": "cookingTechnique",
+        "target": "Chiên"
+      }
+    ],
+    "retrieved_facts": [
+      {
+        "subject": "Cá Rán",
+        "relation": "cookingTechnique",
+        "target": "Chiên",
+        "via": null,
+        "hop": 1,
+        "score": 0.879395,
+        "verbalized_text": "Cá Rán được chế biến bằng kỹ thuật Chiên",
+        "evidence": "Chả cá Lã Vọng: cá rán thay vì đậu hũ.",
+        "source_url": "https://vi.wikipedia.org/wiki/B%C3%BAn%20%C4%91%E1%BA%ADu%20m%E1%BA%AFm%20t%C3%B4m"
+      }
+    ],
+    "retrieval_query": "Loai cau hoi: cooking_technique. Mon neo: Cá Rán. Tu khoa: kỹ thuật nấu, phương pháp chế biến, kết cấu thực phẩm, biến đổi màu sắc. Mo ta: Phân tích cách phương pháp chế biến (ninh, nướng, hấp...) tạo ra sự khác biệt so với các món tương tự, ảnh hưởng đến độ giòn, mềm và sắc thái thị giác.. Duong di quan he: Dish -[cookingTechnique]-> CookingTechnique. Chuoi quan he: cookingTechnique, CookingTechnique. Vat the thay duoc: Đậu phụ, Đỗ cove luộc, Canh rau cải, Cá rán, Sườn bò nướng, Cơm trắng, Nước tương. Ngu canh anh: Bức ảnh hiển thị các món ăn được sắp xếp trên nền đen. Ở góc trên bên trái là đĩa đậu phụ trắng cắt khối đặt cạnh đỗ cove luộc màu xanh lục. Góc trên bên phải là tô canh rau cải với nước dùng trong và lá rau xanh mướt. Vị trí chính giữa là ",
+    "food_items": [
+      "Đậu phụ",
+      "Đỗ cove luộc",
+      "Canh rau cải",
+      "Cá rán",
+      "Sườn bò nướng",
+      "Cơm trắng",
+      "Nước tương"
+    ],
+    "image_description": "Bức ảnh hiển thị các món ăn được sắp xếp trên nền đen. Ở góc trên bên trái là đĩa đậu phụ trắng cắt khối đặt cạnh đỗ cove luộc màu xanh lục. Góc trên bên phải là tô canh rau cải với nước dùng trong và lá rau xanh mướt. Vị trí chính giữa là chén nước tương màu nâu đen điểm xuyết vài lát ớt đỏ. Góc dưới bên trái là đĩa cá rán có màu vàng nâu cánh gián. Góc dưới bên phải là đĩa sườn bò nướng màu nâu sẫm. Cạnh đĩa cá, phía bên trái khung hình, là một bát cơm trắng nhỏ.",
+    "anchor_entity": "Chiên",
+    "answer_key": "Chiên"
+  },
+  {
+    "image_id": "image001403",
+    "image": "https://comquemahai.com/wp-content/uploads/2023/08/com-que-ma-hai.jpg",
+    "dish": "Cơm Niêu",
+    "qtype": "dish_classification",
+    "question_vi": "Món ăn nằm ở phía bên trái của niêu cá kho tộ trung tâm thuộc nhóm phân loại ẩm thực nào và nó có mối quan hệ vị trí như thế nào so với đĩa rau muống xào tỏi?",
+    "choices": {
+      "A": "Món canh, nằm phía trên đĩa rau muống xào tỏi.",
+      "B": "Món cơm, nằm phía trên đĩa rau muống xào tỏi.",
+      "C": "Món xào, nằm phía dưới đĩa rau muống xào tỏi.",
+      "D": "Món kho, nằm đối diện với đĩa rau muống xào tỏi."
+    },
+    "answer": "B",
+    "rationale_vi": "Dựa vào hình ảnh, món ăn nằm ở vị trí bên trái niêu cá kho tộ là niêu cơm niêu. Theo phân loại ẩm thực, đây là món cơm. Xét về vị trí, niêu cơm niêu nằm ở phía trên bên trái, trong khi đĩa rau muống xào tỏi nằm ở phía dưới cùng bên trái, vì vậy niêu cơm niêu nằm phía trên đĩa rau muống xào tỏi.",
+    "triples_used": [
+      {
+        "subject": "Cơm Niêu",
+        "relation": "dishType",
+        "target": "Cơm"
+      }
+    ],
+    "retrieved_facts": [
+      {
+        "subject": "Cơm Niêu",
+        "relation": "dishType",
+        "target": "Cơm",
+        "via": null,
+        "hop": 1,
+        "score": 0.885257,
+        "verbalized_text": "Cơm Niêu là loại món ăn Cơm",
+        "evidence": "Các món cơm đặc sản của Việt Nam khác như: Cơm niêu đập",
+        "source_url": "https://vi.wikipedia.org/wiki/C%C6%A1m%20h%E1%BA%BFn"
+      }
+    ],
+    "retrieval_query": "Loai cau hoi: dish_classification. Mon neo: Cơm Niêu. Tu khoa: phân loại món ăn, cấu trúc trình bày, món nước, món khô. Mo ta: Xác định vị trí của món ăn trong hệ thống phân loại ẩm thực (món bún, món cơm, bánh...) để hướng dẫn người dùng về cách tiếp cận món ăn.. Duong di quan he: Dish -[dishType]-> DishType. Chuoi quan he: dishType, DishType. Vat the thay duoc: Cơm niêu, Cá kho tộ, Thịt luộc, Rau muống xào tỏi, Canh mướp, Đậu hũ chiên, Tép rang. Ngu canh anh: Hình ảnh hiển thị các món ăn được sắp xếp theo bố cục vòng tròn. Ở vị trí trung tâm là niêu cá kho tộ màu nâu sẫm. Phía trên bên trái là tô canh mướp màu xanh lục nhạt. Phía trên bên phải là đĩa thịt luộc gồm các lát thịt trắng hồng xếp qua",
+    "food_items": [
+      "Cơm niêu",
+      "Cá kho tộ",
+      "Thịt luộc",
+      "Rau muống xào tỏi",
+      "Canh mướp",
+      "Đậu hũ chiên",
+      "Tép rang"
+    ],
+    "image_description": "Hình ảnh hiển thị các món ăn được sắp xếp theo bố cục vòng tròn. Ở vị trí trung tâm là niêu cá kho tộ màu nâu sẫm. Phía trên bên trái là tô canh mướp màu xanh lục nhạt. Phía trên bên phải là đĩa thịt luộc gồm các lát thịt trắng hồng xếp quanh chén nước chấm nâu. Bên trái là niêu cơm niêu màu cam đất chứa cơm trắng. Bên phải là đĩa đậu hũ chiên màu vàng nâu. Phía dưới cùng bên trái là đĩa rau muống xào tỏi màu xanh đậm. Phía dưới cùng bên phải là đĩa tép rang màu đỏ cam.",
+    "anchor_entity": "Cơm",
+    "answer_key": "Cơm"
+  },
+  {
+    "image_id": "image001487",
+    "image": "https://cvdoasxazyruytejluvv.supabase.co/storage/v1/object/public/images/image001487.png",
+    "dish": "Cơm Niêu",
+    "qtype": "dish_classification",
+    "question_vi": "Nhìn vào hình ảnh, món ăn chính nằm ở trung tâm được đặt trong nồi đất nung có màu sắc rực rỡ này thuộc nhóm phân loại ẩm thực nào trong văn hóa ăn uống Việt Nam?",
+    "choices": {
+      "A": "Món bún nước",
+      "B": "Món cơm truyền thống",
+      "C": "Món bánh cuốn",
+      "D": "Món xôi hấp"
+    },
+    "answer": "B",
+    "rationale_vi": "Dựa trên hình ảnh, món ăn chính được trình bày trong nồi đất nung với các hạt gạo đã chín, đây là cách chế biến đặc trưng của Cơm Niêu. Theo hệ thống phân loại ẩm thực, món ăn này thuộc nhóm món cơm, một loại hình ẩm thực phổ biến trong các bữa ăn gia đình Việt Nam, khác biệt hoàn toàn với các loại bún, bánh hay xôi.",
+    "triples_used": [
+      {
+        "subject": "Cơm Niêu",
+        "relation": "dishType",
+        "target": "Cơm"
+      }
+    ],
+    "retrieved_facts": [
+      {
+        "subject": "Cơm Niêu",
+        "relation": "dishType",
+        "target": "Cơm",
+        "via": null,
+        "hop": 1,
+        "score": 0.878879,
+        "verbalized_text": "Cơm Niêu là loại món ăn Cơm",
+        "evidence": "Các món cơm đặc sản của Việt Nam khác như: Cơm niêu đập",
+        "source_url": "https://vi.wikipedia.org/wiki/C%C6%A1m%20h%E1%BA%BFn"
+      }
+    ],
+    "retrieval_query": "Loai cau hoi: dish_classification. Mon neo: Cơm Niêu. Tu khoa: phân loại món ăn, cấu trúc trình bày, món nước, món khô. Mo ta: Xác định vị trí của món ăn trong hệ thống phân loại ẩm thực (món bún, món cơm, bánh...) để hướng dẫn người dùng về cách tiếp cận món ăn.. Duong di quan he: Dish -[dishType]-> DishType. Chuoi quan he: dishType, DishType. Vat the thay duoc: Cơm niêu, Thịt kho tộ, Dưa leo, Kho quẹt, Dưa chua, Canh. Ngu canh anh: màu có saturation cao",
+    "food_items": [
+      "Cơm niêu",
+      "Thịt kho tộ",
+      "Dưa leo",
+      "Kho quẹt",
+      "Dưa chua",
+      "Canh"
+    ],
+    "image_description": "màu có saturation cao",
+    "anchor_entity": "Cơm",
+    "answer_key": "Cơm"
+  },
+  {
+    "image_id": "image001761",
+    "image": "https://comnieuckulinh.com/wp-content/uploads/2025/05/main-8.jpg",
+    "dish": "Cơm Niêu",
+    "qtype": "dish_classification",
+    "question_vi": "Trong số các món ăn được bày trên bàn, món nào thuộc nhóm món kho có màu nâu sẫm nằm ở vị trí trung tâm, và món nào thuộc nhóm món xào nằm ở góc dưới bên trái?",
+    "choices": {
+      "A": "Tộ cá kho và đĩa tôm xào bông cải",
+      "B": "Tộ cá kho và đĩa thịt xào hành tây",
+      "C": "Niêu cơm và đĩa tôm xào bông cải",
+      "D": "Tô canh chua và đĩa thịt xào hành tây"
+    },
+    "answer": "A",
+    "rationale_vi": "Dựa vào hình ảnh, tôi thấy ở vị trí trung tâm có một tộ cá kho với màu nâu sẫm đặc trưng của món kho, trong khi đó ở hàng dưới cùng bên trái là đĩa tôm xào bông cải xanh và trắng. Các món ăn này được phân loại rõ ràng theo phương pháp chế biến là kho và xào, khác biệt với các món canh hay món cơm như niêu đất chứa cơm trắng ở góc trái phía sau.",
+    "triples_used": [
+      {
+        "subject": "Cơm Niêu",
+        "relation": "dishType",
+        "target": "Cơm"
+      }
+    ],
+    "retrieved_facts": [
+      {
+        "subject": "Cơm Niêu",
+        "relation": "dishType",
+        "target": "Cơm",
+        "via": null,
+        "hop": 1,
+        "score": 0.89027,
+        "verbalized_text": "Cơm Niêu là loại món ăn Cơm",
+        "evidence": "Các món cơm đặc sản của Việt Nam khác như: Cơm niêu đập",
+        "source_url": "https://vi.wikipedia.org/wiki/C%C6%A1m%20h%E1%BA%BFn"
+      }
+    ],
+    "retrieval_query": "Loai cau hoi: dish_classification. Mon neo: Cơm Niêu. Tu khoa: phân loại món ăn, cấu trúc trình bày, món nước, món khô. Mo ta: Xác định vị trí của món ăn trong hệ thống phân loại ẩm thực (món bún, món cơm, bánh...) để hướng dẫn người dùng về cách tiếp cận món ăn.. Duong di quan he: Dish -[dishType]-> DishType. Chuoi quan he: dishType, DishType. Vat the thay duoc: Cơm niêu, Canh chua cá, Cá kho tộ, Tôm xào bông cải, Thịt xào hành tây, Cà pháo, Nước mắm. Ngu canh anh: Hình ảnh hiển thị các món ăn được bày biện trên mặt bàn gỗ. Góc trái phía sau là niêu đất màu nâu chứa cơm trắng. Ở trung tâm là tô canh chua cá nước dùng vàng nhạt, điểm xuyết cà chua đỏ và rau thơm xanh. Phía sau bên phải là rổ rau củ gồm",
+    "food_items": [
+      "Cơm niêu",
+      "Canh chua cá",
+      "Cá kho tộ",
+      "Tôm xào bông cải",
+      "Thịt xào hành tây",
+      "Cà pháo",
+      "Nước mắm"
+    ],
+    "image_description": "Hình ảnh hiển thị các món ăn được bày biện trên mặt bàn gỗ. Góc trái phía sau là niêu đất màu nâu chứa cơm trắng. Ở trung tâm là tô canh chua cá nước dùng vàng nhạt, điểm xuyết cà chua đỏ và rau thơm xanh. Phía sau bên phải là rổ rau củ gồm hành tây trắng, cà chua đỏ, ớt đỏ và chanh xanh. Phía trước rổ rau là bát cà pháo trắng. Ở hàng dưới, bên trái là đĩa tôm hồng xào bông cải xanh và trắng. Chính giữa là tộ cá kho màu nâu sẫm điểm xuyết ớt đỏ. Góc phải là đĩa thịt xào hành tây màu nâu cánh gián kết hợp hành lá xanh. Một chén nước mắm màu nâu đỏ đặt cạnh niêu cơm.",
+    "anchor_entity": "Cơm",
+    "answer_key": "Cơm"
+  },
+  {
+    "image_id": "image001926",
+    "image": "https://resource.kinhtedothi.vn/2022/07/25/mon-an1111-1658724329.jpg",
+    "dish": "Gan Xào Tỏi",
+    "qtype": "cooking_technique",
+    "question_vi": "Trong bố cục bốn phần của bức ảnh, món ăn nằm ở góc trên bên trái được chế biến bằng phương pháp nào để tạo ra màu nâu sẫm đặc trưng và sự kết hợp với tỏi, khác biệt hoàn toàn với kỹ thuật làm chín các cánh gà nướng màu cam đỏ ở góc đối diện?",
+    "choices": {
+      "A": "Hấp cách thủy",
+      "B": "Xào nhanh với lửa lớn",
+      "C": "Luộc trong nước sôi",
+      "D": "Quay trong lò nướng"
+    },
+    "answer": "B",
+    "rationale_vi": "Dựa trên quan sát hình ảnh, món ăn ở góc trên bên trái là gan được chế biến bằng kỹ thuật xào. Phương pháp xào giúp nguyên liệu tiếp xúc trực tiếp với nhiệt độ cao và dầu ăn, tạo nên màu nâu sẫm bóng bẩy và làm dậy mùi thơm của tỏi, hoàn toàn khác biệt với kỹ thuật nướng tạo màu cam đỏ bắt mắt trên bề mặt da của cánh gà ở góc trên bên phải.",
+    "triples_used": [
+      {
+        "subject": "Gan Xào Tỏi",
+        "relation": "cookingTechnique",
+        "target": "Xào"
+      }
+    ],
+    "retrieved_facts": [
+      {
+        "subject": "Gan Xào Tỏi",
+        "relation": "cookingTechnique",
+        "target": "Xào",
+        "via": null,
+        "hop": 1,
+        "score": 0.894468,
+        "verbalized_text": "Gan Xào Tỏi được chế biến bằng kỹ thuật Xào",
+        "evidence": "Đây là một văn hóa ăn uống sử dụng rất nhiều loại rau (luộc, xào, làm dưa, ăn sống)",
+        "source_url": "https://vi.wikipedia.org/wiki/%E1%BA%A8m%20th%E1%BB%B1c%20Vi%E1%BB%87t%20Nam"
+      }
+    ],
+    "retrieval_query": "Loai cau hoi: cooking_technique. Mon neo: Gan Xào Tỏi. Tu khoa: kỹ thuật nấu, phương pháp chế biến, kết cấu thực phẩm, biến đổi màu sắc. Mo ta: Phân tích cách phương pháp chế biến (ninh, nướng, hấp...) tạo ra sự khác biệt so với các món tương tự, ảnh hưởng đến độ giòn, mềm và sắc thái thị giác.. Duong di quan he: Dish -[cookingTechnique]-> CookingTechnique. Chuoi quan he: cookingTechnique, CookingTechnique. Vat the thay duoc: Gan xào tỏi, Cánh gà nướng, Canh rau củ, Cơm trắng. Ngu canh anh: Bức ảnh được chia thành bốn phần rõ rệt. Góc trên bên trái là đĩa gan xào tỏi màu nâu sẫm, điểm xuyết những mảnh tỏi vàng nhạt. Góc trên bên phải là các cánh gà nướng màu cam đỏ rực rỡ, trang trí bằng lá ngò xanh. Góc dưới bên trái là bát c",
+    "food_items": [
+      "Gan xào tỏi",
+      "Cánh gà nướng",
+      "Canh rau củ",
+      "Cơm trắng"
+    ],
+    "image_description": "Bức ảnh được chia thành bốn phần rõ rệt. Góc trên bên trái là đĩa gan xào tỏi màu nâu sẫm, điểm xuyết những mảnh tỏi vàng nhạt. Góc trên bên phải là các cánh gà nướng màu cam đỏ rực rỡ, trang trí bằng lá ngò xanh. Góc dưới bên trái là bát canh rau củ với nước dùng trong, nổi bật các bông súp lơ xanh và nấm trắng. Góc dưới bên phải là bát cơm trắng tinh khiết, có đôi đũa đang gắp một phần cơm lên trên.",
+    "anchor_entity": "Xào",
+    "answer_key": "Xào"
+  },
+  {
+    "image_id": "image001939",
+    "image": "https://sgtt.thesaigontimes.vn/wp-content/uploads/2025/06/mtcn-1.jpg",
+    "dish": "Cơm Niêu",
+    "qtype": "dish_classification",
+    "question_vi": "Trong số các món ăn được bày biện trên bàn, món nào thuộc nhóm món canh và vị trí của nó nằm ở đâu so với các niêu cơm trắng?",
+    "choices": {
+      "A": "Canh cua, nằm ở góc dưới bên phải bàn ăn.",
+      "B": "Canh cua, nằm ở góc trên bên phải bàn ăn.",
+      "C": "Canh rau củ, nằm ở vị trí trung tâm bàn ăn.",
+      "D": "Canh chua, nằm ở phía dưới bên trái bàn ăn."
+    },
+    "answer": "B",
+    "rationale_vi": "Dựa trên quan sát tổng thể bàn ăn, tôi thấy có một tô canh cua với màu sắc đặc trưng của gạch cua và rau xanh. Về vị trí, tô canh này được đặt ở góc trên bên phải của bàn ăn, trong khi các niêu cơm trắng được bố trí tại bốn góc bàn, giúp tôi xác định chính xác vị trí tương đối của món canh này so với các món cơm.",
+    "triples_used": [
+      {
+        "subject": "Cơm Niêu",
+        "relation": "dishType",
+        "target": "Cơm"
+      }
+    ],
+    "retrieved_facts": [
+      {
+        "subject": "Cơm Niêu",
+        "relation": "dishType",
+        "target": "Cơm",
+        "via": null,
+        "hop": 1,
+        "score": 0.893426,
+        "verbalized_text": "Cơm Niêu là loại món ăn Cơm",
+        "evidence": "Các món cơm đặc sản của Việt Nam khác như: Cơm niêu đập",
+        "source_url": "https://vi.wikipedia.org/wiki/C%C6%A1m%20h%E1%BA%BFn"
+      }
+    ],
+    "retrieval_query": "Loai cau hoi: dish_classification. Mon neo: Cơm Niêu. Tu khoa: phân loại món ăn, cấu trúc trình bày, món nước, món khô. Mo ta: Xác định vị trí của món ăn trong hệ thống phân loại ẩm thực (món bún, món cơm, bánh...) để hướng dẫn người dùng về cách tiếp cận món ăn.. Duong di quan he: Dish -[dishType]-> DishType. Chuoi quan he: dishType, DishType. Vat the thay duoc: Cơm niêu, Gà kho, Thịt luộc, Salad rau củ, Thịt xá xíu, Cá kho tộ, Hàu nướng phô mai, Canh cua, Cá kho, Nước chấm. Ngu canh anh: Bốn niêu cơm trắng đặt tại bốn góc bàn. Phía trên bên trái là đĩa thịt luộc xếp vòng tròn bao quanh nộm cà rốt, đu đủ màu cam. Cạnh đó là nồi gà kho màu nâu vàng điểm xuyết rau thơm xanh. Phía trên bên phải là đĩa lớn chứa thịt xá xíu đỏ hồ",
+    "food_items": [
+      "Cơm niêu",
+      "Gà kho",
+      "Thịt luộc",
+      "Salad rau củ",
+      "Thịt xá xíu",
+      "Cá kho tộ",
+      "Hàu nướng phô mai",
+      "Canh cua",
+      "Cá kho",
+      "Nước chấm"
+    ],
+    "image_description": "Bốn niêu cơm trắng đặt tại bốn góc bàn. Phía trên bên trái là đĩa thịt luộc xếp vòng tròn bao quanh nộm cà rốt, đu đủ màu cam. Cạnh đó là nồi gà kho màu nâu vàng điểm xuyết rau thơm xanh. Phía trên bên phải là đĩa lớn chứa thịt xá xíu đỏ hồng bao quanh salad rau củ nhiều màu, kèm chén nước chấm màu vàng nhạt. Góc dưới bên phải là đĩa hàu nướng phô mai vàng óng trên nền rau xà lách xanh và hoa trang trí màu xanh dương. Phía dưới bên trái là đĩa cá kho màu nâu đỏ cùng rau thì là xanh. Ở trung tâm là nồi cá kho tộ màu nâu sẫm đặt cạnh chén nước chấm xanh nhạt. Góc bên phải là tô canh cua màu cam đỏ của gạch cua và xanh của rau.",
+    "anchor_entity": "Cơm",
+    "answer_key": "Cơm"
+  },
+  {
+    "image_id": "image002301",
+    "image": "https://vnn-imgs-a1.vgcloud.vn/mst.eva.vn/upload/2-2021/images/2021-06-01/vo-8x-nau-ngon-khoe-30-mam-ngon-ca-thang-ngay-nau-1-lan-an-2-bua-batch_168903802_154903379862757_909345281358336620-1622519578-444-width700height700.jpg?width=260&s=SAgUiwshp5yaSoiLAQoSeA",
+    "dish": "Cá Trê Chiên",
+    "qtype": "ingredients",
+    "question_vi": "Khi quan sát mẹt tre này, bạn hãy cho biết nguyên liệu chính nào tạo nên cấu trúc thịt dai ngọt đặc trưng cho món ăn nằm ở phía trên cùng, và nguyên liệu đó có vai trò gì trong việc định hình hương vị cho món ăn này?",
+    "choices": {
+      "A": "Thịt gà, giúp tạo độ mềm cho món ăn.",
+      "B": "Cá trê, tạo nên lớp vỏ giòn rụm bên ngoài và phần thịt chắc bên trong.",
+      "C": "Thịt bò, tạo mùi thơm nồng cho món ăn.",
+      "D": "Thịt heo, giúp tăng độ béo ngậy cho món ăn."
+    },
+    "answer": "B",
+    "rationale_vi": "Dựa trên hình ảnh, món ăn nằm ở vị trí phía trên cùng của mẹt tre là cá chiên. Nguyên liệu chính tạo nên món ăn này là cá trê, một loại cá nước ngọt có phần thịt chắc, khi được chiên vàng nâu sẽ tạo ra sự tương phản giữa lớp vỏ giòn rụm và phần thịt bên trong mềm ngọt, đóng vai trò then chốt trong việc tạo nên cấu trúc và hương vị đặc trưng cho món ăn.",
+    "triples_used": [
+      {
+        "subject": "Cá Trê Chiên",
+        "relation": "hasIngredient",
+        "target": "Cá Trê"
+      }
+    ],
+    "retrieved_facts": [
+      {
+        "subject": "Cá Trê Chiên",
+        "relation": "hasIngredient",
+        "target": "Cá Trê",
+        "via": null,
+        "hop": 1,
+        "score": 0.892565,
+        "verbalized_text": "Cá Trê Chiên có nguyên liệu là Cá Trê",
+        "evidence": "các loài catfish (cá mèo hay cá trê Mỹ) thuộc họ Ictaluridae của bộ Cá da trơn được chăn nuôi với quy mô công nghiệp.",
+        "source_url": "https://vi.wikipedia.org/wiki/B%E1%BB%99%20C%C3%A1%20da%20tr%C6%A1n"
+      }
+    ],
+    "retrieval_query": "Loai cau hoi: ingredients. Mon neo: Cá Trê Chiên. Tu khoa: nguyên liệu chính, thành phần đạm, mùi thơm, cấu trúc hương vị. Mo ta: Xác định các nguyên liệu then chốt xuất hiện trong món ăn, vai trò của chúng trong việc tạo ra mùi thơm và cấu trúc hương vị đặc trưng cho thực thể.. Duong di quan he: Dish -[hasIngredient]-> Ingredient. Chuoi quan he: hasIngredient, Ingredient. Vat the thay duoc: Cá trê chiên, Canh giò heo bí đao, Su su cà rốt xào, Nước mắm tỏi ớt. Ngu canh anh: Hình ảnh hiển thị các món ăn được đặt trên một chiếc mẹt tre. Phía trên là đĩa cá trê chiên có màu vàng nâu. Bên trái là tô canh giò heo bí đao với nước dùng trong, giò heo màu hồng nhạt và bí đao xanh. Phía dưới là đĩa su su cà rốt xào với",
+    "food_items": [
+      "Cá trê chiên",
+      "Canh giò heo bí đao",
+      "Su su cà rốt xào",
+      "Nước mắm tỏi ớt"
+    ],
+    "image_description": "Hình ảnh hiển thị các món ăn được đặt trên một chiếc mẹt tre. Phía trên là đĩa cá trê chiên có màu vàng nâu. Bên trái là tô canh giò heo bí đao với nước dùng trong, giò heo màu hồng nhạt và bí đao xanh. Phía dưới là đĩa su su cà rốt xào với sự kết hợp giữa màu cam của cà rốt và xanh nhạt của su su. Góc bên phải là chén nước mắm tỏi ớt màu vàng nhạt điểm xuyết các vụn tỏi, ớt màu trắng và đỏ.",
+    "anchor_entity": "Cá Trê",
+    "answer_key": "Cá Trê"
+  },
+  {
+    "image_id": "image002301",
+    "image": "https://vnn-imgs-a1.vgcloud.vn/mst.eva.vn/upload/2-2021/images/2021-06-01/vo-8x-nau-ngon-khoe-30-mam-ngon-ca-thang-ngay-nau-1-lan-an-2-bua-batch_168903802_154903379862757_909345281358336620-1622519578-444-width700height700.jpg?width=260&s=SAgUiwshp5yaSoiLAQoSeA",
+    "dish": "Cá Trê Chiên",
+    "qtype": "ingredient_category",
+    "question_vi": "Trong mẹt thức ăn này, nếu xét món nằm ở phía trên cùng và món nằm ở phía bên trái, nhóm thực phẩm chính nào đang chiếm ưu thế trong tổng thể hai món ăn đó khi so sánh giữa hải sản và thịt đỏ?",
+    "choices": {
+      "A": "Nhóm hải sản chiếm ưu thế tuyệt đối.",
+      "B": "Nhóm thịt đỏ chiếm ưu thế tuyệt đối.",
+      "C": "Cả hai món đều thuộc nhóm thực phẩm từ thực vật.",
+      "D": "Có sự cân bằng giữa nhóm hải sản và nhóm thịt đỏ."
+    },
+    "answer": "D",
+    "rationale_vi": "Món nằm ở phía trên cùng là cá trê chiên, thuộc nhóm hải sản, trong khi món nằm ở phía bên trái là canh giò heo bí đao, chứa giò heo thuộc nhóm thịt đỏ. Vì mỗi món đại diện cho một nhóm thực phẩm khác nhau với khối lượng tương đương trong tổng thể, nên có sự cân bằng giữa nhóm hải sản và nhóm thịt đỏ.",
+    "triples_used": [
+      {
+        "subject": "Cá Trê Chiên",
+        "relation": "hasIngredient",
+        "target": "Cá Trê"
+      },
+      {
+        "subject": "Cá Trê",
+        "relation": "ingredientCategory",
+        "target": "Hải Sản"
+      }
+    ],
+    "retrieved_facts": [
+      {
+        "subject": "Cá Trê Chiên",
+        "relation": "ingredientCategory",
+        "target": "Hải Sản",
+        "via": "Cá Trê",
+        "hop": 2,
+        "score": 0.898312,
+        "verbalized_text": "Cá Trê thuộc nhóm nguyên liệu Hải Sản",
+        "evidence": "Cá da trơn là loài thủy sinh vật được chăn nuôi phổ biến ở nhiều nước trên thế giới và trở thành một nguồn thủy hải sản quan trọng",
+        "source_url": "https://vi.wikipedia.org/wiki/B%E1%BB%99%20C%C3%A1%20da%20tr%C6%A1n"
+      }
+    ],
+    "retrieval_query": "Loai cau hoi: ingredient_category. Mon neo: Cá Trê Chiên. Tu khoa: nhóm thực phẩm, loại đạm, ngũ cốc, protein source. Mo ta: Thực hiện truy vấn 2-hop để hiểu rõ món ăn được xây dựng từ nhóm thực phẩm nào (hải sản, thịt đỏ, tinh bột) và tỷ lệ cân bằng giữa chúng.. Duong di quan he: Dish -> Ingredient -[ingredientCategory]-> IngredientCategory. Chuoi quan he: ingredientCategory. Vat the thay duoc: Cá trê chiên, Canh giò heo bí đao, Su su cà rốt xào, Nước mắm tỏi ớt. Ngu canh anh: Hình ảnh hiển thị các món ăn được đặt trên một chiếc mẹt tre. Phía trên là đĩa cá trê chiên có màu vàng nâu. Bên trái là tô canh giò heo bí đao với nước dùng trong, giò heo màu hồng nhạt và bí đao xanh. Phía dưới là đĩa su su cà rốt xào với",
+    "food_items": [
+      "Cá trê chiên",
+      "Canh giò heo bí đao",
+      "Su su cà rốt xào",
+      "Nước mắm tỏi ớt"
+    ],
+    "image_description": "Hình ảnh hiển thị các món ăn được đặt trên một chiếc mẹt tre. Phía trên là đĩa cá trê chiên có màu vàng nâu. Bên trái là tô canh giò heo bí đao với nước dùng trong, giò heo màu hồng nhạt và bí đao xanh. Phía dưới là đĩa su su cà rốt xào với sự kết hợp giữa màu cam của cà rốt và xanh nhạt của su su. Góc bên phải là chén nước mắm tỏi ớt màu vàng nhạt điểm xuyết các vụn tỏi, ớt màu trắng và đỏ.",
+    "anchor_entity": "Cá Trê",
+    "answer_key": "Cá Trê|Hải Sản"
+  }
+]
