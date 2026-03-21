@@ -32,7 +32,7 @@ from typing import Any
 
 from dotenv import load_dotenv
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 load_dotenv(PROJECT_ROOT / ".env")
 
 DEFAULT_INPUT = PROJECT_ROOT / "data" / "triples" / "extracted_triples.json"

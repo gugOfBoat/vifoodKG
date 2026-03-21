@@ -121,7 +121,28 @@ DIETARY_STATEMENTS = {
     "mặn": "Không phù hợp với chế độ ăn thuần thực vật.",
 }
 
+ALLERGEN_PROMPT_ADDENDUM = """
+For allergen_restrictions:
+- The correct answer must be an allergen entity, not a yes/no statement.
+- All four answer choices must be allergen entities of the same semantic type.
+- Never use answers like "Có", "Không", "Có thể", "Không thể", or full-sentence warnings.
+- Prefer short noun phrases such as: Giáp xác, Gluten, Đậu nành, Trứng, Sữa, Đậu phộng.
+- The question should ask which allergen is relevant to the dish or which allergen-sensitive person should be cautious, not whether the dish is safe in a yes/no form.
+- Keep each answer choice short, nominal, and parallel in form.
+"""
+
+DIETARY_PROMPT_ADDENDUM = """
+For dietary_restrictions:
+- The correct answer must be a dietary category label, not a yes/no statement.
+- All four answer choices must be short category labels with the same semantic form.
+- Never use "Có", "Không", "Phù hợp với...", "Không phù hợp với..." as answer choices.
+- Ask which dietary label best matches the dish, not whether the dish is suitable in yes/no form.
+- Keep answer choices short, nominal, and parallel in structure.
+- If the provided facts imply plant-based vs animal-product, express them as category labels only.
+"""
+
 INDIFOODVQA_PROMPT_TEMPLATE = """
+
 You are a Vietnamese food specialist AI visual assistant, and you are seeing a single image. What you see are provided with some sentences, describing the same image you are looking at. Answer all questions as you are seeing the image.
 Description : {image_description}
 Use the following facts when generating the questions, given in the form of triples:
@@ -776,6 +797,18 @@ def build_indifoodvqa_prompt(
             "Avoid repeating the following existing questions for the same image and question type:\n"
             + existing_text
         )
+
+    extras.append(
+        "All four answer choices must be short noun phrases or category labels of the same semantic type. "
+        "Do not use yes/no answers, full-sentence statements, warnings, or explanatory phrases as answer choices."
+    )
+
+    qtype = qmeta.get("canonical_qtype", "")
+    if qtype == "allergen_restrictions":
+        extras.append(ALLERGEN_PROMPT_ADDENDUM.strip())
+    elif qtype == "dietary_restrictions":
+        extras.append(DIETARY_PROMPT_ADDENDUM.strip())
+
     extras.append(f"Focus on producing diverse reasoning patterns. Generation slot: {generation_slot}.")
     if extras:
         prompt += "\n\n" + "\n\n".join(extras)
