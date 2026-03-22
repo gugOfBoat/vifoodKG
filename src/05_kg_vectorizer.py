@@ -37,7 +37,7 @@ E5_PREFIX   = "passage: "   # required prefix for retrieval passages
 VECTORIZE_REL_TYPES = [
     "hasIngredient", "servedWith", "originRegion", "dishType",
     "cookingTechnique", "flavorProfile", "hasAllergen", "hasDietaryTag",
-    "ingredientCategory",
+    "ingredientCategory", "hasSubRule", "fromIngredient", "toIngredient"
 ]
 
 
@@ -61,7 +61,7 @@ SET r.embedding = row.embedding
 
 VECTOR_INDEX_QUERY = """
 CREATE VECTOR INDEX triple_vector_index IF NOT EXISTS
-FOR ()-[r:hasIngredient|servedWith|originRegion|dishType|cookingTechnique|flavorProfile|hasAllergen|hasDietaryTag|ingredientCategory]-()
+FOR ()-[r:hasIngredient|servedWith|originRegion|dishType|cookingTechnique|flavorProfile|hasAllergen|hasDietaryTag|ingredientCategory|hasSubRule|fromIngredient|toIngredient]-()
 ON (r.embedding)
 OPTIONS {indexConfig: {
   `vector.dimensions`: 384,
@@ -82,10 +82,12 @@ def bulk_update(session, rows: list[dict]) -> None:
 
 
 def create_vector_index(session) -> None:
-    """Create the cosine vector index on relationship embeddings."""
+    """Drop old index and recreate cosine vector index on all relationship embeddings."""
     try:
+        session.run("DROP INDEX triple_vector_index IF EXISTS")
+        print("  Dropped old `triple_vector_index` (if existed).")
         session.run(VECTOR_INDEX_QUERY)
-        print("  Vector index `triple_vector_index` created / already exists.")
+        print("  Vector index `triple_vector_index` created successfully.")
     except Exception as e:
         print(f"  [WARN] Vector index creation: {e}")
 
@@ -165,9 +167,9 @@ def main():
     parser = argparse.ArgumentParser(description="ViFoodKG Step 4 — Edge Vectorizer")
     parser.add_argument("--batch-size", type=int, default=32,
                         help="Number of texts per embedding batch (default: 32)")
-    parser.add_argument("--device", default="auto",
+    parser.add_argument("--device", default="cpu",
                         choices=["auto", "cuda", "cpu"],
-                        help="Device for SentenceTransformer (default: auto)")
+                        help="Device for SentenceTransformer (default: cpu)")
     parser.add_argument("--dry-run", action="store_true",
                         help="Count edges only, do not write embeddings")
     args = parser.parse_args()
