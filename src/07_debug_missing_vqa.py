@@ -1,3 +1,27 @@
+"""Backfill and debug missing VQA samples.
+
+This utility identifies images that are missing one or more expected question
+types in the Supabase ``vqa`` table, then reuses the generation pipeline from
+``06_generate_vqa.py`` to regenerate only the missing samples. It is intended
+for recovery and diagnostics after partial runs, retrieval issues, validation
+failures, or API quota interruptions.
+
+The script writes three artifacts under ``--output-dir``:
+- ``generated_vqa.json``: successfully generated VQA records for the current job
+- ``debug_failures.csv``: per-attempt failure diagnostics and skip reasons
+- ``_generate_vqa_progress.json``: resumable checkpoint state
+
+Runs are resumable. Reuse the same ``--output-dir`` after an interruption to
+continue from the last saved checkpoint instead of starting over.
+
+Examples:
+    python 07_debug_missing_vqa.py
+        --image-ids-file data/missing_image_ids.json      
+        --output-dir outputs/debug_missing
+
+    python 07_debug_missing_vqa.py --start 0 --end 100 --output-dir /content/drive/MyDrive/ViFoodKG_outputs/debug_missing
+"""
+
 from __future__ import annotations
 
 import argparse
@@ -147,6 +171,35 @@ def save_debug_csv(debug_rows: list[dict[str, str]], path: Path):
         writer = csv.DictWriter(f, fieldnames=["image_id", "qtype", "fail_stage", "detail"])
         writer.writeheader()
         writer.writerows(debug_rows)
+
+
+def load_progress(progress_file: Path) -> dict[str, Any]:
+    if progress_file.exists():
+        data = json.loads(progress_file.read_text(encoding="utf-8"))
+        data.setdefault("page", 0)
+        data.setdefault("generated", [])
+        data.setdefault("debug_rows", [])
+        data.setdefault("question_keys", [])
+        return data
+    return {"page": 0, "generated": [], "debug_rows": [], "question_keys": []}
+
+
+def save_progress(
+    *,
+    progress_file: Path,
+    page: int,
+    generated: list[dict[str, Any]],
+    debug_rows: list[dict[str, str]],
+    question_keys: set[str],
+) -> None:
+    progress_file.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "page": page,
+        "generated": generated,
+        "debug_rows": debug_rows,
+        "question_keys": sorted(question_keys),
+    }
+    progress_file.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def describe_invalid_generation(result: dict[str, Any]) -> str:
@@ -433,6 +486,7 @@ def main():
     output_dir.mkdir(parents=True, exist_ok=True)
     debug_csv = output_dir / "debug_failures.csv"
     generated_json = output_dir / "generated_vqa.json"
+    progress_json = output_dir / "_generate_vqa_progress.json"
 
     image_ids_from_file = load_image_ids(args.image_ids_file) if base.norm_text(args.image_ids_file) else []
     start_image_id = base.norm_text(args.start_image_id)
@@ -462,11 +516,23 @@ def main():
     gemini_client = base.make_gemini_client()
     kg = base.make_retriever(device=args.device)
 
-    generated: list[dict[str, Any]] = []
-    debug_rows: list[dict[str, str]] = []
+    progress = load_progress(progress_json)
+    generated: list[dict[str, Any]] = list(progress.get("generated", []))
+    debug_rows: list[dict[str, str]] = list(progress.get("debug_rows", []))
     questions_by_pair: dict[tuple[str, str], list[str]] = {}
     answers_by_pair: dict[tuple[str, str], set[str]] = {}
-    question_keys: set[str] = set()
+    question_keys: set[str] = set(progress.get("question_keys", []))
+
+    for sample in generated:
+        image_id = base.norm_text(sample.get("image_id"))
+        qtype = base.norm_text(sample.get("qtype"))
+        question = base.norm_text(sample.get("question_vi"))
+        answer_key = base.norm_text(sample.get("answer_key"))
+        if image_id and qtype and question:
+            questions_by_pair.setdefault((image_id, qtype), []).append(question)
+            question_keys.add(base.question_signature(image_id, qtype, question))
+        if image_id and qtype and answer_key:
+            answers_by_pair.setdefault((image_id, qtype), set()).add(answer_key)
 
     try:
         embedded_edges = base.count_embedded_edges(kg)
@@ -527,7 +593,7 @@ def main():
         else:
             row_batches = None
 
-        page = 0
+        page = int(progress.get("page", 0))
         while True:
             if row_batches is not None:
                 if page >= len(row_batches):
@@ -654,6 +720,13 @@ def main():
                         )
 
                         debug_rows.extend(logs)
+                        save_progress(
+                            progress_file=progress_json,
+                            page=page,
+                            generated=generated,
+                            debug_rows=debug_rows,
+                            question_keys=question_keys,
+                        )
 
                         if not sample:
                             break
@@ -681,8 +754,22 @@ def main():
                             f"  ✓ {sample['image_id']}::{sample['qtype']}::{len(existing_questions)} "
                             f"-> {sample['answer']} | {sample['question_vi'][:90]}"
                         )
+                        save_progress(
+                            progress_file=progress_json,
+                            page=page,
+                            generated=generated,
+                            debug_rows=debug_rows,
+                            question_keys=question_keys,
+                        )
 
             page += 1
+            save_progress(
+                progress_file=progress_json,
+                page=page,
+                generated=generated,
+                debug_rows=debug_rows,
+                question_keys=question_keys,
+            )
 
         generated_json.write_text(json.dumps(generated, ensure_ascii=False, indent=2), encoding="utf-8")
         save_debug_csv(debug_rows, debug_csv)
@@ -695,12 +782,25 @@ def main():
         print(f"Debug rows: {len(debug_rows)}")
         print(f"Saved generated JSON: {generated_json}")
         print(f"Saved debug CSV: {debug_csv}")
+        print(f"Saved progress JSON: {progress_json}")
 
         print("\nTop fail stages:")
         for stage, count in stage_counts.most_common(20):
             print(f"  {stage}: {count}")
 
     finally:
+        try:
+            save_progress(
+                progress_file=progress_json,
+                page=locals().get("page", int(progress.get("page", 0))),
+                generated=generated,
+                debug_rows=debug_rows,
+                question_keys=question_keys,
+            )
+            generated_json.write_text(json.dumps(generated, ensure_ascii=False, indent=2), encoding="utf-8")
+            save_debug_csv(debug_rows, debug_csv)
+        except Exception as exc:  # noqa: BLE001
+            print(f"[WARN] Failed to flush progress on exit: {type(exc).__name__}: {exc}")
         kg.close()
 
 

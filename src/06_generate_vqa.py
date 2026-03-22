@@ -8,17 +8,16 @@ Pipeline
 --------
 1. Read approved images from Supabase (`image.is_checked = true` and `image.is_drop = false`)
 2. Load question types from `data/question_types.csv`
-3. Use `query.py::KGRetriever` to retrieve top-K triples from Neo4j
-4. Filter triples by qtype and build one grounded candidate answer
+3. Use `query.py::KGRetriever` to retrieve qtype-aware top-K local paths from Neo4j
+4. Filter/rank those rows into one grounded candidate answer
 5. Give image description + retrieved triples + fixed 4 choices to Gemini
 6. Save checkpoint + final JSON
 
 Important
 ---------
-- This script depends on edge embeddings stored in Neo4j by `05_kg_vectorizer.py`.
-- `query.py` only returns relationships whose `embedding` property is not null.
-- With the CURRENT `05_kg_vectorizer.py`, `substitution_rules` will usually be skipped,
-  because `fromIngredient` / `toIngredient` edges are not vectorized yet.
+- This script now uses relation-aware local retrieval from `query.py`.
+- Ranking is done on full path text at runtime, so Neo4j edge embeddings are no longer required here.
+- `substitution_rules` can be retrieved as long as the relevant edges exist in Neo4j.
 
 Usage
 -----
@@ -53,7 +52,7 @@ DEFAULT_PROGRESS_FILE = DEFAULT_OUTPUT_DIR / "_generate_vqa_progress.json"
 
 GEMINI_MODEL = os.getenv("VQA_GEMINI_MODEL", "gemini-3.1-flash-lite-preview")
 PAGE_SIZE = 500
-TOP_K = 8
+TOP_K = 20
 DEFAULT_SEED = 42
 
 # qtypes that can be supported by the CURRENT retriever + vectorizer stack
@@ -121,28 +120,7 @@ DIETARY_STATEMENTS = {
     "mặn": "Không phù hợp với chế độ ăn thuần thực vật.",
 }
 
-ALLERGEN_PROMPT_ADDENDUM = """
-For allergen_restrictions:
-- The correct answer must be an allergen entity, not a yes/no statement.
-- All four answer choices must be allergen entities of the same semantic type.
-- Never use answers like "Có", "Không", "Có thể", "Không thể", or full-sentence warnings.
-- Prefer short noun phrases such as: Giáp xác, Gluten, Đậu nành, Trứng, Sữa, Đậu phộng.
-- The question should ask which allergen is relevant to the dish or which allergen-sensitive person should be cautious, not whether the dish is safe in a yes/no form.
-- Keep each answer choice short, nominal, and parallel in form.
-"""
-
-DIETARY_PROMPT_ADDENDUM = """
-For dietary_restrictions:
-- The correct answer must be a dietary category label, not a yes/no statement.
-- All four answer choices must be short category labels with the same semantic form.
-- Never use "Có", "Không", "Phù hợp với...", "Không phù hợp với..." as answer choices.
-- Ask which dietary label best matches the dish, not whether the dish is suitable in yes/no form.
-- Keep answer choices short, nominal, and parallel in structure.
-- If the provided facts imply plant-based vs animal-product, express them as category labels only.
-"""
-
 INDIFOODVQA_PROMPT_TEMPLATE = """
-
 You are a Vietnamese food specialist AI visual assistant, and you are seeing a single image. What you see are provided with some sentences, describing the same image you are looking at. Answer all questions as you are seeing the image.
 Description : {image_description}
 Use the following facts when generating the questions, given in the form of triples:
@@ -152,7 +130,7 @@ Give an output with 4 parts, with each part separated by 2 blank lines: a questi
 (2) one can determine confidently from the image that it is not in the image. Do not ask any question that cannot be answered confidently.
 The question should be about {question_type} of the food items in the image This includes details about {detailed_information}. The question should involve complex ideas like relative positions of the objects, the shapes and colors of the objects, and so on. The answers should be in a tone that a visual AI assistant is seeing the image and answering the question. Nowhere should it be mentioned that a description or some external knowledge has been provided. Act like you can see the image, and create complex questions requiring multiple steps of reasoning.
 The knowledge triples do not describe the image. If any of the given knowledge triples are used to generate the question, then do not mention the entities given in the knowledge triple in the Question or Answer Choices. Ensure that in the case that any knowledge triple is used, the question is not answerable without using this external knowledge. The knowledge used to generate the question can only be mentioned in the Reason field.
-Also, create questions about both the main dish and the side dish. Try to include the relative position between the items as a part of the question. But keep the main question about {question_type} of the food items. Do not bold anything (keep everything in normal font), and do not number the questions. The question and each answer choice should be in a new line. Make sure the questions involve reasoning to answer. The output should contain 5 such diverse questions (5 questions with given format). Do not mention the word "knowledge" or "triples" or "description" anywhere. Don't include any numbers anywhere.
+Also, create questions about both the main dish and the side dish. Try to include the relative position between the items as a part of the question. But keep the main question about {question_type} of the food items. Do not bold anything (keep everything in normal font), and do not number the questions. The question and each answer choice should be in a new line. Make sure the questions involve reasoning to answer. The output should contain a question with given format. Do not mention the word "knowledge" or "triples" or "description" anywhere. Don't include any numbers anywhere.
 Write all output in Vietnamese.
 """.strip()
 
@@ -427,18 +405,16 @@ def fetch_all_dishes(kg) -> dict[str, str]:
     return mapping
 
 
-def count_embedded_edges(kg) -> int:
+def count_total_relations(kg) -> int:
     with kg._driver.session() as session:
-        row = session.run(
-            "MATCH ()-[r]-() WHERE r.embedding IS NOT NULL RETURN count(r) AS c"
-        ).single()
+        row = session.run("MATCH ()-[r]-() RETURN count(r) AS c").single()
         return int(row["c"]) if row and row["c"] is not None else 0
 
 
-def count_substitution_embeddings(kg) -> int:
+def count_substitution_edges(kg) -> int:
     with kg._driver.session() as session:
         row = session.run(
-            "MATCH ()-[r:fromIngredient|toIngredient]-() WHERE r.embedding IS NOT NULL RETURN count(r) AS c"
+            "MATCH ()-[r:fromIngredient|toIngredient]-() RETURN count(r) AS c"
         ).single()
         return int(row["c"]) if row and row["c"] is not None else 0
 
@@ -451,28 +427,29 @@ def choose_anchor_dish(food_items: list[str], dish_aliases: dict[str, str]) -> s
     return None
 
 
-def build_retrieval_query(qmeta: dict[str, Any], dish: str, image_desc: str, food_items: list[str]) -> str:
+def build_retrieval_query(qmeta: dict[str, Any]) -> str:
     keywords = qmeta.get("keywords", "")
     detail = qmeta.get("detail_description", "")
-    rel_path = qmeta.get("relationship_path", "")
     rel_seq = ", ".join(qmeta.get("relationship_sequence", []))
-    visible = ", ".join(food_items[:12])
-    short_desc = image_desc[:240]
     return (
         f"Loại câu hỏi: {qmeta['canonical_qtype']}. "
-        f"Món neo: {dish}. "
         f"Từ khóa: {keywords}. "
-        f"Mô tả: {detail}. "
-        f"Đường đi quan hệ: {rel_path}. "
-        f"Chuỗi quan hệ: {rel_seq}. "
-        f"Vật thể thay được: {visible}. "
-        f"Ngữ cảnh ảnh: {short_desc}"
+        f"Mục tiêu truy xuất: {detail}. "
+        f"Chuỗi quan hệ ưu tiên: {rel_seq}."
     )
 
 
 # ---------------------------------------------------------------------------
 # Candidate construction from query.py retrieval results
 # ---------------------------------------------------------------------------
+
+
+def get_retrieval_relations(qmeta: dict[str, Any]) -> list[str]:
+    qtype = qmeta.get("canonical_qtype")
+    if qtype == "substitution_rules":
+        return ["fromIngredient", "toIngredient"]
+    primary = norm_text(qmeta.get("primary_relation"))
+    return [primary] if primary else []
 
 
 def filter_rows_by_relationship_path(rows: list[dict[str, Any]], qmeta: dict[str, Any]) -> list[dict[str, Any]]:
@@ -748,13 +725,18 @@ def build_choices(candidate: dict[str, Any], kg, rng: random.Random) -> tuple[di
 # Gemini generation
 # ---------------------------------------------------------------------------
 
-def format_kg_triples_for_prompt(rows: list[dict[str, Any]]) -> str:
+def format_kg_triples_for_prompt(triples: list[dict[str, Any]]) -> str:
     lines: list[str] = []
-    for row in rows:
-        subject = norm_text(row.get("subject"))
-        relation = norm_text(row.get("relation"))
-        target = norm_text(row.get("target"))
-        if subject and relation and target:
+    for triple in triples:
+        subject = norm_text(triple.get("subject"))
+        relation = norm_text(triple.get("relation"))
+        target = norm_text(triple.get("target"))
+        via = norm_text(triple.get("via"))
+        if not subject or not relation or not target:
+            continue
+        if via:
+            lines.append(f"({subject}, {relation}, {target}, qua {via})")
+        else:
             lines.append(f"({subject}, {relation}, {target})")
     return "\n".join(lines)
 
@@ -778,6 +760,7 @@ def build_indifoodvqa_prompt(
                 "hop": row.get("hop"),
                 "score": row.get("score"),
                 "verbalized_text": norm_text(row.get("verbalized_text")),
+                "rank_text": norm_text(row.get("rank_text")),
                 "evidence": norm_text(row.get("evidence")),
                 "source_url": norm_text(row.get("source_url")),
             }
@@ -785,7 +768,7 @@ def build_indifoodvqa_prompt(
 
     prompt = INDIFOODVQA_PROMPT_TEMPLATE.format(
         image_description=image_row["image_description"],
-        kg_triples=format_kg_triples_for_prompt(retrieved_rows),
+        kg_triples=format_kg_triples_for_prompt(candidate["triples"]),
         question_type=qmeta.get("question_type") or qmeta["canonical_qtype"],
         detailed_information=qmeta.get("detail_description", ""),
     )
@@ -797,18 +780,6 @@ def build_indifoodvqa_prompt(
             "Avoid repeating the following existing questions for the same image and question type:\n"
             + existing_text
         )
-
-    extras.append(
-        "All four answer choices must be short noun phrases or category labels of the same semantic type. "
-        "Do not use yes/no answers, full-sentence statements, warnings, or explanatory phrases as answer choices."
-    )
-
-    qtype = qmeta.get("canonical_qtype", "")
-    if qtype == "allergen_restrictions":
-        extras.append(ALLERGEN_PROMPT_ADDENDUM.strip())
-    elif qtype == "dietary_restrictions":
-        extras.append(DIETARY_PROMPT_ADDENDUM.strip())
-
     extras.append(f"Focus on producing diverse reasoning patterns. Generation slot: {generation_slot}.")
     if extras:
         prompt += "\n\n" + "\n\n".join(extras)
@@ -905,13 +876,17 @@ def generate_one_sample(
     used_answer_keys: set[str] | None = None,
     generation_slot: int = 1,
 ) -> dict[str, Any] | None:
-    retrieval_query = build_retrieval_query(
-        qmeta=qmeta,
-        dish=anchor_dish,
-        image_desc=image_row["image_description"],
-        food_items=image_row["food_items"],
+    retrieval_query = build_retrieval_query(qmeta=qmeta)
+    retrieval_relations = get_retrieval_relations(qmeta)
+    retrieve_top_k = top_k
+    if qmeta.get("canonical_qtype") == "substitution_rules":
+        retrieve_top_k = max(top_k, 12)
+    retrieved = kg.retrieve(
+        items=[anchor_dish],
+        question=retrieval_query,
+        top_k=retrieve_top_k,
+        allowed_relations=retrieval_relations,
     )
-    retrieved = kg.retrieve(items=[anchor_dish], question=retrieval_query, top_k=top_k)
     candidates = select_candidates(qmeta, retrieved)
     if not candidates:
         return None
@@ -958,6 +933,7 @@ def generate_one_sample(
                 "triples_used": triples_used,
                 "retrieved_facts": retrieved_facts,
                 "retrieval_query": retrieval_query,
+                "retrieval_relations": retrieval_relations,
                 "food_items": image_row["food_items"],
                 "image_description": image_row["image_description"],
                 "anchor_entity": candidate.get("anchor"),
@@ -1053,23 +1029,13 @@ def main() -> None:
     kg = make_retriever(device=args.device)
 
     try:
-        embedded_edges = count_embedded_edges(kg)
-        if embedded_edges == 0:
-            raise RuntimeError(
-                "No relationship embeddings found in Neo4j. Run src/05_kg_vectorizer.py first."
-            )
-
-        substitution_emb = count_substitution_embeddings(kg)
-        if substitution_emb == 0 and any(q["canonical_qtype"] == "substitution_rules" for q in requested_qtypes):
-            print(
-                "[WARN] substitution_rules is disabled in practice because current edge embeddings for "
-                "fromIngredient/toIngredient are missing. Skip this qtype for now or update 05_kg_vectorizer.py."
-            )
-            requested_qtypes = [q for q in requested_qtypes if q["canonical_qtype"] != "substitution_rules"]
+        total_relations = count_total_relations(kg)
+        substitution_edges = count_substitution_edges(kg)
 
         dish_aliases = fetch_all_dishes(kg)
         print(f"Loaded {len(dish_aliases)} dishes from Neo4j")
-        print(f"Embedded relationships: {embedded_edges}")
+        print(f"Total relationships in KG: {total_relations}")
+        print(f"Substitution edges in KG: {substitution_edges}")
         print("Question types:", ", ".join(q["canonical_qtype"] for q in requested_qtypes))
         if norm_text(args.start_image_id) or norm_text(args.end_image_id):
             print(
