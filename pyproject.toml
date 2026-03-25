@@ -4,9 +4,6 @@ version = "0.1.0"
 description = "ViFoodKG: A Knowledge Graph for Vietnamese Cuisine Questions & Answers powered by Neo4j and Gemini"
 readme = "README.md"
 requires-python = ">=3.11"
-authors = [
-    { name = "gugOfBoat" }
-]
 dependencies = [
     "wikipedia-api>=0.6.0",
     "python-dotenv>=1.0.0",

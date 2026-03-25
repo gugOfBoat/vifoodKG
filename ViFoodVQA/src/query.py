@@ -1,42 +1,24 @@
 """
 ViFoodKG — KGRetriever Module
 ===============================
-Chiến lược: Neo → Traverse → Rank
+Chiến lược query: Neo → Traverse → Prefilter → Rank
 
-  1. Neo   : Anchor vào đúng các Dish node trong items
-  2. Traverse: Lấy toàn bộ edges 1-hop và 2-hop từ những node đó
-  3. Rank  : Tính cosine giữa embedding của edges và vector câu hỏi → top-K
+  1. Neo       : Anchor vào đúng các Dish node trong items
+  2. Traverse  : Lấy neighborhood 1-hop / 2-hop quanh các Dish đó
+  3. Prefilter : Giữ lại đúng relation phục vụ qtype hiện tại
+  4. Rank      : So khớp vector giữa query intent và full path text
 
-Ưu điểm:
-- Load model 1 lần duy nhất (singleton), gọi lại .retrieve() bao nhiêu cũng được
-- Không scan toàn bộ vector index → nhanh hơn, chính xác hơn
-- Hỗ trợ cả 1-hop lẫn 2-hop tự động
-- Dễ import từ Colab / pipeline sinh QA
-
-Usage:
-------
-  from src.query import KGRetriever
-
-  kg = KGRetriever()                         # load model 1 lần
-  results = kg.retrieve(
-      items=["Phở Bò", "Thịt Bò"],
-      question="nguyên liệu chính là gì",
-      top_k=5,
-  )
-  for r in results:
-      print(r["verbalized_text"], r["score"])
-
-CLI:
-----
-  python src/query.py -i "Phở Bò" "Thịt Bò" -q "nguyên liệu" -k 5
-  python src/query.py -i "Bánh Xèo" -q "chất dị ứng" -k 3 --json
+Khác biệt chính so với bản cũ:
+- Không rank edge embedding đơn lẻ nữa; rank theo full path text để 2-hop không bị lép vế
+- Có thể truyền allowed_relations để lọc theo qtype trước khi top-k
+- Query text nên chỉ chứa intent của qtype; tên món đã được dùng ở bước anchor/traverse
 """
 
 import argparse
 import json
 import os
 import sys
-from typing import Optional
+from typing import Dict, Iterable, Optional
 
 import numpy as np
 from dotenv import load_dotenv
@@ -60,62 +42,101 @@ _TRAVERSE_QUERY = """
 // ── 1-hop: Dish → direct target ─────────────────────────────────────────────
 MATCH (d:Dish)-[r]->(target)
 WHERE d.name IN $items
-  AND NOT type(r) IN ['hasSubRule']      // SubRule handled separately
-  AND r.embedding IS NOT NULL
+  AND NOT type(r) IN ['hasSubRule']
 
-RETURN
-  d.name          AS subject,
-  'Dish'          AS subject_type,
-  type(r)         AS relation,
-  target.name     AS target,
+RETURN DISTINCT
+  d.name            AS subject,
+  'Dish'            AS subject_type,
+  type(r)           AS relation,
+  target.name       AS target,
   labels(target)[0] AS target_type,
-  null            AS via,               // no intermediate node for 1-hop
+  null              AS via,
+  null              AS via_type,
   r.verbalized_text AS verbalized_text,
-  r.evidence      AS evidence,
-  r.source_url    AS source_url,
-  1               AS hop,
-  r.embedding     AS embedding
+  r.evidence        AS evidence,
+  r.source_url      AS source_url,
+  1                 AS hop
 
 UNION ALL
 
-// ── 2-hop: Dish → Ingredient → (Category | Allergen | DietaryTag) ───────────
+// ── 2-hop: Dish → Ingredient → target ──────────────────────────────────────
 MATCH (d:Dish)-[:hasIngredient]->(ing:Ingredient)-[r]->(target)
 WHERE d.name IN $items
-  AND r.embedding IS NOT NULL
 
-RETURN
-  d.name          AS subject,
-  'Dish'          AS subject_type,
-  type(r)         AS relation,
-  target.name     AS target,
+RETURN DISTINCT
+  d.name            AS subject,
+  'Dish'            AS subject_type,
+  type(r)           AS relation,
+  target.name       AS target,
   labels(target)[0] AS target_type,
-  ing.name        AS via,
+  ing.name          AS via,
+  'Ingredient'      AS via_type,
   r.verbalized_text AS verbalized_text,
-  r.evidence      AS evidence,
-  r.source_url    AS source_url,
-  2               AS hop,
-  r.embedding     AS embedding
+  r.evidence        AS evidence,
+  r.source_url      AS source_url,
+  2                 AS hop
 
 UNION ALL
 
-// ── SubstitutionRule: Dish → SubRule → from/to Ingredient ───────────────────
+// ── SubstitutionRule: Dish → SubRule → Ingredient ──────────────────────────
 MATCH (d:Dish)-[:hasSubRule]->(sr:SubstitutionRule)-[r]->(ing:Ingredient)
 WHERE d.name IN $items
-  AND r.embedding IS NOT NULL
 
-RETURN
-  d.name          AS subject,
-  'Dish'          AS subject_type,
-  type(r)         AS relation,
-  ing.name        AS target,
-  'Ingredient'    AS target_type,
-  sr.name         AS via,
+RETURN DISTINCT
+  d.name            AS subject,
+  'Dish'            AS subject_type,
+  type(r)           AS relation,
+  ing.name          AS target,
+  'Ingredient'      AS target_type,
+  sr.name           AS via,
+  'SubstitutionRule' AS via_type,
   r.verbalized_text AS verbalized_text,
-  r.evidence      AS evidence,
-  r.source_url    AS source_url,
-  2               AS hop,
-  r.embedding     AS embedding
+  r.evidence        AS evidence,
+  r.source_url      AS source_url,
+  2                 AS hop
 """
+
+
+_RELATION_TO_VI = {
+    "hasIngredient": "có thành phần",
+    "servedWith": "thường ăn kèm với",
+    "originRegion": "có nguồn gốc từ",
+    "dishType": "thuộc loại món",
+    "ingredientCategory": "thuộc nhóm nguyên liệu",
+    "hasAllergen": "có chất gây dị ứng",
+    "cookingTechnique": "được chế biến bằng",
+    "flavorProfile": "có hương vị",
+    "hasDietaryTag": "mang nhãn chế độ ăn",
+    "hasSubRule": "có quy tắc thay thế",
+    "fromIngredient": "thay nguyên liệu gốc",
+    "toIngredient": "bằng nguyên liệu",
+}
+
+
+def _relation_to_vi(relation: str) -> str:
+    return _RELATION_TO_VI.get((relation or "").strip(), (relation or "").strip())
+
+
+def _norm_text(value: object) -> str:
+    if value is None:
+        return ""
+    return " ".join(str(value).strip().split())
+
+
+def _build_rank_text(row: dict) -> str:
+    subject = _norm_text(row.get("subject"))
+    relation = _norm_text(row.get("relation"))
+    relation_vi = _relation_to_vi(relation)
+    target = _norm_text(row.get("target"))
+    via = _norm_text(row.get("via"))
+
+    if int(row.get("hop") or 0) == 1:
+        return f"{subject} {relation_vi} {target}".strip()
+
+    if relation in {"fromIngredient", "toIngredient"}:
+        return f"{subject} có quy tắc thay thế {via}; {via} {relation_vi} {target}".strip()
+
+    return f"{subject} có thành phần {via}; {via} {relation_vi} {target}".strip()
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -158,6 +179,7 @@ class KGRetriever:
         print(f"[KGRetriever] Loading {MODEL_NAME} on {device}...")
         from sentence_transformers import SentenceTransformer
         self._model = SentenceTransformer(MODEL_NAME, device=device)
+        self._text_embedding_cache: Dict[str, np.ndarray] = {}
         print("[KGRetriever] Ready.\n")
 
     # ── Internal helpers ──────────────────────────────────────────────────────
@@ -170,9 +192,20 @@ class KGRetriever:
         )
         return vec[0]
 
-    def _cosine(self, vec_a: np.ndarray, vec_b: list) -> float:
+    def _embed_many(self, texts: list[str]) -> list[np.ndarray]:
+        uncached = [text for text in texts if text not in self._text_embedding_cache]
+        if uncached:
+            vectors = self._model.encode(
+                [E5_QUERY_PREFIX + text for text in uncached],
+                normalize_embeddings=True,
+                show_progress_bar=False,
+            )
+            for text, vec in zip(uncached, vectors, strict=True):
+                self._text_embedding_cache[text] = vec
+        return [self._text_embedding_cache[text] for text in texts]
+
+    def _cosine(self, vec_a: np.ndarray, vec_b: np.ndarray | list) -> float:
         b = np.array(vec_b, dtype=np.float32)
-        # Both are L2-normalised → dot product == cosine
         return float(np.dot(vec_a, b))
 
     # ── Main API ──────────────────────────────────────────────────────────────
@@ -182,25 +215,23 @@ class KGRetriever:
         items: list[str],
         question: str,
         top_k: int = 5,
+        allowed_relations: Optional[Iterable[str]] = None,
     ) -> list[dict]:
         """
         Parameters
         ----------
-        items    : food entities detected in image (dish names, ingredient names)
-        question : free-text description of what the user wants to know
-        top_k    : number of top triples to return
+        items             : dish names used to anchor the local subgraph
+        question          : qtype intent / detail text (should be short, relation-focused)
+        top_k             : number of rows to return after ranking
+        allowed_relations : optional relation whitelist applied BEFORE top-k
 
         Returns
         -------
-        List[dict] sorted by score desc, each with:
-          subject, subject_type, relation, target, target_type,
-          via (intermediate node for 2-hop, else None),
-          verbalized_text, evidence, source_url, hop, score
+        List[dict] sorted by score desc.
+        Each row additionally includes `rank_text`, the full path text used for scoring.
         """
-        # Step 1 — Embed question
         query_vec = self._embed(question)
 
-        # Step 2 — Traverse neighborhood in Neo4j (anchor on items)
         with self._driver.session() as session:
             raw = session.run(_TRAVERSE_QUERY, items=items)
             rows = [dict(r) for r in raw]
@@ -208,16 +239,24 @@ class KGRetriever:
         if not rows:
             return []
 
-        # Step 3 — Rank by cosine, keep top-K
-        scored = []
-        for row in rows:
-            emb = row.pop("embedding")
-            if emb is None:
-                continue
-            score = self._cosine(query_vec, emb)
-            scored.append({**row, "score": round(score, 6)})
+        if allowed_relations:
+            allowed = {_norm_text(rel) for rel in allowed_relations if _norm_text(rel)}
+            rows = [row for row in rows if _norm_text(row.get("relation")) in allowed]
+            if not rows:
+                return []
 
-        scored.sort(key=lambda x: x["score"], reverse=True)
+        rank_texts = [_build_rank_text(row) for row in rows]
+        rank_vecs = self._embed_many(rank_texts)
+
+        scored = []
+        for row, rank_text, rank_vec in zip(rows, rank_texts, rank_vecs, strict=True):
+            scored.append({
+                **row,
+                "rank_text": rank_text,
+                "score": round(self._cosine(query_vec, rank_vec), 6),
+            })
+
+        scored.sort(key=lambda x: (x["score"], x.get("hop", 0)), reverse=True)
         return scored[:top_k]
 
     def retrieve_all_types(
@@ -276,6 +315,9 @@ def print_results(results: list[dict], items: list[str], question: str) -> None:
         else:
             print(f"    ({st}) {subj} ──[{rel}]──▶ {tgt} ({tt})")
 
+        rt = r.get("rank_text")
+        if rt:
+            print(f"    ≈ {rt}")
         vt = r.get("verbalized_text")
         if vt:
             print(f"    ✎ {vt}")
@@ -301,11 +343,12 @@ def main():
     parser.add_argument("--question", "-q", required=True, metavar="QUESTION")
     parser.add_argument("--top-k", "-k", type=int, default=5)
     parser.add_argument("--device", default="auto", choices=["auto", "cuda", "cpu"])
+    parser.add_argument("--relations", nargs="*", default=[], help="Optional relation whitelist before ranking")
     parser.add_argument("--json", action="store_true")
     args = parser.parse_args()
 
     with KGRetriever(device=args.device) as kg:
-        results = kg.retrieve(args.items, args.question, args.top_k)
+        results = kg.retrieve(args.items, args.question, args.top_k, allowed_relations=args.relations)
 
     if args.json:
         print(json.dumps({
