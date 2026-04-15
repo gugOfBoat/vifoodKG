@@ -1536,6 +1536,9 @@ def fetch_kg_rows(
     filter_is_drop: str,
     relation_filter: str,
     search_text: str,
+    start_triple_id: int = 1,
+    end_triple_id: int = 9999999,
+    filter_evidence: str = "Tất cả",
 ) -> list[dict[str, Any]]:
     if not table_exists("kg_triple_catalog"):
         return []
@@ -1548,7 +1551,9 @@ def fetch_kg_rows(
     if column_exists("kg_triple_catalog", "updated_at"):
         select_cols += ",updated_at"
 
-    query = supabase.table("kg_triple_catalog").select(select_cols).order("triple_id")
+    query = supabase.table("kg_triple_catalog").select(select_cols).gte("triple_id", start_triple_id).lte("triple_id", end_triple_id).order("triple_id")
+    if filter_evidence == "Trống (NULL)":
+        query = query.is_("evidence", "null")
     if column_exists("kg_triple_catalog", "is_checked"):
         query = apply_bool_filter(query, "is_checked", filter_is_checked)
     if column_exists("kg_triple_catalog", "is_drop"):
@@ -1612,20 +1617,44 @@ def load_verify_triples_page() -> None:
         st.error("Chưa có bảng `kg_triple_catalog`.")
         return
 
+    start_triple_id = st.sidebar.number_input(
+        "Từ triple ID:",
+        min_value=1,
+        value=1,
+        step=1,
+        key="triple_start_id",
+    )
+
+    end_triple_id = st.sidebar.number_input(
+        "Đến triple ID:",
+        min_value=1,
+        value=2072,
+        step=1,
+        key="triple_end_id",
+    )
+    st.sidebar.markdown("---")
+
     filter_is_checked = st.sidebar.selectbox(
         "Lọc theo triple.is_checked:",
         ["Tất cả", "True", "False"],
-        index=2 if has_review_cols else 0,
+        index=2,
         key="triple_filter_checked",
     )
     filter_is_drop = st.sidebar.selectbox(
         "Lọc theo triple.is_drop:",
         ["Tất cả", "True", "False"],
-        index=0,
+        index=2,
         key="triple_filter_drop",
     )
 
-    rows_for_relation = fetch_kg_rows("Tất cả", "Tất cả", "Tất cả", "")
+    filter_evidence = st.sidebar.selectbox(
+        "Lọc theo evidence:",
+        ["Tất cả", "Trống (NULL)"],
+        index=1,
+        key="triple_filter_evidence",
+    )
+
+    rows_for_relation = fetch_kg_rows("Tất cả", "Tất cả", "Tất cả", "", start_triple_id, end_triple_id, filter_evidence)
     relations = sorted({norm_text(row.get("relation")) for row in rows_for_relation if norm_text(row.get("relation"))})
     relation_filter = st.sidebar.selectbox(
         "Lọc theo relation:",
@@ -1636,7 +1665,7 @@ def load_verify_triples_page() -> None:
     search_text = st.sidebar.text_input("Tìm theo subject/target/relation:", key="triple_search")
 
     try:
-        triple_rows = fetch_kg_rows(filter_is_checked, filter_is_drop, relation_filter, search_text)
+        triple_rows = fetch_kg_rows(filter_is_checked, filter_is_drop, relation_filter, search_text, start_triple_id, end_triple_id, filter_evidence)
     except Exception as exc:  # noqa: BLE001
         st.error(f"Không tải được triple catalog: {exc}")
         return
@@ -1764,7 +1793,7 @@ def load_verify_triples_page() -> None:
 page = st.sidebar.radio(
     "Chế độ",
     ["Verify Images", "Verify VQA", "Verify KG Triples"],
-    index=1,
+    index=2,
 )
 
 st.sidebar.markdown("---")
