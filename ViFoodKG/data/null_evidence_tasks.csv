@@ -1,0 +1,2510 @@
+﻿triple_id,subject,relation,target,evidence,source_url,assignee
+1,Bánh Bèo,cookingTechnique,Hấp,,,Member_1
+2,Bánh Bèo,dishType,Món khai vị,,,Member_1
+3,Bánh Bèo,flavorProfile,Mặn ngọt,,,Member_1
+5,Bánh Bèo,hasIngredient,Bột Gạo,,,Member_1
+6,Bánh Bèo,hasIngredient,Tôm,,,Member_1
+8,Bánh Bèo,originRegion,Huế,,,Member_1
+9,Bánh Bèo,servedWith,Nước Mắm,,,Member_1
+10,Bánh Chưng,cookingTechnique,Luộc,,,Member_1
+14,Bánh Chưng,hasIngredient,Gạo Nếp,,,Member_1
+15,Bánh Chưng,hasIngredient,Thịt Lợn,,,Member_1
+19,Bánh Cuốn,cookingTechnique,Hấp,,,Member_1
+20,Bánh Cuốn,dishType,Món ăn sáng,,,Member_1
+21,Bánh Cuốn,flavorProfile,Thanh đạm,,,Member_1
+25,Bánh Cuốn,hasIngredient,Mộc Nhĩ,,,Member_1
+26,Bánh Cuốn,hasIngredient,Thịt Lợn,,,Member_1
+27,Bánh Cuốn,originRegion,Miền Bắc,,,Member_1
+29,Bánh Cuốn,servedWith,Nước Mắm,,,Member_1
+31,Bánh Mì,cookingTechnique,Nướng,,,Member_1
+36,Bánh Mì,hasIngredient,Bột Mì,,,Member_1
+57,Bánh Xèo,cookingTechnique,Chiên,,,Member_1
+58,Bánh Xèo,cookingTechnique,Rán,,,Member_1
+59,Bánh Xèo,dishType,Món ăn chơi,,,Member_1
+60,Bánh Xèo,flavorProfile,Giòn béo,,,Member_1
+62,Bánh Xèo,hasIngredient,Tôm,,,Member_1
+63,Bánh Xèo,originRegion,Miền Nam,,,Member_1
+64,Bánh Xèo,servedWith,Rau Diếp,,,Member_1
+65,Bánh Xèo,servedWith,Rau sống,,,Member_1
+80,Bún Bò Nam Bộ,cookingTechnique,Xào,,,Member_1
+81,Bún Bò Nam Bộ,hasIngredient,Thăn Bò,,,Member_1
+82,Bún Bò Nam Bộ,originRegion,Nam Bộ,,,Member_1
+84,Bún Riêu Cua,hasIngredient,Mắm tôm,,,Member_1
+85,Bún Riêu Cua,originRegion,Đồng bằng sông Hồng,,,Member_1
+86,Bún Riêu Cua,servedWith,Rau sống,,,Member_1
+89,Bún Thịt Nướng,cookingTechnique,Nướng,,,Member_1
+90,Bún Thịt Nướng,hasIngredient,Thịt Nạc Dăm,,,Member_1
+91,Bún Thịt Nướng,originRegion,Miền Nam,,,Member_1
+92,Bún Thịt Nướng,servedWith,Nước Mắm Chua Ngọt,,,Member_1
+96,Bắp Cải,ingredientCategory,Rau Lá,,,Member_1
+97,Bột Chiên,hasAllergen,Gluten,,,Member_1
+98,Bột Chiên Xù,hasAllergen,Gluten,,,Member_1
+99,Bột Gạo,ingredientCategory,Ngũ Cốc,,,Member_1
+100,Bột Mì,hasAllergen,Gluten,,,Member_1
+108,Canh Chua,dishType,Món Nước,,,Member_1
+109,Canh Chua,dishType,Món nước,,,Member_1
+110,Canh Chua,flavorProfile,Chua,,,Member_1
+111,Canh Chua,hasIngredient,Cá,,,Member_1
+112,Canh Chua,originRegion,Nam Bộ,,,Member_1
+114,Canh Chua,servedWith,Cơm Trắng,,,Member_1
+130,Canh Khoai Lang,cookingTechnique,Luộc/Nấu canh,,,Member_1
+131,Canh Khoai Lang,dishType,Món Canh,,,Member_1
+132,Canh Khoai Lang,flavorProfile,Ngọt thanh,,,Member_1
+135,Canh Khoai Lang,hasIngredient,Khoai Lang,,,Member_1
+137,Canh Khoai Lang,originRegion,Việt Nam,,,Member_1
+138,Canh Khoai Lang,servedWith,Cơm trắng,,,Member_1
+144,Canh Khoai Môn,hasIngredient,Khoai Môn,,,Member_1
+148,Canh Khoai Mỡ,cookingTechnique,Nấu Canh,,,Member_1
+149,Canh Khoai Mỡ,dishType,Canh,,,Member_1
+150,Canh Khoai Mỡ,flavorProfile,"Ngọt, béo",,,Member_1
+153,Canh Khoai Mỡ,hasIngredient,Khoai Mỡ,,,Member_1
+156,Canh Khoai Mỡ,servedWith,Cơm trắng,,,Member_1
+172,Canh Khoai Sọ,hasIngredient,Khoai Sọ,,,Member_1
+176,Canh Khoai Sọ Nấu Xương,cookingTechnique,Hầm,,,Member_1
+177,Canh Khoai Sọ Nấu Xương,dishType,Canh,,,Member_1
+178,Canh Khoai Sọ Nấu Xương,flavorProfile,"Ngọt, bùi",,,Member_1
+181,Canh Khoai Sọ Nấu Xương,hasIngredient,Xương heo,,,Member_1
+184,Canh Khoai Sọ Nấu Xương,originRegion,Việt Nam,,,Member_1
+185,Canh Khoai Sọ Nấu Xương,servedWith,Cơm trắng,,,Member_1
+186,Canh Khoai Tây Cà Rốt,cookingTechnique,Nấu,,,Member_1
+187,Canh Khoai Tây Cà Rốt,dishType,Món Nước,,,Member_1
+188,Canh Khoai Tây Cà Rốt,flavorProfile,Ngọt thanh,,,Member_1
+191,Canh Khoai Tây Cà Rốt,hasIngredient,Cà Rốt,,,Member_1
+192,Canh Khoai Tây Cà Rốt,hasIngredient,Khoai Tây,,,Member_1
+194,Canh Khoai Tây Cà Rốt,originRegion,Việt Nam,,,Member_1
+195,Canh Khoai Tây Cà Rốt,servedWith,Cơm trắng,,,Member_1
+206,Canh Khoai Tây Nấu Xương,cookingTechnique,Hầm,,,Member_1
+207,Canh Khoai Tây Nấu Xương,dishType,Canh,,,Member_1
+208,Canh Khoai Tây Nấu Xương,flavorProfile,"Ngọt, bùi",,,Member_1
+211,Canh Khoai Tây Nấu Xương,hasIngredient,Xương heo,,,Member_1
+214,Canh Khoai Tây Nấu Xương,originRegion,Việt Nam,,,Member_1
+215,Canh Khoai Tây Nấu Xương,servedWith,Cơm trắng,,,Member_1
+225,Canh Khổ Qua,cookingTechnique,Luộc/Nấu,,,Member_1
+226,Canh Khổ Qua,dishType,Canh,,,Member_1
+227,Canh Khổ Qua,flavorProfile,"Đắng nhẹ, thanh mát",,,Member_1
+230,Canh Khổ Qua,hasIngredient,Khổ Qua,,,Member_1
+231,Canh Khổ Qua,originRegion,Miền Nam,,,Member_1
+232,Canh Khổ Qua,servedWith,Cơm trắng,,,Member_1
+233,Canh Khổ Qua Nhồi Thịt,cookingTechnique,Hầm,,,Member_1
+234,Canh Khổ Qua Nhồi Thịt,dishType,Canh,,,Member_1
+235,Canh Khổ Qua Nhồi Thịt,flavorProfile,"Đắng, ngọt thịt",,,Member_1
+239,Canh Khổ Qua Nhồi Thịt,hasIngredient,Thịt Heo,,,Member_1
+240,Canh Khổ Qua Nhồi Thịt,hasIngredient,Thịt Lợn,,,Member_1
+241,Canh Khổ Qua Nhồi Thịt,hasSubRule,Quy Tắc Thay Thế Chay,,,Member_1
+242,Canh Khổ Qua Nhồi Thịt,originRegion,Nam Bộ,,,Member_1
+243,Canh Khổ Qua Nhồi Thịt,servedWith,Cơm trắng,,,Member_1
+251,Canh Khổ Qua Nấu Tôm,cookingTechnique,Nấu,,,Member_1
+252,Canh Khổ Qua Nấu Tôm,dishType,Canh,,,Member_1
+253,Canh Khổ Qua Nấu Tôm,flavorProfile,"Đắng, ngọt thanh",,,Member_1
+256,Canh Khổ Qua Nấu Tôm,hasIngredient,Tôm,,,Member_1
+257,Canh Khổ Qua Nấu Tôm,originRegion,Việt Nam,,,Member_1
+264,Canh Lòng Gà Nấu Giá Đỗ,cookingTechnique,Nấu,,,Member_1
+265,Canh Lòng Gà Nấu Giá Đỗ,dishType,Canh,,,Member_1
+266,Canh Lòng Gà Nấu Giá Đỗ,flavorProfile,"Thanh, ngọt",,,Member_1
+268,Canh Lòng Gà Nấu Giá Đỗ,hasIngredient,"Lòng gà, Giá đỗ",,,Member_1
+288,Canh Móng Giò,hasIngredient,Giò Heo,,,Member_1
+298,Canh Măng,cookingTechnique,Hầm,,,Member_1
+300,Canh Măng,hasIngredient,Măng,,,Member_1
+304,Canh Măng Móng Giò,cookingTechnique,Hầm,,,Member_1
+308,Canh Măng Sườn,cookingTechnique,Hầm,,,Member_1
+309,Canh Măng Sườn,hasIngredient,Sườn heo,,,Member_1
+312,Canh Măng Vịt,hasIngredient,Thịt vịt,,,Member_1
+313,Canh Măng Vịt,servedWith,Nước mắm gừng,,,Member_1
+314,Canh Mướp,cookingTechnique,Luộc/Nấu,,,Member_1
+315,Canh Mướp,flavorProfile,Thanh mát,,,Member_1
+326,Canh Mướp Nấu Hến,hasIngredient,Hến,,,Member_1
+328,Canh Mướp Nấu Mọc,hasIngredient,Mọc (giò sống),,,Member_1
+333,Canh Mướp Nấu Thịt Băm,dishType,Canh,,,Member_1
+334,Canh Mướp Nấu Thịt Băm,flavorProfile,Ngọt thanh,,,Member_1
+335,Canh Mướp Nấu Thịt Băm,hasIngredient,Thịt Lợn,,,Member_1
+337,Canh Mướp Nấu Thịt Viên,hasIngredient,Thịt Lợn,,,Member_1
+339,Canh Mướp Nấu Tôm,hasIngredient,Tôm,,,Member_1
+340,Canh Mướp Rau Mồng Tơi,hasIngredient,Rau,,,Member_1
+343,Canh Mướp Rau Ngót,hasIngredient,Rau,,,Member_1
+354,Canh Mọc,dishType,Canh,,,Member_1
+356,Canh Mọc,hasIngredient,Dọc Mùng,,,Member_1
+360,Canh Mọc Nấu Nấm,hasIngredient,Nấm,,,Member_1
+364,Canh Mọc Nấu Sườn,hasIngredient,Dọc Mùng,,,Member_1
+368,Canh Mồng Tơi,dishType,Canh,,,Member_1
+369,Canh Mồng Tơi,flavorProfile,"Nhớt, thanh mát",,,Member_1
+370,Canh Mồng Tơi,hasIngredient,Rau Mồng Tơi,,,Member_1
+387,Canh Ngao Hoa Nấu Chua,cookingTechnique,Nấu,,,Member_1
+388,Canh Ngao Hoa Nấu Chua,dishType,Món canh,,,Member_1
+389,Canh Ngao Hoa Nấu Chua,flavorProfile,Chua thanh,,,Member_1
+390,Canh Ngao Hoa Nấu Chua,hasIngredient,Nghêu,,,Member_1
+391,Canh Ngao Hoa Nấu Chua,originRegion,Việt Nam,,,Member_1
+392,Canh Ngao Hoa Nấu Chua,servedWith,Cơm trắng,,,Member_1
+417,Canh Ngao Nấu Cà Chua,cookingTechnique,Nấu,,,Member_1
+418,Canh Ngao Nấu Cà Chua,dishType,Món canh,,,Member_1
+419,Canh Ngao Nấu Cà Chua,flavorProfile,Chua nhẹ,,,Member_1
+422,Canh Ngao Nấu Cà Chua,hasIngredient,"Ngao, Cà chua",,,Member_1
+423,Canh Ngao Nấu Cà Chua,originRegion,Việt Nam,,,Member_1
+424,Canh Ngao Nấu Cà Chua,servedWith,Cơm trắng,,,Member_1
+461,Canh Nấm Cải Thảo,cookingTechnique,Nấu,,,Member_1
+462,Canh Nấm Cải Thảo,dishType,Canh,,,Member_1
+463,Canh Nấm Cải Thảo,flavorProfile,Ngọt thanh,,,Member_1
+465,Canh Nấm Cải Thảo,hasIngredient,Cải thảo,,,Member_1
+466,Canh Rau,cookingTechnique,Luộc/Nấu,,,Member_1
+467,Canh Rau,dishType,Canh,,,Member_1
+468,Canh Rau,flavorProfile,Thanh đạm,,,Member_1
+469,Canh Rau,hasIngredient,Rau Muống,,,Member_1
+470,Canh Rau,originRegion,Việt Nam,,,Member_1
+471,Canh Rau Cải,dishType,Canh,,,Member_1
+472,Canh Rau Cải,flavorProfile,Hơi đắng nhẹ,,,Member_1
+474,Canh Rau Cải,hasIngredient,Rau cải,,,Member_1
+479,Canh Rau Cải Nấu Ngao,dishType,Canh,,,Member_1
+482,Canh Rau Cải Nấu Ngao,hasIngredient,Ngao,,,Member_1
+483,Canh Rau Cải Nấu Sườn,cookingTechnique,Hầm/Nấu,,,Member_1
+484,Canh Rau Cải Nấu Sườn,dishType,Canh,,,Member_1
+485,Canh Rau Cải Nấu Sườn,flavorProfile,Ngọt đậm đà,,,Member_1
+486,Canh Rau Cải Nấu Sườn,hasIngredient,Sườn Non,,,Member_1
+490,Canh Rau Cải Nấu Thịt Băm,hasIngredient,Thịt Lợn,,,Member_1
+491,Canh Rau Cải Nấu Trứng,dishType,Canh,,,Member_1
+494,Canh Rau Cải Nấu Trứng,hasIngredient,Trứng,,,Member_1
+504,Canh Rau Cải Nấu Xương,cookingTechnique,Hầm,,,Member_1
+505,Canh Rau Cải Nấu Xương,dishType,Canh,,,Member_1
+506,Canh Rau Cải Nấu Xương,flavorProfile,Đậm đà,,,Member_1
+509,Canh Rau Cải Nấu Xương,hasIngredient,Rau Cải,,,Member_1
+510,Canh Rau Cải Nấu Xương,hasIngredient,Thịt Lợn,,,Member_1
+512,Canh Rau Cải Nấu Xương,originRegion,Việt Nam,,,Member_1
+513,Canh Rau Cải Nấu Xương,servedWith,Cơm trắng,,,Member_1
+514,Canh Rau Cải Thịt Băm,cookingTechnique,Nấu,,,Member_1
+515,Canh Rau Cải Thịt Băm,dishType,Canh,,,Member_1
+516,Canh Rau Cải Thịt Băm,flavorProfile,Ngọt thanh,,,Member_1
+519,Canh Rau Cải Thịt Băm,hasIngredient,Rau Cải,,,Member_1
+520,Canh Rau Cải Thịt Băm,hasIngredient,Thịt Lợn,,,Member_1
+523,Canh Rau Cải Thịt Băm,originRegion,Việt Nam,,,Member_1
+524,Canh Rau Cải Thịt Băm,servedWith,Cơm trắng,,,Member_1
+546,Canh Rau Củ,cookingTechnique,Luộc/Nấu,,,Member_1
+547,Canh Rau Củ,dishType,Canh,,,Member_1
+548,Canh Rau Củ,flavorProfile,Thanh đạm,,,Member_1
+550,Canh Rau Củ,hasIngredient,Rau,,,Member_1
+552,Canh Rau Củ,originRegion,Việt Nam,,,Member_1
+553,Canh Rau Củ,servedWith,Cơm trắng,,,Member_1
+562,Canh Rau Củ Nấu Thịt,cookingTechnique,Nấu,,,Member_1
+563,Canh Rau Củ Nấu Thịt,dishType,Canh,,,Member_1
+564,Canh Rau Củ Nấu Thịt,flavorProfile,Ngọt đậm,,,Member_1
+567,Canh Rau Củ Nấu Thịt,hasIngredient,Rau,,,Member_1
+570,Canh Rau Củ Nấu Thịt,originRegion,Việt Nam,,,Member_1
+571,Canh Rau Củ Nấu Thịt,servedWith,Cơm trắng,,,Member_1
+597,Canh Rau Luộc,dishType,Món nước,,,Member_1
+602,Canh Rau Muống,cookingTechnique,Luộc/Nấu,,,Member_1
+603,Canh Rau Muống,dishType,Canh,,,Member_1
+604,Canh Rau Muống,flavorProfile,Thanh mát,,,Member_1
+606,Canh Rau Muống,hasIngredient,Rau Muống,,,Member_1
+607,Canh Rau Muống,originRegion,Việt Nam,,,Member_1
+608,Canh Rau Muống,servedWith,Nước Mắm,,,Member_1
+609,Canh Rau Muống Nấu Cà Chua,cookingTechnique,Nấu,,,Member_1
+610,Canh Rau Muống Nấu Cà Chua,dishType,Canh,,,Member_1
+611,Canh Rau Muống Nấu Cà Chua,flavorProfile,Chua,,,Member_1
+613,Canh Rau Muống Nấu Cà Chua,hasIngredient,Cà Chua,,,Member_1
+615,Canh Rau Muống Nấu Cà Chua,originRegion,Việt Nam,,,Member_1
+616,Canh Rau Muống Nấu Tôm,cookingTechnique,Nấu,,,Member_1
+617,Canh Rau Muống Nấu Tôm,dishType,Canh,,,Member_1
+618,Canh Rau Muống Nấu Tôm,flavorProfile,Ngọt đậm đà,,,Member_1
+620,Canh Rau Muống Nấu Tôm,hasIngredient,Tôm,,,Member_1
+621,Canh Rau Muống Nấu Tôm,originRegion,Việt Nam,,,Member_1
+629,Canh Rau Mồng Tơi,cookingTechnique,Nấu,,,Member_1
+630,Canh Rau Mồng Tơi,dishType,Canh,,,Member_1
+631,Canh Rau Mồng Tơi,flavorProfile,"Nhớt, thanh mát",,,Member_1
+632,Canh Rau Mồng Tơi,hasIngredient,Rau Mồng Tơi,,,Member_1
+633,Canh Rau Mồng Tơi,originRegion,Việt Nam,,,Member_1
+634,Canh Rau Ngót,cookingTechnique,Nấu,,,Member_1
+635,Canh Rau Ngót,dishType,Canh,,,Member_1
+636,Canh Rau Ngót,flavorProfile,Ngọt thanh,,,Member_1
+637,Canh Rau Ngót,hasIngredient,Rau Ngót,,,Member_1
+638,Canh Rau Ngót,originRegion,Việt Nam,,,Member_1
+646,Canh Rau Ngót Nấu Thịt Băm,cookingTechnique,Nấu,,,Member_1
+647,Canh Rau Ngót Nấu Thịt Băm,dishType,Canh,,,Member_1
+648,Canh Rau Ngót Nấu Thịt Băm,flavorProfile,Ngọt đậm đà,,,Member_1
+649,Canh Rau Ngót Nấu Thịt Băm,hasIngredient,Rau Ngót,,,Member_1
+650,Canh Rau Ngót Nấu Thịt Băm,hasIngredient,Thịt Băm,,,Member_1
+651,Canh Rau Ngót Nấu Thịt Băm,originRegion,Việt Nam,,,Member_1
+661,Canh Rau Ngót Thịt Băm,cookingTechnique,Nấu,,,Member_1
+662,Canh Rau Ngót Thịt Băm,dishType,Món Canh,,,Member_1
+663,Canh Rau Ngót Thịt Băm,flavorProfile,Ngọt thanh,,,Member_1
+666,Canh Rau Ngót Thịt Băm,hasIngredient,Thịt Băm,,,Member_1
+667,Canh Rau Ngót Thịt Băm,originRegion,Việt Nam,,,Member_1
+668,Canh Rau Ngót Thịt Băm,servedWith,Cơm trắng,,,Member_1
+693,Canh Rau Nấu Tôm,cookingTechnique,Nấu,,,Member_1
+694,Canh Rau Nấu Tôm,dishType,Canh,,,Member_1
+695,Canh Rau Nấu Tôm,flavorProfile,Ngọt thanh,,,Member_1
+697,Canh Rau Nấu Tôm,hasIngredient,Tôm,,,Member_1
+698,Canh Rau Nấu Tôm,originRegion,Việt Nam,,,Member_1
+699,Canh Rau Nấu Tôm,servedWith,Cơm trắng,,,Member_1
+735,Canh Riêu Cua,dishType,Canh,,,Member_1
+736,Canh Riêu Cua,flavorProfile,Thanh mát,,,Member_1
+739,Canh Rong Biển,dishType,Canh,,,Member_1
+740,Canh Rong Biển,flavorProfile,Thanh đạm,,,Member_1
+742,Canh Rong Biển,hasIngredient,Rong biển,,,Member_1
+743,Canh Rong Biển,hasIngredient,Thịt bò,,,Member_1
+745,Canh Rong Biển Hoa Thiên Lý,hasIngredient,Hoa thiên lý,,,Member_1
+748,Canh Rong Biển Trứng Đậu Hũ,hasIngredient,Rong biển,,,Member_1
+749,Canh Rong Biển Đậu Hũ,flavorProfile,Thanh đạm,,,Member_1
+751,Canh Rong Biển Đậu Hũ,hasIngredient,Rong Biển,,,Member_1
+752,Canh Rong Biển Đậu Hũ,hasIngredient,Đậu Nành,,,Member_1
+765,Canh Súp Lơ,cookingTechnique,Nấu,,,Member_1
+766,Canh Súp Lơ,dishType,Canh,,,Member_1
+768,Canh Súp Lơ,hasIngredient,Súp Lơ,,,Member_1
+786,Canh Sườn Chua,dishType,Canh,,,Member_1
+788,Canh Sườn Chua,flavorProfile,Chua ngọt,,,Member_1
+790,Canh Sườn Chua,hasIngredient,Sườn Non,,,Member_1
+791,Canh Sườn Chua,originRegion,Miền Bắc,,,Member_1
+792,Canh Sườn Củ Cải,dishType,Canh,,,Member_1
+793,Canh Sườn Củ Cải,flavorProfile,Ngọt thanh,,,Member_1
+802,Canh Sườn Hầm Củ Quả,cookingTechnique,Hầm,,,Member_1
+805,Canh Sườn Hầm Củ Quả,hasIngredient,Thịt Heo,,,Member_1
+806,Canh Sườn Khoai Môn,dishType,Canh,,,Member_1
+807,Canh Sườn Khoai Môn,flavorProfile,"Bùi, béo, ngọt",,,Member_1
+808,Canh Sườn Khoai Môn,hasIngredient,Thịt Heo,,,Member_1
+809,Canh Sườn Khoai Tây,cookingTechnique,Hầm,,,Member_1
+810,Canh Sườn Khoai Tây,dishType,Canh,,,Member_1
+811,Canh Sườn Khoai Tây,flavorProfile,Thanh ngọt,,,Member_1
+813,Canh Sườn Khoai Tây,hasIngredient,Sườn heo,,,Member_1
+815,Canh Sườn Khoai Tây,originRegion,Miền Bắc,,,Member_1
+816,Canh Sườn Khoai Tây Cà Rốt,cookingTechnique,Hầm,,,Member_1
+817,Canh Sườn Khoai Tây Cà Rốt,dishType,Canh,,,Member_1
+818,Canh Sườn Khoai Tây Cà Rốt,flavorProfile,Ngọt thanh,,,Member_1
+819,Canh Sườn Khoai Tây Cà Rốt,hasIngredient,Thịt Heo,,,Member_1
+820,Canh Sườn Ngô Cà Rốt,cookingTechnique,Hầm,,,Member_1
+821,Canh Sườn Ngô Cà Rốt,dishType,Canh,,,Member_1
+822,Canh Sườn Ngô Cà Rốt,flavorProfile,Ngọt đậm đà,,,Member_1
+824,Canh Sườn Ngô Cà Rốt,hasIngredient,Thịt Heo,,,Member_1
+829,Canh Sườn Nấu Bí,hasIngredient,Thịt Lợn,,,Member_1
+833,Canh Sườn Nấu Củ Quả,hasIngredient,Sườn Non,,,Member_1
+834,Canh Sườn Nấu Mọc,cookingTechnique,Nấu,,,Member_1
+835,Canh Sườn Nấu Mọc,dishType,Canh,,,Member_1
+838,Canh Sườn Nấu Rau Củ,cookingTechnique,Hầm,,,Member_1
+839,Canh Sườn Nấu Rau Củ,dishType,Canh,,,Member_1
+841,Canh Sườn Nấu Sấu,cookingTechnique,Nấu,,,Member_1
+842,Canh Sườn Nấu Sấu,dishType,Canh,,,Member_1
+843,Canh Sườn Nấu Sấu,flavorProfile,Chua,,,Member_1
+845,Canh Sườn Nấu Sấu,hasIngredient,Quả Sấu,,,Member_1
+846,Canh Sườn Nấu Sấu,hasIngredient,Sườn,,,Member_1
+847,Canh Sườn Nấu Sấu,originRegion,Miền Bắc,,,Member_1
+848,Canh Sườn Rau Củ,cookingTechnique,Hầm,,,Member_1
+849,Canh Sườn Rau Củ,dishType,Canh,,,Member_1
+850,Canh Sườn Rau Củ,hasIngredient,Sườn heo,,,Member_1
+899,Canh Trứng Cà Chua,cookingTechnique,Nấu,,,Member_1
+900,Canh Trứng Cà Chua,dishType,Canh,,,Member_1
+910,Canh Tôm,cookingTechnique,Nấu,,,Member_1
+911,Canh Tôm,dishType,Canh,,,Member_1
+913,Canh Tôm,hasIngredient,Tôm,,,Member_1
+921,Canh Xương,cookingTechnique,Hầm,,,Member_1
+922,Canh Xương,dishType,Canh,,,Member_1
+927,Canh Xương Hầm Củ Quả,dishType,Canh,,,Member_1
+928,Canh Xương Hầm Rau Củ,cookingTechnique,Hầm,,,Member_1
+929,Canh Xương Hầm Rau Củ,dishType,Canh,,,Member_1
+938,Canh Xương Khoai Tây,cookingTechnique,Hầm,,,Member_1
+939,Canh Xương Khoai Tây,dishType,Canh,,,Member_1
+940,Canh Xương Khoai Tây,flavorProfile,"Ngọt, béo",,,Member_1
+942,Canh Xương Khoai Tây,hasIngredient,Khoai tây,,,Member_1
+943,Canh Xương Khoai Tây,originRegion,Việt Nam,,,Member_1
+953,Canh Đậu Hũ Cà Chua,cookingTechnique,Nấu,,,Member_1
+954,Canh Đậu Hũ Cà Chua,dishType,Món Nước,,,Member_1
+955,Canh Đậu Hũ Cà Chua,flavorProfile,Chua,,,Member_1
+958,Canh Đậu Hũ Cà Chua,hasIngredient,Cà Chua,,,Member_1
+964,Canh Ốc Chuối Đậu,cookingTechnique,Om,,,Member_1
+965,Canh Ốc Chuối Đậu,dishType,Canh,,,Member_1
+967,Canh Ốc Chuối Đậu,hasIngredient,Ốc bươu,,,Member_1
+968,Canh Ốc Chuối Đậu,originRegion,Miền Bắc,,,Member_1
+969,Cao Lầu,cookingTechnique,Trộn,,,Member_1
+970,Cao Lầu,dishType,Mì,,,Member_1
+971,Cao Lầu,flavorProfile,"Đậm đà, mặn ngọt",,,Member_1
+972,Cao Lầu,hasIngredient,Thịt Xíu,,,Member_1
+973,Cao Lầu,hasIngredient,Tôm,,,Member_1
+974,Cao Lầu,originRegion,Quảng Nam,,,Member_1
+975,Cao Lầu,servedWith,Rau sống,,,Member_1
+983,Chim Bồ Câu Hầm Ngải Cứu,cookingTechnique,Hầm,,,Member_1
+984,Chim Bồ Câu Hầm Ngải Cứu,dishType,Món hầm,,,Member_1
+986,Chim Bồ Câu Hầm Ngải Cứu,hasIngredient,Lá ngải cứu,,,Member_1
+1000,Chim Cút,ingredientCategory,Thịt,,,Member_1
+1003,Chim Cút Quay,hasIngredient,Chim Cút,,,Member_1
+1005,Chim Cút Rôti,cookingTechnique,Quay,,,Member_1
+1008,Chim Cút Rôti,hasIngredient,Chim Cút,,,Member_1
+1015,Chim Quay,cookingTechnique,Quay,,,Member_1
+1036,Cháo,cookingTechnique,Ninh,,,Member_1
+1037,Cháo,dishType,Món nước,,,Member_1
+1038,Cháo,flavorProfile,Thanh đạm,,,Member_1
+1041,Cháo,hasIngredient,Gạo,,,Member_1
+1043,Cháo,originRegion,Việt Nam,,,Member_1
+1044,Cháo,servedWith,Dầu cháo quẩy,,,Member_1
+1055,Cháo Gà,hasIngredient,Thịt Gà,,,Member_1
+1057,Cháo Hải Sản,dishType,Món chính,,,Member_1
+1059,Cháo Hải Sản,hasIngredient,Thủy Hải Sản,,,Member_1
+1067,Cháo Sườn,dishType,Món ăn vặt,,,Member_1
+1068,Cháo Sườn,hasIngredient,Thịt Lợn,,,Member_1
+1069,Cháo Sườn,servedWith,Quẩy,,,Member_1
+1074,Cháo Trai,dishType,Món ăn vặt,,,Member_1
+1075,Cháo Trai,hasIngredient,Trai,,,Member_1
+1076,Cháo Trai,servedWith,Rau răm,,,Member_1
+1077,Cháo Trắng,cookingTechnique,Ninh,,,Member_1
+1078,Cháo Trắng,dishType,Món chính,,,Member_1
+1079,Cháo Trắng,flavorProfile,Thanh đạm,,,Member_1
+1081,Cháo Trắng,hasIngredient,Gạo,,,Member_1
+1083,Cháo Trắng,originRegion,Việt Nam,,,Member_1
+1084,Cháo Trắng,servedWith,Dầu Cháo Quẩy,,,Member_1
+1106,Chân Giò Bó Luộc,cookingTechnique,Luộc,,,Member_1
+1107,Chân Giò Bó Luộc,dishType,Món nguội,,,Member_1
+1108,Chân Giò Bó Luộc,flavorProfile,"Béo, giòn",,,Member_1
+1110,Chân Giò Bó Luộc,hasIngredient,Thịt Lợn,,,Member_1
+1111,Chân Giò Bó Luộc,originRegion,Việt Nam,,,Member_1
+1112,Chân Giò Bó Luộc,servedWith,Nước mắm tỏi ớt,,,Member_1
+1113,Chân Giò Giả Cầy,cookingTechnique,Ninh,,,Member_1
+1114,Chân Giò Giả Cầy,dishType,Món kho/om,,,Member_1
+1115,Chân Giò Giả Cầy,flavorProfile,"Chua, cay, nồng",,,Member_1
+1117,Chân Giò Giả Cầy,hasIngredient,Chân Giò Lợn,,,Member_1
+1118,Chân Giò Giả Cầy,hasIngredient,Mắm Tôm,,,Member_1
+1119,Chân Giò Giả Cầy,originRegion,Miền Bắc,,,Member_1
+1120,Chân Giò Giả Cầy,servedWith,Bún,,,Member_1
+1145,Chân Giò Lợn,ingredientCategory,Thịt,,,Member_1
+1164,Chân Gà Luộc,cookingTechnique,Luộc,,,Member_1
+1165,Chân Gà Luộc,dishType,Món khai vị,,,Member_1
+1166,Chân Gà Luộc,flavorProfile,Ngọt tự nhiên,,,Member_1
+1167,Chân Gà Luộc,hasIngredient,Chân gà,,,Member_1
+1168,Chân Gà Luộc,servedWith,Muối tiêu chanh,,,Member_1
+1177,Chân Gà Sả Tắc,cookingTechnique,Ngâm,,,Member_1
+1178,Chân Gà Sả Tắc,dishType,Món ăn vặt,,,Member_1
+1179,Chân Gà Sả Tắc,flavorProfile,Chua ngọt,,,Member_1
+1189,Chè Bánh Lọt,cookingTechnique,Luộc,,,Member_1
+1190,Chè Bánh Lọt,dishType,Tráng miệng,,,Member_1
+1191,Chè Bánh Lọt,flavorProfile,Ngọt béo,,,Member_1
+1192,Chè Bánh Lọt,hasIngredient,Bột Gạo,,,Member_1
+1193,Chè Bánh Lọt,hasIngredient,Bột Năng,,,Member_1
+1194,Chè Bánh Lọt,originRegion,Nam Bộ,,,Member_1
+1195,Chè Bánh Lọt,servedWith,Nước cốt dừa,,,Member_1
+1196,Chè Bưởi,cookingTechnique,Nấu,,,Member_1
+1197,Chè Bưởi,dishType,Tráng miệng,,,Member_1
+1198,Chè Bưởi,flavorProfile,Ngọt thanh,,,Member_1
+1200,Chè Bưởi,hasIngredient,Đậu Xanh,,,Member_1
+1201,Chè Bưởi,originRegion,Tây Nam Bộ,,,Member_1
+1202,Chè Bưởi,servedWith,Nước cốt dừa,,,Member_1
+1222,Chè Hạt Sen,cookingTechnique,Ninh,,,Member_1
+1223,Chè Hạt Sen,dishType,Món Nước,,,Member_1
+1225,Chè Hạt Sen,hasIngredient,Hạt Sen,,,Member_1
+1226,Chè Hạt Sen,originRegion,Miền Trung,,,Member_1
+1256,Chè Sương Sa Hạt Lựu,cookingTechnique,Luộc,,,Member_1
+1257,Chè Sương Sa Hạt Lựu,dishType,Món Nước,,,Member_1
+1258,Chè Sương Sa Hạt Lựu,flavorProfile,"Ngọt, béo",,,Member_1
+1260,Chè Sương Sa Hạt Lựu,hasIngredient,Bột năng,,,Member_1
+1261,Chè Sương Sa Hạt Lựu,originRegion,Miền Nam,,,Member_1
+1262,Chè Sương Sa Hạt Lựu,servedWith,Nước cốt dừa,,,Member_1
+1305,Chạch Kho Tương,dishType,Món kho,,,Member_1
+1306,Chạch Kho Tương,flavorProfile,"Đậm đà, bùi, thơm mùi tương",,,Member_1
+1311,Chạch Kho Tương,originRegion,Miền Bắc,,,Member_1
+1324,Chả Băm Nướng,flavorProfile,"Thơm mùi khói, đậm đà",,,Member_1
+1327,Chả Băm Nướng,hasIngredient,Thịt lợn băm,,,Member_1
+1329,Chả Băm Nướng,originRegion,Miền Bắc,,,Member_1
+1349,Chả Bọc Sả,cookingTechnique,Nướng,,,Member_1
+1350,Chả Bọc Sả,dishType,Món nướng,,,Member_1
+1351,Chả Bọc Sả,flavorProfile,Thơm nồng mùi sả,,,Member_1
+1356,Chả Bọc Sả,originRegion,Việt Nam,,,Member_1
+1357,Chả Bọc Sả,servedWith,"Bún, rau sống",,,Member_1
+1358,Chả Cuốn Lá Bưởi,cookingTechnique,Nướng,,,Member_1
+1359,Chả Cuốn Lá Bưởi,dishType,Món nướng,,,Member_1
+1365,Chả Cuốn Lá Bưởi,originRegion,Miền Bắc,,,Member_1
+1366,Chả Cuốn Lá Bưởi,servedWith,"Cơm, bún",,,Member_1
+1367,Chả Cá,cookingTechnique,Chiên,,,Member_1
+1368,Chả Cá,dishType,Món chiên,,,Member_1
+1369,Chả Cá,flavorProfile,"Ngọt, dai",,,Member_1
+1372,Chả Cá,hasIngredient,Cá,,,Member_1
+1375,Chả Cá,originRegion,Việt Nam,,,Member_1
+1376,Chả Cá,servedWith,"Bún, nước mắm",,,Member_1
+1377,Chả Cá Lã Vọng,cookingTechnique,Nướng,,,Member_1
+1378,Chả Cá Lã Vọng,dishType,Món đặc sản,,,Member_1
+1379,Chả Cá Lã Vọng,flavorProfile,"Thơm mùi thì là, mắm tôm, nghệ",,,Member_1
+1380,Chả Cá Lã Vọng,hasIngredient,Cá Lăng,,,Member_1
+1381,Chả Cá Lã Vọng,hasIngredient,Mắm Tôm,,,Member_1
+1383,Chả Cá Lã Vọng,originRegion,Hà Nội,,,Member_1
+1384,Chả Cá Lã Vọng,servedWith,Bún,,,Member_1
+1403,Chả Giò,cookingTechnique,Chiên,,,Member_1
+1404,Chả Giò,dishType,Món chiên,,,Member_1
+1405,Chả Giò,flavorProfile,"Giòn, béo, đậm đà",,,Member_1
+1408,Chả Giò,hasIngredient,Thịt Lợn,,,Member_1
+1410,Chả Giò,originRegion,Miền Nam,,,Member_1
+1411,Chả Giò,servedWith,Nước Mắm,,,Member_1
+1430,Chả Giò Tôm,cookingTechnique,Chiên,,,Member_1
+1431,Chả Giò Tôm,dishType,Món chiên,,,Member_1
+1432,Chả Giò Tôm,flavorProfile,Ngọt vị tôm,,,Member_1
+1434,Chả Giò Tôm,hasIngredient,Tôm,,,Member_1
+1436,Chả Giò Tôm,originRegion,Việt Nam,,,Member_1
+1437,Chả Giò Tôm,servedWith,Nước mắm chua ngọt,,,Member_1
+1447,Chả Lá Lốt,cookingTechnique,Chiên,,,Member_1
+1448,Chả Lá Lốt,dishType,Món chiên,,,Member_1
+1451,Chả Lá Lốt,hasIngredient,Lá Lốt,,,Member_1
+1453,Chả Lá Lốt,originRegion,Miền Bắc,,,Member_1
+1454,Chả Lá Lốt,servedWith,Bún,,,Member_1
+1464,Chả Lụi,cookingTechnique,Nướng,,,Member_1
+1465,Chả Lụi,dishType,Món nướng,,,Member_1
+1466,Chả Lụi,flavorProfile,"Giòn, thơm",,,Member_1
+1468,Chả Lụi,hasIngredient,Tôm,,,Member_1
+1470,Chả Lụi,originRegion,Bình Thuận,,,Member_1
+1471,Chả Lụi,servedWith,Rau sống,,,Member_1
+1472,Chả Mực,cookingTechnique,Chiên,,,Member_1
+1473,Chả Mực,dishType,Món chiên,,,Member_1
+1474,Chả Mực,flavorProfile,"Giòn sần sật, ngọt",,,Member_1
+1477,Chả Mực,hasIngredient,Mực,,,Member_1
+1479,Chả Mực,originRegion,Quảng Ninh,,,Member_1
+1480,Chả Mực,servedWith,Xôi trắng,,,Member_1
+1481,Chả Nướng,cookingTechnique,Nướng,,,Member_1
+1482,Chả Nướng,dishType,Món chính,,,Member_1
+1483,Chả Nướng,flavorProfile,Đậm đà,,,Member_1
+1486,Chả Nướng,hasIngredient,Thịt heo,,,Member_1
+1487,Chả Nướng,originRegion,Miền Bắc,,,Member_1
+1488,Chả Nướng,servedWith,Bún,,,Member_1
+1489,Chả Ram,cookingTechnique,Chiên,,,Member_1
+1490,Chả Ram,dishType,Món chiên,,,Member_1
+1491,Chả Ram,flavorProfile,Giòn rụm,,,Member_1
+1493,Chả Ram,hasIngredient,Thịt Lợn,,,Member_1
+1494,Chả Ram,originRegion,Miền Trung,,,Member_1
+1495,Chả Ram,servedWith,Nước Mắm,,,Member_1
+1496,Chả Rán,cookingTechnique,Chiên,,,Member_1
+1497,Chả Rán,dishType,Món chiên,,,Member_1
+1498,Chả Rán,flavorProfile,Béo ngậy,,,Member_1
+1501,Chả Rán,hasIngredient,Trứng Gà,,,Member_1
+1502,Chả Rán,servedWith,Nước mắm chua ngọt,,,Member_1
+1503,Chả Rươi,cookingTechnique,Rán,,,Member_1
+1504,Chả Rươi,dishType,Món đặc sản,,,Member_1
+1505,Chả Rươi,flavorProfile,"Bùi, béo",,,Member_1
+1508,Chả Rươi,hasIngredient,Rươi,,,Member_1
+1509,Chả Rươi,originRegion,Hải Dương,,,Member_1
+1510,Chả Rươi,servedWith,Rau thơm,,,Member_1
+1525,Chả Trứng,cookingTechnique,Hấp,,,Member_1
+1526,Chả Trứng,dishType,Món phụ,,,Member_1
+1527,Chả Trứng,flavorProfile,Béo,,,Member_1
+1530,Chả Trứng,hasIngredient,Trứng,,,Member_1
+1531,Chả Trứng,originRegion,Miền Nam,,,Member_1
+1532,Chả Trứng,servedWith,Cơm tấm,,,Member_1
+1539,Chả Trứng Hấp,cookingTechnique,Hấp,,,Member_1
+1540,Chả Trứng Hấp,dishType,Món chính,,,Member_1
+1541,Chả Trứng Hấp,flavorProfile,Thanh đạm,,,Member_1
+1543,Chả Trứng Hấp,hasIngredient,Mộc nhĩ,,,Member_1
+1544,Chả Trứng Hấp,servedWith,Cơm trắng,,,Member_1
+1545,Chả Viên,cookingTechnique,Chiên,,,Member_1
+1546,Chả Viên,dishType,Món chính,,,Member_1
+1547,Chả Viên,flavorProfile,Đậm đà,,,Member_1
+1549,Chả Viên,hasIngredient,Thịt heo,,,Member_1
+1550,Chả Viên,servedWith,Bún,,,Member_1
+1551,Cua,hasAllergen,Giáp xác,,,Member_1
+1552,Cua,ingredientCategory,Hải Sản,,,Member_1
+1556,Cua Hấp,cookingTechnique,Hấp,,,Member_1
+1557,Cua Hấp,dishType,Món chính,,,Member_1
+1558,Cua Hấp,flavorProfile,Ngọt tự nhiên,,,Member_1
+1561,Cua Hấp,hasIngredient,Cua,,,Member_1
+1562,Cua Hấp,originRegion,Việt Nam,,,Member_1
+1563,Cua Hấp,servedWith,Muối tiêu chanh,,,Member_1
+1611,Cua Đồng,hasAllergen,Giáp xác,,,Member_1
+1612,Cua Đồng,ingredientCategory,Hải Sản,,,Member_1
+1640,Cuốn Tôm Thịt,cookingTechnique,Cuốn,,,Member_1
+1641,Cuốn Tôm Thịt,dishType,Món khai vị,,,Member_1
+1642,Cuốn Tôm Thịt,flavorProfile,Tươi mát,,,Member_1
+1645,Cuốn Tôm Thịt,hasIngredient,Tôm,,,Member_1
+1647,Cuốn Tôm Thịt,originRegion,Việt Nam,,,Member_1
+1648,Cuốn Tôm Thịt,servedWith,Tương đậu phộng,,,Member_1
+1650,Cà Chua,ingredientCategory,Rau,,,Member_2
+1652,Cà Chua,ingredientCategory,Rau Lá,,,Member_2
+1653,Cà Chua,ingredientCategory,Rau Quả,,,Member_2
+1655,Cà Chua Nhồi Thịt,cookingTechnique,Hấp/Om,,,Member_2
+1656,Cà Chua Nhồi Thịt,dishType,Món chính,,,Member_2
+1657,Cà Chua Nhồi Thịt,flavorProfile,Chua ngọt,,,Member_2
+1659,Cà Chua Nhồi Thịt,hasIngredient,Thịt lợn băm,,,Member_2
+1661,Cà Chua Nhồi Thịt,originRegion,Miền Bắc,,,Member_2
+1662,Cà Chua Nhồi Thịt,servedWith,Cơm trắng,,,Member_2
+1672,Cà Ri Gà,cookingTechnique,Hầm,,,Member_2
+1673,Cà Ri Gà,dishType,Món hầm,,,Member_2
+1674,Cà Ri Gà,flavorProfile,Béo ngậy,,,Member_2
+1677,Cà Ri Gà,hasIngredient,Thịt Gà,,,Member_2
+1678,Cà Ri Gà,originRegion,Miền Nam,,,Member_2
+1679,Cà Ri Gà,servedWith,Bánh mì,,,Member_2
+1680,Cà Ri Tôm,cookingTechnique,Nấu,,,Member_2
+1681,Cà Ri Tôm,dishType,Món hầm,,,Member_2
+1684,Cà Ri Tôm,hasIngredient,Tôm,,,Member_2
+1692,Cà Rốt,ingredientCategory,Rau Lá,,,Member_2
+1694,Cà Tím,ingredientCategory,Rau,,,Member_2
+1702,Cà Tím Kho,cookingTechnique,Kho,,,Member_2
+1703,Cà Tím Kho,dishType,Món kho,,,Member_2
+1705,Cà Tím Kho,hasIngredient,Cà tím,,,Member_2
+1706,Cà Tím Xào,cookingTechnique,Xào,,,Member_2
+1707,Cà Tím Xào,dishType,Món xào,,,Member_2
+1709,Cà Tím Xào,hasIngredient,Cà Tím,,,Member_2
+1712,Cá,ingredientCategory,Hải Sản,,,Member_2
+1714,Cá,ingredientCategory,Thịt,,,Member_2
+1726,Cá Bống,ingredientCategory,Thịt,,,Member_2
+1743,Cá Bống Kho Tiêu,cookingTechnique,Kho,,,Member_2
+1744,Cá Bống Kho Tiêu,dishType,Món kho,,,Member_2
+1748,Cá Bống Kho Tiêu,hasIngredient,Tiêu,,,Member_2
+1749,Cá Bống Kho Tiêu,originRegion,Việt Nam,,,Member_2
+1750,Cá Bống Kho Tiêu,servedWith,Cơm trắng,,,Member_2
+1752,Cá Chiên,cookingTechnique,Chiên,,,Member_2
+1753,Cá Chiên,dishType,Món chiên,,,Member_2
+1754,Cá Chiên,flavorProfile,"Giòn, béo",,,Member_2
+1757,Cá Chiên,hasIngredient,Cá Chiên,,,Member_2
+1758,Cá Chiên,ingredientCategory,Hải Sản,,,Member_2
+1759,Cá Chiên,ingredientCategory,Thủy Hải Sản,,,Member_2
+1760,Cá Chiên,originRegion,Đông Nam Á,,,Member_2
+1761,Cá Chiên,servedWith,Nước mắm tỏi ớt,,,Member_2
+1788,Cá Chiên Sốt Cà Chua,cookingTechnique,Chiên và sốt,,,Member_2
+1789,Cá Chiên Sốt Cà Chua,dishType,Món chiên,,,Member_2
+1792,Cá Chiên Sốt Cà Chua,originRegion,Việt Nam,,,Member_2
+1793,Cá Chiên Sốt Cà Chua,servedWith,Cơm trắng,,,Member_2
+1803,Cá Chiên Tỏi Ớt,cookingTechnique,Chiên,,,Member_2
+1804,Cá Chiên Tỏi Ớt,dishType,Món chính,,,Member_2
+1805,Cá Chiên Tỏi Ớt,flavorProfile,Cay nồng,,,Member_2
+1808,Cá Chiên Tỏi Ớt,hasIngredient,Cá,,,Member_2
+1809,Cá Chiên Tỏi Ớt,hasIngredient,Ớt,,,Member_2
+1810,Cá Chiên Tỏi Ớt,originRegion,Việt Nam,,,Member_2
+1811,Cá Chiên Tỏi Ớt,servedWith,Cơm trắng,,,Member_2
+1820,Cá Chiên Xù,cookingTechnique,Chiên,,,Member_2
+1821,Cá Chiên Xù,dishType,Món chính,,,Member_2
+1822,Cá Chiên Xù,flavorProfile,Béo giòn,,,Member_2
+1825,Cá Chiên Xù,hasIngredient,Bột Chiên Xù,,,Member_2
+1826,Cá Chiên Xù,originRegion,Việt Nam,,,Member_2
+1827,Cá Chiên Xù,servedWith,Rau sống,,,Member_2
+1828,Cá Chép,ingredientCategory,Hải Sản,,,Member_2
+1829,Cá Chép Chiên Giòn,cookingTechnique,Chiên,,,Member_2
+1830,Cá Chép Chiên Giòn,dishType,Món chính,,,Member_2
+1831,Cá Chép Chiên Giòn,flavorProfile,Giòn béo,,,Member_2
+1834,Cá Chép Chiên Giòn,hasIngredient,Cá Chép,,,Member_2
+1835,Cá Chép Chiên Giòn,originRegion,Miền Bắc,,,Member_2
+1836,Cá Chép Chiên Giòn,servedWith,Nước mắm gừng,,,Member_2
+1845,Cá Chép Om Dưa,cookingTechnique,Om,,,Member_2
+1846,Cá Chép Om Dưa,dishType,Món chính,,,Member_2
+1847,Cá Chép Om Dưa,flavorProfile,Chua dịu,,,Member_2
+1850,Cá Chép Om Dưa,hasIngredient,Dưa cải chua,,,Member_2
+1851,Cá Chép Om Dưa,originRegion,Miền Bắc,,,Member_2
+1852,Cá Chép Om Dưa,servedWith,Bún tươi,,,Member_2
+1882,Cá Cơm,ingredientCategory,Hải sản,,,Member_2
+1893,Cá Cơm Kho,cookingTechnique,Kho,,,Member_2
+1894,Cá Cơm Kho,dishType,Món kho,,,Member_2
+1895,Cá Cơm Kho,flavorProfile,"Mặn, ngọt",,,Member_2
+1898,Cá Cơm Kho,hasIngredient,Cá Cơm,,,Member_2
+1899,Cá Cơm Kho,originRegion,Việt Nam,,,Member_2
+1900,Cá Cơm Kho,servedWith,Cơm trắng,,,Member_2
+1915,Cá Cơm Rang Lạc,hasIngredient,Cá,,,Member_2
+1917,Cá Cơm Rang Lạc,originRegion,Việt Nam,,,Member_2
+1919,Cá Cơm Rim,cookingTechnique,Rim,,,Member_2
+1920,Cá Cơm Rim,dishType,Món rim,,,Member_2
+1921,Cá Cơm Rim,flavorProfile,Đậm đà,,,Member_2
+1924,Cá Cơm Rim,hasIngredient,Cá cơm,,,Member_2
+1925,Cá Cơm Rim,originRegion,Miền Trung,,,Member_2
+1926,Cá Cơm Rim,servedWith,Cơm trắng,,,Member_2
+1943,Cá Diếc,hasAllergen,Giáp xác,,,Member_2
+1944,Cá Diếc,ingredientCategory,Hải sản,,,Member_2
+1953,Cá Diếc Rán,cookingTechnique,Rán,,,Member_2
+1954,Cá Diếc Rán,dishType,Món rán,,,Member_2
+1955,Cá Diếc Rán,flavorProfile,"Giòn, béo",,,Member_2
+1957,Cá Diếc Rán,hasIngredient,Cá Diếc,,,Member_2
+1958,Cá Diếc Rán,originRegion,Miền Bắc,,,Member_2
+1959,Cá Diếc Rán,servedWith,Nước mắm gừng,,,Member_2
+1970,Cá Hường,ingredientCategory,Thủy sản,,,Member_2
+1980,Cá Hường Chiên Sả,cookingTechnique,Chiên,,,Member_2
+1981,Cá Hường Chiên Sả,dishType,Món mặn,,,Member_2
+1982,Cá Hường Chiên Sả,flavorProfile,Thơm mùi sả,,,Member_2
+1985,Cá Hường Chiên Sả,hasIngredient,Cá Hường,,,Member_2
+1987,Cá Hường Chiên Sả,originRegion,Việt Nam,,,Member_2
+1988,Cá Hường Chiên Sả,servedWith,Nước mắm tỏi ớt,,,Member_2
+1994,Cá Hấp,hasIngredient,Cá Bống,,,Member_2
+1995,Cá Hấp,hasIngredient,Cá Lóc,,,Member_2
+1996,Cá Hấp,hasIngredient,Nước Cốt Dừa,,,Member_2
+2001,Cá Hấp Hành Gừng,cookingTechnique,Hấp,,,Member_2
+2002,Cá Hấp Hành Gừng,dishType,Món mặn,,,Member_2
+2003,Cá Hấp Hành Gừng,flavorProfile,Thơm nồng,,,Member_2
+2006,Cá Hấp Hành Gừng,hasIngredient,"Gừng, Hành lá",,,Member_2
+2009,Cá Hấp Hành Gừng,originRegion,Việt Nam,,,Member_2
+2010,Cá Hấp Hành Gừng,servedWith,Nước tương,,,Member_2
+2011,Cá Hấp Hồng Kông,cookingTechnique,Hấp,,,Member_2
+2012,Cá Hấp Hồng Kông,dishType,Món mặn,,,Member_2
+2013,Cá Hấp Hồng Kông,flavorProfile,Đậm đà,,,Member_2
+2016,Cá Hấp Hồng Kông,hasIngredient,"Cá mú, Nước tương",,,Member_2
+2019,Cá Hấp Hồng Kông,originRegion,Trung Quốc,,,Member_2
+2020,Cá Hấp Hồng Kông,servedWith,Cơm trắng,,,Member_2
+2052,Cá Hồi Sốt,cookingTechnique,Áp chảo,,,Member_2
+2053,Cá Hồi Sốt,dishType,Món mặn,,,Member_2
+2054,Cá Hồi Sốt,flavorProfile,Đậm đà,,,Member_2
+2057,Cá Hồi Sốt,hasIngredient,"Cá hồi, Sốt bơ chanh",,,Member_2
+2060,Cá Hồi Sốt,originRegion,Phương Tây,,,Member_2
+2061,Cá Hồi Sốt,servedWith,Măng tây,,,Member_2
+2067,Cá Hồi Áp Chảo,cookingTechnique,Áp chảo,,,Member_2
+2068,Cá Hồi Áp Chảo,flavorProfile,Béo ngậy,,,Member_2
+2072,Cá Kho,cookingTechnique,Kho,,,Member_2
+2074,Cá Kho,originRegion,Việt Nam,,,Member_2
+2075,Cá Kho Cà Chua,flavorProfile,Chua dịu,,,Member_2
+2076,Cá Kho Cà Chua,hasIngredient,Cá,,,Member_2
+2079,Cá Kho Dưa Chua,hasIngredient,Cá,,,Member_2
+2080,Cá Kho Măng,hasIngredient,Măng,,,Member_2
+2081,Cá Kho Măng,hasIngredient,Măng Tre,,,Member_2
+2082,Cá Kho Nghệ,cookingTechnique,Kho,,,Member_2
+2083,Cá Kho Nghệ,flavorProfile,Thơm nồng,,,Member_2
+2084,Cá Kho Nghệ,hasIngredient,Cá,,,Member_2
+2085,Cá Kho Nghệ,hasIngredient,Nghệ,,,Member_2
+2086,Cá Kho Thơm,flavorProfile,Chua Ngọt,,,Member_2
+2087,Cá Kho Thơm,hasIngredient,Cá,,,Member_2
+2089,Cá Kho Thơm,hasIngredient,Thơm,,,Member_2
+2094,Cá Lóc,ingredientCategory,Thủy Hải Sản,,,Member_2
+2096,Cá Lóc Nướng,cookingTechnique,Nướng,,,Member_2
+2097,Cá Lóc Nướng,hasIngredient,Cá Lóc,,,Member_2
+2106,Cá Ngát Kho,cookingTechnique,Kho,,,Member_2
+2107,Cá Ngát Kho,hasIngredient,Cá Ngát,,,Member_2
+2126,Cá Nướng,cookingTechnique,Nướng,,,Member_2
+2127,Cá Nướng,dishType,Món nướng,,,Member_2
+2128,Cá Nướng,flavorProfile,Thơm khói,,,Member_2
+2131,Cá Nướng,servedWith,"Bánh tráng, rau sống",,,Member_2
+2152,Cá Om Chuối Đậu,hasIngredient,Tía Tô,,,Member_2
+2161,Cá Rán,cookingTechnique,Chiên,,,Member_2
+2162,Cá Rán,dishType,Món chiên,,,Member_2
+2163,Cá Rán,flavorProfile,Giòn béo,,,Member_2
+2166,Cá Rán,servedWith,Nước mắm tỏi ớt,,,Member_2
+2175,Cá Rô Kho,cookingTechnique,Kho,,,Member_2
+2180,Cá Rô Kho,hasIngredient,Cá Rô Phi,,,Member_2
+2221,Cá Sốt Cà Chua,cookingTechnique,Nấu,,,Member_2
+2222,Cá Sốt Cà Chua,dishType,Món sốt,,,Member_2
+2223,Cá Sốt Cà Chua,flavorProfile,Chua ngọt,,,Member_2
+2226,Cá Sốt Cà Chua,hasIngredient,Cà Chua,,,Member_2
+2227,Cá Sốt Cà Chua,originRegion,Việt Nam,,,Member_2
+2228,Cá Sốt Cà Chua,servedWith,Cơm trắng,,,Member_2
+2229,Cá Tai Tượng,ingredientCategory,Hải Sản,,,Member_2
+2230,Cá Tai Tượng Chiên Xù,cookingTechnique,Chiên xù,,,Member_2
+2231,Cá Tai Tượng Chiên Xù,dishType,Món chiên,,,Member_2
+2232,Cá Tai Tượng Chiên Xù,flavorProfile,Giòn béo,,,Member_2
+2235,Cá Tai Tượng Chiên Xù,hasIngredient,Cá Tai Tượng,,,Member_2
+2236,Cá Tai Tượng Chiên Xù,originRegion,Nam Bộ,,,Member_2
+2237,Cá Tai Tượng Chiên Xù,servedWith,Bánh tráng và rau sống,,,Member_2
+2238,Cá Thu Chiên,cookingTechnique,Chiên,,,Member_2
+2239,Cá Thu Chiên,dishType,Món chiên,,,Member_2
+2240,Cá Thu Chiên,flavorProfile,Béo ngậy,,,Member_2
+2243,Cá Thu Chiên,hasIngredient,Cá Chiên,,,Member_2
+2245,Cá Thu Chiên,servedWith,Nước mắm tỏi ớt,,,Member_2
+2276,Cá Trê,ingredientCategory,Hải Sản,,,Member_2
+2281,Cá Trê Chiên,hasIngredient,Cá Trê,,,Member_2
+2283,Cá Trắm Chiên Giòn,cookingTechnique,Chiên,,,Member_2
+2284,Cá Trắm Chiên Giòn,dishType,Món chính,,,Member_2
+2285,Cá Trắm Chiên Giòn,flavorProfile,"Giòn, bùi",,,Member_2
+2287,Cá Trắm Chiên Giòn,hasIngredient,Cá trắm,,,Member_2
+2288,Cá Trắm Chiên Giòn,servedWith,Nước mắm tỏi ớt,,,Member_2
+2296,Cá Trắm Kho Chuối,dishType,Món chính,,,Member_2
+2297,Cá Trắm Kho Chuối,flavorProfile,"Bùi, đậm đà",,,Member_2
+2341,Cá Đối Kho Mía,cookingTechnique,Kho,,,Member_2
+2342,Cá Đối Kho Mía,dishType,Món kho,,,Member_2
+2343,Cá Đối Kho Mía,flavorProfile,"Ngọt thanh, mặn",,,Member_2
+2347,Cá Đối Kho Mía,hasIngredient,Mía,,,Member_2
+2348,Cá Đối Kho Mía,originRegion,Miền Tây,,,Member_2
+2349,Cá Đối Kho Mía,servedWith,Cơm trắng,,,Member_2
+2350,Cánh Gà,ingredientCategory,Thịt,,,Member_2
+2351,Cánh Gà Chiên,cookingTechnique,Chiên,,,Member_2
+2352,Cánh Gà Chiên,dishType,Món chiên,,,Member_2
+2353,Cánh Gà Chiên,flavorProfile,"Giòn, mặn",,,Member_2
+2356,Cánh Gà Chiên,hasIngredient,Cánh Gà,,,Member_2
+2357,Cánh Gà Chiên,originRegion,Hoa Kỳ,,,Member_2
+2358,Cánh Gà Chiên,servedWith,Cần Tây,,,Member_2
+2366,Cánh Gà Chiên Nước Mắm,cookingTechnique,Chiên,,,Member_2
+2367,Cánh Gà Chiên Nước Mắm,dishType,Món chính,,,Member_2
+2368,Cánh Gà Chiên Nước Mắm,flavorProfile,"Mặn, ngọt",,,Member_2
+2371,Cánh Gà Chiên Nước Mắm,hasIngredient,Cánh Gà,,,Member_2
+2372,Cánh Gà Chiên Nước Mắm,hasIngredient,Nước Mắm,,,Member_2
+2373,Cánh Gà Chiên Nước Mắm,servedWith,Cơm trắng,,,Member_2
+2374,Cánh Gà Nướng,cookingTechnique,Nướng,,,Member_2
+2375,Cánh Gà Nướng,dishType,Món nướng,,,Member_2
+2376,Cánh Gà Nướng,flavorProfile,"Thơm, đậm đà",,,Member_2
+2378,Cánh Gà Nướng,hasIngredient,Cánh gà,,,Member_2
+2379,Cánh Gà Nướng,servedWith,Muối ớt xanh,,,Member_2
+2397,Cơm Chiên,cookingTechnique,Chiên,,,Member_2
+2398,Cơm Chiên,dishType,Món chính,,,Member_2
+2399,Cơm Chiên,flavorProfile,"Mặn, thơm",,,Member_2
+2401,Cơm Chiên,hasIngredient,Trứng,,,Member_2
+2402,Cơm Chiên,originRegion,Việt Nam,,,Member_2
+2403,Cơm Chiên,servedWith,Nước tương,,,Member_2
+2404,Cơm Chiên Dương Châu,cookingTechnique,Chiên,,,Member_2
+2405,Cơm Chiên Dương Châu,dishType,Món chính,,,Member_2
+2406,Cơm Chiên Dương Châu,flavorProfile,Mặn ngọt hài hòa,,,Member_2
+2408,Cơm Chiên Dương Châu,hasIngredient,Tôm Sú,,,Member_2
+2409,Cơm Chiên Dương Châu,hasIngredient,Xá Xíu,,,Member_2
+2412,Cơm Chiên Dương Châu,originRegion,Trung Quốc,,,Member_2
+2413,Cơm Chiên Dương Châu,servedWith,Nước tương ớt,,,Member_2
+2415,Cơm Chiên Hải Sản,dishType,Món Khô,,,Member_2
+2419,Cơm Chiên Hải Sản,hasIngredient,Hải Sản,,,Member_2
+2508,Cơm Cốm,cookingTechnique,Rang,,,Member_2
+2509,Cơm Cốm,dishType,Món tráng miệng,,,Member_2
+2510,Cơm Cốm,flavorProfile,Ngọt thanh,,,Member_2
+2513,Cơm Cốm,hasIngredient,Lúa nếp,,,Member_2
+2515,Cơm Cốm,originRegion,Hà Nội,,,Member_2
+2516,Cơm Cốm,servedWith,Nước cốt dừa,,,Member_2
+2526,Cơm Gà,cookingTechnique,Luộc,,,Member_2
+2527,Cơm Gà,dishType,Món chính,,,Member_2
+2528,Cơm Gà,flavorProfile,Đậm đà,,,Member_2
+2531,Cơm Gà,hasIngredient,Gạo,,,Member_2
+2532,Cơm Gà,hasIngredient,Thịt gà,,,Member_2
+2534,Cơm Gà,originRegion,Miền Trung,,,Member_2
+2535,Cơm Gà,servedWith,Nước mắm gừng,,,Member_2
+2564,Cơm Gạo Lứt Hạt Sen,cookingTechnique,Hấp,,,Member_2
+2565,Cơm Gạo Lứt Hạt Sen,dishType,Món chính,,,Member_2
+2566,Cơm Gạo Lứt Hạt Sen,flavorProfile,Bùi,,,Member_2
+2569,Cơm Gạo Lứt Hạt Sen,hasIngredient,Gạo Lứt,,,Member_2
+2571,Cơm Gạo Lứt Hạt Sen,originRegion,Việt Nam,,,Member_2
+2572,Cơm Gạo Lứt Hạt Sen,servedWith,Muối mè,,,Member_2
+2601,Cơm Lam,cookingTechnique,Nướng,,,Member_2
+2602,Cơm Lam,dishType,Món cơm,,,Member_2
+2603,Cơm Lam,flavorProfile,"Dẻo, Thơm mùi tre",,,Member_2
+2606,Cơm Lam,hasIngredient,Gạo Nếp,,,Member_2
+2608,Cơm Lam,originRegion,"Tây Nguyên, Tây Bắc",,,Member_2
+2609,Cơm Lam,servedWith,Muối Vừng,,,Member_2
+2615,Cơm Niêu,cookingTechnique,Nấu bằng nồi đất,,,Member_2
+2616,Cơm Niêu,dishType,Cơm,,,Member_2
+2618,Cơm Niêu,hasIngredient,Gạo tẻ,,,Member_2
+2620,Cơm Niêu,servedWith,"Cá kho, Canh cua",,,Member_2
+2621,Cơm Nếp Cẩm,cookingTechnique,Đồ (hấp),,,Member_2
+2622,Cơm Nếp Cẩm,dishType,Món tráng miệng,,,Member_2
+2624,Cơm Nếp Cẩm,hasIngredient,Gạo Nếp,,,Member_2
+2626,Cơm Nếp Cẩm,servedWith,Sữa chua,,,Member_2
+2642,Cơm Sen,cookingTechnique,Hấp trong lá sen,,,Member_2
+2643,Cơm Sen,dishType,Món cơm,,,Member_2
+2644,Cơm Sen,flavorProfile,"Thanh tao, Thơm mùi sen",,,Member_2
+2647,Cơm Sen,hasIngredient,Gạo,,,Member_2
+2648,Cơm Sườn,cookingTechnique,Nướng,,,Member_2
+2649,Cơm Sườn,dishType,Món cơm,,,Member_2
+2652,Cơm Sườn,hasIngredient,Thịt Lợn,,,Member_2
+2654,Cơm Sườn,originRegion,Việt Nam,,,Member_2
+2655,Cơm Sườn,servedWith,"Nước mắm chua ngọt, Dưa leo",,,Member_2
+2656,Cơm Sườn Nướng,cookingTechnique,Nướng,,,Member_2
+2657,Cơm Sườn Nướng,dishType,Món cơm,,,Member_2
+2658,Cơm Sườn Nướng,flavorProfile,"Ngọt, Mặn, Thơm khói",,,Member_2
+2660,Cơm Sườn Nướng,hasIngredient,Thịt Lợn,,,Member_2
+2661,Cơm Sườn Nướng,originRegion,Miền Nam,,,Member_2
+2686,Cơm Thịt Kho,cookingTechnique,Kho,,,Member_2
+2687,Cơm Thịt Kho,dishType,Món chính,,,Member_2
+2688,Cơm Thịt Kho,flavorProfile,"Mặn, ngọt",,,Member_2
+2692,Cơm Thịt Kho,originRegion,Việt Nam,,,Member_2
+2710,Cơm Trộn,cookingTechnique,Trộn,,,Member_2
+2711,Cơm Trộn,dishType,Cơm,,,Member_2
+2712,Cơm Trộn,flavorProfile,"Cay, ngọt, béo",,,Member_2
+2715,Cơm Trộn,hasIngredient,Gạo,,,Member_2
+2718,Cơm Trộn,originRegion,Hàn Quốc,,,Member_2
+2719,Cơm Trộn,servedWith,Tương ớt Hàn Quốc,,,Member_2
+2734,Cơm Tấm,hasIngredient,Thịt Lợn Nướng,,,Member_2
+2735,Cơm Tấm,hasIngredient,Trứng,,,Member_2
+2738,Cơm Tấm,originRegion,Việt Nam,,,Member_2
+2750,Cơm Tấm Sườn,cookingTechnique,Nướng,,,Member_2
+2751,Cơm Tấm Sườn,dishType,Món chính,,,Member_2
+2753,Cơm Tấm Sườn,hasIngredient,Gạo tấm,,,Member_2
+2754,Cơm Tấm Sườn,servedWith,Nước mắm chua ngọt,,,Member_2
+2755,Cơm Đậu Đỏ,dishType,Món chính,,,Member_2
+2766,Cốm,ingredientCategory,Ngũ Cốc,,,Member_2
+2799,Dưa Chuột,ingredientCategory,Rau,,,Member_2
+2802,Dưa Cải Chua Xào,cookingTechnique,Xào,,,Member_2
+2803,Dưa Cải Chua Xào,dishType,Món chay,,,Member_2
+2804,Dưa Cải Chua Xào,flavorProfile,Chua,,,Member_2
+2807,Dưa Cải Chua Xào,hasIngredient,Dưa Cải Muối,,,Member_2
+2810,Dưa Cải Chua Xào,originRegion,Miền Bắc,,,Member_2
+2811,Dưa Cải Chua Xào,servedWith,Cơm trắng,,,Member_2
+2831,Dưa Cải Muối,cookingTechnique,Lên Men,,,Member_2
+2832,Dưa Cải Muối,flavorProfile,Chua,,,Member_2
+2834,Dưa Cải Muối,hasIngredient,Rau Cải,,,Member_2
+2837,Dưa Cải Muối,ingredientCategory,Rau Lá,,,Member_2
+2838,Dưa Cải Muối,servedWith,Thịt Heo Quay,,,Member_2
+2878,Dưa Leo,ingredientCategory,Rau Lá,,,Member_2
+2905,Dọc Mùng,ingredientCategory,Rau Lá,,,Member_2
+2921,Dứa,ingredientCategory,Rau Quả,,,Member_2
+2951,Gan Xào Tỏi,cookingTechnique,Xào,,,Member_2
+2952,Gan Xào Tỏi,dishType,Món xào,,,Member_2
+2953,Gan Xào Tỏi,flavorProfile,"Bùi, thơm",,,Member_2
+2954,Gan Xào Tỏi,hasIngredient,"Gan lợn, Tỏi",,,Member_2
+2956,Ghẹ Hấp,cookingTechnique,Hấp,,,Member_2
+2957,Ghẹ Hấp,dishType,Món hấp,,,Member_2
+2958,Ghẹ Hấp,flavorProfile,"Ngọt, thanh",,,Member_2
+2960,Ghẹ Hấp,hasIngredient,Ghẹ,,,Member_2
+2961,Ghẹ Hấp,servedWith,Muối tiêu chanh,,,Member_2
+3014,Giò Heo,ingredientCategory,Thịt,,,Member_2
+3015,Giò Heo Hầm,cookingTechnique,Hầm,,,Member_2
+3016,Giò Heo Hầm,dishType,Món hầm,,,Member_2
+3017,Giò Heo Hầm,flavorProfile,Béo ngậy,,,Member_2
+3019,Giò Heo Hầm,hasIngredient,Giò Heo,,,Member_2
+3020,Giò Heo Hầm,originRegion,Việt Nam,,,Member_2
+3021,Giò Heo Hầm,servedWith,Bánh mì hoặc Cơm,,,Member_2
+3022,Giò Heo Kho,cookingTechnique,Kho,,,Member_2
+3023,Giò Heo Kho,dishType,Món kho,,,Member_2
+3024,Giò Heo Kho,flavorProfile,"Đậm đà, mặn ngọt",,,Member_2
+3026,Giò Heo Kho,hasIngredient,Giò Heo,,,Member_2
+3027,Giò Heo Kho,originRegion,Việt Nam,,,Member_2
+3028,Giò Heo Kho,servedWith,Cơm trắng,,,Member_2
+3036,Giả Cầy,cookingTechnique,Hầm,,,Member_2
+3037,Giả Cầy,dishType,Món hầm,,,Member_2
+3038,Giả Cầy,flavorProfile,"Chua, cay, nồng",,,Member_2
+3040,Giả Cầy,hasIngredient,Giò Heo,,,Member_2
+3041,Giả Cầy,hasIngredient,Mắm Tôm,,,Member_2
+3042,Giả Cầy,hasSubRule,Thay Thế Cơm Mẻ,,,Member_2
+3043,Giả Cầy,originRegion,Miền Bắc Việt Nam,,,Member_2
+3044,Giả Cầy,servedWith,Bún tươi,,,Member_2
+3046,Gà,ingredientCategory,Thịt,,,Member_2
+3057,Gà Chiên,cookingTechnique,Chiên,,,Member_2
+3058,Gà Chiên,dishType,Món chính,,,Member_2
+3059,Gà Chiên,flavorProfile,"Béo, mặn",,,Member_2
+3063,Gà Chiên,hasIngredient,Cánh Gà,,,Member_2
+3066,Gà Chiên,originRegion,Hoa Kỳ,,,Member_2
+3067,Gà Chiên,servedWith,Cà Rốt,,,Member_2
+3078,Gà Chiên Khoai Tây,cookingTechnique,Chiên,,,Member_2
+3079,Gà Chiên Khoai Tây,dishType,Món chính,,,Member_2
+3080,Gà Chiên Khoai Tây,flavorProfile,"Béo, mặn",,,Member_2
+3083,Gà Chiên Khoai Tây,hasIngredient,Khoai tây,,,Member_2
+3084,Gà Chiên Khoai Tây,hasIngredient,Thịt gà,,,Member_2
+3086,Gà Chiên Khoai Tây,originRegion,Quốc tế,,,Member_2
+3087,Gà Chiên Khoai Tây,servedWith,Tương ớt,,,Member_2
+3089,Gà Chiên Mắm Tỏi,dishType,Món chính,,,Member_2
+3090,Gà Chiên Mắm Tỏi,flavorProfile,"Mặn, ngọt, thơm tỏi",,,Member_2
+3094,Gà Chiên Mắm Tỏi,hasIngredient,Thịt gà,,,Member_2
+3096,Gà Chiên Mắm Tỏi,originRegion,Việt Nam,,,Member_2
+3097,Gà Chiên Mắm Tỏi,servedWith,Cơm trắng,,,Member_2
+3142,Gà Hấp Bia,hasIngredient,Thịt Gà,,,Member_2
+3145,Gà Hấp Bia,originRegion,Hoa Kỳ,,,Member_2
+3147,Gà Hấp Lá Chanh,cookingTechnique,Hấp,,,Member_2
+3148,Gà Hấp Lá Chanh,dishType,Món hấp,,,Member_2
+3149,Gà Hấp Lá Chanh,flavorProfile,"Thanh đạm, thơm mùi lá chanh",,,Member_2
+3151,Gà Hấp Lá Chanh,hasIngredient,Gà,,,Member_2
+3152,Gà Hấp Lá Chanh,originRegion,Miền Bắc,,,Member_2
+3153,Gà Hấp Lá Chanh,servedWith,Muối tiêu chanh,,,Member_2
+3179,Gà Hầm Hạt Sen,cookingTechnique,Hầm,,,Member_2
+3180,Gà Hầm Hạt Sen,dishType,Món hầm,,,Member_2
+3181,Gà Hầm Hạt Sen,flavorProfile,"Ngọt bùi, thanh mát",,,Member_2
+3184,Gà Hầm Hạt Sen,hasIngredient,Gà,,,Member_2
+3185,Gà Hầm Hạt Sen,originRegion,Việt Nam,,,Member_2
+3186,Gà Hầm Hạt Sen,servedWith,Cơm trắng,,,Member_2
+3212,Gà Hầm Thuốc Bắc,cookingTechnique,Hầm,,,Member_2
+3213,Gà Hầm Thuốc Bắc,dishType,Món hầm,,,Member_2
+3214,Gà Hầm Thuốc Bắc,flavorProfile,"Đậm đà, vị thuốc bắc",,,Member_2
+3217,Gà Hầm Thuốc Bắc,hasIngredient,Gà Đông Tảo,,,Member_2
+3219,Gà Hầm Thuốc Bắc,servedWith,Muối tiêu,,,Member_2
+3235,Gà Kho,cookingTechnique,Kho,,,Member_2
+3236,Gà Kho,dishType,Món mặn,,,Member_2
+3238,Gà Kho,hasIngredient,Thịt gà,,,Member_2
+3239,Gà Kho,servedWith,Cơm trắng,,,Member_2
+3240,Gà Kho Gừng,cookingTechnique,Kho,,,Member_2
+3241,Gà Kho Gừng,dishType,Món mặn,,,Member_2
+3242,Gà Kho Gừng,flavorProfile,"Cay nồng, mặn ngọt",,,Member_2
+3244,Gà Kho Gừng,hasIngredient,Thịt Gà,,,Member_2
+3260,Gà Luộc,cookingTechnique,Luộc,,,Member_2
+3261,Gà Luộc,dishType,Món luộc,,,Member_2
+3262,Gà Luộc,flavorProfile,Ngọt tự nhiên,,,Member_2
+3264,Gà Luộc,hasIngredient,Thịt Gà,,,Member_2
+3265,Gà Luộc,servedWith,Muối tiêu chanh,,,Member_2
+3266,Gà Luộc Lá Chanh,cookingTechnique,Luộc,,,Member_2
+3267,Gà Luộc Lá Chanh,dishType,Món luộc,,,Member_2
+3268,Gà Luộc Lá Chanh,flavorProfile,"Thơm thanh, ngọt",,,Member_2
+3269,Gà Luộc Lá Chanh,hasIngredient,Thịt Gà,,,Member_2
+3270,Gà Luộc Lá Chanh,originRegion,Miền Bắc,,,Member_2
+3271,Gà Luộc Lá Chanh,servedWith,Lá Chanh,,,Member_2
+3272,Gà Nướng,cookingTechnique,Nướng,,,Member_2
+3273,Gà Nướng,dishType,Món nướng,,,Member_2
+3274,Gà Nướng,flavorProfile,"Đậm đà, thơm mùi khói",,,Member_2
+3276,Gà Nướng,hasIngredient,Thịt Gà,,,Member_2
+3277,Gà Nướng,servedWith,Muối ớt xanh,,,Member_2
+3278,Gà Nướng Lu,cookingTechnique,Nướng,,,Member_2
+3280,Gà Nướng Lu,dishType,Món nướng,,,Member_2
+3281,Gà Nướng Lu,flavorProfile,"Da giòn, thịt mọng nước",,,Member_2
+3282,Gà Nướng Lu,hasIngredient,Thịt Gà,,,Member_2
+3283,Gà Nướng Lu,originRegion,Miền Nam,,,Member_2
+3284,Gà Nướng Muối Ớt,cookingTechnique,Nướng,,,Member_2
+3289,Gà Nướng Muối Ớt,hasIngredient,Thịt Gà,,,Member_2
+3295,Gà Nấu Măng Chua,flavorProfile,Chua,,,Member_2
+3298,Gà Nấu Măng Chua,hasIngredient,Thịt Gà,,,Member_2
+3319,Gà Rang Gừng,cookingTechnique,Kho,,,Member_2
+3320,Gà Rang Gừng,dishType,Món mặn,,,Member_2
+3321,Gà Rang Gừng,flavorProfile,Cay,,,Member_2
+3324,Gà Rang Gừng,hasIngredient,Thịt Gà,,,Member_2
+3326,Gà Rang Gừng,originRegion,Miền Bắc,,,Member_2
+3327,Gà Rang Gừng,servedWith,Cơm trắng,,,Member_2
+3328,Gà Rang Lá Chanh,cookingTechnique,Rang,,,Member_2
+3329,Gà Rang Lá Chanh,dishType,Món mặn,,,Member_2
+3330,Gà Rang Lá Chanh,flavorProfile,Thơm nồng,,,Member_2
+3332,Gà Rang Lá Chanh,hasIngredient,Lá Chanh,,,Member_2
+3333,Gà Rang Lá Chanh,hasIngredient,Thịt Gà,,,Member_2
+3335,Gà Rang Lá Chanh,originRegion,Việt Nam,,,Member_2
+3336,Gà Rang Lá Chanh,servedWith,Cơm trắng,,,Member_2
+3337,Gà Rang Muối,cookingTechnique,Chiên,,,Member_2
+3338,Gà Rang Muối,dishType,Món chiên,,,Member_2
+3339,Gà Rang Muối,flavorProfile,Mặn giòn,,,Member_2
+3342,Gà Rang Muối,hasIngredient,Thịt Gà,,,Member_2
+3344,Gà Rang Muối,originRegion,Việt Nam,,,Member_2
+3345,Gà Rang Muối,servedWith,Rau sống,,,Member_2
+3355,Gà Rán,cookingTechnique,Chiên,,,Member_2
+3356,Gà Rán,dishType,Món chiên,,,Member_2
+3357,Gà Rán,flavorProfile,Giòn béo,,,Member_2
+3359,Gà Rán,hasIngredient,Thịt Gà,,,Member_2
+3361,Gà Rán,originRegion,Quốc tế,,,Member_2
+3362,Gà Rán,servedWith,Tương ớt,,,Member_2
+3398,Gà Xào Sả Ớt,cookingTechnique,Xào,,,Member_2
+3399,Gà Xào Sả Ớt,dishType,Món xào,,,Member_2
+3400,Gà Xào Sả Ớt,flavorProfile,Cay,,,Member_2
+3404,Gà Xào Sả Ớt,hasIngredient,Thịt Gà,,,Member_2
+3407,Gà Xào Sả Ớt,originRegion,Việt Nam,,,Member_2
+3416,Gà Xé Phay,cookingTechnique,Luộc,,,Member_2
+3417,Gà Xé Phay,dishType,Món gỏi/nộm,,,Member_2
+3418,Gà Xé Phay,flavorProfile,"Chua, ngọt, thanh mát",,,Member_2
+3421,Gà Xé Phay,hasIngredient,Thịt Gà,,,Member_2
+3422,Gà Xé Phay,originRegion,Việt Nam,,,Member_2
+3423,Gà Xé Phay,servedWith,Bánh phồng tôm,,,Member_2
+3425,Gà Ác,ingredientCategory,Thịt,,,Member_2
+3433,Gà Áp Chảo Khoai Tây Chanh,cookingTechnique,Chiên,,,Member_2
+3437,Gà Áp Chảo Khoai Tây Chanh,hasIngredient,Thịt Gà,,,Member_2
+3443,Gạo,ingredientCategory,Ngũ Cốc,,,Member_2
+3444,Gạo,ingredientCategory,Ngũ cốc,,,Member_2
+3445,Gạo Lứt,ingredientCategory,Ngũ Cốc,,,Member_2
+3447,Gạo Nếp,ingredientCategory,Ngũ Cốc,,,Member_2
+3448,Gạo Nếp,ingredientCategory,Ngũ cốc,,,Member_2
+3450,Gấc,ingredientCategory,Rau Quả,,,Member_2
+3452,Gỏi,dishType,Món Khô,,,Member_2
+3453,Gỏi,flavorProfile,Chua,,,Member_2
+3460,Gỏi Bò,cookingTechnique,Trộn,,,Member_2
+3461,Gỏi Bò,dishType,Món gỏi/nộm,,,Member_2
+3462,Gỏi Bò,flavorProfile,"Chua, ngọt, cay",,,Member_2
+3465,Gỏi Bò,hasIngredient,Thịt Bò,,,Member_2
+3466,Gỏi Bò,originRegion,Việt Nam,,,Member_2
+3467,Gỏi Bò,servedWith,Bánh Phồng Tôm,,,Member_2
+3469,Gỏi Bò Rau Mầm,dishType,Gỏi,,,Member_2
+3473,Gỏi Bò Rau Mầm,hasIngredient,Thịt Bò,,,Member_2
+3486,Gỏi Bắp Cải,cookingTechnique,Trộn,,,Member_2
+3487,Gỏi Bắp Cải,dishType,Món chay/mặn,,,Member_2
+3488,Gỏi Bắp Cải,flavorProfile,Chua ngọt,,,Member_2
+3490,Gỏi Bắp Cải,hasIngredient,Bắp Cải,,,Member_2
+3492,Gỏi Bắp Cải,originRegion,Việt Nam,,,Member_2
+3493,Gỏi Bắp Cải,servedWith,Bánh phồng tôm,,,Member_2
+3511,Gỏi Cuốn,cookingTechnique,Cuốn,,,Member_2
+3512,Gỏi Cuốn,dishType,Món Cuốn,,,Member_2
+3513,Gỏi Cuốn,flavorProfile,Thanh mát,,,Member_2
+3515,Gỏi Cuốn,hasIngredient,Bánh Tráng,,,Member_2
+3516,Gỏi Cuốn,hasIngredient,Thịt Heo,,,Member_2
+3517,Gỏi Cuốn,hasIngredient,Thịt Luộc,,,Member_2
+3518,Gỏi Cuốn,hasIngredient,Tôm,,,Member_2
+3519,Gỏi Cuốn,hasIngredient,Tôm Khô,,,Member_2
+3521,Gỏi Cuốn,originRegion,Miền Nam,,,Member_2
+3522,Gỏi Cuốn,servedWith,Tương Hột,,,Member_2
+3542,Gỏi Cá Trích,cookingTechnique,Phi lê và Trộn,,,Member_2
+3543,Gỏi Cá Trích,dishType,Đặc sản,,,Member_2
+3544,Gỏi Cá Trích,flavorProfile,Ngọt béo,,,Member_2
+3546,Gỏi Cá Trích,hasIngredient,Cá Trích,,,Member_2
+3549,Gỏi Cá Trích,originRegion,Phú Quốc,,,Member_2
+3550,Gỏi Cá Trích,servedWith,Nước Mắm,,,Member_2
+3561,Gỏi Dưa Leo,dishType,Món Khô,,,Member_2
+3565,Gỏi Dưa Leo,hasIngredient,Dưa Leo,,,Member_2
+3577,Gỏi Gà,cookingTechnique,Luộc,,,Member_2
+3578,Gỏi Gà,dishType,Món chính,,,Member_2
+3579,Gỏi Gà,flavorProfile,Đậm đà,,,Member_2
+3582,Gỏi Gà,hasIngredient,Thịt Gà,,,Member_2
+3583,Gỏi Gà,originRegion,Việt Nam,,,Member_2
+3584,Gỏi Gà,servedWith,Cháo gà,,,Member_2
+3585,Gỏi Gà Rau Càng Cua,cookingTechnique,Trộn,,,Member_2
+3586,Gỏi Gà Rau Càng Cua,dishType,Món khai vị,,,Member_2
+3587,Gỏi Gà Rau Càng Cua,flavorProfile,Chua thanh,,,Member_2
+3591,Gỏi Gà Rau Càng Cua,hasIngredient,Thịt Gà,,,Member_2
+3592,Gỏi Gà Rau Càng Cua,originRegion,Miền Nam,,,Member_2
+3593,Gỏi Gà Rau Càng Cua,servedWith,Bánh tráng,,,Member_2
+3650,Gỏi Mực,cookingTechnique,Luộc và Trộn,,,Member_2
+3651,Gỏi Mực,dishType,Khai vị,,,Member_2
+3652,Gỏi Mực,flavorProfile,Cay chua ngọt,,,Member_2
+3654,Gỏi Mực,hasIngredient,Mực,,,Member_2
+3656,Gỏi Mực,originRegion,Miền Trung,,,Member_2
+3657,Gỏi Mực,servedWith,Nước mắm chua ngọt,,,Member_2
+3677,Gỏi Ngó Sen Tôm Thịt,cookingTechnique,Luộc và Trộn,,,Member_2
+3678,Gỏi Ngó Sen Tôm Thịt,dishType,Khai vị,,,Member_2
+3679,Gỏi Ngó Sen Tôm Thịt,flavorProfile,Hài hòa,,,Member_3
+3682,Gỏi Ngó Sen Tôm Thịt,hasIngredient,Thịt Lợn,,,Member_3
+3683,Gỏi Ngó Sen Tôm Thịt,hasIngredient,Tôm,,,Member_3
+3685,Gỏi Ngó Sen Tôm Thịt,originRegion,Việt Nam,,,Member_3
+3686,Gỏi Ngó Sen Tôm Thịt,servedWith,Bánh phồng tôm,,,Member_3
+3780,Gỏi Tôm,cookingTechnique,Trộn,,,Member_3
+3781,Gỏi Tôm,dishType,Món Khô,,,Member_3
+3782,Gỏi Tôm,flavorProfile,Chua ngọt,,,Member_3
+3784,Gỏi Tôm,hasIngredient,Tôm,,,Member_3
+3786,Gỏi Tôm,originRegion,Việt Nam,,,Member_3
+3787,Gỏi Tôm,servedWith,Bánh phồng tôm,,,Member_3
+3788,Gỏi Tôm Thịt,cookingTechnique,Trộn,,,Member_3
+3789,Gỏi Tôm Thịt,dishType,Món khai vị,,,Member_3
+3790,Gỏi Tôm Thịt,flavorProfile,Hài hòa,,,Member_3
+3793,Gỏi Tôm Thịt,hasIngredient,Thịt Lợn,,,Member_3
+3794,Gỏi Tôm Thịt,hasIngredient,Tôm,,,Member_3
+3796,Gỏi Tôm Thịt,originRegion,Việt Nam,,,Member_3
+3797,Gỏi Tôm Thịt,servedWith,Nước mắm chua ngọt,,,Member_3
+3798,Gỏi Xoài,cookingTechnique,Trộn,,,Member_3
+3799,Gỏi Xoài,dishType,Món khai vị,,,Member_3
+3800,Gỏi Xoài,flavorProfile,Chua,,,Member_3
+3803,Gỏi Xoài,hasIngredient,Xoài Xanh,,,Member_3
+3805,Gỏi Xoài,originRegion,Miền Nam,,,Member_3
+3806,Gỏi Xoài,servedWith,Khô cá lóc,,,Member_3
+3835,Gỏi Đu Đủ,cookingTechnique,Trộn,,,Member_3
+3836,Gỏi Đu Đủ,dishType,Món khai vị,,,Member_3
+3837,Gỏi Đu Đủ,flavorProfile,Mặn,,,Member_3
+3839,Gỏi Đu Đủ,hasIngredient,Đu Đủ,,,Member_3
+3842,Gỏi Đu Đủ,originRegion,Việt Nam,,,Member_3
+3843,Gỏi Đu Đủ,servedWith,Nước mắm chua ngọt,,,Member_3
+3862,Hoa Chuối,ingredientCategory,Rau Lá,,,Member_3
+3884,Hoa Thiên Lý Xào Thịt Bò,cookingTechnique,Xào,,,Member_3
+3885,Hoa Thiên Lý Xào Thịt Bò,dishType,Món xào,,,Member_3
+3886,Hoa Thiên Lý Xào Thịt Bò,flavorProfile,Đậm đà,,,Member_3
+3890,Hoa Thiên Lý Xào Thịt Bò,hasIngredient,Thịt Bò,,,Member_3
+3892,Hoa Thiên Lý Xào Thịt Bò,originRegion,Việt Nam,,,Member_3
+3893,Hoa Thiên Lý Xào Thịt Bò,servedWith,Cơm trắng,,,Member_3
+3925,Hàu Nướng Mỡ Hành,cookingTechnique,Nướng,,,Member_3
+3926,Hàu Nướng Mỡ Hành,dishType,Món nướng,,,Member_3
+3927,Hàu Nướng Mỡ Hành,flavorProfile,Béo,,,Member_3
+3930,Hàu Nướng Mỡ Hành,hasIngredient,Mỡ Hành,,,Member_3
+3933,Hàu Nướng Mỡ Hành,originRegion,Việt Nam,,,Member_3
+3934,Hàu Nướng Mỡ Hành,servedWith,Nước mắm,,,Member_3
+3944,Há Cảo,dishType,Bánh,,,Member_3
+3948,Há Cảo,hasIngredient,Tôm,,,Member_3
+3962,Hạt Sen,ingredientCategory,Ngũ cốc,,,Member_3
+3964,Hải Sản,hasAllergen,Giáp Xác,,,Member_3
+3965,Hải Sản,ingredientCategory,Hải Sản,,,Member_3
+3990,Hẹ,ingredientCategory,Rau Lá,,,Member_3
+3992,Hến,ingredientCategory,Hải Sản,,,Member_3
+4046,Hủ Tiếu Nam Vang,cookingTechnique,"Ninh xương, chần",,,Member_3
+4047,Hủ Tiếu Nam Vang,dishType,Món Nước,,,Member_3
+4048,Hủ Tiếu Nam Vang,flavorProfile,"Đậm đà, ngọt thanh",,,Member_3
+4050,Hủ Tiếu Nam Vang,hasIngredient,Tôm,,,Member_3
+4054,Hủ Tiếu Nam Vang,originRegion,Campuchia (Việt hóa),,,Member_3
+4055,Hủ Tiếu Nam Vang,servedWith,"Tôm, gan, thịt băm, trứng cút",,,Member_3
+4066,Hủ Tiếu Tôm,cookingTechnique,"Luộc, chần",,,Member_3
+4067,Hủ Tiếu Tôm,dishType,Món nước,,,Member_3
+4068,Hủ Tiếu Tôm,flavorProfile,"Ngọt, thanh",,,Member_3
+4071,Hủ Tiếu Tôm,hasIngredient,Tôm,,,Member_3
+4073,Hủ Tiếu Tôm,originRegion,Miền Nam Việt Nam,,,Member_3
+4074,Hủ Tiếu Tôm,servedWith,"Rau sống, giá, hẹ",,,Member_3
+4087,Kem,flavorProfile,Ngọt,,,Member_3
+4115,Khoai Lang,ingredientCategory,Rau Ăn Củ,,,Member_3
+4116,Khoai Môn,ingredientCategory,Ngũ Cốc,,,Member_3
+4117,Khoai Môn,ingredientCategory,Rau Ăn Củ,,,Member_3
+4118,Khoai Mỡ,ingredientCategory,Ngũ Cốc,,,Member_3
+4121,Khoai Tây,ingredientCategory,Ngũ Cốc,,,Member_3
+4148,Khoai Tây Xào Thịt,cookingTechnique,Xào,,,Member_3
+4149,Khoai Tây Xào Thịt,dishType,Món mặn,,,Member_3
+4150,Khoai Tây Xào Thịt,flavorProfile,"Mặn, ngọt",,,Member_3
+4153,Khoai Tây Xào Thịt,hasIngredient,Khoai Tây,,,Member_3
+4154,Khoai Tây Xào Thịt,hasIngredient,Thịt Lợn,,,Member_3
+4156,Khoai Tây Xào Thịt,originRegion,Việt Nam,,,Member_3
+4157,Khoai Tây Xào Thịt,servedWith,Cơm trắng,,,Member_3
+4158,Khoai Tây Xào Thịt Bò,cookingTechnique,Xào nhanh,,,Member_3
+4159,Khoai Tây Xào Thịt Bò,dishType,Món Xào,,,Member_3
+4160,Khoai Tây Xào Thịt Bò,flavorProfile,Đậm đà,,,Member_3
+4163,Khoai Tây Xào Thịt Bò,hasIngredient,Thịt Bò,,,Member_3
+4165,Khoai Tây Xào Thịt Bò,originRegion,Việt Nam,,,Member_3
+4166,Khoai Tây Xào Thịt Bò,servedWith,Cơm trắng,,,Member_3
+4167,Khâu Nhục,cookingTechnique,Ninh,,,Member_3
+4168,Khâu Nhục,dishType,Món hầm,,,Member_3
+4169,Khâu Nhục,flavorProfile,"Béo, đậm đà",,,Member_3
+4172,Khâu Nhục,hasIngredient,Thịt Ba Chỉ,,,Member_3
+4174,Khâu Nhục,originRegion,Miền Bắc,,,Member_3
+4175,Khâu Nhục,servedWith,Cơm trắng hoặc xôi,,,Member_3
+4185,Khô Cá Đù Chiên,cookingTechnique,Chiên,,,Member_3
+4186,Khô Cá Đù Chiên,dishType,Món chiên,,,Member_3
+4187,Khô Cá Đù Chiên,flavorProfile,Mặn,,,Member_3
+4190,Khô Cá Đù Chiên,hasIngredient,Cá Đù,,,Member_3
+4192,Khô Cá Đù Chiên,originRegion,Việt Nam,,,Member_3
+4193,Khô Cá Đù Chiên,servedWith,"Cơm trắng, dưa leo",,,Member_3
+4203,Khổ Qua,ingredientCategory,Rau Củ,,,Member_3
+4209,Khổ Qua Chà Bông,hasIngredient,Chà Bông,,,Member_3
+4237,Khổ Qua Xào Thịt Bò,hasIngredient,Thịt Bò,,,Member_3
+4238,Khổ Qua Xào Trứng,cookingTechnique,Xào,,,Member_3
+4239,Khổ Qua Xào Trứng,dishType,Món xào,,,Member_3
+4240,Khổ Qua Xào Trứng,flavorProfile,"Đắng, béo",,,Member_3
+4243,Khổ Qua Xào Trứng,hasIngredient,Trứng,,,Member_3
+4255,Kẹo Lạc,hasIngredient,Lạc,,,Member_3
+4258,Lá Lốt,ingredientCategory,Rau lá,,,Member_3
+4276,Lòng Gà,ingredientCategory,Thịt,,,Member_3
+4277,Lòng Gà Xào,cookingTechnique,Xào,,,Member_3
+4278,Lòng Gà Xào,dishType,Món xào,,,Member_3
+4279,Lòng Gà Xào,flavorProfile,"Mặn, ngọt, giòn",,,Member_3
+4282,Lòng Gà Xào,hasIngredient,Lòng Gà,,,Member_3
+4283,Lòng Gà Xào,originRegion,Việt Nam,,,Member_3
+4284,Lòng Gà Xào,servedWith,Cơm trắng,,,Member_3
+4285,Lòng Gà Xào Dứa,cookingTechnique,Xào,,,Member_3
+4286,Lòng Gà Xào Dứa,dishType,Món xào,,,Member_3
+4287,Lòng Gà Xào Dứa,flavorProfile,Chua,,,Member_3
+4290,Lòng Gà Xào Dứa,hasIngredient,Dứa,,,Member_3
+4291,Lòng Gà Xào Dứa,hasIngredient,Lòng Gà,,,Member_3
+4292,Lòng Gà Xào Dứa,originRegion,Việt Nam,,,Member_3
+4308,Lòng Gà Xào Trứng Non,cookingTechnique,Xào,,,Member_3
+4309,Lòng Gà Xào Trứng Non,dishType,Món xào,,,Member_3
+4310,Lòng Gà Xào Trứng Non,flavorProfile,"Béo, đậm đà",,,Member_3
+4313,Lòng Gà Xào Trứng Non,hasIngredient,Lòng Gà,,,Member_3
+4314,Lòng Gà Xào Trứng Non,hasIngredient,Trứng Non,,,Member_3
+4315,Lòng Gà Xào Đậu Cove,cookingTechnique,Xào,,,Member_3
+4316,Lòng Gà Xào Đậu Cove,dishType,Món xào,,,Member_3
+4317,Lòng Gà Xào Đậu Cove,flavorProfile,"Giòn, ngọt",,,Member_3
+4320,Lòng Gà Xào Đậu Cove,hasIngredient,Lòng Gà,,,Member_3
+4323,Lòng Lợn,ingredientCategory,Thịt,,,Member_3
+4331,Lòng Lợn Luộc,cookingTechnique,Luộc,,,Member_3
+4335,Lòng Lợn Luộc,hasIngredient,Lòng Lợn,,,Member_3
+4338,Lòng Lợn Luộc,servedWith,Mắm Tôm,,,Member_3
+4375,Lòng Xào,cookingTechnique,Xào,,,Member_3
+4376,Lòng Xào,dishType,Món Khô,,,Member_3
+4380,Lòng Xào,hasIngredient,Lòng Lợn,,,Member_3
+4422,Lòng Xào Hẹ,hasIngredient,Hẹ,,,Member_3
+4423,Lòng Xào Hẹ,hasIngredient,Lòng Lợn,,,Member_3
+4428,Lúa nếp,ingredientCategory,Ngũ cốc,,,Member_3
+4430,Lươn,ingredientCategory,Thịt,,,Member_3
+4431,Lươn Xào Sả Ớt,cookingTechnique,Xào,,,Member_3
+4432,Lươn Xào Sả Ớt,dishType,Món xào,,,Member_3
+4433,Lươn Xào Sả Ớt,flavorProfile,Cay,,,Member_3
+4436,Lươn Xào Sả Ớt,hasIngredient,Lươn,,,Member_3
+4438,Lươn Xào Sả Ớt,originRegion,Miền Trung,,,Member_3
+4439,Lươn Xào Sả Ớt,servedWith,Cơm trắng,,,Member_3
+4469,Lẩu,cookingTechnique,Ninh,,,Member_3
+4470,Lẩu,dishType,Lẩu,,,Member_3
+4471,Lẩu,flavorProfile,Đậm đà,,,Member_3
+4473,Lẩu,hasIngredient,Rau xanh,,,Member_3
+4474,Lẩu,servedWith,Bún tươi,,,Member_3
+4475,Lẩu Bò,cookingTechnique,Ninh,,,Member_3
+4476,Lẩu Bò,dishType,Món chính,,,Member_3
+4477,Lẩu Bò,flavorProfile,Béo ngậy,,,Member_3
+4479,Lẩu Bò,hasIngredient,Thịt Bò,,,Member_3
+4480,Lẩu Bò,originRegion,Việt Nam,,,Member_3
+4481,Lẩu Bò,servedWith,Mì,,,Member_3
+4482,Lẩu Cua Đồng,cookingTechnique,Nấu,,,Member_3
+4483,Lẩu Cua Đồng,dishType,Món chính,,,Member_3
+4484,Lẩu Cua Đồng,flavorProfile,Thanh,,,Member_3
+4486,Lẩu Cua Đồng,hasIngredient,Cua Đồng,,,Member_3
+4487,Lẩu Cua Đồng,originRegion,Miền Bắc,,,Member_3
+4488,Lẩu Cua Đồng,servedWith,Bún,,,Member_3
+4490,Lẩu Cá,dishType,Lẩu,,,Member_3
+4491,Lẩu Cá,flavorProfile,Chua ngọt,,,Member_3
+4494,Lẩu Cá,hasIngredient,Cá,,,Member_3
+4495,Lẩu Cá,servedWith,Nước mắm mặn,,,Member_3
+4511,Lẩu Gà Ác,cookingTechnique,Ninh,,,Member_3
+4512,Lẩu Gà Ác,dishType,Món bổ dưỡng,,,Member_3
+4513,Lẩu Gà Ác,flavorProfile,Thảo mộc,,,Member_3
+4515,Lẩu Gà Ác,hasIngredient,Gà Ác,,,Member_3
+4516,Lẩu Gà Ác,originRegion,Việt Nam,,,Member_3
+4517,Lẩu Gà Ác,servedWith,Mì trứng,,,Member_3
+4518,Lẩu Hải Sản,cookingTechnique,Nấu,,,Member_3
+4519,Lẩu Hải Sản,dishType,Món chính,,,Member_3
+4520,Lẩu Hải Sản,flavorProfile,Mặn,,,Member_3
+4522,Lẩu Hải Sản,hasIngredient,Tôm,,,Member_3
+4523,Lẩu Hải Sản,originRegion,Vùng biển,,,Member_3
+4532,Lẩu Riêu Cua,cookingTechnique,Nấu lẩu,,,Member_3
+4533,Lẩu Riêu Cua,dishType,Món nước,,,Member_3
+4534,Lẩu Riêu Cua,flavorProfile,Chua,,,Member_3
+4536,Lẩu Riêu Cua,hasIngredient,Cua Đồng,,,Member_3
+4537,Lẩu Riêu Cua,originRegion,Miền Bắc,,,Member_3
+4538,Lẩu Riêu Cua,servedWith,"Bún tươi, rau sống",,,Member_3
+4553,Miến Măng Ngan,cookingTechnique,Nấu canh,,,Member_3
+4554,Miến Măng Ngan,dishType,Món Nước,,,Member_3
+4555,Miến Măng Ngan,flavorProfile,"Đậm đà, ngọt thanh",,,Member_3
+4557,Miến Măng Ngan,hasIngredient,Thịt Ngan,,,Member_3
+4558,Miến Măng Ngan,originRegion,Miền Bắc,,,Member_3
+4563,Miến Nấu Mộc Nhĩ,cookingTechnique,Ninh,,,Member_3
+4564,Miến Nấu Mộc Nhĩ,dishType,Món chay,,,Member_3
+4566,Miến Nấu Mộc Nhĩ,hasIngredient,Mộc Nhĩ,,,Member_3
+4567,Miến Trộn,cookingTechnique,Trộn,,,Member_3
+4568,Miến Trộn,dishType,Món Khô,,,Member_3
+4569,Miến Trộn,flavorProfile,Chua,,,Member_3
+4570,Miến Trộn,flavorProfile,Ngọt,,,Member_3
+4572,Miến Trộn,hasIngredient,Lạc rang,,,Member_3
+4573,Miến Xào,cookingTechnique,Xào,,,Member_3
+4574,Miến Xào,dishType,Món Xào,,,Member_3
+4575,Miến Xào,hasIngredient,Rau củ,,,Member_3
+4612,Mì Gà Quay,cookingTechnique,Quay,,,Member_3
+4613,Mì Gà Quay,dishType,Mì nước,,,Member_3
+4614,Mì Gà Quay,flavorProfile,"Đậm đà, thơm mùi ngũ vị hương",,,Member_3
+4617,Mì Gà Quay,hasIngredient,Thịt Gà,,,Member_3
+4619,Mì Gà Quay,originRegion,Trung Hoa,,,Member_3
+4620,Mì Gà Quay,servedWith,Cải thìa,,,Member_3
+4641,Mì Khô,cookingTechnique,Trộn,,,Member_3
+4642,Mì Khô,dishType,Món Khô,,,Member_3
+4643,Mì Khô,flavorProfile,Đậm đà,,,Member_3
+4646,Mì Khô,hasIngredient,Sợi mì,,,Member_3
+4649,Mì Khô,originRegion,Việt Nam,,,Member_3
+4650,Mì Khô,servedWith,Chén nước dùng riêng,,,Member_3
+4651,Mì Nước,cookingTechnique,Ninh,,,Member_3
+4652,Mì Nước,dishType,Món Nước,,,Member_3
+4653,Mì Nước,flavorProfile,Thanh ngọt,,,Member_3
+4656,Mì Nước,hasIngredient,Nước dùng,,,Member_3
+4659,Mì Nước,originRegion,Việt Nam,,,Member_3
+4660,Mì Nước,servedWith,"Giá đỗ, chanh, ớt",,,Member_3
+4666,Mì Nấm Măng,hasIngredient,Nấm,,,Member_3
+4671,Mì Quảng,cookingTechnique,"Nấu, Trộn",,,Member_3
+4672,Mì Quảng,dishType,Mì trộn,,,Member_3
+4673,Mì Quảng,flavorProfile,"Đậm đà, béo ngậy",,,Member_3
+4676,Mì Quảng,hasIngredient,Tôm,,,Member_3
+4679,Mì Quảng,originRegion,Quảng Nam,,,Member_3
+4680,Mì Quảng,servedWith,Bánh Tráng,,,Member_3
+4715,Mì Xào,cookingTechnique,Xào,,,Member_3
+4716,Mì Xào,dishType,Món Khô,,,Member_3
+4717,Mì Xào,flavorProfile,Mặn,,,Member_3
+4720,Mì Xào,hasIngredient,Rau cải,,,Member_3
+4722,Mì Xào,originRegion,Châu Á,,,Member_3
+4723,Mì Xào,servedWith,Nước tương,,,Member_3
+4764,Mì Xào Thập Cẩm,cookingTechnique,Xào,,,Member_3
+4765,Mì Xào Thập Cẩm,dishType,Món chính,,,Member_3
+4766,Mì Xào Thập Cẩm,flavorProfile,"Mặn, ngọt, béo",,,Member_3
+4769,Mì Xào Thập Cẩm,hasIngredient,Mì Trứng,,,Member_3
+4772,Mì Xào Thập Cẩm,originRegion,Việt Nam,,,Member_3
+4773,Mì Xào Thập Cẩm,servedWith,Nước tương dầm ớt,,,Member_3
+4803,Món Kho,cookingTechnique,Ninh,,,Member_3
+4804,Món Kho,dishType,Món chính,,,Member_3
+4805,Món Kho,flavorProfile,Mặn,,,Member_3
+4808,Món Kho,hasIngredient,"Nước mắm, đường, hành",,,Member_3
+4811,Món Kho,originRegion,Việt Nam,,,Member_3
+4812,Món Kho,servedWith,"Cơm trắng, rau luộc",,,Member_3
+4851,Móng Giò,ingredientCategory,Thịt,,,Member_3
+4852,Móng Giò Hầm Củ Quả,cookingTechnique,Ninh,,,Member_3
+4853,Móng Giò Hầm Củ Quả,dishType,Món canh/hầm,,,Member_3
+4854,Móng Giò Hầm Củ Quả,flavorProfile,"Ngọt thanh, béo",,,Member_3
+4857,Móng Giò Hầm Củ Quả,hasIngredient,Móng Giò,,,Member_3
+4859,Móng Giò Hầm Củ Quả,originRegion,Việt Nam,,,Member_3
+4860,Móng Giò Hầm Củ Quả,servedWith,Cơm trắng,,,Member_3
+4861,Móng Giò Kho,cookingTechnique,Kho,,,Member_3
+4862,Móng Giò Kho,dishType,Món mặn,,,Member_3
+4863,Móng Giò Kho,flavorProfile,Mặn ngọt,,,Member_3
+4866,Móng Giò Kho,hasIngredient,Móng Giò,,,Member_3
+4867,Móng Giò Kho,originRegion,Miền Bắc,,,Member_3
+4868,Móng Giò Kho,servedWith,Cơm trắng,,,Member_3
+4870,Măng,ingredientCategory,Rau Lá,,,Member_3
+4898,Măng Tây,ingredientCategory,Rau Lá,,,Member_3
+4899,Măng Tây Xào,cookingTechnique,Xào,,,Member_3
+4903,Măng Tây Xào,hasIngredient,Măng Tây,,,Member_3
+4905,Măng Tây Xào Thịt Bò,cookingTechnique,Xào nhanh,,,Member_3
+4906,Măng Tây Xào Thịt Bò,dishType,Món xào,,,Member_3
+4907,Măng Tây Xào Thịt Bò,flavorProfile,Đậm đà,,,Member_3
+4910,Măng Tây Xào Thịt Bò,hasIngredient,Thịt Bò,,,Member_3
+4917,Măng Xào,cookingTechnique,Xào,,,Member_3
+4918,Măng Xào,dishType,Món xào,,,Member_3
+4919,Măng Xào,flavorProfile,Đậm đà,,,Member_3
+4921,Măng Xào,hasIngredient,Măng,,,Member_3
+4929,Mướp,ingredientCategory,Rau Lá,,,Member_3
+4930,Mướp Luộc,cookingTechnique,Luộc,,,Member_3
+4931,Mướp Luộc,dishType,Món luộc,,,Member_3
+4932,Mướp Luộc,flavorProfile,Thanh mát,,,Member_3
+4935,Mướp Luộc,hasIngredient,Mướp,,,Member_3
+4936,Mướp Luộc,originRegion,Việt Nam,,,Member_3
+4937,Mướp Luộc,servedWith,Nước mắm tỏi ớt,,,Member_3
+4945,Mướp Xào,cookingTechnique,Xào,,,Member_3
+4946,Mướp Xào,dishType,Món Xào,,,Member_3
+4947,Mướp Xào,flavorProfile,Ngọt thanh,,,Member_3
+4949,Mướp Xào,hasIngredient,Mướp,,,Member_3
+4950,Mướp Xào,originRegion,Việt Nam,,,Member_3
+4951,Mướp Xào,servedWith,Cơm trắng,,,Member_3
+4964,Mướp Xào Trứng Non Lòng Gà,cookingTechnique,Xào,,,Member_3
+4965,Mướp Xào Trứng Non Lòng Gà,dishType,Món xào,,,Member_3
+4968,Mướp Xào Trứng Non Lòng Gà,hasIngredient,Mướp,,,Member_3
+4969,Mướp Xào Trứng Non Lòng Gà,hasIngredient,Trứng Non Lòng Gà,,,Member_3
+4977,Mướp Xào Đậu Hũ,cookingTechnique,Xào,,,Member_3
+4978,Mướp Xào Đậu Hũ,dishType,Món xào,,,Member_3
+4979,Mướp Xào Đậu Hũ,flavorProfile,Thanh đạm,,,Member_3
+4980,Mướp Xào Đậu Hũ,hasIngredient,Mướp,,,Member_3
+4981,Mướp Xào Đậu Hũ,hasIngredient,Đậu Hũ,,,Member_3
+4982,Mướp Xào Đậu Hũ,originRegion,Việt Nam,,,Member_3
+4983,Mướp Đắng Trộn Ớt Chuông,cookingTechnique,Trộn,,,Member_3
+4984,Mướp Đắng Trộn Ớt Chuông,dishType,Món nộm/trộn,,,Member_3
+4985,Mướp Đắng Trộn Ớt Chuông,flavorProfile,Đắng,,,Member_3
+4988,Mướp Đắng Trộn Ớt Chuông,hasIngredient,Ớt Chuông,,,Member_3
+4989,Mướp Đắng Trộn Ớt Chuông,originRegion,Việt Nam,,,Member_3
+5013,Mướp Đắng Xào Trứng,cookingTechnique,Xào,,,Member_3
+5014,Mướp Đắng Xào Trứng,dishType,Món xào,,,Member_3
+5015,Mướp Đắng Xào Trứng,flavorProfile,"Đắng, béo",,,Member_3
+5018,Mướp Đắng Xào Trứng,hasIngredient,Trứng Gà,,,Member_3
+5019,Mướp Đắng Xào Trứng,originRegion,Việt Nam,,,Member_3
+5020,Mướp Đắng Xào Trứng,servedWith,Cơm trắng,,,Member_3
+5030,Mắm Chưng,cookingTechnique,Hấp,,,Member_3
+5031,Mắm Chưng,dishType,Món hấp,,,Member_3
+5032,Mắm Chưng,flavorProfile,"Mặn, đậm đà",,,Member_3
+5033,Mắm Chưng,hasIngredient,Mắm Cá,,,Member_3
+5036,Mắm Chưng,originRegion,Nam Bộ,,,Member_3
+5037,Mắm Chưng,servedWith,"Dưa leo, rau sống",,,Member_3
+5038,Mắm Cá,hasAllergen,Giáp Xác,,,Member_3
+5044,Mắm Tôm,hasAllergen,Giáp Xác,,,Member_3
+5046,Mắm Tôm,hasIngredient,Muối,,,Member_3
+5047,Mắm Tôm,hasIngredient,Tôm,,,Member_3
+5048,Mắm Tôm,ingredientCategory,Hải Sản,,,Member_3
+5049,Mắm tôm,hasAllergen,Giáp xác,,,Member_3
+5051,Mộc Nhĩ,ingredientCategory,Rau Lá,,,Member_3
+5055,Mực,hasAllergen,Giáp Xác,,,Member_3
+5057,Mực,ingredientCategory,Hải Sản,,,Member_3
+5075,Mực Chiên Xù,cookingTechnique,Chiên,,,Member_3
+5079,Mực Chiên Xù,hasIngredient,Bột Chiên Xù,,,Member_3
+5083,Mực Hấp,cookingTechnique,Hấp,,,Member_3
+5084,Mực Hấp,dishType,Món hấp,,,Member_3
+5085,Mực Hấp,flavorProfile,Ngọt tự nhiên,,,Member_3
+5087,Mực Hấp,hasIngredient,Mực,,,Member_3
+5105,Mực Hấp Hành,hasIngredient,Mực,,,Member_3
+5117,Mực Một Nắng Nướng Muối Ớt,cookingTechnique,Nướng,,,Member_3
+5118,Mực Một Nắng Nướng Muối Ớt,dishType,Món nướng,,,Member_3
+5119,Mực Một Nắng Nướng Muối Ớt,flavorProfile,Cay,,,Member_3
+5123,Mực Một Nắng Nướng Muối Ớt,hasIngredient,Ớt,,,Member_3
+5125,Mực Một Nắng Nướng Muối Ớt,originRegion,Miền Trung,,,Member_3
+5126,Mực Một Nắng Nướng Muối Ớt,servedWith,Muối tiêu chanh,,,Member_3
+5127,Mực Nhồi Thịt,cookingTechnique,Nhồi,,,Member_3
+5128,Mực Nhồi Thịt,dishType,Món hấp,,,Member_3
+5129,Mực Nhồi Thịt,flavorProfile,Đậm đà,,,Member_3
+5132,Mực Nhồi Thịt,hasIngredient,Mực,,,Member_3
+5133,Mực Nhồi Thịt,hasIngredient,Thịt Lợn,,,Member_3
+5134,Mực Nhồi Thịt,originRegion,Việt Nam,,,Member_3
+5135,Mực Nhồi Thịt,servedWith,Nước mắm tỏi ớt,,,Member_3
+5173,Mực Rim Nước Mắm,flavorProfile,Mặn,,,Member_3
+5175,Mực Rim Nước Mắm,hasIngredient,Nước Mắm,,,Member_3
+5197,Mực Trứng,ingredientCategory,Hải Sản,,,Member_3
+5198,Mực Trứng Hấp,cookingTechnique,Hấp,,,Member_3
+5199,Mực Trứng Hấp,dishType,Món khai vị,,,Member_3
+5200,Mực Trứng Hấp,flavorProfile,Thanh ngọt,,,Member_3
+5203,Mực Trứng Hấp,hasIngredient,Mực Trứng,,,Member_3
+5205,Mực Trứng Hấp,originRegion,Vùng biển Việt Nam,,,Member_3
+5206,Mực Trứng Hấp,servedWith,Nước Mắm Gừng,,,Member_3
+5207,Mực Tẩm Bột Chiên Giòn,cookingTechnique,Chiên,,,Member_3
+5208,Mực Tẩm Bột Chiên Giòn,dishType,Món chiên,,,Member_3
+5209,Mực Tẩm Bột Chiên Giòn,flavorProfile,Giòn béo,,,Member_3
+5211,Mực Tẩm Bột Chiên Giòn,hasIngredient,Bột Chiên,,,Member_3
+5212,Mực Tẩm Bột Chiên Giòn,hasIngredient,Mực,,,Member_3
+5215,Mực Tẩm Bột Chiên Giòn,originRegion,Toàn quốc,,,Member_3
+5216,Mực Tẩm Bột Chiên Giòn,servedWith,Tương ớt,,,Member_3
+5217,Mực Xào,cookingTechnique,Xào,,,Member_3
+5218,Mực Xào,dishType,Món Xào,,,Member_3
+5222,Mực Xào,hasIngredient,Mực,,,Member_3
+5223,Mực Xào,hasIngredient,Rau Củ,,,Member_3
+5228,Mực Xào Cay,cookingTechnique,Xào,,,Member_3
+5229,Mực Xào Cay,dishType,Món xào,,,Member_3
+5230,Mực Xào Cay,flavorProfile,Cay,,,Member_3
+5233,Mực Xào Cay,hasIngredient,Mực,,,Member_3
+5234,Mực Xào Cay,hasIngredient,Ớt,,,Member_3
+5238,Mực Xào Cay,servedWith,Cơm trắng,,,Member_3
+5239,Mực Xào Cần Tây,cookingTechnique,Xào,,,Member_3
+5240,Mực Xào Cần Tây,dishType,Món xào,,,Member_3
+5241,Mực Xào Cần Tây,flavorProfile,Thơm đặc trưng,,,Member_3
+5244,Mực Xào Cần Tây,hasIngredient,Mực,,,Member_3
+5246,Mực Xào Cần Tây,originRegion,Toàn quốc,,,Member_3
+5247,Mực Xào Cần Tây,servedWith,Cơm trắng,,,Member_3
+5307,Mực Xào Ngô Bao Tử,cookingTechnique,Xào,,,Member_3
+5308,Mực Xào Ngô Bao Tử,dishType,Món xào,,,Member_3
+5309,Mực Xào Ngô Bao Tử,flavorProfile,Ngọt tự nhiên,,,Member_3
+5312,Mực Xào Ngô Bao Tử,hasIngredient,Mực,,,Member_3
+5313,Mực Xào Ngô Bao Tử,hasIngredient,Ngô Bao Tử,,,Member_3
+5314,Mực Xào Ngô Bao Tử,originRegion,Việt Nam,,,Member_3
+5347,Mực Xào Ớt Chuông,cookingTechnique,Xào,,,Member_3
+5352,Mực Xào Ớt Chuông,hasIngredient,Mực,,,Member_3
+5353,Mực Xào Ớt Chuông,hasIngredient,Ớt Chuông,,,Member_3
+5355,Nem Cua Bể,cookingTechnique,Chiên ngập dầu,,,Member_3
+5356,Nem Cua Bể,dishType,Món chiên,,,Member_3
+5357,Nem Cua Bể,flavorProfile,Đậm đà,,,Member_3
+5359,Nem Cua Bể,hasIngredient,Thịt Cua,,,Member_3
+5360,Nem Cua Bể,originRegion,Hải Phòng,,,Member_3
+5361,Nem Cua Bể,servedWith,Bún và nước chấm,,,Member_3
+5370,Nem Công Chả Phượng,cookingTechnique,Hấp,,,Member_3
+5371,Nem Công Chả Phượng,dishType,Món khai vị,,,Member_3
+5374,Nem Công Chả Phượng,hasIngredient,Thịt Công,,,Member_3
+5375,Nem Công Chả Phượng,originRegion,Miền Trung,,,Member_3
+5381,Nem Lụi,cookingTechnique,Nướng,,,Member_3
+5383,Nem Lụi,hasIngredient,Thịt Lợn,,,Member_3
+5384,Nem Lụi,originRegion,Huế,,,Member_3
+5385,Nem Lụi,servedWith,Nước Lèo,,,Member_3
+5386,Nem Nướng,cookingTechnique,Nướng,,,Member_3
+5387,Nem Nướng,flavorProfile,Ngọt,,,Member_3
+5388,Nem Nướng,hasIngredient,Thịt heo,,,Member_3
+5389,Nem Nướng,originRegion,Miền Trung,,,Member_3
+5390,Nem Nướng,servedWith,Bánh tráng,,,Member_3
+5391,Nem Rán,cookingTechnique,Chiên,,,Member_3
+5392,Nem Rán,dishType,Món Khô,,,Member_3
+5393,Nem Rán,flavorProfile,Mặn ngọt hài hòa,,,Member_3
+5395,Nem Rán,hasIngredient,Mộc Nhĩ,,,Member_3
+5396,Nem Rán,hasIngredient,Thịt Lợn,,,Member_3
+5397,Nem Rán,hasIngredient,Trứng Gà,,,Member_3
+5398,Nem Rán,originRegion,Miền Bắc,,,Member_3
+5399,Nem Rán,servedWith,Nước Mắm,,,Member_3
+5400,Nem Rán,servedWith,Nước Mắm Pha,,,Member_3
+5401,Nem Rán,servedWith,Rau Xà Lách,,,Member_3
+5418,Ngan Giả Cầy,cookingTechnique,Ninh,,,Member_3
+5419,Ngan Giả Cầy,dishType,Món kho,,,Member_3
+5420,Ngan Giả Cầy,flavorProfile,Cay,,,Member_3
+5423,Ngan Giả Cầy,hasIngredient,Thịt Ngan,,,Member_3
+5429,Ngao,hasAllergen,Giáp Xác,,,Member_3
+5430,Ngao,ingredientCategory,Hải Sản,,,Member_3
+5459,Nghêu,hasAllergen,Giáp xác,,,Member_3
+5461,Nghêu,ingredientCategory,Hải sản,,,Member_3
+5463,Ngô Bao Tử,ingredientCategory,Ngũ Cốc,,,Member_3
+5479,Ngọn Su Su Xào Thịt Bò,cookingTechnique,Xào,,,Member_3
+5480,Ngọn Su Su Xào Thịt Bò,dishType,Món chính,,,Member_3
+5484,Ngọn Su Su Xào Thịt Bò,hasIngredient,Thịt Bò,,,Member_3
+5503,Nui,ingredientCategory,Ngũ Cốc,,,Member_3
+5504,Nui Xào Rau Củ,cookingTechnique,Xào,,,Member_3
+5505,Nui Xào Rau Củ,dishType,Món Xào,,,Member_3
+5506,Nui Xào Rau Củ,flavorProfile,Thanh đạm,,,Member_3
+5509,Nui Xào Rau Củ,hasIngredient,Nui,,,Member_3
+5510,Nui Xào Rau Củ,hasIngredient,Rau Củ,,,Member_3
+5512,Nui Xào Rau Củ,originRegion,Việt Nam,,,Member_3
+5513,Nui Xào Rau Củ,servedWith,Nước tương,,,Member_3
+5516,Nước Mắm,hasAllergen,Giáp Xác,,,Member_3
+5524,Nấm,ingredientCategory,Rau Lá,,,Member_3
+5588,Nấm Kim Châm,ingredientCategory,Rau,,,Member_3
+5594,Nấm Kim Châm Chiên Giòn,hasIngredient,Nấm Kim Châm,,,Member_3
+5627,Nấm Rơm Kho,cookingTechnique,Kho,,,Member_3
+5628,Nấm Rơm Kho,dishType,Món kho,,,Member_3
+5629,Nấm Rơm Kho,flavorProfile,"Mặn, ngọt, đậm đà",,,Member_3
+5631,Nấm Rơm Kho,hasIngredient,Nấm Rơm,,,Member_3
+5633,Nấm Rơm Kho,originRegion,Nam Bộ,,,Member_3
+5634,Nấm Rơm Kho,servedWith,Cơm trắng,,,Member_3
+5638,Nấm Xào,cookingTechnique,Xào,,,Member_3
+5639,Nấm Xào,dishType,Món xào,,,Member_3
+5640,Nấm Xào,flavorProfile,Thanh đạm,,,Member_3
+5643,Nấm Xào,hasIngredient,Nấm,,,Member_3
+5645,Nấm Xào,servedWith,Cơm trắng,,,Member_3
+5678,Nấm Đậu Kho,cookingTechnique,Kho,,,Member_3
+5679,Nấm Đậu Kho,dishType,Món kho,,,Member_3
+5680,Nấm Đậu Kho,flavorProfile,Mặn,,,Member_3
+5683,Nấm Đậu Kho,hasIngredient,Nấm,,,Member_3
+5684,Nấm Đậu Kho,hasIngredient,Đậu,,,Member_3
+5731,Nộm Dưa Chuột,cookingTechnique,Trộn,,,Member_3
+5732,Nộm Dưa Chuột,dishType,Món khai vị,,,Member_3
+5733,Nộm Dưa Chuột,flavorProfile,Chua ngọt,,,Member_3
+5736,Nộm Dưa Chuột,hasIngredient,Dưa Chuột,,,Member_3
+5739,Nộm Dưa Chuột,servedWith,Thịt kho,,,Member_3
+5760,Nộm Giá Đỗ Dưa Chuột,cookingTechnique,Trộn,,,Member_3
+5761,Nộm Giá Đỗ Dưa Chuột,dishType,Món khai vị,,,Member_3
+5762,Nộm Giá Đỗ Dưa Chuột,flavorProfile,Chua ngọt,,,Member_3
+5765,Nộm Giá Đỗ Dưa Chuột,hasIngredient,Dưa Chuột,,,Member_3
+5766,Nộm Giá Đỗ Dưa Chuột,hasIngredient,Giá Đỗ,,,Member_3
+5768,Nộm Giá Đỗ Dưa Chuột,originRegion,Việt Nam,,,Member_3
+5769,Nộm Giá Đỗ Dưa Chuột,servedWith,Thịt luộc,,,Member_3
+5775,Nộm Gà,hasIngredient,Thịt Gà,,,Member_3
+5781,Nộm Hoa Chuối,flavorProfile,Chua,,,Member_3
+5784,Nộm Hoa Chuối,hasIngredient,Hoa Chuối,,,Member_3
+5817,Nộm Su Hào Cà Rốt,hasIngredient,Su Hào,,,Member_3
+5818,Nộm Su Hào Cà Rốt,servedWith,Lạc Rang,,,Member_3
+5868,Phá Lấu Lợn,hasIngredient,Thịt Lợn,,,Member_3
+5882,Phở,cookingTechnique,Ninh,,,Member_3
+5883,Phở,dishType,Món Nước,,,Member_3
+5884,Phở,flavorProfile,Thanh ngọt,,,Member_3
+5887,Phở,hasIngredient,Bánh Phở,,,Member_3
+5888,Phở,hasIngredient,Thịt Bò,,,Member_3
+5889,Phở,originRegion,Miền Bắc,,,Member_3
+5890,Phở,servedWith,Rau Thơm,,,Member_3
+5891,Phở Bò,cookingTechnique,Ninh,,,Member_3
+5892,Phở Bò,dishType,Món nước,,,Member_3
+5893,Phở Bò,flavorProfile,Đậm đà,,,Member_3
+5896,Phở Bò,hasIngredient,Thịt Bò,,,Member_3
+5897,Phở Bò,originRegion,Việt Nam,,,Member_3
+5898,Phở Bò,servedWith,Quẩy,,,Member_3
+5908,Phở Bò Tái,cookingTechnique,Nhúng,,,Member_3
+5909,Phở Bò Tái,dishType,Món nước,,,Member_3
+5910,Phở Bò Tái,flavorProfile,Ngọt,,,Member_3
+5913,Phở Bò Tái,hasIngredient,Thịt Bò Tái,,,Member_3
+5915,Phở Bò Tái,originRegion,Việt Nam,,,Member_3
+5916,Phở Bò Tái,servedWith,Tương ớt,,,Member_3
+5944,Phở Cuốn,cookingTechnique,Cuốn,,,Member_3
+5945,Phở Cuốn,dishType,Món Khô,,,Member_3
+5946,Phở Cuốn,flavorProfile,Tươi mát,,,Member_3
+5949,Phở Cuốn,hasIngredient,Bánh Phở Cuốn,,,Member_3
+5952,Phở Cuốn,originRegion,Hà Nội,,,Member_3
+5953,Phở Cuốn,servedWith,Nước Mắm Chua Ngọt,,,Member_3
+5971,Phở Gà,cookingTechnique,Ninh,,,Member_3
+5972,Phở Gà,dishType,Món Nước,,,Member_3
+5973,Phở Gà,flavorProfile,Thanh ngọt,,,Member_3
+5976,Phở Gà,hasIngredient,Bánh Phở,,,Member_3
+5977,Phở Gà,hasIngredient,Thịt Gà,,,Member_3
+5979,Phở Gà,originRegion,Việt Nam,,,Member_3
+5980,Phở Gà,servedWith,Quẩy và lá chanh,,,Member_3
+6047,Phở Xào Bò,cookingTechnique,Xào,,,Member_3
+6048,Phở Xào Bò,dishType,Món xào,,,Member_3
+6049,Phở Xào Bò,flavorProfile,Đậm đà,,,Member_3
+6052,Phở Xào Bò,hasIngredient,Thịt Bò,,,Member_3
+6054,Phở Xào Bò,originRegion,Việt Nam,,,Member_3
+6055,Phở Xào Bò,servedWith,"Nước tương, ớt",,,Member_3
+6085,Quy Tắc Thay Thế Chay,fromIngredient,Thịt Heo,,,Member_3
+6086,Quy Tắc Thay Thế Chay,toIngredient,Mì Căn,,,Member_3
+6091,Rau,ingredientCategory,Rau Lá,,,Member_3
+6103,Rau Bí,ingredientCategory,Rau Lá,,,Member_3
+6113,Rau Bí Xào,cookingTechnique,Xào,,,Member_4
+6117,Rau Bí Xào,hasIngredient,Rau Bí,,,Member_4
+6130,Rau Bí Xào Tỏi,cookingTechnique,Xào,,,Member_4
+6131,Rau Bí Xào Tỏi,dishType,Món xào,,,Member_4
+6132,Rau Bí Xào Tỏi,flavorProfile,"Thơm, mặn nhẹ",,,Member_4
+6134,Rau Bí Xào Tỏi,hasIngredient,Rau Bí,,,Member_4
+6135,Rau Bí Xào Tỏi,hasIngredient,Tỏi,,,Member_4
+6136,Rau Bí Xào Tỏi,originRegion,Việt Nam,,,Member_4
+6137,Rau Bí Xào Tỏi,servedWith,Cơm trắng,,,Member_4
+6154,Rau Cải,ingredientCategory,Rau Lá,,,Member_4
+6167,Rau Cải Hầm,hasIngredient,Rau Cải,,,Member_4
+6169,Rau Cải Luộc,cookingTechnique,Luộc,,,Member_4
+6170,Rau Cải Luộc,dishType,Món luộc,,,Member_4
+6171,Rau Cải Luộc,flavorProfile,"Thanh, hơi đắng nhẹ",,,Member_4
+6172,Rau Cải Luộc,hasIngredient,Rau Cải,,,Member_4
+6174,Rau Cải Luộc,originRegion,Việt Nam,,,Member_4
+6175,Rau Cải Luộc,servedWith,Nước mắm gừng,,,Member_4
+6220,Rau Củ,ingredientCategory,Rau Lá,,,Member_4
+6250,Rau Củ Luộc,cookingTechnique,Luộc,,,Member_4
+6251,Rau Củ Luộc,dishType,Món luộc,,,Member_4
+6252,Rau Củ Luộc,flavorProfile,Thanh đạm,,,Member_4
+6254,Rau Củ Luộc,hasIngredient,Rau Củ,,,Member_4
+6256,Rau Củ Luộc,originRegion,Việt Nam,,,Member_4
+6257,Rau Củ Luộc,servedWith,Nước mắm tỏi ớt,,,Member_4
+6276,Rau Củ Xào,cookingTechnique,Xào,,,Member_4
+6277,Rau Củ Xào,dishType,Xào,,,Member_4
+6278,Rau Củ Xào,flavorProfile,Đậm đà,,,Member_4
+6281,Rau Củ Xào,hasIngredient,Rau Củ,,,Member_4
+6284,Rau Củ Xào,originRegion,Việt Nam,,,Member_4
+6285,Rau Củ Xào,servedWith,Cơm trắng,,,Member_4
+6295,Rau Củ Xào Thập Cẩm,cookingTechnique,Xào,,,Member_4
+6296,Rau Củ Xào Thập Cẩm,dishType,Món Xào,,,Member_4
+6297,Rau Củ Xào Thập Cẩm,flavorProfile,Thanh đạm,,,Member_4
+6300,Rau Củ Xào Thập Cẩm,hasIngredient,Rau Củ,,,Member_4
+6302,Rau Củ Xào Thập Cẩm,originRegion,Việt Nam,,,Member_4
+6303,Rau Củ Xào Thập Cẩm,servedWith,Cơm trắng,,,Member_4
+6304,Rau Củ Xào Tôm,cookingTechnique,Xào,,,Member_4
+6305,Rau Củ Xào Tôm,dishType,Món xào,,,Member_4
+6306,Rau Củ Xào Tôm,flavorProfile,Ngọt tự nhiên,,,Member_4
+6308,Rau Củ Xào Tôm,hasIngredient,Tôm,,,Member_4
+6310,Rau Củ Xào Tôm,originRegion,Việt Nam,,,Member_4
+6311,Rau Củ Xào Tôm,servedWith,Cơm trắng,,,Member_4
+6313,Rau Dền,ingredientCategory,Rau Lá,,,Member_4
+6314,Rau Dền Luộc,cookingTechnique,Luộc,,,Member_4
+6318,Rau Dền Luộc,hasIngredient,Rau Dền,,,Member_4
+6324,Rau Lang,ingredientCategory,Rau Lá,,,Member_4
+6325,Rau Lang Luộc,cookingTechnique,Luộc,,,Member_4
+6326,Rau Lang Luộc,dishType,Món luộc,,,Member_4
+6327,Rau Lang Luộc,flavorProfile,Ngọt nhẹ,,,Member_4
+6330,Rau Lang Luộc,hasIngredient,Rau Lang,,,Member_4
+6333,Rau Lang Luộc,originRegion,Việt Nam,,,Member_4
+6334,Rau Lang Luộc,servedWith,Nước mắm tỏi ớt,,,Member_4
+6364,Rau Luộc,cookingTechnique,Luộc,,,Member_4
+6383,Rau Muống,ingredientCategory,Rau,,,Member_4
+6384,Rau Muống,ingredientCategory,Rau Lá,,,Member_4
+6386,Rau Muống Luộc,cookingTechnique,Luộc,,,Member_4
+6387,Rau Muống Luộc,dishType,Món luộc,,,Member_4
+6388,Rau Muống Luộc,flavorProfile,Ngọt thanh,,,Member_4
+6391,Rau Muống Luộc,hasIngredient,Rau Muống,,,Member_4
+6393,Rau Muống Luộc,originRegion,Việt Nam,,,Member_4
+6394,Rau Muống Luộc,servedWith,Nước Mắm,,,Member_4
+6395,Rau Muống Xào,cookingTechnique,Xào,,,Member_4
+6396,Rau Muống Xào,dishType,Món xào,,,Member_4
+6397,Rau Muống Xào,flavorProfile,"Mặn, béo, thơm tỏi",,,Member_4
+6400,Rau Muống Xào,hasIngredient,Rau Muống,,,Member_4
+6402,Rau Muống Xào,originRegion,Việt Nam,,,Member_4
+6403,Rau Muống Xào,servedWith,Nước tương,,,Member_4
+6412,Rau Muống Xào Thịt Bò,cookingTechnique,Xào,,,Member_4
+6413,Rau Muống Xào Thịt Bò,dishType,Món xào,,,Member_4
+6414,Rau Muống Xào Thịt Bò,flavorProfile,"Đậm đà, thơm",,,Member_4
+6417,Rau Muống Xào Thịt Bò,hasIngredient,Rau Muống,,,Member_4
+6418,Rau Muống Xào Thịt Bò,hasIngredient,Thịt Bò,,,Member_4
+6419,Rau Muống Xào Tỏi,cookingTechnique,Xào,,,Member_4
+6420,Rau Muống Xào Tỏi,dishType,Món xào,,,Member_4
+6421,Rau Muống Xào Tỏi,flavorProfile,Mặn,,,Member_4
+6424,Rau Muống Xào Tỏi,hasIngredient,Rau Muống,,,Member_4
+6425,Rau Muống Xào Tỏi,hasIngredient,Tỏi,,,Member_4
+6427,Rau Muống Xào Tỏi,originRegion,Việt Nam,,,Member_4
+6429,Rau Mồng Tơi,ingredientCategory,Rau Lá,,,Member_4
+6430,Rau Mồng Tơi Luộc,cookingTechnique,Luộc,,,Member_4
+6433,Rau Mồng Tơi Luộc,hasIngredient,Rau Mồng Tơi,,,Member_4
+6438,Rau Ngót,ingredientCategory,Rau Lá,,,Member_4
+6490,Rau Xào,cookingTechnique,Xào,,,Member_4
+6493,Rau Xào Nấm,cookingTechnique,Xào,,,Member_4
+6496,Rau Xào Nấm,hasIngredient,Nấm,,,Member_4
+6515,Rau Xào Tỏi,cookingTechnique,Xào,,,Member_4
+6516,Rau Xào Tỏi,flavorProfile,"Thơm, đậm đà",,,Member_4
+6518,Rau Xào Tỏi,hasIngredient,Rau,,,Member_4
+6519,Rau Xào Tỏi,hasIngredient,Tỏi,,,Member_4
+6525,Rong Biển,ingredientCategory,Rau Lá,,,Member_4
+6537,Rươi,ingredientCategory,Hải Sản,,,Member_4
+6560,Salad Tôm,hasIngredient,Tôm,,,Member_4
+6567,Salad Vịt Áp Chảo,hasIngredient,Thịt Vịt,,,Member_4
+6568,Su Hào,ingredientCategory,Rau Lá,,,Member_4
+6569,Su Hào Xào Cà Rốt,cookingTechnique,Xào,,,Member_4
+6570,Su Hào Xào Cà Rốt,dishType,Món xào,,,Member_4
+6571,Su Hào Xào Cà Rốt,flavorProfile,Thanh đạm,,,Member_4
+6574,Su Hào Xào Cà Rốt,hasIngredient,Cà Rốt,,,Member_4
+6575,Su Hào Xào Cà Rốt,hasIngredient,Su Hào,,,Member_4
+6577,Su Hào Xào Cà Rốt,originRegion,Miền Bắc,,,Member_4
+6578,Su Hào Xào Cà Rốt,servedWith,Cơm trắng,,,Member_4
+6612,Su Su,ingredientCategory,Rau Lá,,,Member_4
+6624,Su Su Luộc,cookingTechnique,Luộc,,,Member_4
+6625,Su Su Luộc,dishType,Món luộc,,,Member_4
+6626,Su Su Luộc,flavorProfile,Thanh mát,,,Member_4
+6628,Su Su Luộc,hasIngredient,Su Su,,,Member_4
+6630,Su Su Luộc,originRegion,Việt Nam,,,Member_4
+6631,Su Su Luộc,servedWith,Nước mắm tỏi ớt,,,Member_4
+6663,Su Su Xào,cookingTechnique,Xào,,,Member_4
+6664,Su Su Xào,dishType,Món Xào,,,Member_4
+6665,Su Su Xào,flavorProfile,Thanh đạm,,,Member_4
+6668,Su Su Xào,hasIngredient,Su Su,,,Member_4
+6671,Su Su Xào,originRegion,Việt Nam,,,Member_4
+6672,Su Su Xào,servedWith,Cơm trắng,,,Member_4
+6673,Su Su Xào Cà Rốt,cookingTechnique,Xào,,,Member_4
+6674,Su Su Xào Cà Rốt,dishType,Món xào,,,Member_4
+6675,Su Su Xào Cà Rốt,flavorProfile,Thanh đạm,,,Member_4
+6678,Su Su Xào Cà Rốt,hasIngredient,Cà Rốt,,,Member_4
+6679,Su Su Xào Cà Rốt,hasIngredient,Su Su,,,Member_4
+6680,Su Su Xào Cà Rốt,originRegion,Việt Nam,,,Member_4
+6695,Su Su Xào Thịt Bò,cookingTechnique,Xào,,,Member_4
+6696,Su Su Xào Thịt Bò,dishType,Món xào,,,Member_4
+6697,Su Su Xào Thịt Bò,flavorProfile,Đậm đà,,,Member_4
+6699,Su Su Xào Thịt Bò,hasIngredient,Su Su,,,Member_4
+6700,Su Su Xào Thịt Bò,hasIngredient,Thịt Bò,,,Member_4
+6701,Su Su Xào Thịt Bò,originRegion,Việt Nam,,,Member_4
+6709,Su Su Xào Tỏi,cookingTechnique,Xào,,,Member_4
+6710,Su Su Xào Tỏi,dishType,Món xào,,,Member_4
+6711,Su Su Xào Tỏi,flavorProfile,Thơm nồng,,,Member_4
+6712,Su Su Xào Tỏi,hasIngredient,Su Su,,,Member_4
+6713,Su Su Xào Tỏi,hasIngredient,Tỏi,,,Member_4
+6715,Su Su Xào Tỏi,originRegion,Việt Nam,,,Member_4
+6799,Súp Lơ,ingredientCategory,Rau Lá,,,Member_4
+6800,Súp Lơ Xào Mực,cookingTechnique,Xào,,,Member_4
+6801,Súp Lơ Xào Mực,dishType,Món chính,,,Member_4
+6802,Súp Lơ Xào Mực,flavorProfile,"Giòn, ngọt",,,Member_4
+6804,Súp Lơ Xào Mực,hasIngredient,Mực,,,Member_4
+6805,Súp Lơ Xào Mực,hasIngredient,Súp Lơ,,,Member_4
+6808,Súp Lơ Xào Mực,servedWith,Cơm trắng,,,Member_4
+6823,Súp Lươn,hasIngredient,Lươn,,,Member_4
+6863,Sườn,ingredientCategory,Thịt,,,Member_4
+6874,Sườn Chiên,cookingTechnique,Chiên,,,Member_4
+6875,Sườn Chiên,dishType,Món chính,,,Member_4
+6876,Sườn Chiên,flavorProfile,"Béo, mặn",,,Member_4
+6879,Sườn Chiên,hasIngredient,Sườn Lợn,,,Member_4
+6881,Sườn Chiên,originRegion,Việt Nam,,,Member_4
+6882,Sườn Chiên,servedWith,Cơm trắng,,,Member_4
+6883,Sườn Chiên Sả,cookingTechnique,Chiên,,,Member_4
+6884,Sườn Chiên Sả,dishType,Món chính,,,Member_4
+6885,Sườn Chiên Sả,flavorProfile,Thơm nồng,,,Member_4
+6888,Sườn Chiên Sả,hasIngredient,Sườn Lợn,,,Member_4
+6889,Sườn Chiên Sả,hasIngredient,Sả,,,Member_4
+6892,Sườn Chiên Sả,originRegion,Việt Nam,,,Member_4
+6893,Sườn Chiên Sả,servedWith,Cơm nóng,,,Member_4
+6914,Sườn Kho,cookingTechnique,Kho,,,Member_4
+6915,Sườn Kho,dishType,Món chính,,,Member_4
+6916,Sườn Kho,flavorProfile,Mặn,,,Member_4
+6919,Sườn Kho,hasIngredient,Sườn Lợn,,,Member_4
+6922,Sườn Kho,originRegion,Việt Nam,,,Member_4
+6923,Sườn Kho,servedWith,Cơm Trắng,,,Member_4
+6924,Sườn Kho Khoai Tây,cookingTechnique,Kho,,,Member_4
+6925,Sườn Kho Khoai Tây,dishType,Món kho,,,Member_4
+6926,Sườn Kho Khoai Tây,flavorProfile,Mặn ngọt,,,Member_4
+6929,Sườn Kho Khoai Tây,hasIngredient,Khoai Tây,,,Member_4
+6932,Sườn Kho Khoai Tây,originRegion,Việt Nam,,,Member_4
+6933,Sườn Kho Khoai Tây,servedWith,Cơm trắng,,,Member_4
+6934,Sườn Kho Trứng Cút,cookingTechnique,Kho,,,Member_4
+6935,Sườn Kho Trứng Cút,dishType,Món kho,,,Member_4
+6936,Sườn Kho Trứng Cút,flavorProfile,Mặn ngọt,,,Member_4
+6938,Sườn Kho Trứng Cút,hasIngredient,Sườn Lợn,,,Member_4
+6939,Sườn Kho Trứng Cút,hasIngredient,Trứng Cút,,,Member_4
+6941,Sườn Kho Trứng Cút,originRegion,Việt Nam,,,Member_4
+6942,Sườn Kho Trứng Cút,servedWith,Cơm trắng,,,Member_4
+6943,Sườn Kho Tộ,cookingTechnique,Kho tộ,,,Member_4
+6944,Sườn Kho Tộ,dishType,Món kho,,,Member_4
+6945,Sườn Kho Tộ,flavorProfile,Mặn,,,Member_4
+6948,Sườn Kho Tộ,hasIngredient,Sườn Lợn,,,Member_4
+6950,Sườn Kho Tộ,originRegion,Miền Nam,,,Member_4
+6951,Sườn Kho Tộ,servedWith,Cơm trắng,,,Member_4
+6952,Sườn Lợn,ingredientCategory,Thịt,,,Member_4
+6954,Sườn Non,ingredientCategory,Thịt,,,Member_4
+6956,Sườn Non Chay Chiên,cookingTechnique,Chiên,,,Member_4
+6957,Sườn Non Chay Chiên,dishType,Món chay,,,Member_4
+6958,Sườn Non Chay Chiên,flavorProfile,Giòn mặn,,,Member_4
+6960,Sườn Non Chay Chiên,hasIngredient,Sườn Non Chay,,,Member_4
+6962,Sườn Non Chay Chiên,originRegion,Việt Nam,,,Member_4
+6963,Sườn Non Chay Chiên,servedWith,Tương ớt,,,Member_4
+6972,Sườn Nướng,cookingTechnique,Nướng,,,Member_4
+6973,Sườn Nướng,dishType,Món nướng,,,Member_4
+6974,Sườn Nướng,flavorProfile,Đậm đà,,,Member_4
+6977,Sườn Nướng,hasIngredient,Sườn Lợn,,,Member_4
+6978,Sườn Nướng,originRegion,Việt Nam,,,Member_4
+6979,Sườn Nướng,servedWith,Đồ chua,,,Member_4
+6980,Sườn Ram,cookingTechnique,Rim,,,Member_4
+6981,Sườn Ram,dishType,Món ram,,,Member_4
+6982,Sườn Ram,flavorProfile,Mặn ngọt,,,Member_4
+6985,Sườn Ram,hasIngredient,Sườn Lợn,,,Member_4
+6987,Sườn Ram,originRegion,Việt Nam,,,Member_4
+6988,Sườn Ram,servedWith,Cơm trắng,,,Member_4
+6989,Sườn Rim,cookingTechnique,Rim,,,Member_4
+6990,Sườn Rim,dishType,Món rim,,,Member_4
+6991,Sườn Rim,flavorProfile,Mặn,,,Member_4
+6994,Sườn Rim,hasIngredient,Sườn Lợn,,,Member_4
+6996,Sườn Rim,originRegion,Việt Nam,,,Member_4
+6997,Sườn Rim,servedWith,Cơm trắng,,,Member_4
+6998,Sườn Rán,cookingTechnique,Chiên,,,Member_4
+7003,Sườn Rán,hasIngredient,Sườn Lợn,,,Member_4
+7016,Sườn Xào Chua Ngọt,cookingTechnique,Xào,,,Member_4
+7017,Sườn Xào Chua Ngọt,dishType,Món mặn,,,Member_4
+7018,Sườn Xào Chua Ngọt,flavorProfile,Chua,,,Member_4
+7019,Sườn Xào Chua Ngọt,flavorProfile,Ngọt,,,Member_4
+7022,Sườn Xào Chua Ngọt,hasIngredient,Sườn Lợn,,,Member_4
+7024,Sườn Xào Chua Ngọt,originRegion,Miền Bắc,,,Member_4
+7025,Sườn Xào Chua Ngọt,servedWith,Cơm trắng,,,Member_4
+7026,Sườn Xào Dứa,cookingTechnique,Xào,,,Member_4
+7028,Sườn Xào Dứa,flavorProfile,Chua ngọt,,,Member_4
+7031,Sườn Xào Dứa,hasIngredient,Dứa,,,Member_4
+7032,Sườn Xào Dứa,hasIngredient,Sườn Lợn,,,Member_4
+7041,Sườn Xào Măng,hasIngredient,Măng,,,Member_4
+7042,Sườn Xào Măng,hasIngredient,Sườn Lợn,,,Member_4
+7097,Tai Heo,ingredientCategory,Thịt,,,Member_4
+7099,Thay Thế Cơm Mẻ,fromIngredient,Cơm Mẻ,,,Member_4
+7100,Thay Thế Cơm Mẻ,toIngredient,Sữa Chua,,,Member_4
+7103,Thay Thế Trứng,fromIngredient,Trứng Vịt,,,Member_4
+7104,Thay Thế Trứng,toIngredient,Trứng Gà,,,Member_4
+7116,Thiên Lý Xào Thịt Bò,cookingTechnique,Xào,,,Member_4
+7117,Thiên Lý Xào Thịt Bò,dishType,Món mặn,,,Member_4
+7118,Thiên Lý Xào Thịt Bò,flavorProfile,Đậm đà,,,Member_4
+7120,Thiên Lý Xào Thịt Bò,hasIngredient,Thịt Bò,,,Member_4
+7123,Thiên Lý Xào Thịt Bò,originRegion,Việt Nam,,,Member_4
+7124,Thiên Lý Xào Thịt Bò,servedWith,Cơm trắng,,,Member_4
+7125,Thăn Bò,ingredientCategory,Thịt,,,Member_4
+7144,Thịt,ingredientCategory,Thịt,,,Member_4
+7147,Thịt Ba Chỉ,ingredientCategory,Thịt,,,Member_4
+7148,Thịt Ba Chỉ Chiên,cookingTechnique,Chiên,,,Member_4
+7149,Thịt Ba Chỉ Chiên,dishType,Món chiên,,,Member_4
+7150,Thịt Ba Chỉ Chiên,flavorProfile,"Giòn, béo",,,Member_4
+7152,Thịt Ba Chỉ Chiên,hasIngredient,Thịt Ba Chỉ,,,Member_4
+7154,Thịt Ba Chỉ Chiên,originRegion,Việt Nam,,,Member_4
+7155,Thịt Ba Chỉ Chiên,servedWith,Nước mắm tỏi ớt,,,Member_4
+7156,Thịt Ba Chỉ Kho Tiêu,cookingTechnique,Kho,,,Member_4
+7157,Thịt Ba Chỉ Kho Tiêu,dishType,Món kho,,,Member_4
+7158,Thịt Ba Chỉ Kho Tiêu,flavorProfile,Mặn,,,Member_4
+7161,Thịt Ba Chỉ Kho Tiêu,hasIngredient,Thịt Ba Chỉ,,,Member_4
+7163,Thịt Ba Chỉ Kho Tiêu,originRegion,Việt Nam,,,Member_4
+7164,Thịt Ba Chỉ Kho Tiêu,servedWith,Cơm trắng,,,Member_4
+7165,Thịt Ba Chỉ Luộc,cookingTechnique,Luộc,,,Member_4
+7166,Thịt Ba Chỉ Luộc,dishType,Món luộc,,,Member_4
+7167,Thịt Ba Chỉ Luộc,flavorProfile,"Thanh, ngọt tự nhiên",,,Member_4
+7170,Thịt Ba Chỉ Luộc,hasIngredient,Thịt Ba Chỉ,,,Member_4
+7172,Thịt Ba Chỉ Luộc,originRegion,Việt Nam,,,Member_4
+7173,Thịt Ba Chỉ Luộc,servedWith,Mắm Tôm,,,Member_4
+7182,Thịt Ba Chỉ Rang,cookingTechnique,Xào,,,Member_4
+7187,Thịt Ba Chỉ Rang,hasIngredient,Thịt Ba Chỉ,,,Member_4
+7191,Thịt Ba Chỉ Rang Cháy Cạnh,cookingTechnique,Rang,,,Member_4
+7192,Thịt Ba Chỉ Rang Cháy Cạnh,dishType,Món rang,,,Member_4
+7193,Thịt Ba Chỉ Rang Cháy Cạnh,flavorProfile,Mặn,,,Member_4
+7196,Thịt Ba Chỉ Rang Cháy Cạnh,hasIngredient,Thịt Ba Chỉ,,,Member_4
+7198,Thịt Ba Chỉ Rang Cháy Cạnh,originRegion,Việt Nam,,,Member_4
+7199,Thịt Ba Chỉ Rang Cháy Cạnh,servedWith,Cơm trắng,,,Member_4
+7219,Thịt Ba Chỉ Xào,cookingTechnique,Xào,,,Member_4
+7220,Thịt Ba Chỉ Xào,dishType,Món mặn,,,Member_4
+7221,Thịt Ba Chỉ Xào,flavorProfile,"Mặn, ngọt, béo",,,Member_4
+7224,Thịt Ba Chỉ Xào,hasIngredient,Thịt Ba Chỉ,,,Member_4
+7225,Thịt Ba Chỉ Xào,originRegion,Việt Nam,,,Member_4
+7226,Thịt Ba Chỉ Xào,servedWith,Cơm trắng,,,Member_4
+7237,Thịt Bò,ingredientCategory,Thịt,,,Member_4
+7255,Thịt Bò Luộc,cookingTechnique,Luộc,,,Member_4
+7256,Thịt Bò Luộc,dishType,Món luộc,,,Member_4
+7257,Thịt Bò Luộc,flavorProfile,"Thanh, ngọt tự nhiên",,,Member_4
+7260,Thịt Bò Luộc,hasIngredient,Thịt Bò,,,Member_4
+7261,Thịt Bò Luộc,originRegion,Việt Nam,,,Member_4
+7262,Thịt Bò Luộc,servedWith,Nước Mắm Gừng,,,Member_4
+7271,Thịt Bò Nấu Dưa,cookingTechnique,Ninh,,,Member_4
+7272,Thịt Bò Nấu Dưa,dishType,Món canh/xào,,,Member_4
+7273,Thịt Bò Nấu Dưa,flavorProfile,"Chua, mặn, ngọt",,,Member_4
+7277,Thịt Bò Nấu Dưa,hasIngredient,Thịt Bò,,,Member_4
+7278,Thịt Bò Nấu Dưa,originRegion,Miền Bắc,,,Member_4
+7279,Thịt Bò Nấu Dưa,servedWith,Cơm trắng,,,Member_4
+7288,Thịt Bò Xào,cookingTechnique,Xào,,,Member_4
+7289,Thịt Bò Xào,dishType,Món Xào,,,Member_4
+7290,Thịt Bò Xào,flavorProfile,"Mặn, ngọt, thơm",,,Member_4
+7293,Thịt Bò Xào,hasIngredient,Thịt Bò,,,Member_4
+7294,Thịt Bò Xào,originRegion,Việt Nam,,,Member_4
+7295,Thịt Bò Xào,servedWith,Cơm trắng,,,Member_4
+7305,Thịt Bò Xào Dứa,cookingTechnique,Xào,,,Member_4
+7307,Thịt Bò Xào Dứa,flavorProfile,Chua Ngọt,,,Member_4
+7310,Thịt Bò Xào Dứa,hasIngredient,Dứa,,,Member_4
+7311,Thịt Bò Xào Dứa,hasIngredient,Thịt Bò,,,Member_4
+7315,Thịt Bò Xào Hoa Thiên Lý,cookingTechnique,Xào,,,Member_4
+7321,Thịt Bò Xào Hoa Thiên Lý,hasIngredient,Thịt Bò,,,Member_4
+7345,Thịt Bò Xào Mướp,cookingTechnique,Xào,,,Member_4
+7346,Thịt Bò Xào Mướp,dishType,Món xào,,,Member_4
+7347,Thịt Bò Xào Mướp,flavorProfile,Ngọt thanh,,,Member_4
+7350,Thịt Bò Xào Mướp,hasIngredient,Mướp,,,Member_4
+7351,Thịt Bò Xào Mướp,hasIngredient,Thịt Bò,,,Member_4
+7353,Thịt Bò Xào Mướp,originRegion,Việt Nam,,,Member_4
+7354,Thịt Bò Xào Mướp,servedWith,Cơm trắng,,,Member_4
+7364,Thịt Bò Xào Rau,cookingTechnique,Xào,,,Member_4
+7369,Thịt Bò Xào Rau,hasIngredient,Rau,,,Member_4
+7370,Thịt Bò Xào Rau,hasIngredient,Thịt Bò,,,Member_4
+7374,Thịt Bò Xào Rau Củ,cookingTechnique,Xào,,,Member_4
+7380,Thịt Bò Xào Rau Củ,hasIngredient,Thịt Bò,,,Member_4
+7394,Thịt Bò Xào Đậu Que,cookingTechnique,Xào,,,Member_4
+7399,Thịt Bò Xào Đậu Que,hasIngredient,Thịt Bò,,,Member_4
+7405,Thịt Băm,ingredientCategory,Thịt,,,Member_4
+7406,Thịt Băm Hấp Trứng,cookingTechnique,Hấp,,,Member_4
+7407,Thịt Băm Hấp Trứng,dishType,Món hấp,,,Member_4
+7408,Thịt Băm Hấp Trứng,flavorProfile,Thanh đạm,,,Member_4
+7412,Thịt Băm Hấp Trứng,hasIngredient,Trứng Gà,,,Member_4
+7413,Thịt Băm Hấp Trứng,originRegion,Việt Nam,,,Member_4
+7414,Thịt Băm Hấp Trứng,servedWith,Cơm trắng,,,Member_4
+7415,Thịt Băm Rang,cookingTechnique,Rang,,,Member_4
+7416,Thịt Băm Rang,dishType,Món mặn,,,Member_4
+7417,Thịt Băm Rang,flavorProfile,Mặn,,,Member_4
+7420,Thịt Băm Rang,hasIngredient,Thịt Lợn,,,Member_4
+7421,Thịt Băm Rang,originRegion,Việt Nam,,,Member_4
+7422,Thịt Băm Rang,servedWith,Cơm trắng,,,Member_4
+7423,Thịt Băm Sốt Cà Chua,cookingTechnique,Sốt,,,Member_4
+7424,Thịt Băm Sốt Cà Chua,dishType,Món xào/sốt,,,Member_4
+7425,Thịt Băm Sốt Cà Chua,flavorProfile,Chua,,,Member_4
+7427,Thịt Băm Sốt Cà Chua,hasIngredient,Cà Chua,,,Member_4
+7429,Thịt Băm Sốt Cà Chua,originRegion,Việt Nam,,,Member_4
+7430,Thịt Băm Sốt Cà Chua,servedWith,Cơm trắng,,,Member_4
+7431,Thịt Băm Trang Trí với Dưa Chuột,cookingTechnique,Xào,,,Member_4
+7432,Thịt Băm Trang Trí với Dưa Chuột,dishType,Món mặn,,,Member_4
+7433,Thịt Băm Trang Trí với Dưa Chuột,flavorProfile,Tươi mát,,,Member_4
+7435,Thịt Băm Trang Trí với Dưa Chuột,hasIngredient,Thịt Lợn,,,Member_4
+7436,Thịt Băm Trang Trí với Dưa Chuột,servedWith,Dưa Chuột,,,Member_4
+7437,Thịt Băm Xào,cookingTechnique,Xào,,,Member_4
+7438,Thịt Băm Xào,dishType,Món xào,,,Member_4
+7439,Thịt Băm Xào,flavorProfile,Đậm đà,,,Member_4
+7440,Thịt Băm Xào,hasIngredient,Thịt Lợn,,,Member_4
+7441,Thịt Băm Xào,originRegion,Việt Nam,,,Member_4
+7442,Thịt Băm Xào,servedWith,Cơm trắng,,,Member_4
+7443,Thịt Băm Xào Ngô Cà Rốt,cookingTechnique,Xào,,,Member_4
+7444,Thịt Băm Xào Ngô Cà Rốt,dishType,Món xào,,,Member_4
+7445,Thịt Băm Xào Ngô Cà Rốt,flavorProfile,Ngọt tự nhiên,,,Member_4
+7446,Thịt Băm Xào Ngô Cà Rốt,hasIngredient,Cà Rốt,,,Member_4
+7448,Thịt Băm Xào Ngô Cà Rốt,hasIngredient,Thịt Lợn,,,Member_4
+7449,Thịt Băm Xào Ngô Cà Rốt,originRegion,Việt Nam,,,Member_4
+7450,Thịt Băm Xào Ngô Cà Rốt,servedWith,Cơm trắng,,,Member_4
+7451,Thịt Băm Xào Ngô Ngọt,cookingTechnique,Xào,,,Member_4
+7456,Thịt Băm Xào Ngô Ngọt,hasIngredient,Thịt Lợn,,,Member_4
+7469,Thịt Băm Xào Rau Củ,hasIngredient,Rau Củ,,,Member_4
+7470,Thịt Băm Xào Rau Củ,hasIngredient,Thịt Lợn,,,Member_4
+7505,Thịt Chân Giò Luộc,cookingTechnique,Luộc,,,Member_4
+7506,Thịt Chân Giò Luộc,dishType,Món chính,,,Member_4
+7507,Thịt Chân Giò Luộc,hasIngredient,Chân giò heo,,,Member_4
+7512,Thịt Cua,hasAllergen,Giáp Xác,,,Member_4
+7513,Thịt Cua,ingredientCategory,Hải Sản,,,Member_4
+7525,Thịt Công,ingredientCategory,Thịt,,,Member_4
+7532,Thịt Gà,ingredientCategory,Thịt,,,Member_4
+7559,Thịt Gác Bếp,cookingTechnique,Hun Khói,,,Member_4
+7560,Thịt Gác Bếp,dishType,Đặc sản vùng cao,,,Member_4
+7561,Thịt Gác Bếp,flavorProfile,"Khói, cay, mặn",,,Member_4
+7564,Thịt Gác Bếp,hasIngredient,Thịt Trâu,,,Member_4
+7566,Thịt Gác Bếp,originRegion,Tây Bắc Việt Nam,,,Member_4
+7567,Thịt Gác Bếp,servedWith,Chẩm chéo,,,Member_4
+7569,Thịt Heo,ingredientCategory,Thịt,,,Member_4
+7570,Thịt Heo Quay,cookingTechnique,Quay,,,Member_4
+7571,Thịt Heo Quay,dishType,Món Quay,,,Member_4
+7572,Thịt Heo Quay,flavorProfile,"Giòn, béo",,,Member_4
+7575,Thịt Heo Quay,hasIngredient,Thịt Lợn,,,Member_4
+7577,Thịt Heo Quay,originRegion,Việt Nam,,,Member_4
+7578,Thịt Heo Quay,servedWith,Bánh hỏi,,,Member_4
+7632,Thịt Kho,cookingTechnique,Kho,,,Member_4
+7633,Thịt Kho,dishType,Món kho,,,Member_4
+7634,Thịt Kho,flavorProfile,Mặn ngọt,,,Member_4
+7636,Thịt Kho,hasIngredient,Thịt Lợn,,,Member_4
+7637,Thịt Kho,hasIngredient,Trứng,,,Member_4
+7638,Thịt Kho,originRegion,Miền Nam,,,Member_4
+7639,Thịt Kho,servedWith,Cải Chua,,,Member_4
+7647,Thịt Kho Củ Cải,dishType,Món kho,,,Member_4
+7648,Thịt Kho Củ Cải,flavorProfile,Ngọt thanh,,,Member_4
+7657,Thịt Kho Gừng,dishType,Món kho,,,Member_4
+7658,Thịt Kho Gừng,flavorProfile,Cay nồng,,,Member_4
+7705,Thịt Kho Trứng,cookingTechnique,Kho,,,Member_4
+7706,Thịt Kho Trứng,dishType,Món kho,,,Member_4
+7707,Thịt Kho Trứng,flavorProfile,Mặn ngọt,,,Member_4
+7711,Thịt Kho Trứng,hasIngredient,Trứng,,,Member_4
+7712,Thịt Kho Trứng,hasIngredient,Trứng Vịt,,,Member_4
+7713,Thịt Kho Trứng,hasSubRule,Thay Thế Trứng,,,Member_4
+7714,Thịt Kho Trứng,originRegion,Miền Nam,,,Member_4
+7716,Thịt Kho Trứng,servedWith,Cơm Trắng,,,Member_4
+7717,Thịt Kho Trứng,servedWith,Cải Chua,,,Member_4
+7718,Thịt Kho Trứng Cút,cookingTechnique,Kho,,,Member_4
+7719,Thịt Kho Trứng Cút,dishType,Món kho,,,Member_4
+7720,Thịt Kho Trứng Cút,flavorProfile,Mặn ngọt,,,Member_4
+7723,Thịt Kho Trứng Cút,hasIngredient,Thịt Lợn,,,Member_4
+7724,Thịt Kho Trứng Cút,hasIngredient,Trứng Cút,,,Member_4
+7725,Thịt Kho Trứng Cút,originRegion,Việt Nam,,,Member_4
+7726,Thịt Kho Trứng Cút,servedWith,Cơm Trắng,,,Member_4
+7727,Thịt Kho Tàu,cookingTechnique,Kho,,,Member_4
+7728,Thịt Kho Tàu,dishType,Món kho,,,Member_4
+7729,Thịt Kho Tàu,flavorProfile,Mặn ngọt béo,,,Member_4
+7732,Thịt Kho Tàu,hasIngredient,Nước Dừa,,,Member_4
+7733,Thịt Kho Tàu,hasIngredient,Trứng Vịt,,,Member_4
+7735,Thịt Kho Tàu,originRegion,Miền Nam Việt Nam,,,Member_4
+7736,Thịt Kho Tàu,servedWith,Dưa cải chua,,,Member_4
+7737,Thịt Kho Tộ,cookingTechnique,Kho tộ,,,Member_4
+7738,Thịt Kho Tộ,dishType,Món kho,,,Member_4
+7739,Thịt Kho Tộ,flavorProfile,Mặn đậm đà,,,Member_4
+7742,Thịt Kho Tộ,hasIngredient,Thịt Heo,,,Member_4
+7744,Thịt Kho Tộ,originRegion,Miền Nam,,,Member_4
+7745,Thịt Kho Tộ,servedWith,Rau luộc,,,Member_4
+7764,Thịt Luộc,cookingTechnique,Luộc,,,Member_4
+7765,Thịt Luộc,dishType,Món chính,,,Member_4
+7766,Thịt Luộc,flavorProfile,Thanh đạm,,,Member_4
+7769,Thịt Luộc,hasIngredient,Thịt Lợn,,,Member_4
+7770,Thịt Luộc,originRegion,Việt Nam,,,Member_4
+7771,Thịt Luộc,servedWith,Nước mắm,,,Member_4
+7773,Thịt Lợn,ingredientCategory,Thịt,,,Member_4
+7774,Thịt Lợn Bọc Sả Chiên,cookingTechnique,Chiên,,,Member_4
+7775,Thịt Lợn Bọc Sả Chiên,dishType,Món chiên,,,Member_4
+7776,Thịt Lợn Bọc Sả Chiên,flavorProfile,Thơm mùi sả,,,Member_4
+7778,Thịt Lợn Bọc Sả Chiên,hasIngredient,Thịt lợn xay,,,Member_4
+7792,Thịt Lợn Luộc,cookingTechnique,Luộc,,,Member_4
+7794,Thịt Lợn Luộc,hasIngredient,Thịt Lợn,,,Member_4
+7795,Thịt Lợn Luộc,servedWith,Mắm tôm,,,Member_4
+7802,Thịt Lợn Nướng,cookingTechnique,Nướng,,,Member_4
+7803,Thịt Lợn Nướng,flavorProfile,"Đậm đà, thơm khói",,,Member_4
+7838,Thịt Ngan,ingredientCategory,Thịt,,,Member_4
+7856,Thịt Nạc Dăm,ingredientCategory,Thịt,,,Member_4
+7857,Thịt Nạc Vai,ingredientCategory,Thịt,,,Member_4
+7858,Thịt Nấu Đông,cookingTechnique,Ninh,,,Member_4
+7859,Thịt Nấu Đông,originRegion,Miền Bắc,,,Member_4
+7860,Thịt Nấu Đông,servedWith,Dưa hành,,,Member_4
+7861,Thịt Quay,cookingTechnique,Quay,,,Member_4
+7862,Thịt Quay,dishType,Món chính,,,Member_4
+7863,Thịt Quay,flavorProfile,"Mặn, béo, giòn",,,Member_4
+7866,Thịt Quay,hasIngredient,Thịt heo,,,Member_4
+7867,Thịt Rang,cookingTechnique,Rang,,,Member_4
+7868,Thịt Rang,flavorProfile,"Mặn, đậm đà",,,Member_4
+7870,Thịt Rang,hasIngredient,Thịt heo,,,Member_4
+7871,Thịt Rang Cháy Cạnh,cookingTechnique,Rang cháy cạnh,,,Member_4
+7872,Thịt Rang Cháy Cạnh,flavorProfile,"Mặn, thơm, béo",,,Member_4
+7873,Thịt Rang Cháy Cạnh,hasIngredient,Thịt ba chỉ,,,Member_4
+7881,Thịt Rán Lá Chanh,hasIngredient,Lá chanh,,,Member_4
+7886,Thịt Trâu,ingredientCategory,Thịt,,,Member_4
+7901,Thịt Viên Chiên,cookingTechnique,Chiên,,,Member_4
+7902,Thịt Viên Chiên,dishType,Món chiên,,,Member_4
+7904,Thịt Viên Chiên,hasIngredient,Thịt heo xay,,,Member_4
+7905,Thịt Viên Chiên,servedWith,Tương ớt,,,Member_4
+7918,Thịt Vịt,ingredientCategory,Thịt,,,Member_4
+7934,Thịt Xiên Nướng,cookingTechnique,Nướng,,,Member_4
+7935,Thịt Xiên Nướng,dishType,Món ăn vặt,,,Member_4
+7937,Thịt Xiên Nướng,hasIngredient,Thịt Lợn,,,Member_4
+7938,Thịt Xiên Nướng,servedWith,Tương ớt,,,Member_4
+7939,Thịt Xào,cookingTechnique,Xào,,,Member_4
+7940,Thịt Xào,dishType,Món xào,,,Member_4
+7942,Thịt Xào,hasIngredient,Thịt Bò,,,Member_4
+7965,Thịt Xào Dứa,hasIngredient,Dứa,,,Member_4
+8040,Thịt Xá Xíu,cookingTechnique,Nướng,,,Member_4
+8041,Thịt Xá Xíu,dishType,Món quay/nướng,,,Member_4
+8042,Thịt Xá Xíu,flavorProfile,"Ngọt, mặn, ngũ vị hương",,,Member_4
+8044,Thịt Xá Xíu,hasIngredient,Thịt Nạc Vai,,,Member_4
+8045,Thịt Xá Xíu,originRegion,Trung Hoa,,,Member_4
+8046,Thịt Xá Xíu,servedWith,Cơm Trắng,,,Member_4
+8047,Thịt Xông Khói,cookingTechnique,Xông Khói,,,Member_4
+8048,Thịt Xông Khói,dishType,Thực phẩm chế biến sẵn,,,Member_4
+8049,Thịt Xông Khói,flavorProfile,"Mặn, khói",,,Member_4
+8051,Thịt Xông Khói,hasIngredient,Thịt Động Vật,,,Member_4
+8052,Thịt Xông Khói,servedWith,Bánh Mì,,,Member_4
+8053,Thịt bò,ingredientCategory,Thịt,,,Member_4
+8054,Thịt gà,ingredientCategory,Thịt,,,Member_4
+8057,Thịt Đông,cookingTechnique,Ninh,,,Member_4
+8058,Thịt Đông,dishType,Món nguội,,,Member_4
+8059,Thịt Đông,flavorProfile,"Thanh mát, mặn dịu",,,Member_4
+8060,Thịt Đông,hasIngredient,Mộc Nhĩ,,,Member_4
+8061,Thịt Đông,hasIngredient,Thịt Chân Giò,,,Member_4
+8062,Thịt Đông,originRegion,Miền Bắc,,,Member_4
+8064,Thịt Đông,servedWith,Dưa Muối Chua,,,Member_4
+8065,Thịt Ếch,ingredientCategory,Thịt,,,Member_4
+8066,Thủy Hải Sản,hasAllergen,Giáp xác,,,Member_4
+8075,Tiết Canh,cookingTechnique,Chế biến sống,,,Member_4
+8076,Tiết Canh,dishType,Món khai vị,,,Member_4
+8077,Tiết Canh,flavorProfile,"Mặn, béo, mát",,,Member_4
+8080,Tiết Canh,hasIngredient,Tiết Động Vật,,,Member_4
+8081,Tiết Canh,hasIngredient,Tôm,,,Member_4
+8082,Tiết Canh,originRegion,Miền Bắc,,,Member_4
+8083,Tiết Canh,servedWith,Lạc Rang,,,Member_4
+8089,Tiết Động Vật,ingredientCategory,Thịt,,,Member_4
+8090,Trai,hasAllergen,Giáp Xác,,,Member_4
+8091,Trai,ingredientCategory,Hải Sản,,,Member_4
+8097,Tré,cookingTechnique,Lên men,,,Member_4
+8098,Tré,dishType,Món ăn chơi,,,Member_4
+8099,Tré,flavorProfile,Chua ngọt,,,Member_4
+8102,Tré,hasIngredient,Tai Heo,,,Member_4
+8104,Tré,originRegion,Huế,,,Member_4
+8105,Tré,servedWith,Bánh Tráng,,,Member_4
+8106,Trứng,hasAllergen,Trứng,,,Member_4
+8109,Trứng,ingredientCategory,Thịt,,,Member_4
+8110,Trứng,ingredientCategory,Thực Phẩm Động Vật,,,Member_4
+8120,Trứng Chiên,cookingTechnique,Chiên,,,Member_4
+8121,Trứng Chiên,dishType,Món chính,,,Member_4
+8122,Trứng Chiên,flavorProfile,"Béo, mặn",,,Member_4
+8125,Trứng Chiên,hasIngredient,Trứng,,,Member_4
+8127,Trứng Chiên,originRegion,Việt Nam,,,Member_4
+8128,Trứng Chiên,servedWith,Cơm trắng,,,Member_4
+8144,Trứng Chiên Lá Hẹ,cookingTechnique,Chiên,,,Member_4
+8145,Trứng Chiên Lá Hẹ,dishType,Món chính,,,Member_4
+8146,Trứng Chiên Lá Hẹ,flavorProfile,Thơm nồng,,,Member_5
+8149,Trứng Chiên Lá Hẹ,hasIngredient,Lá hẹ,,,Member_5
+8151,Trứng Chiên Lá Hẹ,originRegion,Việt Nam,,,Member_5
+8152,Trứng Chiên Lá Hẹ,servedWith,Cơm trắng,,,Member_5
+8180,Trứng Chiên Tôm,cookingTechnique,Chiên,,,Member_5
+8181,Trứng Chiên Tôm,dishType,Món chính,,,Member_5
+8182,Trứng Chiên Tôm,flavorProfile,"Ngọt, béo",,,Member_5
+8185,Trứng Chiên Tôm,hasIngredient,Tôm,,,Member_5
+8186,Trứng Chiên Tôm,originRegion,Việt Nam,,,Member_5
+8187,Trứng Chiên Tôm,servedWith,Cơm trắng,,,Member_5
+8218,Trứng Cút,hasAllergen,Trứng,,,Member_5
+8219,Trứng Cút,ingredientCategory,Thịt,,,Member_5
+8230,Trứng Cút Kho Thịt Băm,cookingTechnique,Ninh,,,Member_5
+8231,Trứng Cút Kho Thịt Băm,dishType,Món kho,,,Member_5
+8233,Trứng Cút Kho Thịt Băm,hasIngredient,Thịt Lợn,,,Member_5
+8234,Trứng Cút Kho Thịt Băm,hasIngredient,Trứng Cút,,,Member_5
+8236,Trứng Cút Kho Thịt Băm,servedWith,Cơm trắng,,,Member_5
+8248,Trứng Gà,hasAllergen,Salmonella,,,Member_5
+8250,Trứng Gà,ingredientCategory,Thịt,,,Member_5
+8257,Trứng Hấp Cá,cookingTechnique,Hấp,,,Member_5
+8258,Trứng Hấp Cá,dishType,Món mặn,,,Member_5
+8262,Trứng Hấp Cá,hasIngredient,Trứng gà,,,Member_5
+8269,Trứng Luộc,cookingTechnique,Luộc,,,Member_5
+8270,Trứng Luộc,dishType,Món phụ,,,Member_5
+8271,Trứng Luộc,flavorProfile,Béo ngậy,,,Member_5
+8273,Trứng Luộc,hasIngredient,Trứng Gà,,,Member_5
+8274,Trứng Luộc,servedWith,Muối tiêu chanh,,,Member_5
+8275,Trứng Luộc Dầm Mắm,cookingTechnique,Luộc,,,Member_5
+8276,Trứng Luộc Dầm Mắm,dishType,Món mặn,,,Member_5
+8278,Trứng Luộc Dầm Mắm,hasIngredient,Nước mắm,,,Member_5
+8282,Trứng Luộc Lòng Đào,hasIngredient,Trứng Gà,,,Member_5
+8283,Trứng Luộc Lòng Đào,servedWith,Bánh Mì Bơ,,,Member_5
+8295,Trứng Ngâm Tương,cookingTechnique,Ngâm,,,Member_5
+8296,Trứng Ngâm Tương,dishType,Món mặn,,,Member_5
+8298,Trứng Ngâm Tương,hasIngredient,Nước tương,,,Member_5
+8300,Trứng Non,ingredientCategory,Thịt,,,Member_5
+8302,Trứng Non Lòng Gà,ingredientCategory,Thịt,,,Member_5
+8304,Trứng Non Xào Bí Nụ,dishType,Món xào,,,Member_5
+8311,Trứng Rán,cookingTechnique,Rán,,,Member_5
+8312,Trứng Rán,dishType,Món chính,,,Member_5
+8315,Trứng Rán,hasIngredient,Trứng gà,,,Member_5
+8319,Trứng Vịt,hasAllergen,Trứng,,,Member_5
+8320,Trứng Vịt,ingredientCategory,Thịt,,,Member_5
+8323,Trứng Vịt Lộn,cookingTechnique,Luộc,,,Member_5
+8324,Trứng Vịt Lộn,dishType,Món ăn vặt,,,Member_5
+8327,Trứng Vịt Lộn,hasIngredient,Trứng Vịt,,,Member_5
+8328,Trứng Vịt Lộn,originRegion,Việt Nam,,,Member_5
+8330,Trứng Vịt Lộn,servedWith,Rau Răm,,,Member_5
+8334,Trứng Ốp La,cookingTechnique,Chiên,,,Member_5
+8338,Trứng Ốp La,hasIngredient,Trứng Gà,,,Member_5
+8363,Tía Tô,ingredientCategory,Rau Lá,,,Member_5
+8364,Tóp Mỡ,ingredientCategory,Thịt,,,Member_5
+8365,Tóp Mỡ Giòn Xóc Mắm Tỏi,cookingTechnique,Chiên và Xóc,,,Member_5
+8366,Tóp Mỡ Giòn Xóc Mắm Tỏi,flavorProfile,Mặn ngọt cay,,,Member_5
+8368,Tóp Mỡ Giòn Xóc Mắm Tỏi,hasIngredient,Nước Mắm,,,Member_5
+8369,Tóp Mỡ Giòn Xóc Mắm Tỏi,hasIngredient,Tóp Mỡ,,,Member_5
+8371,Tóp Mỡ Rim,cookingTechnique,Rim,,,Member_5
+8374,Tóp Mỡ Rim,hasIngredient,Tóp Mỡ,,,Member_5
+8376,Tôm,hasAllergen,Giáp Xác,,,Member_5
+8377,Tôm,hasAllergen,Giáp xác,,,Member_5
+8379,Tôm,ingredientCategory,Giáp Xác,,,Member_5
+8380,Tôm,ingredientCategory,Hải Sản,,,Member_5
+8382,Tôm Chiên,cookingTechnique,Chiên,,,Member_5
+8383,Tôm Chiên,dishType,Món chiên,,,Member_5
+8384,Tôm Chiên,hasIngredient,Tôm,,,Member_5
+8385,Tôm Chiên,servedWith,Tương ớt,,,Member_5
+8387,Tôm Chiên Bột,hasIngredient,Bột mì,,,Member_5
+8389,Tôm Chiên Xù,hasIngredient,Bột chiên xù,,,Member_5
+8394,Tôm Cuộn Khoai Tây Chiên,dishType,Món ăn vặt,,,Member_5
+8404,Tôm Càng Sốt Trái Cây,cookingTechnique,Sốt,,,Member_5
+8405,Tôm Càng Sốt Trái Cây,dishType,Món chính,,,Member_5
+8428,Tôm Hấp,cookingTechnique,Hấp,,,Member_5
+8429,Tôm Hấp,dishType,Món khai vị,,,Member_5
+8430,Tôm Hấp,flavorProfile,Ngọt thanh,,,Member_5
+8431,Tôm Hấp,hasIngredient,Tôm,,,Member_5
+8432,Tôm Hấp,servedWith,Muối tiêu chanh,,,Member_5
+8441,Tôm Hấp Sả,cookingTechnique,Hấp,,,Member_5
+8442,Tôm Hấp Sả,dishType,Món khai vị,,,Member_5
+8443,Tôm Hấp Sả,flavorProfile,Thơm mùi sả,,,Member_5
+8445,Tôm Hấp Sả,hasIngredient,Sả,,,Member_5
+8447,Tôm Hấp Sả,servedWith,Muối tiêu chanh,,,Member_5
+8448,Tôm Kho,cookingTechnique,Kho,,,Member_5
+8449,Tôm Kho,dishType,Món mặn,,,Member_5
+8450,Tôm Kho,flavorProfile,Mặn ngọt,,,Member_5
+8452,Tôm Kho,hasIngredient,Tôm,,,Member_5
+8453,Tôm Kho,servedWith,Cơm trắng,,,Member_5
+8454,Tôm Khô,hasAllergen,Giáp Xác,,,Member_5
+8455,Tôm Khô,ingredientCategory,Hải Sản,,,Member_5
+8462,Tôm Luộc Nước Dừa,cookingTechnique,Luộc,,,Member_5
+8463,Tôm Luộc Nước Dừa,dishType,Món chính,,,Member_5
+8464,Tôm Luộc Nước Dừa,flavorProfile,Ngọt thanh,,,Member_5
+8468,Tôm Luộc Nước Dừa,hasIngredient,Tôm,,,Member_5
+8469,Tôm Luộc Nước Dừa,originRegion,Miền Tây,,,Member_5
+8470,Tôm Luộc Nước Dừa,servedWith,Muối tiêu chanh,,,Member_5
+8471,Tôm Lột Hấp Gừng,cookingTechnique,Hấp,,,Member_5
+8472,Tôm Lột Hấp Gừng,dishType,Món chính,,,Member_5
+8473,Tôm Lột Hấp Gừng,flavorProfile,Cay nồng,,,Member_5
+8477,Tôm Lột Hấp Gừng,hasIngredient,Tôm,,,Member_5
+8478,Tôm Lột Hấp Gừng,servedWith,Nước mắm gừng,,,Member_5
+8479,Tôm Nướng,cookingTechnique,Nướng,,,Member_5
+8480,Tôm Nướng,dishType,Món nướng,,,Member_5
+8481,Tôm Nướng,flavorProfile,Đậm đà,,,Member_5
+8484,Tôm Nướng,hasIngredient,Tôm,,,Member_5
+8494,Tôm Ram Thịt Ba Chỉ,cookingTechnique,Ram,,,Member_5
+8495,Tôm Ram Thịt Ba Chỉ,dishType,Món kho/ram,,,Member_5
+8496,Tôm Ram Thịt Ba Chỉ,flavorProfile,Mặn ngọt,,,Member_5
+8500,Tôm Ram Thịt Ba Chỉ,hasIngredient,Tôm,,,Member_5
+8501,Tôm Ram Thịt Ba Chỉ,servedWith,Cơm trắng,,,Member_5
+8502,Tôm Rang,cookingTechnique,Rang,,,Member_5
+8503,Tôm Rang,dishType,Món chính,,,Member_5
+8504,Tôm Rang,flavorProfile,Mặn,,,Member_5
+8507,Tôm Rang,hasIngredient,Tôm,,,Member_5
+8508,Tôm Rang,servedWith,Cơm trắng,,,Member_5
+8518,Tôm Rang Mặn Ngọt,dishType,Món chính,,,Member_5
+8519,Tôm Rang Mặn Ngọt,flavorProfile,Mặn ngọt,,,Member_5
+8522,Tôm Rang Mặn Ngọt,hasIngredient,Tôm,,,Member_5
+8523,Tôm Rang Mặn Ngọt,servedWith,Cơm trắng,,,Member_5
+8524,Tôm Rang Thịt,cookingTechnique,Rang,,,Member_5
+8525,Tôm Rang Thịt,dishType,Món chính,,,Member_5
+8526,Tôm Rang Thịt,flavorProfile,Mặn ngọt,,,Member_5
+8530,Tôm Rang Thịt,hasIngredient,Tôm,,,Member_5
+8531,Tôm Rang Thịt,servedWith,Cơm trắng,,,Member_5
+8532,Tôm Rang Thịt Ba Chỉ,cookingTechnique,Rang,,,Member_5
+8533,Tôm Rang Thịt Ba Chỉ,dishType,Món chính,,,Member_5
+8534,Tôm Rang Thịt Ba Chỉ,flavorProfile,Béo ngậy,,,Member_5
+8537,Tôm Rang Thịt Ba Chỉ,hasIngredient,Thịt ba chỉ,,,Member_5
+8538,Tôm Rang Thịt Ba Chỉ,hasIngredient,Tôm,,,Member_5
+8539,Tôm Rang Thịt Ba Chỉ,servedWith,Cơm trắng,,,Member_5
+8540,Tôm Rim,cookingTechnique,Rim,,,Member_5
+8541,Tôm Rim,dishType,Món mặn,,,Member_5
+8542,Tôm Rim,flavorProfile,Mặn ngọt,,,Member_5
+8545,Tôm Rim,hasIngredient,Tôm,,,Member_5
+8546,Tôm Rim,originRegion,Việt Nam,,,Member_5
+8547,Tôm Rim,servedWith,Cơm trắng,,,Member_5
+8552,Tôm Rim Mặn Ngọt,hasIngredient,Tôm,,,Member_5
+8555,Tôm Rim Thịt,cookingTechnique,Rim,,,Member_5
+8556,Tôm Rim Thịt,dishType,Món mặn,,,Member_5
+8557,Tôm Rim Thịt,flavorProfile,Mặn ngọt,,,Member_5
+8560,Tôm Rim Thịt,hasIngredient,Thịt Lợn,,,Member_5
+8561,Tôm Rim Thịt,hasIngredient,Tôm,,,Member_5
+8562,Tôm Rim Thịt,originRegion,Việt Nam,,,Member_5
+8563,Tôm Rim Thịt,servedWith,Cơm trắng,,,Member_5
+8564,Tôm Rim Thịt Ba Chỉ,cookingTechnique,Rim,,,Member_5
+8565,Tôm Rim Thịt Ba Chỉ,dishType,Món mặn,,,Member_5
+8566,Tôm Rim Thịt Ba Chỉ,flavorProfile,Mặn ngọt,,,Member_5
+8569,Tôm Rim Thịt Ba Chỉ,hasIngredient,Thịt Lợn,,,Member_5
+8570,Tôm Rim Thịt Ba Chỉ,hasIngredient,Tôm,,,Member_5
+8571,Tôm Rim Thịt Ba Chỉ,originRegion,Việt Nam,,,Member_5
+8572,Tôm Rim Thịt Ba Chỉ,servedWith,Cơm trắng,,,Member_5
+8573,Tôm Sú,hasAllergen,Giáp Xác,,,Member_5
+8639,Tôm Xào Măng Tây,cookingTechnique,Xào,,,Member_5
+8640,Tôm Xào Măng Tây,dishType,Món xào,,,Member_5
+8641,Tôm Xào Măng Tây,flavorProfile,Giòn ngọt,,,Member_5
+8644,Tôm Xào Măng Tây,hasIngredient,Tôm,,,Member_5
+8645,Tôm Xào Ngô,cookingTechnique,Xào,,,Member_5
+8646,Tôm Xào Ngô,dishType,Món xào,,,Member_5
+8647,Tôm Xào Ngô,flavorProfile,Ngọt,,,Member_5
+8650,Tôm Xào Ngô,hasIngredient,Tôm,,,Member_5
+8651,Tôm Xào Nụ Mướp,cookingTechnique,Xào,,,Member_5
+8652,Tôm Xào Nụ Mướp,dishType,Món xào,,,Member_5
+8653,Tôm Xào Nụ Mướp,flavorProfile,Thanh mát,,,Member_5
+8656,Tôm Xào Nụ Mướp,hasIngredient,Tôm,,,Member_5
+8667,Tôm Xào Tỏi,cookingTechnique,Xào,,,Member_5
+8668,Tôm Xào Tỏi,dishType,Món xào,,,Member_5
+8671,Tôm Xào Tỏi,hasIngredient,Tỏi,,,Member_5
+8695,Tỏi,ingredientCategory,Rau Lá,,,Member_5
+8700,Vịt Kho Gừng,flavorProfile,"Cay ấm, mặn ngọt",,,Member_5
+8702,Vịt Kho Gừng,servedWith,Cơm trắng,,,Member_5
+8703,Vịt Luộc,cookingTechnique,Luộc,,,Member_5
+8705,Vịt Luộc,servedWith,Nước mắm gừng,,,Member_5
+8714,Vịt Quay,cookingTechnique,Quay,,,Member_5
+8717,Vịt Quay,originRegion,Trung Hoa,,,Member_5
+8728,Xoài Xanh,ingredientCategory,Rau Quả,,,Member_5
+8729,Xá Xíu,ingredientCategory,Thịt,,,Member_5
+8738,Xíu Mại,cookingTechnique,Hấp,,,Member_5
+8739,Xíu Mại,dishType,Món hấp,,,Member_5
+8740,Xíu Mại,flavorProfile,Đậm đà,,,Member_5
+8743,Xíu Mại,hasIngredient,Rau,,,Member_5
+8744,Xíu Mại,hasIngredient,Thịt,,,Member_5
+8745,Xíu Mại,originRegion,Trung Quốc (du nhập),,,Member_5
+8746,Xíu Mại,servedWith,Giấm,,,Member_5
+8747,Xíu Mại Sốt Cà Chua,cookingTechnique,Om/Rim,,,Member_5
+8748,Xíu Mại Sốt Cà Chua,dishType,Món sốt,,,Member_5
+8749,Xíu Mại Sốt Cà Chua,flavorProfile,Chua ngọt,,,Member_5
+8752,Xíu Mại Sốt Cà Chua,hasIngredient,Cà Chua,,,Member_5
+8753,Xíu Mại Sốt Cà Chua,servedWith,Bánh mì,,,Member_5
+8761,Xôi,cookingTechnique,Đồ/Hấp,,,Member_5
+8762,Xôi,dishType,Món tinh bột,,,Member_5
+8763,Xôi,flavorProfile,Dẻo thơm,,,Member_5
+8765,Xôi,hasIngredient,Gạo nếp,,,Member_5
+8766,Xôi,originRegion,Việt Nam,,,Member_5
+8802,Xôi Cốm Hạt Sen,cookingTechnique,Hấp,,,Member_5
+8803,Xôi Cốm Hạt Sen,dishType,Món ăn sáng,,,Member_5
+8804,Xôi Cốm Hạt Sen,flavorProfile,Ngọt thanh,,,Member_5
+8807,Xôi Cốm Hạt Sen,hasIngredient,Cốm,,,Member_5
+8808,Xôi Cốm Hạt Sen,hasIngredient,Hạt Sen,,,Member_5
+8809,Xôi Cốm Hạt Sen,originRegion,Miền Bắc,,,Member_5
+8810,Xôi Gà,cookingTechnique,Hấp,,,Member_5
+8811,Xôi Gà,dishType,Món chính,,,Member_5
+8812,Xôi Gà,flavorProfile,Mặn đậm đà,,,Member_5
+8816,Xôi Gà,hasIngredient,Thịt Gà,,,Member_5
+8817,Xôi Gà,originRegion,Việt Nam,,,Member_5
+8818,Xôi Gà,servedWith,Nước tương,,,Member_5
+8819,Xôi Gấc,cookingTechnique,Hấp,,,Member_5
+8820,Xôi Gấc,dishType,Món ăn truyền thống,,,Member_5
+8821,Xôi Gấc,flavorProfile,Ngọt bùi,,,Member_5
+8823,Xôi Gấc,hasIngredient,Gấc,,,Member_5
+8824,Xôi Gấc,originRegion,Việt Nam,,,Member_5
+8861,Xôi Mặn,cookingTechnique,Hấp,,,Member_5
+8862,Xôi Mặn,dishType,Món ăn sáng,,,Member_5
+8867,Xôi Ngũ Sắc,cookingTechnique,Hấp,,,Member_5
+8868,Xôi Ngũ Sắc,dishType,Món chính,,,Member_5
+8869,Xôi Ngũ Sắc,flavorProfile,"Ngọt nhẹ, bùi",,,Member_5
+8872,Xôi Ngũ Sắc,hasIngredient,Gạo nếp,,,Member_5
+8873,Xôi Ngũ Sắc,originRegion,Tây Bắc,,,Member_5
+8874,Xôi Ngũ Sắc,servedWith,Muối vừng,,,Member_5
+8883,Xôi Nếp Than,cookingTechnique,Đồ,,,Member_5
+8884,Xôi Nếp Than,dishType,Món chính,,,Member_5
+8885,Xôi Nếp Than,flavorProfile,"Ngọt, bùi",,,Member_5
+8888,Xôi Nếp Than,hasIngredient,Gạo Nếp,,,Member_5
+8889,Xôi Nếp Than,originRegion,Miền Nam,,,Member_5
+8890,Xôi Nếp Than,servedWith,Dừa nạo,,,Member_5
+8906,Xôi Tím,cookingTechnique,Hấp,,,Member_5
+8907,Xôi Tím,dishType,Món chính,,,Member_5
+8908,Xôi Tím,flavorProfile,"Bùi, thơm",,,Member_5
+8910,Xôi Tím,hasIngredient,Gạo Nếp,,,Member_5
+8911,Xôi Tím,hasIngredient,Lá Cẩm,,,Member_5
+8912,Xôi Tím,originRegion,Tây Bắc,,,Member_5
+8913,Xôi Tím,servedWith,Muối vừng,,,Member_5
+8914,Xôi Vò,cookingTechnique,Hấp,,,Member_5
+8915,Xôi Vò,dishType,Món chính,,,Member_5
+8916,Xôi Vò,flavorProfile,"Bùi, ngọt nhẹ",,,Member_5
+8919,Xôi Vò,hasIngredient,Gạo Nếp,,,Member_5
+8920,Xôi Vò,hasIngredient,Đỗ Xanh,,,Member_5
+8921,Xôi Vò,originRegion,Miền Bắc,,,Member_5
+8922,Xôi Vò,servedWith,Chè đường,,,Member_5
+8931,Xôi Vị Lá Dứa,cookingTechnique,Hấp,,,Member_5
+8932,Xôi Vị Lá Dứa,dishType,Món tráng miệng,,,Member_5
+8933,Xôi Vị Lá Dứa,flavorProfile,"Ngọt, thơm",,,Member_5
+8936,Xôi Vị Lá Dứa,hasIngredient,Gạo Nếp,,,Member_5
+8937,Xôi Vị Lá Dứa,hasIngredient,Lá Dứa,,,Member_5
+8938,Xôi Vị Lá Dứa,originRegion,Miền Nam,,,Member_5
+8939,Xôi Vị Lá Dứa,servedWith,Dừa nạo,,,Member_5
+8948,Xôi Xéo,cookingTechnique,Hấp,,,Member_5
+8949,Xôi Xéo,dishType,Món chính,,,Member_5
+8950,Xôi Xéo,flavorProfile,"Béo, mặn, thơm",,,Member_5
+8954,Xôi Xéo,hasIngredient,Gạo Nếp,,,Member_5
+8955,Xôi Xéo,originRegion,Miền Bắc,,,Member_5
+8956,Xôi Xéo,servedWith,Chả lụa,,,Member_5
+8966,Xôi Đỗ Đen,cookingTechnique,Đồ,,,Member_5
+8967,Xôi Đỗ Đen,flavorProfile,"Bùi, thanh",,,Member_5
+8969,Xôi Đỗ Đen,hasIngredient,Gạo Nếp,,,Member_5
+8970,Xôi Đỗ Đen,hasIngredient,Đỗ Đen,,,Member_5
+8971,Xôi Đỗ Đen,originRegion,Việt Nam,,,Member_5
+8972,Xôi Đỗ Đen,servedWith,Muối vừng,,,Member_5
+8981,Đu Đủ,ingredientCategory,Rau Lá,,,Member_5
+8983,Đùi Gà Kho,cookingTechnique,Kho,,,Member_5
+8984,Đùi Gà Kho,dishType,Món chính,,,Member_5
+8985,Đùi Gà Kho,flavorProfile,"Mặn, ngọt",,,Member_5
+8988,Đùi Gà Kho,hasIngredient,Thịt Gà,,,Member_5
+8989,Đùi Gà Kho,servedWith,Cơm trắng,,,Member_5
+9005,Đầu Cá Hấp,cookingTechnique,Hấp,,,Member_5
+9006,Đầu Cá Hấp,dishType,Món chính,,,Member_5
+9007,Đầu Cá Hấp,flavorProfile,"Ngọt, thanh",,,Member_5
+9010,Đầu Cá Hấp,hasIngredient,Cá,,,Member_5
+9011,Đầu Cá Hấp,servedWith,Nước mắm,,,Member_5
+9012,Đậu,ingredientCategory,Ngũ cốc,,,Member_5
+9014,Đậu Bắp,ingredientCategory,Rau lá,,,Member_5
+9015,Đậu Bắp Luộc,cookingTechnique,Luộc,,,Member_5
+9016,Đậu Bắp Luộc,dishType,Món rau,,,Member_5
+9017,Đậu Bắp Luộc,flavorProfile,"Thanh, nhớt",,,Member_5
+9020,Đậu Bắp Luộc,hasIngredient,Đậu Bắp,,,Member_5
+9021,Đậu Bắp Luộc,servedWith,Chao,,,Member_5
+9042,Đậu Cove,ingredientCategory,Rau Lá,,,Member_5
+9043,Đậu Cove Luộc,cookingTechnique,Luộc,,,Member_5
+9044,Đậu Cove Luộc,dishType,Món luộc,,,Member_5
+9046,Đậu Cove Luộc,hasIngredient,Đậu Cove,,,Member_5
+9047,Đậu Cove Luộc,servedWith,Nước tương tỏi ớt,,,Member_5
+9100,Đậu Hà Lan,ingredientCategory,Ngũ Cốc,,,Member_5
+9111,Đậu Hà Lan Xào,hasIngredient,Đậu Hà Lan,,,Member_5
+9117,Đậu Hũ,hasAllergen,Đậu Nành,,,Member_5
+9119,Đậu Hũ,ingredientCategory,Ngũ Cốc,,,Member_5
+9161,Đậu Hũ Kho,cookingTechnique,Kho,,,Member_5
+9162,Đậu Hũ Kho,dishType,Món kho,,,Member_5
+9163,Đậu Hũ Kho,flavorProfile,"Mặn, ngọt",,,Member_5
+9165,Đậu Hũ Kho,hasIngredient,Đậu Hũ,,,Member_5
+9166,Đậu Hũ Kho Nấm,cookingTechnique,Kho,,,Member_5
+9167,Đậu Hũ Kho Nấm,dishType,Món kho,,,Member_5
+9169,Đậu Hũ Kho Nấm,hasIngredient,Nấm,,,Member_5
+9170,Đậu Hũ Kho Nấm,hasIngredient,Đậu Hũ,,,Member_5
+9171,Đậu Hũ Kho Thơm,cookingTechnique,Kho,,,Member_5
+9172,Đậu Hũ Kho Thơm,dishType,Món kho,,,Member_5
+9173,Đậu Hũ Kho Thơm,flavorProfile,Chua Ngọt,,,Member_5
+9175,Đậu Hũ Kho Thơm,hasIngredient,Thơm,,,Member_5
+9176,Đậu Hũ Kho Thơm,hasIngredient,Đậu Hũ,,,Member_5
+9202,Đậu Hũ Nhồi Thịt Sốt,cookingTechnique,Ninh,,,Member_5
+9203,Đậu Hũ Nhồi Thịt Sốt,dishType,Món chính,,,Member_5
+9205,Đậu Hũ Nhồi Thịt Sốt,hasIngredient,Đậu Hũ,,,Member_5
+9206,Đậu Hũ Nhồi Thịt Sốt Cà Chua,cookingTechnique,Om,,,Member_5
+9207,Đậu Hũ Nhồi Thịt Sốt Cà Chua,flavorProfile,Chua,,,Member_5
+9209,Đậu Hũ Nhồi Thịt Sốt Cà Chua,hasIngredient,Cà Chua,,,Member_5
+9249,Đậu Hũ Sốt Cà Chua,cookingTechnique,Om,,,Member_5
+9250,Đậu Hũ Sốt Cà Chua,dishType,Món chay,,,Member_5
+9251,Đậu Hũ Sốt Cà Chua,flavorProfile,Chua,,,Member_5
+9253,Đậu Hũ Sốt Cà Chua,hasIngredient,Cà Chua,,,Member_5
+9254,Đậu Hũ Sốt Cà Chua,hasIngredient,Đậu Hũ,,,Member_5
+9278,Đậu Hũ Tẩm Hành,cookingTechnique,Chiên,,,Member_5
+9279,Đậu Hũ Tẩm Hành,dishType,Món chay,,,Member_5
+9280,Đậu Hũ Tẩm Hành,flavorProfile,"Thanh, thơm",,,Member_5
+9282,Đậu Hũ Tẩm Hành,hasIngredient,Hành Lá,,,Member_5
+9283,Đậu Hũ Tẩm Hành,hasIngredient,Đậu Hũ,,,Member_5
+9290,Đậu Hũ Tẩm Mỡ Hành,hasIngredient,Đậu Hũ,,,Member_5
+9341,Đậu Nành,hasAllergen,Đậu Nành,,,Member_5
+9345,Đậu Phụ,hasAllergen,Đậu Nành,,,Member_5
+9347,Đậu Phụ,ingredientCategory,Thực Phẩm Chay,,,Member_5
+9353,Đậu Que,ingredientCategory,Rau Lá,,,Member_5
+9354,Đậu Que Luộc,cookingTechnique,Luộc,,,Member_5
+9357,Đậu Que Luộc,hasIngredient,Đậu Que,,,Member_5
+9358,Đậu Que Xào,cookingTechnique,Xào,,,Member_5
+9359,Đậu Que Xào,dishType,Món xào,,,Member_5
+9360,Đậu Que Xào,flavorProfile,"Giòn, ngọt",,,Member_5
+9362,Đậu Que Xào,hasIngredient,Đậu Que,,,Member_5
+9368,Đậu Que Xào Thịt Bò,cookingTechnique,Xào,,,Member_5
+9369,Đậu Que Xào Thịt Bò,dishType,Món xào,,,Member_5
+9370,Đậu Que Xào Thịt Bò,flavorProfile,Mặn ngọt,,,Member_5
+9372,Đậu Que Xào Thịt Bò,hasIngredient,Thịt Bò,,,Member_5
+9374,Đậu Que Xào Thịt Bò,originRegion,Việt Nam,,,Member_5
+9375,Đậu Que Xào Thịt Bò,servedWith,Cơm trắng,,,Member_5
+9384,Đậu Que Xào Trứng Non,cookingTechnique,Xào,,,Member_5
+9385,Đậu Que Xào Trứng Non,dishType,Món xào,,,Member_5
+9386,Đậu Que Xào Trứng Non,flavorProfile,Béo ngậy,,,Member_5
+9388,Đậu Que Xào Trứng Non,hasIngredient,Trứng Non,,,Member_5
+9390,Đậu Que Xào Trứng Non,originRegion,Việt Nam,,,Member_5
+9391,Đậu Que Xào Trứng Non,servedWith,Cơm trắng,,,Member_5
+9401,Đậu Rồng,ingredientCategory,Rau Lá,,,Member_5
+9402,Đậu Rồng Luộc,cookingTechnique,Luộc,,,Member_5
+9403,Đậu Rồng Luộc,dishType,Món luộc,,,Member_5
+9404,Đậu Rồng Luộc,flavorProfile,Giòn ngọt,,,Member_5
+9407,Đậu Rồng Luộc,hasIngredient,Đậu Rồng,,,Member_5
+9408,Đậu Rồng Luộc,originRegion,Nam Bộ,,,Member_5
+9409,Đậu Rồng Luộc,servedWith,Kho quẹt,,,Member_5
+9438,Đậu Xanh,ingredientCategory,Ngũ Cốc,,,Member_5
+9506,Đậu Đũa,ingredientCategory,Rau Lá,,,Member_5
+9541,Đậu Đũa Xào Thịt,hasIngredient,Thịt Lợn,,,Member_5
+9542,Đậu Đũa Xào Thịt,hasIngredient,Đậu Đũa,,,Member_5
+9579,Ếch Kho Tộ,cookingTechnique,Ninh,,,Member_5
+9580,Ếch Kho Tộ,dishType,Món kho,,,Member_5
+9581,Ếch Kho Tộ,flavorProfile,Mặn,,,Member_5
+9583,Ếch Kho Tộ,hasIngredient,Thịt Ếch,,,Member_5
+9584,Ếch Kho Tộ,originRegion,Miền Nam Việt Nam,,,Member_5
+9585,Ếch Kho Tộ,servedWith,Cơm trắng,,,Member_5
+9586,Ếch Xào Măng,cookingTechnique,Xào,,,Member_5
+9587,Ếch Xào Măng,dishType,Món xào,,,Member_5
+9588,Ếch Xào Măng,flavorProfile,"Chua nhẹ, đậm đà",,,Member_5
+9590,Ếch Xào Măng,hasIngredient,Măng,,,Member_5
+9591,Ếch Xào Măng,hasIngredient,Thịt Ếch,,,Member_5
+9592,Ếch Xào Măng,originRegion,Việt Nam,,,Member_5
+9593,Ếch Xào Măng Cay,cookingTechnique,Xào,,,Member_5
+9594,Ếch Xào Măng Cay,dishType,Món xào,,,Member_5
+9595,Ếch Xào Măng Cay,flavorProfile,Cay,,,Member_5
+9597,Ếch Xào Măng Cay,hasIngredient,Măng,,,Member_5
+9598,Ếch Xào Măng Cay,hasIngredient,Thịt Ếch,,,Member_5
+9599,Ếch Xào Măng Cay,originRegion,Việt Nam,,,Member_5
+9600,Ốc,ingredientCategory,Hải Sản,,,Member_5
+9633,Ốc Luộc,cookingTechnique,Luộc,,,Member_5
+9634,Ốc Luộc,dishType,Món ăn vặt,,,Member_5
+9635,Ốc Luộc,flavorProfile,"Thanh, ngọt, cay, nồng",,,Member_5
+9638,Ốc Luộc,hasIngredient,Ốc,,,Member_5
+9640,Ốc Luộc,originRegion,Miền Bắc,,,Member_5
+9641,Ốc Luộc,servedWith,Nước Mắm Gừng,,,Member_5
+9673,Ốc Nấu Chuối Đậu,cookingTechnique,Ninh,,,Member_5
+9674,Ốc Nấu Chuối Đậu,dishType,Món canh/om,,,Member_5
+9675,Ốc Nấu Chuối Đậu,flavorProfile,"Thanh, bùi, chua nhẹ",,,Member_5
+9678,Ốc Nấu Chuối Đậu,hasIngredient,Đậu Phụ,,,Member_5
+9679,Ốc Nấu Chuối Đậu,hasIngredient,Ốc,,,Member_5
+9682,Ốc Nấu Chuối Đậu,originRegion,Miền Bắc,,,Member_5
+9683,Ốc Nấu Chuối Đậu,servedWith,Bún tươi,,,Member_5
+9727,Ức Gà,ingredientCategory,Thịt,,,Member_5
+9728,Ức Gà Luộc,cookingTechnique,Luộc,,,Member_5
+9729,Ức Gà Luộc,dishType,Món chính,,,Member_5
+9730,Ức Gà Luộc,flavorProfile,"Thanh, ngọt tự nhiên",,,Member_5
+9733,Ức Gà Luộc,hasIngredient,Ức Gà,,,Member_5
+9735,Ức Gà Luộc,originRegion,Việt Nam,,,Member_5
+9736,Ức Gà Luộc,servedWith,Muối tiêu chanh,,,Member_5
+9737,Ức Gà Rán,cookingTechnique,Chiên,,,Member_5
+9738,Ức Gà Rán,dishType,Món Khô,,,Member_5
+9739,Ức Gà Rán,flavorProfile,"Mặn, béo, giòn",,,Member_5
+9741,Ức Gà Rán,hasIngredient,Ức Gà,,,Member_5
+9743,Ức Gà Rán,originRegion,Phương Tây,,,Member_5
+9744,Ức Gà Rán,servedWith,Tương ớt,,,Member_5
+9788,Măng,hasDietaryTag,chay,,,Member_5
+9792,Rau Cải,hasDietaryTag,chay,,,Member_5
+9797,Canh Khoai Mỡ,originRegion,Long An,,,Member_5
+9800,Rau Muống,hasDietaryTag,chay,,,Member_5
+9812,Trứng,hasDietaryTag,chay,,,Member_5
+9818,Gạo,hasDietaryTag,chay,,,Member_5
+9822,Rau,hasDietaryTag,chay,,,Member_5
+9836,Mắm Tôm,hasDietaryTag,mặn,,,Member_5
+9854,Đậu Xanh,hasDietaryTag,chay,,,Member_5
+9857,Canh Chua,cookingTechnique,Chiên,,,Member_5
+9869,Tôm,hasDietaryTag,mặn,,,Member_5
+9885,Su Su,hasDietaryTag,chay,,,Member_5
+9900,Thịt Gà,hasDietaryTag,mặn,,,Member_5
+9917,Thịt Bò,hasDietaryTag,mặn,,,Member_5
+9925,Thịt Heo,hasDietaryTag,mặn,,,Member_5
+9930,Gạo Nếp,hasDietaryTag,chay,,,Member_5
+9932,Thịt Lợn,hasDietaryTag,mặn,,,Member_5
+9946,Thịt Ba Chỉ,hasDietaryTag,mặn,,,Member_5
+9962,Đậu Phụ,hasDietaryTag,chay,,,Member_5
+9967,Cá Kho Cà Chua,cookingTechnique,Chiên,,,Member_5
+9978,Móng Giò,hasDietaryTag,mặn,,,Member_5
+9989,Cá Thu Chiên,originRegion,Đông Nam Á,,,Member_5
+10028,Cà Chua,hasDietaryTag,chay,,,Member_5
+10032,Đậu Hũ,hasDietaryTag,chay,,,Member_5
+10034,Trứng Gà,hasDietaryTag,mặn,,,Member_5
+10051,Lòng Lợn,hasDietaryTag,mặn,,,Member_5
+10073,Rau Ngót,hasDietaryTag,chay,,,Member_5
+10080,Nghêu,hasDietaryTag,mặn,,,Member_5
+10083,Chả Lá Lốt,flavorProfile,Cay,,,Member_5
+10105,Tía Tô,hasDietaryTag,chay,,,Member_5
+10134,Thịt,hasDietaryTag,mặn,,,Member_5
+10151,Gà,hasDietaryTag,mặn,,,Member_5
+10185,Cá Cơm Rang Lạc,cookingTechnique,Chiên,,,Member_5
+10191,Đậu Bắp,hasDietaryTag,chay,,,Member_5
+10234,Lẩu Cá,cookingTechnique,Chiên,,,Member_5
+10240,Sườn Non,hasDietaryTag,mặn,,,Member_5
+10299,Mực,hasDietaryTag,mặn,,,Member_5
+10368,Bánh Phở,hasDietaryTag,chay,,,Member_5
+10380,Cà Tím,hasDietaryTag,chay,,,Member_5
+10414,Cá Kho Dưa Chua,cookingTechnique,Chiên,,,Member_5
+10424,Đu Đủ,hasDietaryTag,chay,,,Member_5
+10467,Trứng Non,hasDietaryTag,mặn,,,Member_5
+10472,Rau Mồng Tơi,hasDietaryTag,chay,,,Member_5
+10491,Nấm,hasDietaryTag,chay,,,Member_5
+10497,Rau Củ,hasDietaryTag,chay,,,Member_5
+10518,Giò Heo,hasDietaryTag,mặn,,,Member_5
+10524,Gà Hầm Thuốc Bắc,originRegion,Hưng Yên,,,Member_5
+10532,Sườn Non Chay,hasDietaryTag,chay,,,Member_5
+10541,Nước Cốt Dừa,hasDietaryTag,chay,,,Member_5
+10544,Gà Ác,hasDietaryTag,mặn,,,Member_5
+10581,Đậu Hà Lan,hasDietaryTag,chay,,,Member_5
+10677,Dưa Cải Muối,hasDietaryTag,chay,,,Member_5
+10751,Bột mì,hasDietaryTag,chay,,,Member_5
+10760,Rau Bí,hasDietaryTag,chay,,,Member_5
+10784,Mắm Cá,hasDietaryTag,mặn,,,Member_5
+10787,Cá Kho Thơm,cookingTechnique,Chiên,,,Member_5
+10789,Cá Bống Kho Tiêu,flavorProfile,Béo,,,Member_5
+10790,Đậu Nành,hasDietaryTag,chay,,,Member_5
+10791,Ức Gà,hasDietaryTag,mặn,,,Member_5
+10808,Cá Lăng,hasDietaryTag,mặn,,,Member_5
+11797,Bắp Cải,hasDietaryTag,chay,,,Member_5
+12088,Nấm Rơm,hasDietaryTag,chay,,,Member_5
+12184,Thịt Băm,hasDietaryTag,mặn,,,Member_5
+12187,Thịt Luộc,hasDietaryTag,mặn,,,Member_5
+12189,Giá Đỗ,hasDietaryTag,chay,,,Member_5
+17134,Trứng Vịt,ingredientCategory,Trứng,,,Member_5
+17135,Mực,hasAllergen,Hải sản,,,Member_5
+17136,Bánh Cuốn,servedWith,Dưa chuột,,,Member_5
+17137,Bánh Cuốn,hasIngredient,Chả lụa,,,Member_5
+17138,Chả lụa,hasDietaryTag,mặn,,,Member_5
+17139,Canh Chua,cookingTechnique,Nấu,,,Member_5
+17140,Trứng,hasDietaryTag,mặn,,,Member_5
+17141,Lòng gà xào giá đỗ,hasIngredient,Lòng gà,,,Member_5
+17142,Gà chiên mắm,cookingTechnique,Chiên,,,Member_5
+17143,Thịt Bò,ingredientCategory,Thịt đỏ,,,Member_5
+17144,Cơm gà luộc,cookingTechnique,Luộc,,,Member_5
+17145,Cơm gà luộc,originRegion,Miền Trung,,,Member_5
+17146,Chả giò,cookingTechnique,Chiên,,,Member_5
+17147,Canh cua mướp mồng tơi,dishType,Món canh,,,Member_5
+17148,Hủ Tiếu Nam Vang,hasIngredient,"Tôm, gan, thịt băm, trứng cút",,,Member_5
+17149,Mướp Luộc,cooking_technique,Luộc,,,Member_5
+17150,Thịt kho,cooking_technique,Kho,,,Member_5
+17151,Canh Rau Ngót Nấu Thịt Băm,flavorProfile,Ngọt thanh,,,Member_5
+17152,Sườn rim,dishType,Món kho,,,Member_5
+17153,Bò kho tàu,dishType,Món kho,,,Member_5
+17154,Cá kho tộ,cookingTechnique,Kho,,,Member_5
+17155,Chả Cá Lã Vọng,flavorProfile,"Ngọt, dai",,,Member_5
+17156,Chả Cá Lã Vọng,dishType,Món chiên,,,Member_5
+17157,Ớt,flavorProfile,Cay nồng,,,Member_5
+17158,Chè Bưởi,hasIngredient,Nước cốt dừa,,,Member_5
+17159,Chè khoai môn tím,dishType,Tráng miệng,,,Member_5
+17160,Gà luộc,cookingTechnique,Luộc,,,Member_5
+17161,Cá chiên,cookingTechnique,Chiên,,,Member_5
+17162,Đậu hũ,hasIngredient,Đậu nành,,,Member_5
+17163,Bánh Xèo,servedWith,Bánh tráng,,,Member_5
+17164,Rau Cải Xào,flavorProfile,Ngọt thanh,,,Member_5
+17165,Cà Muối,hasIngredient,Cà Pháo,,,Member_5
+17166,Sườn Kho,hasIngredient,Sườn Heo,,,Member_5
+17168,Tôm Xào Đậu Hà Lan,hasIngredient,"Tôm, Đậu Hà Lan",,,Member_5
+17169,Đậu Hũ Nhồi Thịt Sốt Cà Chua,flavorProfile,Chua Ngọt,,,Member_5
+17170,Mì Quảng,hasIngredient,Thịt,,,Member_5
+17171,Canh Rau,hasIngredient,Rau,,,Member_5
+17172,Rau củ luộc,servedWith,Nước mắm,,,Member_5
+17173,Rau củ luộc,cookingTechnique,Luộc,,,Member_5
+17174,Chả Giò,flavorProfile,"Giòn, đậm đà",,,Member_5
+17175,Cà pháo muối,dishType,Đồ chua,,,Member_5
+17176,Tôm xào rau củ,hasIngredient,Tôm,,,Member_5
+17177,Gỏi cuốn,originRegion,Miền Nam (Nam Bộ),,,Member_5
+17178,Kho quẹt,cookingTechnique,Kho,,,Member_5
+17179,Cơm niêu,dishType,Món cơm,,,Member_5
+17180,Đỗ xào lòng gà,dishType,Món xào,,,Member_5
