@@ -16,6 +16,8 @@ python -m venv .venv
 pip install -e .[dev,hf,api]
 ```
 
+The HF extra requires a recent Transformers build with Qwen3-VL support.
+
 Set secrets through environment variables or `.env`:
 
 ```bash
@@ -63,6 +65,23 @@ Run the full matrix:
 python -m vifood_eval.run --config configs/eval.yaml --resume
 python -m vifood_eval.report --run-dir outputs/<run_id>
 ```
+
+## HF Smoke Diagnostics
+
+The early Colab smoke outputs under `outputs/smoke_qwen_basic` and
+`outputs/smoke_phi_cache_on` are useful failure examples, not final model
+quality claims.
+
+- `smoke_qwen_basic`: no-KG 0-shot hallucinated the top-left dish as bread-like
+  food and failed to produce a parseable final answer, while oracle KG answered
+  both smoke samples correctly. Treat this as a no-KG visual grounding failure
+  that KG can mitigate.
+- `smoke_phi_cache_on`: both no-KG and oracle responses degenerated into repeated
+  `Inc` tokens. Treat this as an HF generation/adapter failure until rerun with
+  the current Phi config (`use_cache: false`, `num_crops: 16`, explicit EOS, and
+  anti-repeat generation kwargs).
+- If PowerShell shows text such as `XÃ©t`, reread files with
+  `Get-Content -Encoding UTF8`; the JSONL files are UTF-8.
 
 ## Output Contract
 

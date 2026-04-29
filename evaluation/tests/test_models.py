@@ -56,15 +56,44 @@ class FakeTensor:
         return self
 
 
+class FakeBatchInputs(dict):
+    def __init__(self) -> None:
+        super().__init__({"input_ids": FakeTensor()})
+        self.device: str | None = None
+
+    def to(self, device: str) -> "FakeBatchInputs":
+        self.device = device
+        return self
+
+
 class FakeProcessor:
     def __init__(self) -> None:
         self.calls: list[dict[str, object]] = []
+        self.tokenizer = types.SimpleNamespace(eos_token_id=32000, pad_token_id=0)
 
     def __call__(self, *, text: object, images: object, return_tensors: str) -> dict[str, FakeTensor]:
         self.calls.append({"text": text, "images": images, "return_tensors": return_tensors})
         return {"input_ids": FakeTensor()}
 
-    def batch_decode(self, tokens: object, skip_special_tokens: bool) -> list[str]:
+    def apply_chat_template(self, messages: object, **kwargs: object) -> FakeBatchInputs | str:
+        self.calls.append({"messages": messages, **kwargs})
+        if kwargs.get("tokenize"):
+            return FakeBatchInputs()
+        return "templated prompt"
+
+    def batch_decode(
+        self,
+        tokens: object,
+        skip_special_tokens: bool,
+        clean_up_tokenization_spaces: bool | None = None,
+    ) -> list[str]:
+        self.calls.append(
+            {
+                "tokens": tokens,
+                "skip_special_tokens": skip_special_tokens,
+                "clean_up_tokenization_spaces": clean_up_tokenization_spaces,
+            }
+        )
         return ["Answer: B"]
 
 
@@ -147,6 +176,15 @@ class FakeImageTextToText:
         return FakeLoadedModel()
 
 
+class FakeQwen3VL:
+    requests: list[dict[str, object]] = []
+
+    @classmethod
+    def from_pretrained(cls, model_id: str, **kwargs: object) -> FakeLoadedModel:
+        cls.requests.append({"model_id": model_id, **kwargs})
+        return FakeLoadedModel()
+
+
 class OpenAICompatibleModelTests(unittest.TestCase):
     def test_json_response_format_falls_back_when_provider_rejects_it(self) -> None:
         fake_openai = types.SimpleNamespace(OpenAI=FakeOpenAI)
@@ -178,6 +216,7 @@ class HFVisionModelTests(unittest.TestCase):
         FakeCausalLM.requests = []
         FakeLoadedModel.generate_calls = []
         FakeImageTextToText.requests = []
+        FakeQwen3VL.requests = []
 
     def test_phi_config_can_force_causal_lm_without_flash_attention(self) -> None:
         fake_transformers = types.SimpleNamespace(
@@ -210,6 +249,7 @@ class HFVisionModelTests(unittest.TestCase):
         self.assertEqual(FakeConfigLoader.last_config.use_flash_attention_2, False)
         self.assertEqual(FakeConfigLoader.last_config.use_cache, True)
         self.assertEqual(FakeProcessorLoader.requests[0]["use_fast"], False)
+        self.assertEqual(FakeProcessorLoader.requests[0]["num_crops"], 16)
         self.assertIs(FakeCausalLM.requests[0]["config"], FakeConfigLoader.last_config)
         self.assertEqual(FakeCausalLM.requests[0]["attn_implementation"], "eager")
         self.assertEqual(FakeCausalLM.requests[0]["torch_dtype"], "auto")
@@ -249,6 +289,47 @@ class HFVisionModelTests(unittest.TestCase):
         self.assertIsInstance(processor.calls[0]["text"], str)
         self.assertNotIsInstance(processor.calls[0]["text"], list)
         self.assertEqual(FakeLoadedModel.generate_calls[0]["use_cache"], True)
+        self.assertEqual(FakeLoadedModel.generate_calls[0]["eos_token_id"], 32000)
+        self.assertEqual(processor.calls[-1]["clean_up_tokenization_spaces"], False)
+
+    def test_qwen3_uses_processor_native_chat_template(self) -> None:
+        processor = FakeProcessor()
+        FakeProcessorLoader.processor = processor
+        fake_transformers = types.SimpleNamespace(
+            AutoConfig=FakeConfigLoader,
+            AutoProcessor=FakeProcessorLoader,
+            AutoModelForCausalLM=FakeCausalLM,
+            AutoModelForImageTextToText=FakeImageTextToText,
+            Qwen3VLForConditionalGeneration=FakeQwen3VL,
+        )
+
+        with patch.dict(sys.modules, {"torch": FakeTorch, "transformers": fake_transformers}):
+            model = HFVisionModel(
+                {
+                    "model_id": "Qwen/Qwen3-VL-2B-Instruct",
+                    "adapter": "qwen3_vl",
+                    "device_map": "auto",
+                    "torch_dtype": "auto",
+                    "generation_kwargs": {
+                        "repetition_penalty": 1.05,
+                        "eos_token_id": "tokenizer",
+                    },
+                }
+            )
+            response = model.generate(
+                [{"role": "user", "content": [{"type": "text", "text": "Question?"}]}],
+                max_new_tokens=16,
+                temperature=0,
+            )
+
+        self.assertEqual(response, "Answer: B")
+        self.assertEqual(FakeQwen3VL.requests[0]["dtype"], "auto")
+        self.assertNotIn("torch_dtype", FakeQwen3VL.requests[0])
+        self.assertEqual(processor.calls[0]["tokenize"], True)
+        self.assertEqual(processor.calls[0]["return_dict"], True)
+        self.assertEqual(processor.calls[0]["return_tensors"], "pt")
+        self.assertEqual(FakeLoadedModel.generate_calls[0]["repetition_penalty"], 1.05)
+        self.assertEqual(FakeLoadedModel.generate_calls[0]["eos_token_id"], 32000)
 
     def test_phi_dynamic_cache_legacy_api_is_patched_for_transformers_5(self) -> None:
         if hasattr(FakeDynamicCache, "from_legacy_cache"):

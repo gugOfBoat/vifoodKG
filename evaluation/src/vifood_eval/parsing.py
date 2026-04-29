@@ -4,7 +4,11 @@ import json
 import re
 from typing import Any
 
-ANSWER_RE = re.compile(r"(?im)^\s*(?:final\s+)?answer\s*[:：]\s*([ABCD])\b")
+ANSWER_RE = re.compile(r"(?im)^\s*(?:final\s+)?answer\s*[:：]\s*(?:\*\*)?\s*([ABCD])\b")
+LOCALIZED_ANSWER_RE = re.compile(
+    r"(?im)^\s*(?:đáp\s*án|dap\s*an|chọn|chon)\s*[:：]?\s*(?:\*\*)?\s*([ABCD])\b"
+)
+FINAL_LETTER_LINE_RE = re.compile(r"(?i)^\s*(?:\*\*)?\s*([ABCD])\s*(?:\*\*)?\s*(?:[.)].*)?$")
 JSON_OBJECT_RE = re.compile(r"\{.*\}", re.DOTALL)
 
 
@@ -13,9 +17,19 @@ def parse_answer_letter(text: str) -> tuple[str | None, str]:
     if matches:
         return matches[-1].upper(), "ok"
 
+    localized_matches = LOCALIZED_ANSWER_RE.findall(text or "")
+    if localized_matches:
+        return localized_matches[-1].upper(), "ok_localized"
+
     stripped = (text or "").strip().upper()
     if stripped in {"A", "B", "C", "D"}:
         return stripped, "ok_single_letter"
+
+    lines = [line.strip() for line in (text or "").splitlines() if line.strip()]
+    if lines:
+        final_line_match = FINAL_LETTER_LINE_RE.match(lines[-1])
+        if final_line_match:
+            return final_line_match.group(1).upper(), "ok_final_line"
 
     fallback = re.findall(r"\b([ABCD])\b", stripped)
     if len(fallback) == 1:
@@ -56,4 +70,3 @@ def _extract_json(text: str) -> Any:
         return json.loads(match.group(0))
     except json.JSONDecodeError:
         return None
-

@@ -20,6 +20,16 @@ class ParsingTests(unittest.TestCase):
         self.assertIsNone(answer)
         self.assertEqual(status, "unparsed")
 
+    def test_parse_answer_accepts_vietnamese_answer_labels(self) -> None:
+        answer, status = parse_answer_letter("Lý do ngắn.\nĐáp án: **B. Măng**")
+        self.assertEqual(answer, "B")
+        self.assertEqual(status, "ok_localized")
+
+    def test_parse_answer_accepts_final_markdown_letter_line(self) -> None:
+        answer, status = parse_answer_letter("Lý do ngắn.\n**C**")
+        self.assertEqual(answer, "C")
+        self.assertEqual(status, "ok_final_line")
+
     def test_parse_classifier_json(self) -> None:
         parsed, status = parse_classifier_response(
             '{"qtype":"ingredients","food_items":["Pho Bo", "Com Tam"]}',
@@ -40,4 +50,3 @@ class ParsingTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

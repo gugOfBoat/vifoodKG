@@ -83,12 +83,17 @@ class HFVisionModel(VisionModel):
         try:
             import torch
             from transformers import AutoConfig, AutoModelForCausalLM, AutoModelForImageTextToText, AutoProcessor
+            try:
+                from transformers import Qwen3VLForConditionalGeneration
+            except ImportError:
+                Qwen3VLForConditionalGeneration = None
         except ImportError as exc:
             raise RuntimeError("Install the 'hf' extra to use local Hugging Face models.") from exc
 
         self.torch = torch
         self.adapter = cfg.get("adapter", "qwen_vl")
-        self.use_cache = cfg.get("use_cache")
+        self.use_cache = cfg.get("use_cache", False) if self.adapter == "phi3_vision" else cfg.get("use_cache")
+        self.generation_kwargs = dict(cfg.get("generation_kwargs") or {})
         if self.adapter == "phi3_vision":
             _patch_dynamic_cache_legacy_api()
 
@@ -96,6 +101,8 @@ class HFVisionModel(VisionModel):
         processor_kwargs = {
             "trust_remote_code": trust_remote_code,
         }
+        if self.adapter == "phi3_vision":
+            processor_kwargs["num_crops"] = cfg.get("num_crops", 16)
         if "processor_use_fast" in cfg:
             processor_kwargs["use_fast"] = cfg["processor_use_fast"]
         self.processor = AutoProcessor.from_pretrained(cfg["model_id"], **processor_kwargs)
@@ -119,10 +126,18 @@ class HFVisionModel(VisionModel):
             model_kwargs["attn_implementation"] = cfg["attn_implementation"]
         torch_dtype = cfg.get("torch_dtype")
         if torch_dtype:
-            model_kwargs["torch_dtype"] = torch_dtype
+            dtype_key = "dtype" if self.adapter == "qwen3_vl" else "torch_dtype"
+            model_kwargs[dtype_key] = torch_dtype
 
         auto_model = cfg.get("auto_model", "image_text_to_text")
-        if auto_model == "causal_lm":
+        if self.adapter == "qwen3_vl":
+            if Qwen3VLForConditionalGeneration is None:
+                raise RuntimeError(
+                    "Install a recent transformers build with Qwen3VLForConditionalGeneration "
+                    "to use the qwen3_vl adapter."
+                )
+            self.model = Qwen3VLForConditionalGeneration.from_pretrained(cfg["model_id"], **model_kwargs)
+        elif auto_model == "causal_lm":
             self.model = AutoModelForCausalLM.from_pretrained(cfg["model_id"], **model_kwargs)
         elif auto_model == "image_text_to_text":
             try:
@@ -143,15 +158,16 @@ class HFVisionModel(VisionModel):
         response_format: dict[str, Any] | None = None,
     ) -> str:
         _ = response_format
-        if self.adapter == "phi3_vision":
+        if self.adapter == "qwen3_vl":
+            inputs = _messages_to_qwen3_inputs(self.processor, messages)
+        elif self.adapter == "phi3_vision":
             prompt, images = _messages_to_phi(messages)
-            processor_text: str | list[str] = prompt
+            inputs = self.processor(text=prompt, images=images, return_tensors="pt")
         else:
             prompt, images = _messages_to_chat_template(self.processor, messages)
-            processor_text = [prompt]
+            inputs = self.processor(text=[prompt], images=images, return_tensors="pt")
 
-        inputs = self.processor(text=processor_text, images=images, return_tensors="pt")
-        inputs = {key: value.to(self.model.device) for key, value in inputs.items()}
+        inputs = _move_inputs_to_device(inputs, self.model.device)
         generate_kwargs: dict[str, Any] = {
             "max_new_tokens": max_new_tokens,
             "do_sample": temperature > 0,
@@ -160,13 +176,21 @@ class HFVisionModel(VisionModel):
             generate_kwargs["use_cache"] = bool(self.use_cache)
         if temperature > 0:
             generate_kwargs["temperature"] = temperature
+        generate_kwargs.update(_resolve_generation_kwargs(self.generation_kwargs, self.processor))
+        if self.adapter == "phi3_vision" and "eos_token_id" not in generate_kwargs:
+            eos_token_id = _tokenizer_attr(self.processor, "eos_token_id")
+            if eos_token_id is not None:
+                generate_kwargs["eos_token_id"] = eos_token_id
 
         with self.torch.no_grad():
             output_ids = self.model.generate(**inputs, **generate_kwargs)
 
-        input_len = inputs["input_ids"].shape[-1]
-        new_tokens = output_ids[:, input_len:]
-        decoded = self.processor.batch_decode(new_tokens, skip_special_tokens=True)
+        new_tokens = _trim_generated_ids(output_ids, inputs["input_ids"])
+        decoded = self.processor.batch_decode(
+            new_tokens,
+            skip_special_tokens=True,
+            clean_up_tokenization_spaces=False,
+        )
         return decoded[0].strip()
 
 
@@ -300,6 +324,68 @@ def _cache_to_legacy(cache: Any) -> tuple[Any, ...]:
             continue
         legacy_layers.append((keys, values))
     return tuple(legacy_layers)
+
+
+def _move_inputs_to_device(inputs: Any, device: Any) -> Any:
+    if hasattr(inputs, "to"):
+        return inputs.to(device)
+    return {
+        key: value.to(device) if hasattr(value, "to") else value
+        for key, value in inputs.items()
+    }
+
+
+def _resolve_generation_kwargs(kwargs: dict[str, Any], processor: Any) -> dict[str, Any]:
+    resolved = dict(kwargs)
+    for key, attr in [
+        ("eos_token_id", "eos_token_id"),
+        ("pad_token_id", "pad_token_id"),
+    ]:
+        if resolved.get(key) == "tokenizer":
+            token_id = _tokenizer_attr(processor, attr)
+            if token_id is not None:
+                resolved[key] = token_id
+            else:
+                resolved.pop(key, None)
+    return resolved
+
+
+def _tokenizer_attr(processor: Any, attr: str) -> Any:
+    tokenizer = getattr(processor, "tokenizer", None)
+    return getattr(tokenizer, attr, None) if tokenizer is not None else None
+
+
+def _trim_generated_ids(output_ids: Any, input_ids: Any) -> Any:
+    try:
+        input_len = input_ids.shape[-1]
+        return output_ids[:, input_len:]
+    except Exception:
+        return [
+            output[len(input_id):]
+            for input_id, output in zip(input_ids, output_ids)
+        ]
+
+
+def _messages_to_qwen3_inputs(processor: Any, messages: list[dict[str, Any]]) -> Any:
+    converted = []
+    for message in messages:
+        content = []
+        for part in message["content"]:
+            if part["type"] == "text":
+                content.append({"type": "text", "text": part["text"]})
+            elif part["type"] == "image":
+                content.append({"type": "image", "image": _load_image(Path(part["path"]))})
+        converted.append({"role": message["role"], "content": content})
+    inputs = processor.apply_chat_template(
+        converted,
+        tokenize=True,
+        add_generation_prompt=True,
+        return_dict=True,
+        return_tensors="pt",
+    )
+    if hasattr(inputs, "pop"):
+        inputs.pop("token_type_ids", None)
+    return inputs
 
 
 def _messages_to_chat_template(processor: Any, messages: list[dict[str, Any]]) -> tuple[str, list[Any]]:

@@ -35,8 +35,10 @@ def build_answer_messages(
                     "text": (
                         "You are evaluating Vietnamese multiple-choice visual question "
                         "answering. Use the image, question, choices, and any provided "
-                        "knowledge triples. Give a brief Vietnamese rationale, then end "
-                        "with exactly one line: Answer: A, Answer: B, Answer: C, or Answer: D."
+                        "knowledge triples. Give at most two short Vietnamese rationale "
+                        "sentences. Do not restate or copy the question or choices. Do not "
+                        "repeat phrases. End with exactly one final line: Answer: A, "
+                        "Answer: B, Answer: C, or Answer: D."
                     ),
                 }
             ],
