@@ -82,7 +82,11 @@ class HFVisionModel(VisionModel):
     def __init__(self, cfg: dict[str, Any]) -> None:
         try:
             import torch
-            from transformers import AutoConfig, AutoModelForCausalLM, AutoModelForImageTextToText, AutoProcessor
+            from transformers import AutoConfig, AutoModelForCausalLM, AutoProcessor
+            try:
+                from transformers import AutoModelForImageTextToText
+            except ImportError:
+                AutoModelForImageTextToText = None
             try:
                 from transformers import Qwen3VLForConditionalGeneration
             except ImportError:
@@ -140,10 +144,13 @@ class HFVisionModel(VisionModel):
         elif auto_model == "causal_lm":
             self.model = AutoModelForCausalLM.from_pretrained(cfg["model_id"], **model_kwargs)
         elif auto_model == "image_text_to_text":
-            try:
-                self.model = AutoModelForImageTextToText.from_pretrained(cfg["model_id"], **model_kwargs)
-            except ValueError:
+            if AutoModelForImageTextToText is None:
                 self.model = AutoModelForCausalLM.from_pretrained(cfg["model_id"], **model_kwargs)
+            else:
+                try:
+                    self.model = AutoModelForImageTextToText.from_pretrained(cfg["model_id"], **model_kwargs)
+                except ValueError:
+                    self.model = AutoModelForCausalLM.from_pretrained(cfg["model_id"], **model_kwargs)
         else:
             raise ValueError(f"Unsupported Hugging Face auto_model: {auto_model}")
         _force_use_cache(getattr(self.model, "config", None), self.use_cache)

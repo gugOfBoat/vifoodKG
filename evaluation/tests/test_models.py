@@ -254,6 +254,32 @@ class HFVisionModelTests(unittest.TestCase):
         self.assertEqual(FakeCausalLM.requests[0]["attn_implementation"], "eager")
         self.assertEqual(FakeCausalLM.requests[0]["torch_dtype"], "auto")
 
+    def test_phi_loads_with_older_transformers_without_image_text_to_text_auto_model(self) -> None:
+        fake_transformers = types.SimpleNamespace(
+            AutoConfig=FakeConfigLoader,
+            AutoProcessor=FakeProcessorLoader,
+            AutoModelForCausalLM=FakeCausalLM,
+        )
+
+        with patch.dict(sys.modules, {"torch": types.SimpleNamespace(), "transformers": fake_transformers}):
+            HFVisionModel(
+                {
+                    "model_id": "microsoft/Phi-3.5-vision-instruct",
+                    "adapter": "phi3_vision",
+                    "auto_model": "causal_lm",
+                    "load_config_first": True,
+                    "device_map": "auto",
+                    "torch_dtype": "auto",
+                    "attn_implementation": "eager",
+                    "num_crops": 16,
+                    "use_cache": True,
+                    "trust_remote_code": True,
+                }
+            )
+
+        self.assertEqual(len(FakeCausalLM.requests), 1)
+        self.assertEqual(FakeCausalLM.requests[0]["model_id"], "microsoft/Phi-3.5-vision-instruct")
+
     def test_phi_processor_receives_single_text_prompt(self) -> None:
         processor = FakeProcessor()
         FakeProcessorLoader.processor = processor

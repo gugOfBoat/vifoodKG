@@ -72,6 +72,8 @@ Qwen runtime:
 
 ```bash
 cd /content/drive/Shareddrives/Intro2SLA/code/inference_code/hoang/ViFoodVQA/evaluation
+export HF_HOME=/content/hf_cache
+mkdir -p "$HF_HOME"
 pip install -e ".[dev,api,hf-qwen]"
 python -m vifood_eval.run --config configs/eval_qwen.yaml --models qwen3_vl_2b --conditions no_kg_0shot oracle --sample-ids 191 192 --run-id smoke_qwen_env
 python -m vifood_eval.report --run-dir outputs/smoke_qwen_env
@@ -81,6 +83,8 @@ Phi runtime:
 
 ```bash
 cd /content/drive/Shareddrives/Intro2SLA/code/inference_code/hoang/ViFoodVQA/evaluation
+export HF_HOME=/content/hf_cache
+mkdir -p "$HF_HOME"
 pip uninstall -y transformers torch torchvision torchaudio accelerate
 pip install -e ".[dev,api,hf-phi]"
 python -c "from vifood_eval.config import load_config; print(load_config('configs/eval_phi.yaml')['models'].keys())"

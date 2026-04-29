@@ -7,3 +7,8 @@ __pycache__/
 *.pyc
 hub/
 *.egg-info/
+models--Qwen--Qwen3-VL-2B-Instruct/
+models--intfloat--multilingual-e5-small/
+models--microsoft--Phi-3.5-vision-instruct/
+xet/
+modules/
