@@ -279,9 +279,13 @@ def _cache_max_length(cache: Any, layer_idx: int) -> int | None:
             except TypeError:
                 value = getter()
             if value is not None:
-                return int(value)
+                max_length = int(value)
+                return max_length if max_length > 0 else None
     value = getattr(cache, "max_cache_len", None)
-    return int(value) if value is not None else None
+    if value is None:
+        return None
+    max_length = int(value)
+    return max_length if max_length > 0 else None
 
 
 def _cache_to_legacy(cache: Any) -> tuple[Any, ...]:

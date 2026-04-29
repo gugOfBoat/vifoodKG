@@ -117,6 +117,7 @@ class FakeTorch:
 
 class FakeDynamicCache:
     calls: list[object] = []
+    max_cache_shape = 8
 
     def __init__(self, ddp_cache_data: object = None) -> None:
         self.ddp_cache_data = ddp_cache_data
@@ -125,7 +126,7 @@ class FakeDynamicCache:
         return 5
 
     def get_max_cache_shape(self, layer_idx: int = 0) -> int:
-        return 8
+        return self.max_cache_shape
 
 
 class FakeCausalLM:
@@ -197,7 +198,7 @@ class HFVisionModelTests(unittest.TestCase):
                     "torch_dtype": "auto",
                     "attn_implementation": "eager",
                     "processor_use_fast": False,
-                    "use_cache": False,
+                    "use_cache": True,
                     "trust_remote_code": True,
                 }
             )
@@ -207,7 +208,7 @@ class HFVisionModelTests(unittest.TestCase):
         self.assertEqual(FakeConfigLoader.last_config._attn_implementation_internal, "eager")
         self.assertEqual(FakeConfigLoader.last_config._attn_implementation, "eager")
         self.assertEqual(FakeConfigLoader.last_config.use_flash_attention_2, False)
-        self.assertEqual(FakeConfigLoader.last_config.use_cache, False)
+        self.assertEqual(FakeConfigLoader.last_config.use_cache, True)
         self.assertEqual(FakeProcessorLoader.requests[0]["use_fast"], False)
         self.assertIs(FakeCausalLM.requests[0]["config"], FakeConfigLoader.last_config)
         self.assertEqual(FakeCausalLM.requests[0]["attn_implementation"], "eager")
@@ -234,7 +235,7 @@ class HFVisionModelTests(unittest.TestCase):
                     "torch_dtype": "auto",
                     "attn_implementation": "eager",
                     "processor_use_fast": False,
-                    "use_cache": False,
+                    "use_cache": True,
                     "trust_remote_code": True,
                 }
             )
@@ -247,7 +248,7 @@ class HFVisionModelTests(unittest.TestCase):
         self.assertEqual(response, "Answer: B")
         self.assertIsInstance(processor.calls[0]["text"], str)
         self.assertNotIsInstance(processor.calls[0]["text"], list)
-        self.assertEqual(FakeLoadedModel.generate_calls[0]["use_cache"], False)
+        self.assertEqual(FakeLoadedModel.generate_calls[0]["use_cache"], True)
 
     def test_phi_dynamic_cache_legacy_api_is_patched_for_transformers_5(self) -> None:
         if hasattr(FakeDynamicCache, "from_legacy_cache"):
@@ -269,6 +270,9 @@ class HFVisionModelTests(unittest.TestCase):
         self.assertIs(converted_cache.ddp_cache_data, legacy_cache)
         self.assertEqual(empty_cache.get_usable_length(2), 5)
         self.assertEqual(empty_cache.get_usable_length(4), 4)
+        FakeDynamicCache.max_cache_shape = -1
+        self.assertEqual(empty_cache.get_usable_length(4), 5)
+        FakeDynamicCache.max_cache_shape = 8
         self.assertEqual(converted_cache.to_legacy_cache(), tuple(legacy_cache))
 
 
