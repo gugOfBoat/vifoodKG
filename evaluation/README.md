@@ -78,8 +78,8 @@ quality claims.
   that KG can mitigate.
 - `smoke_phi_cache_on`: both no-KG and oracle responses degenerated into repeated
   `Inc` tokens. Treat this as an HF generation/adapter failure until rerun with
-  the current Phi config (`num_crops: 16`, fast tokenizer loading, explicit EOS,
-  and no anti-repeat logits processors).
+  the current Phi config (`use_cache: false`, `num_crops: 16`, fast tokenizer
+  loading, explicit EOS, and no anti-repeat logits processors).
 - If PowerShell shows text such as `XÃ©t`, reread files with
   `Get-Content -Encoding UTF8`; the JSONL files are UTF-8.
 
