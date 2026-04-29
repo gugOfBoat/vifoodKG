@@ -70,8 +70,9 @@ def build_classifier_messages(sample: VQASample) -> list[dict[str, Any]]:
                 {
                     "type": "text",
                     "text": (
-                        "Classify the ViFoodVQA sample before KG retrieval. Return only "
-                        f"valid JSON with keys qtype and food_items. qtype must be one of: {qtypes}. "
+                        "Classify the ViFoodVQA sample before KG retrieval. Return only one "
+                        "valid JSON object, with no Markdown and no explanation. The JSON keys "
+                        f"must be qtype and food_items. qtype must be one of: {qtypes}. "
                         "food_items must list visible Vietnamese dish names that can anchor a food KG."
                     ),
                 }
@@ -108,4 +109,3 @@ def _answer_user_message(
 
 def _format_choices(choices: dict[str, str]) -> str:
     return "\n".join(f"{letter}. {choices[letter]}" for letter in ["A", "B", "C", "D"])
-

@@ -56,7 +56,7 @@ models:
     torch_dtype: auto
   phi3_vision:
     type: hf
-    model_id: microsoft/Phi-3-vision-128k-instruct
+    model_id: microsoft/Phi-3.5-vision-instruct
     adapter: phi3_vision
     device_map: auto
     torch_dtype: auto

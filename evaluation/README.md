@@ -36,10 +36,25 @@ JSONL split files used by the runner:
 python -m vifood_eval.prepare_data --config configs/eval.yaml
 ```
 
-Run a smoke test:
+Run a deterministic local smoke test for API-backed models:
 
 ```bash
-python -m vifood_eval.run --config configs/eval.yaml --models gpt_5_2 --limit 2 --conditions no_kg_0shot hybrid --run-id smoke
+python -m vifood_eval.run --config configs/eval.yaml --models gpt_5_2 --conditions no_kg_0shot no_kg_1shot no_kg_2shot oracle --sample-ids 191 192 --run-id smoke_local_api
+```
+
+Run KG retrieval locally only when Neo4j credentials are configured and the E5
+embedding model is available locally:
+
+```bash
+python -m vifood_eval.run --config configs/eval.yaml --models gpt_5_2 --conditions hybrid graph_only vector_only bm25 --sample-ids 191 192 --run-id smoke_kg
+```
+
+Run Hugging Face vision model smoke tests on Kaggle or another GPU environment
+when model weights need to be pulled:
+
+```bash
+python -m vifood_eval.run --config configs/eval.yaml --models qwen3_vl_2b phi3_vision --conditions no_kg_0shot oracle --sample-ids 191 192 --run-id smoke_kaggle_hf
+python -m vifood_eval.run --config configs/eval.yaml --models qwen3_vl_2b phi3_vision --conditions hybrid graph_only vector_only bm25 --sample-ids 191 192 --run-id smoke_kaggle_hf_kg
 ```
 
 Run the full matrix:

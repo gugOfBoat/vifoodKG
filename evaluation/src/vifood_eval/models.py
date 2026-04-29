@@ -10,7 +10,14 @@ from typing import Any
 
 class VisionModel(ABC):
     @abstractmethod
-    def generate(self, messages: list[dict[str, Any]], *, max_new_tokens: int, temperature: float) -> str:
+    def generate(
+        self,
+        messages: list[dict[str, Any]],
+        *,
+        max_new_tokens: int,
+        temperature: float,
+        response_format: dict[str, Any] | None = None,
+    ) -> str:
         raise NotImplementedError
 
 
@@ -37,14 +44,37 @@ class OpenAICompatibleModel(VisionModel):
 
         self.model_id = cfg["model_id"]
         self.client = OpenAI(api_key=api_key, base_url=base_url)
+        self.use_response_format = bool(cfg.get("json_response_format", True))
+        self.response_format_fallback = bool(cfg.get("json_response_format_fallback", True))
 
-    def generate(self, messages: list[dict[str, Any]], *, max_new_tokens: int, temperature: float) -> str:
-        response = self.client.chat.completions.create(
-            model=self.model_id,
-            messages=_messages_to_openai(messages),
-            temperature=temperature,
-            max_tokens=max_new_tokens,
-        )
+    def generate(
+        self,
+        messages: list[dict[str, Any]],
+        *,
+        max_new_tokens: int,
+        temperature: float,
+        response_format: dict[str, Any] | None = None,
+    ) -> str:
+        request: dict[str, Any] = {
+            "model": self.model_id,
+            "messages": _messages_to_openai(messages),
+            "temperature": temperature,
+            "max_tokens": max_new_tokens,
+        }
+        if response_format and self.use_response_format:
+            request["response_format"] = response_format
+
+        try:
+            response = self.client.chat.completions.create(**request)
+        except Exception as exc:
+            if (
+                "response_format" not in request
+                or not self.response_format_fallback
+                or not _looks_like_response_format_error(exc)
+            ):
+                raise
+            request.pop("response_format", None)
+            response = self.client.chat.completions.create(**request)
         return response.choices[0].message.content or ""
 
 
@@ -75,7 +105,15 @@ class HFVisionModel(VisionModel):
             self.model = AutoModelForCausalLM.from_pretrained(cfg["model_id"], **model_kwargs)
         self.model.eval()
 
-    def generate(self, messages: list[dict[str, Any]], *, max_new_tokens: int, temperature: float) -> str:
+    def generate(
+        self,
+        messages: list[dict[str, Any]],
+        *,
+        max_new_tokens: int,
+        temperature: float,
+        response_format: dict[str, Any] | None = None,
+    ) -> str:
+        _ = response_format
         if self.adapter == "phi3_vision":
             prompt, images = _messages_to_phi(messages)
         else:
@@ -115,6 +153,11 @@ def _messages_to_openai(messages: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 )
         converted.append({"role": message["role"], "content": parts})
     return converted
+
+
+def _looks_like_response_format_error(exc: Exception) -> bool:
+    message = str(exc).lower()
+    return "response_format" in message or "response format" in message
 
 
 def _messages_to_chat_template(processor: Any, messages: list[dict[str, Any]]) -> tuple[str, list[Any]]:
@@ -172,4 +215,3 @@ def _load_image(path: Path) -> Any:
     from PIL import Image
 
     return Image.open(path).convert("RGB")
-

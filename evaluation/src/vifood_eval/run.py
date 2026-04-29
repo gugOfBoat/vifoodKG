@@ -28,6 +28,7 @@ def main() -> None:
     parser.add_argument("--conditions", nargs="*")
     parser.add_argument("--run-id")
     parser.add_argument("--limit", type=int)
+    parser.add_argument("--sample-ids", nargs="*", type=int)
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--device", default="auto")
     args = parser.parse_args()
@@ -41,6 +42,8 @@ def main() -> None:
     data_dir = ensure_dataset(cfg)
     samples = load_split(data_dir, cfg["dataset"]["test_split"])
     train_samples = load_split(data_dir, "train")
+    if args.sample_ids:
+        samples = _select_samples_by_id(samples, args.sample_ids)
     if args.limit:
         samples = samples[: args.limit]
 
@@ -162,6 +165,7 @@ def _classify_sample(
         messages,
         max_new_tokens=128,
         temperature=float(cfg["evaluation"]["temperature"]),
+        response_format={"type": "json_object"},
     )
     parsed, status = parse_classifier_response(raw, set(CANONICAL_QTYPES))
     row = {
@@ -201,6 +205,14 @@ def _select_shots(train_samples: list[VQASample], shot_ids: list[int]) -> list[V
     if missing:
         raise KeyError(f"Configured shot sample(s) not found in train split: {missing}")
     return [by_id[vqa_id] for vqa_id in shot_ids]
+
+
+def _select_samples_by_id(samples: list[VQASample], sample_ids: list[int]) -> list[VQASample]:
+    by_id = {sample.vqa_id: sample for sample in samples}
+    missing = [vqa_id for vqa_id in sample_ids if vqa_id not in by_id]
+    if missing:
+        raise KeyError(f"Requested sample(s) not found in evaluation split: {missing}")
+    return [by_id[vqa_id] for vqa_id in sample_ids]
 
 
 def _load_cache(path: Path) -> dict[int, dict[str, Any]]:
