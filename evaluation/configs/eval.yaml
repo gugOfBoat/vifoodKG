@@ -73,7 +73,6 @@ models:
     trust_remote_code: true
     generation_kwargs:
       repetition_penalty: 1.1
-      no_repeat_ngram_size: 6
       pad_token_id: tokenizer
   gpt_5_2:
     type: openai_compatible
