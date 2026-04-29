@@ -88,6 +88,9 @@ class HFVisionModel(VisionModel):
 
         self.torch = torch
         self.adapter = cfg.get("adapter", "qwen_vl")
+        if self.adapter == "phi3_vision":
+            _patch_dynamic_cache_legacy_api()
+
         trust_remote_code = cfg.get("trust_remote_code", True)
         processor_kwargs = {
             "trust_remote_code": trust_remote_code,
@@ -204,6 +207,24 @@ def _force_attention_implementation(config: Any, attn_implementation: object) ->
                 setattr(config, attr, False)
             except Exception:
                 pass
+
+
+def _patch_dynamic_cache_legacy_api() -> None:
+    try:
+        from transformers.cache_utils import DynamicCache
+    except ImportError:
+        return
+
+    if hasattr(DynamicCache, "from_legacy_cache"):
+        return
+
+    @classmethod
+    def from_legacy_cache(cls: type[Any], past_key_values: Any = None) -> Any:
+        if past_key_values is None or isinstance(past_key_values, cls):
+            return past_key_values if past_key_values is not None else cls()
+        return cls(ddp_cache_data=past_key_values)
+
+    DynamicCache.from_legacy_cache = from_legacy_cache
 
 
 def _messages_to_chat_template(processor: Any, messages: list[dict[str, Any]]) -> tuple[str, list[Any]]:

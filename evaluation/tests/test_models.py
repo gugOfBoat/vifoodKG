@@ -9,7 +9,7 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from vifood_eval.models import HFVisionModel, OpenAICompatibleModel
+from vifood_eval.models import HFVisionModel, OpenAICompatibleModel, _patch_dynamic_cache_legacy_api
 
 
 class FakeCompletions:
@@ -107,6 +107,13 @@ class FakeTorch:
     @staticmethod
     def no_grad() -> FakeNoGrad:
         return FakeNoGrad()
+
+
+class FakeDynamicCache:
+    calls: list[object] = []
+
+    def __init__(self, ddp_cache_data: object = None) -> None:
+        self.ddp_cache_data = ddp_cache_data
 
 
 class FakeCausalLM:
@@ -224,6 +231,21 @@ class HFVisionModelTests(unittest.TestCase):
         self.assertEqual(response, "Answer: B")
         self.assertIsInstance(processor.calls[0]["text"], str)
         self.assertNotIsInstance(processor.calls[0]["text"], list)
+
+    def test_phi_dynamic_cache_legacy_api_is_patched_for_transformers_5(self) -> None:
+        if hasattr(FakeDynamicCache, "from_legacy_cache"):
+            delattr(FakeDynamicCache, "from_legacy_cache")
+
+        fake_cache_utils = types.SimpleNamespace(DynamicCache=FakeDynamicCache)
+        with patch.dict(sys.modules, {"transformers.cache_utils": fake_cache_utils}):
+            _patch_dynamic_cache_legacy_api()
+
+        self.assertTrue(hasattr(FakeDynamicCache, "from_legacy_cache"))
+        empty_cache = FakeDynamicCache.from_legacy_cache()
+        self.assertIsInstance(empty_cache, FakeDynamicCache)
+        legacy_cache = [("key", "value")]
+        converted_cache = FakeDynamicCache.from_legacy_cache(legacy_cache)
+        self.assertIs(converted_cache.ddp_cache_data, legacy_cache)
 
 
 if __name__ == "__main__":
