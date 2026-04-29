@@ -35,8 +35,10 @@ def build_answer_messages(
                     "text": (
                         "You are evaluating Vietnamese multiple-choice visual question "
                         "answering. Use the image, question, choices, and any provided "
-                        "knowledge triples. Give a brief Vietnamese rationale, then end "
-                        "with exactly one line: Answer: A, Answer: B, Answer: C, or Answer: D."
+                        "knowledge triples. Give at most two short Vietnamese rationale "
+                        "sentences. Do not restate or copy the question or choices. Do not "
+                        "repeat phrases. End with exactly one final line: Answer: A, "
+                        "Answer: B, Answer: C, or Answer: D."
                     ),
                 }
             ],
@@ -63,6 +65,13 @@ def build_answer_messages(
 
 def build_classifier_messages(sample: VQASample) -> list[dict[str, Any]]:
     qtypes = ", ".join(CANONICAL_QTYPES)
+    classifier_text = (
+        "Task: classify this sample for KG retrieval. Do not answer the multiple-choice "
+        "question. Return exactly one JSON object with this schema:\n"
+        '{"qtype":"<one canonical qtype>","food_items":["<visible Vietnamese dish name>"]}\n\n'
+        f"Allowed qtype values: {qtypes}\n\n"
+        f"Question:\n{sample.row['question']}"
+    )
     return [
         {
             "role": "system",
@@ -70,8 +79,9 @@ def build_classifier_messages(sample: VQASample) -> list[dict[str, Any]]:
                 {
                     "type": "text",
                     "text": (
-                        "Classify the ViFoodVQA sample before KG retrieval. Return only "
-                        f"valid JSON with keys qtype and food_items. qtype must be one of: {qtypes}. "
+                        "Classify the ViFoodVQA sample before KG retrieval. Return only one "
+                        "valid JSON object, with no Markdown and no explanation. The JSON keys "
+                        f"must be qtype and food_items. qtype must be one of: {qtypes}. "
                         "food_items must list visible Vietnamese dish names that can anchor a food KG."
                     ),
                 }
@@ -81,7 +91,7 @@ def build_classifier_messages(sample: VQASample) -> list[dict[str, Any]]:
             "role": "user",
             "content": [
                 {"type": "image", "path": sample.image_path},
-                {"type": "text", "text": f"Question:\n{sample.row['question']}"},
+                {"type": "text", "text": classifier_text},
             ],
         },
     ]
@@ -108,4 +118,3 @@ def _answer_user_message(
 
 def _format_choices(choices: dict[str, str]) -> str:
     return "\n".join(f"{letter}. {choices[letter]}" for letter in ["A", "B", "C", "D"])
-

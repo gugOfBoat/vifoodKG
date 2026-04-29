@@ -59,27 +59,3 @@ models:
       no_repeat_ngram_size: 6
       eos_token_id: tokenizer
       pad_token_id: tokenizer
-  phi3_vision:
-    type: hf
-    model_id: microsoft/Phi-3.5-vision-instruct
-    adapter: phi3_vision
-    auto_model: causal_lm
-    load_config_first: true
-    device_map: auto
-    torch_dtype: auto
-    attn_implementation: eager
-    num_crops: 16
-    use_cache: false
-    trust_remote_code: true
-    generation_kwargs:
-      pad_token_id: tokenizer
-  gpt_5_2:
-    type: openai_compatible
-    model_id: cx/gpt-5.2
-    base_url_env: OPENAI_COMPAT_BASE_URL
-    api_key_env: OPENAI_COMPAT_API_KEY
-  gpt_5_5:
-    type: openai_compatible
-    model_id: cx/gpt-5.5
-    base_url_env: OPENAI_COMPAT_BASE_URL
-    api_key_env: OPENAI_COMPAT_API_KEY

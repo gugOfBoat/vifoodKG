@@ -46,11 +46,11 @@ class VQASample:
 def ensure_dataset(cfg: dict[str, Any]) -> Path:
     data_dir = resolve_eval_path(cfg, cfg["dataset"]["data_dir"])
     if _has_jsonl_dataset(data_dir):
-        write_manifest(data_dir)
+        _write_manifest_if_writable(data_dir)
         return data_dir
     if _has_parquet_dataset(data_dir):
         _materialize_parquet_jsonl(data_dir)
-        write_manifest(data_dir)
+        _write_manifest_if_writable(data_dir)
         return data_dir
 
     repo_id = cfg["dataset"]["repo_id"]
@@ -149,6 +149,15 @@ def write_manifest(data_dir: Path, repo_id: str | None = None, revision: str | N
     path = data_dir / "manifest.json"
     path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     return path
+
+
+def _write_manifest_if_writable(
+    data_dir: Path, repo_id: str | None = None, revision: str | None = None
+) -> Path | None:
+    try:
+        return write_manifest(data_dir, repo_id=repo_id, revision=revision)
+    except OSError:
+        return None
 
 
 def _has_required_files(data_dir: Path) -> bool:
