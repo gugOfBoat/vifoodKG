@@ -69,7 +69,6 @@ models:
     torch_dtype: auto
     attn_implementation: eager
     num_crops: 16
-    processor_use_fast: false
     use_cache: true
     trust_remote_code: true
     generation_kwargs:
