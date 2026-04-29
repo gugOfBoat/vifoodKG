@@ -139,10 +139,12 @@ class HFVisionModel(VisionModel):
         _ = response_format
         if self.adapter == "phi3_vision":
             prompt, images = _messages_to_phi(messages)
+            processor_text: str | list[str] = prompt
         else:
             prompt, images = _messages_to_chat_template(self.processor, messages)
+            processor_text = [prompt]
 
-        inputs = self.processor(text=[prompt], images=images, return_tensors="pt")
+        inputs = self.processor(text=processor_text, images=images, return_tensors="pt")
         inputs = {key: value.to(self.model.device) for key, value in inputs.items()}
         generate_kwargs: dict[str, Any] = {
             "max_new_tokens": max_new_tokens,

@@ -38,11 +38,34 @@ class FakeOpenAI:
 
 class FakeProcessorLoader:
     requests: list[dict[str, object]] = []
+    processor: "FakeProcessor | object" = object()
 
     @classmethod
     def from_pretrained(cls, model_id: str, **kwargs: object) -> object:
         cls.requests.append({"model_id": model_id, **kwargs})
-        return object()
+        return cls.processor
+
+
+class FakeTensor:
+    shape = (1, 1)
+
+    def to(self, device: str) -> "FakeTensor":
+        return self
+
+    def __getitem__(self, key: object) -> "FakeTensor":
+        return self
+
+
+class FakeProcessor:
+    def __init__(self) -> None:
+        self.calls: list[dict[str, object]] = []
+
+    def __call__(self, *, text: object, images: object, return_tensors: str) -> dict[str, FakeTensor]:
+        self.calls.append({"text": text, "images": images, "return_tensors": return_tensors})
+        return {"input_ids": FakeTensor()}
+
+    def batch_decode(self, tokens: object, skip_special_tokens: bool) -> list[str]:
+        return ["Answer: B"]
 
 
 class FakeModelConfig:
@@ -63,8 +86,27 @@ class FakeConfigLoader:
 
 
 class FakeLoadedModel:
+    device = "cpu"
+
     def eval(self) -> None:
         return None
+
+    def generate(self, **kwargs: object) -> FakeTensor:
+        return FakeTensor()
+
+
+class FakeNoGrad:
+    def __enter__(self) -> None:
+        return None
+
+    def __exit__(self, exc_type: object, exc: object, traceback: object) -> None:
+        return None
+
+
+class FakeTorch:
+    @staticmethod
+    def no_grad() -> FakeNoGrad:
+        return FakeNoGrad()
 
 
 class FakeCausalLM:
@@ -112,6 +154,7 @@ class HFVisionModelTests(unittest.TestCase):
         FakeConfigLoader.requests = []
         FakeConfigLoader.last_config = None
         FakeProcessorLoader.requests = []
+        FakeProcessorLoader.processor = object()
         FakeCausalLM.requests = []
         FakeImageTextToText.requests = []
 
@@ -147,6 +190,40 @@ class HFVisionModelTests(unittest.TestCase):
         self.assertIs(FakeCausalLM.requests[0]["config"], FakeConfigLoader.last_config)
         self.assertEqual(FakeCausalLM.requests[0]["attn_implementation"], "eager")
         self.assertEqual(FakeCausalLM.requests[0]["torch_dtype"], "auto")
+
+    def test_phi_processor_receives_single_text_prompt(self) -> None:
+        processor = FakeProcessor()
+        FakeProcessorLoader.processor = processor
+        fake_transformers = types.SimpleNamespace(
+            AutoConfig=FakeConfigLoader,
+            AutoProcessor=FakeProcessorLoader,
+            AutoModelForCausalLM=FakeCausalLM,
+            AutoModelForImageTextToText=FakeImageTextToText,
+        )
+
+        with patch.dict(sys.modules, {"torch": FakeTorch, "transformers": fake_transformers}):
+            model = HFVisionModel(
+                {
+                    "model_id": "microsoft/Phi-3.5-vision-instruct",
+                    "adapter": "phi3_vision",
+                    "auto_model": "causal_lm",
+                    "load_config_first": True,
+                    "device_map": "auto",
+                    "torch_dtype": "auto",
+                    "attn_implementation": "eager",
+                    "processor_use_fast": False,
+                    "trust_remote_code": True,
+                }
+            )
+            response = model.generate(
+                [{"role": "user", "content": [{"type": "text", "text": "Question?"}]}],
+                max_new_tokens=16,
+                temperature=0,
+            )
+
+        self.assertEqual(response, "Answer: B")
+        self.assertIsInstance(processor.calls[0]["text"], str)
+        self.assertNotIsInstance(processor.calls[0]["text"], list)
 
 
 if __name__ == "__main__":
