@@ -72,6 +72,7 @@ Qwen runtime:
 
 ```bash
 cd /content/drive/Shareddrives/Intro2SLA/code/inference_code/hoang/ViFoodVQA/evaluation
+unset TRANSFORMERS_CACHE
 export HF_HOME=/content/hf_cache
 mkdir -p "$HF_HOME"
 pip install -e ".[dev,api,hf-qwen]"
@@ -83,10 +84,12 @@ Phi runtime:
 
 ```bash
 cd /content/drive/Shareddrives/Intro2SLA/code/inference_code/hoang/ViFoodVQA/evaluation
+unset TRANSFORMERS_CACHE
 export HF_HOME=/content/hf_cache
 mkdir -p "$HF_HOME"
-pip uninstall -y transformers torch torchvision torchaudio accelerate
+pip uninstall -y transformers torch torchvision torchaudio accelerate sentence-transformers peft
 pip install -e ".[dev,api,hf-phi]"
+python -c "import sentence_transformers, transformers, accelerate; print(sentence_transformers.__version__, transformers.__version__, accelerate.__version__)"
 python -c "from vifood_eval.config import load_config; print(load_config('configs/eval_phi.yaml')['models'].keys())"
 python -m vifood_eval.run --config configs/eval_phi.yaml --models phi3_vision --conditions no_kg_0shot oracle --sample-ids 191 192 --run-id smoke_phi_env
 python -m vifood_eval.report --run-dir outputs/smoke_phi_env
@@ -95,9 +98,12 @@ python -m vifood_eval.report --run-dir outputs/smoke_phi_env
 Use `configs/eval_qwen.yaml` for Qwen-only runs and `configs/eval_phi.yaml` for
 Phi-only runs. Do not run both models in the same runtime after package changes.
 The Phi extra does not pin NumPy so it can coexist with Colab packages that
-require NumPy 2.x. If the sanity check does not print `dict_keys(['phi3_vision'])`,
-pull the latest repo files and make sure the run command uses
-`--config configs/eval_phi.yaml`.
+require NumPy 2.x, but it pins `sentence-transformers==2.7.0` so KG retrieval
+does not import a newer PEFT/Trainer stack that conflicts with Phi's older
+Accelerate pin. The version sanity check should print `2.7.0 4.43.0 0.30.0`;
+otherwise restart the runtime and rerun the uninstall/install block. If the
+config sanity check does not print `dict_keys(['phi3_vision'])`, pull the latest
+repo files and make sure the run command uses `--config configs/eval_phi.yaml`.
 
 Run the full matrix:
 

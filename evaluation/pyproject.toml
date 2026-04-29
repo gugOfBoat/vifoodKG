@@ -33,6 +33,7 @@ hf-qwen = [
 hf-phi = [
     "accelerate==0.30.0",
     "Pillow==10.3.0",
+    "sentence-transformers==2.7.0",
     "torch==2.3.0",
     "torchvision==0.18.0",
     "transformers==4.43.0",

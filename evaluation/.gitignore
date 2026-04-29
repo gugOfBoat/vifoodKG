@@ -12,3 +12,4 @@ models--intfloat--multilingual-e5-small/
 models--microsoft--Phi-3.5-vision-instruct/
 xet/
 modules/
+hf_cache/
