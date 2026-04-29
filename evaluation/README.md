@@ -81,16 +81,19 @@ Phi runtime:
 
 ```bash
 cd /content/drive/Shareddrives/Intro2SLA/code/inference_code/hoang/ViFoodVQA/evaluation
-pip uninstall -y transformers torch torchvision accelerate
+pip uninstall -y transformers torch torchvision torchaudio accelerate
 pip install -e ".[dev,api,hf-phi]"
+python -c "from vifood_eval.config import load_config; print(load_config('configs/eval_phi.yaml')['models'].keys())"
 python -m vifood_eval.run --config configs/eval_phi.yaml --models phi3_vision --conditions no_kg_0shot oracle --sample-ids 191 192 --run-id smoke_phi_env
 python -m vifood_eval.report --run-dir outputs/smoke_phi_env
 ```
 
 Use `configs/eval_qwen.yaml` for Qwen-only runs and `configs/eval_phi.yaml` for
 Phi-only runs. Do not run both models in the same runtime after package changes.
-The Phi extra uses NumPy 1.24.4 on Python < 3.12 and NumPy 1.26.4 on Python
-3.12+ because NumPy 1.24.4 does not publish Python 3.12 wheels.
+The Phi extra does not pin NumPy so it can coexist with Colab packages that
+require NumPy 2.x. If the sanity check does not print `dict_keys(['phi3_vision'])`,
+pull the latest repo files and make sure the run command uses
+`--config configs/eval_phi.yaml`.
 
 Run the full matrix:
 
