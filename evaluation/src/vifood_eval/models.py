@@ -281,6 +281,12 @@ def _patch_dynamic_cache_legacy_api() -> None:
     if not hasattr(DynamicCache, "seen_tokens"):
         DynamicCache.seen_tokens = property(_cache_seen_tokens)
 
+    if not hasattr(DynamicCache, "get_max_length"):
+        def get_max_length(self: Any) -> int | None:
+            return _cache_legacy_max_length(self, 0)
+
+        DynamicCache.get_max_length = get_max_length
+
     if not hasattr(DynamicCache, "to_legacy_cache"):
         def to_legacy_cache(self: Any) -> tuple[Any, ...]:
             return _cache_to_legacy(self)
@@ -317,6 +323,25 @@ def _cache_max_length(cache: Any, layer_idx: int) -> int | None:
         return None
     max_length = int(value)
     return max_length if max_length > 0 else None
+
+
+def _cache_legacy_max_length(cache: Any, layer_idx: int) -> int | None:
+    if hasattr(cache, "get_max_cache_shape"):
+        getter = getattr(cache, "get_max_cache_shape")
+        try:
+            value = getter(layer_idx)
+        except TypeError:
+            value = getter()
+        if value is not None:
+            max_length = int(value)
+            return max_length if max_length > 0 else None
+
+    for attr in ["max_cache_len", "max_length"]:
+        value = getattr(cache, attr, None)
+        if value is not None:
+            max_length = int(value)
+            return max_length if max_length > 0 else None
+    return None
 
 
 def _cache_to_legacy(cache: Any) -> tuple[Any, ...]:

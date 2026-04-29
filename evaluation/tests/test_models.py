@@ -338,6 +338,8 @@ class HFVisionModelTests(unittest.TestCase):
             delattr(FakeDynamicCache, "get_usable_length")
         if hasattr(FakeDynamicCache, "seen_tokens"):
             delattr(FakeDynamicCache, "seen_tokens")
+        if hasattr(FakeDynamicCache, "get_max_length"):
+            delattr(FakeDynamicCache, "get_max_length")
         if hasattr(FakeDynamicCache, "to_legacy_cache"):
             delattr(FakeDynamicCache, "to_legacy_cache")
 
@@ -354,7 +356,9 @@ class HFVisionModelTests(unittest.TestCase):
         self.assertEqual(empty_cache.get_usable_length(2), 5)
         self.assertEqual(empty_cache.get_usable_length(4), 4)
         self.assertEqual(empty_cache.seen_tokens, 5)
+        self.assertEqual(empty_cache.get_max_length(), 8)
         FakeDynamicCache.max_cache_shape = -1
+        self.assertIsNone(empty_cache.get_max_length())
         self.assertEqual(empty_cache.get_usable_length(4), 5)
         FakeDynamicCache.max_cache_shape = 8
         self.assertEqual(converted_cache.to_legacy_cache(), tuple(legacy_cache))
