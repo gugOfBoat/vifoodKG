@@ -55,9 +55,9 @@ models:
     auto_model: causal_lm
     load_config_first: true
     device_map: auto
-    torch_dtype: auto
+    torch_dtype: float16
     attn_implementation: eager
-    num_crops: 16
+    num_crops: 4
     use_cache: true
     trust_remote_code: true
     generation_kwargs:
