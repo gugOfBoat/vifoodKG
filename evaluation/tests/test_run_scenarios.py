@@ -60,6 +60,41 @@ class FakeRetriever:
         return [{"subject": "Pho Bo", "relation": "hasIngredient", "target": "Beef"}]
 
 
+class FakeTqdm:
+    instances: list["FakeTqdm"] = []
+
+    def __init__(
+        self,
+        *,
+        total: int,
+        initial: int,
+        desc: str,
+        unit: str,
+        disable: bool,
+    ) -> None:
+        self.total = total
+        self.n = initial
+        self.desc = desc
+        self.unit = unit
+        self.disable = disable
+        self.postfixes: list[tuple[dict[str, object], bool]] = []
+        self.updates: list[int] = []
+        FakeTqdm.instances.append(self)
+
+    def __enter__(self) -> "FakeTqdm":
+        return self
+
+    def __exit__(self, exc_type: object, exc: object, tb: object) -> None:
+        return None
+
+    def update(self, n: int = 1) -> None:
+        self.n += n
+        self.updates.append(n)
+
+    def set_postfix(self, values: dict[str, object], *, refresh: bool) -> None:
+        self.postfixes.append((values, refresh))
+
+
 class RunScenarioTests(unittest.TestCase):
     def test_select_samples_by_id_preserves_requested_order(self) -> None:
         with temp_dir() as tmp:
@@ -216,6 +251,94 @@ class RunScenarioTests(unittest.TestCase):
                 len(_read_rows(run_dir / "predictions" / "fake__graph_only.jsonl")),
                 before_rows,
             )
+
+    def test_progress_tracks_condition_without_changing_predictions(self) -> None:
+        with temp_dir() as tmp:
+            root = Path(tmp)
+            run_dir = root / "run"
+            samples = [_sample(root, 1), _sample(root, 2)]
+            model = FakeModel()
+            condition = {"name": "no_kg_0shot", "knowledge": "none", "shots": 0}
+
+            FakeTqdm.instances.clear()
+            with patch("vifood_eval.run.tqdm", FakeTqdm):
+                _run_condition(
+                    cfg=_cfg(),
+                    run_dir=run_dir,
+                    model_name="fake",
+                    model=model,
+                    condition=condition,
+                    samples=samples,
+                    shots=[],
+                    classifier_cache={},
+                    retriever=None,
+                    resume=False,
+                    progress=True,
+                    scenario_index=2,
+                    scenario_total=8,
+                )
+
+                before_calls = len(model.calls)
+                _run_condition(
+                    cfg=_cfg(),
+                    run_dir=run_dir,
+                    model_name="fake",
+                    model=model,
+                    condition=condition,
+                    samples=samples,
+                    shots=[],
+                    classifier_cache={},
+                    retriever=None,
+                    resume=True,
+                    progress=True,
+                    scenario_index=3,
+                    scenario_total=8,
+                )
+
+            rows = _read_rows(run_dir / "predictions" / "fake__no_kg_0shot.jsonl")
+            self.assertEqual(len(rows), 2)
+            self.assertEqual([row["vqa_id"] for row in rows], [1, 2])
+            self.assertTrue(all(row["answer_pred"] == "B" for row in rows))
+            self.assertEqual(len(model.calls), before_calls)
+
+            first_bar, resumed_bar = FakeTqdm.instances
+            self.assertEqual(first_bar.total, 2)
+            self.assertEqual(first_bar.n, 2)
+            self.assertEqual(first_bar.desc, "[2/8] fake/no_kg_0shot")
+            self.assertEqual(first_bar.unit, "q")
+            self.assertFalse(first_bar.disable)
+            self.assertEqual(first_bar.updates, [1, 1])
+            self.assertEqual(first_bar.postfixes[-1][0]["done"], "2/2")
+            self.assertEqual(first_bar.postfixes[-1][0]["out"], "fake__no_kg_0shot.jsonl")
+            self.assertEqual(first_bar.postfixes[-1][0]["vqa_id"], 2)
+
+            self.assertEqual(resumed_bar.total, 2)
+            self.assertEqual(resumed_bar.n, 2)
+            self.assertEqual(resumed_bar.desc, "[3/8] fake/no_kg_0shot")
+            self.assertEqual(resumed_bar.updates, [])
+
+    def test_progress_can_be_disabled_for_direct_runner_calls(self) -> None:
+        with temp_dir() as tmp:
+            root = Path(tmp)
+            run_dir = root / "run"
+
+            FakeTqdm.instances.clear()
+            with patch("vifood_eval.run.tqdm", FakeTqdm):
+                _run_condition(
+                    cfg=_cfg(),
+                    run_dir=run_dir,
+                    model_name="fake",
+                    model=FakeModel(),
+                    condition={"name": "no_kg_0shot", "knowledge": "none", "shots": 0},
+                    samples=[_sample(root, 1)],
+                    shots=[],
+                    classifier_cache={},
+                    retriever=None,
+                    resume=False,
+                    progress=False,
+                )
+
+            self.assertTrue(FakeTqdm.instances[0].disable)
 
     def test_report_writes_summary_retrieval_and_error_review_files(self) -> None:
         with temp_dir() as tmp:
