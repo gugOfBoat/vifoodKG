@@ -72,7 +72,6 @@ models:
     use_cache: true
     trust_remote_code: true
     generation_kwargs:
-      repetition_penalty: 1.1
       pad_token_id: tokenizer
   gpt_5_2:
     type: openai_compatible
