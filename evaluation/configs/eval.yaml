@@ -58,8 +58,11 @@ models:
     type: hf
     model_id: microsoft/Phi-3.5-vision-instruct
     adapter: phi3_vision
+    auto_model: causal_lm
     device_map: auto
     torch_dtype: auto
+    attn_implementation: eager
+    processor_use_fast: false
     trust_remote_code: true
   gpt_5_2:
     type: openai_compatible

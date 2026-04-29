@@ -88,21 +88,33 @@ class HFVisionModel(VisionModel):
 
         self.torch = torch
         self.adapter = cfg.get("adapter", "qwen_vl")
-        self.processor = AutoProcessor.from_pretrained(
-            cfg["model_id"],
-            trust_remote_code=cfg.get("trust_remote_code", True),
-        )
+        processor_kwargs = {
+            "trust_remote_code": cfg.get("trust_remote_code", True),
+        }
+        if "processor_use_fast" in cfg:
+            processor_kwargs["use_fast"] = cfg["processor_use_fast"]
+        self.processor = AutoProcessor.from_pretrained(cfg["model_id"], **processor_kwargs)
+
         model_kwargs = {
             "device_map": cfg.get("device_map", "auto"),
             "trust_remote_code": cfg.get("trust_remote_code", True),
         }
-        if cfg.get("torch_dtype", "auto") == "auto":
-            model_kwargs["torch_dtype"] = "auto"
+        if "attn_implementation" in cfg:
+            model_kwargs["attn_implementation"] = cfg["attn_implementation"]
+        torch_dtype = cfg.get("torch_dtype")
+        if torch_dtype:
+            model_kwargs["torch_dtype"] = torch_dtype
 
-        try:
-            self.model = AutoModelForImageTextToText.from_pretrained(cfg["model_id"], **model_kwargs)
-        except Exception:
+        auto_model = cfg.get("auto_model", "image_text_to_text")
+        if auto_model == "causal_lm":
             self.model = AutoModelForCausalLM.from_pretrained(cfg["model_id"], **model_kwargs)
+        elif auto_model == "image_text_to_text":
+            try:
+                self.model = AutoModelForImageTextToText.from_pretrained(cfg["model_id"], **model_kwargs)
+            except ValueError:
+                self.model = AutoModelForCausalLM.from_pretrained(cfg["model_id"], **model_kwargs)
+        else:
+            raise ValueError(f"Unsupported Hugging Face auto_model: {auto_model}")
         self.model.eval()
 
     def generate(

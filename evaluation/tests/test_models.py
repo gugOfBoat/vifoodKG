@@ -9,7 +9,7 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from vifood_eval.models import OpenAICompatibleModel
+from vifood_eval.models import HFVisionModel, OpenAICompatibleModel
 
 
 class FakeCompletions:
@@ -36,6 +36,38 @@ class FakeOpenAI:
         FakeOpenAI.last_client = self
 
 
+class FakeProcessorLoader:
+    requests: list[dict[str, object]] = []
+
+    @classmethod
+    def from_pretrained(cls, model_id: str, **kwargs: object) -> object:
+        cls.requests.append({"model_id": model_id, **kwargs})
+        return object()
+
+
+class FakeLoadedModel:
+    def eval(self) -> None:
+        return None
+
+
+class FakeCausalLM:
+    requests: list[dict[str, object]] = []
+
+    @classmethod
+    def from_pretrained(cls, model_id: str, **kwargs: object) -> FakeLoadedModel:
+        cls.requests.append({"model_id": model_id, **kwargs})
+        return FakeLoadedModel()
+
+
+class FakeImageTextToText:
+    requests: list[dict[str, object]] = []
+
+    @classmethod
+    def from_pretrained(cls, model_id: str, **kwargs: object) -> FakeLoadedModel:
+        cls.requests.append({"model_id": model_id, **kwargs})
+        return FakeLoadedModel()
+
+
 class OpenAICompatibleModelTests(unittest.TestCase):
     def test_json_response_format_falls_back_when_provider_rejects_it(self) -> None:
         fake_openai = types.SimpleNamespace(OpenAI=FakeOpenAI)
@@ -56,6 +88,39 @@ class OpenAICompatibleModelTests(unittest.TestCase):
         requests = FakeOpenAI.last_client.completions.requests
         self.assertEqual(requests[0]["response_format"], {"type": "json_object"})
         self.assertNotIn("response_format", requests[1])
+
+
+class HFVisionModelTests(unittest.TestCase):
+    def setUp(self) -> None:
+        FakeProcessorLoader.requests = []
+        FakeCausalLM.requests = []
+        FakeImageTextToText.requests = []
+
+    def test_phi_config_can_force_causal_lm_without_flash_attention(self) -> None:
+        fake_transformers = types.SimpleNamespace(
+            AutoProcessor=FakeProcessorLoader,
+            AutoModelForCausalLM=FakeCausalLM,
+            AutoModelForImageTextToText=FakeImageTextToText,
+        )
+
+        with patch.dict(sys.modules, {"torch": types.SimpleNamespace(), "transformers": fake_transformers}):
+            HFVisionModel(
+                {
+                    "model_id": "microsoft/Phi-3.5-vision-instruct",
+                    "adapter": "phi3_vision",
+                    "auto_model": "causal_lm",
+                    "device_map": "auto",
+                    "torch_dtype": "auto",
+                    "attn_implementation": "eager",
+                    "processor_use_fast": False,
+                    "trust_remote_code": True,
+                }
+            )
+
+        self.assertEqual(FakeImageTextToText.requests, [])
+        self.assertEqual(FakeProcessorLoader.requests[0]["use_fast"], False)
+        self.assertEqual(FakeCausalLM.requests[0]["attn_implementation"], "eager")
+        self.assertEqual(FakeCausalLM.requests[0]["torch_dtype"], "auto")
 
 
 if __name__ == "__main__":
