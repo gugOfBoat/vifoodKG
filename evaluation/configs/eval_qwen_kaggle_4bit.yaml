@@ -47,24 +47,22 @@ evaluation:
       knowledge: oracle
       shots: 0
 
+# Identical to eval.yaml qwen3_vl_2b, just adds quantization_config for T4 OOM fix
 models:
   qwen3_vl_2b_4bit:
     type: hf
     model_id: Qwen/Qwen3-VL-2B-Instruct
     adapter: qwen3_vl
     device_map: auto
-    torch_dtype: float16
-    load_config_first: true
-    attn_implementation: sdpa
+    torch_dtype: auto
     quantization_config:
       load_in_4bit: true
       bnb_4bit_quant_type: nf4
       bnb_4bit_use_double_quant: true
       bnb_4bit_compute_dtype: float16
-      llm_int8_skip_modules: ["visual", "deepstack_merger_list", "lm_head"]
+      llm_int8_skip_modules: ["visual", "lm_head"]
     generation_kwargs:
       repetition_penalty: 1.05
       no_repeat_ngram_size: 6
-      use_cache: true
       eos_token_id: tokenizer
       pad_token_id: tokenizer
