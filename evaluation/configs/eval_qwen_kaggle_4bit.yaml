@@ -61,7 +61,7 @@ models:
       bnb_4bit_quant_type: nf4
       bnb_4bit_use_double_quant: true
       bnb_4bit_compute_dtype: float16
-      llm_int8_skip_modules: ["visual", "deepstack_merger_list"]
+      llm_int8_skip_modules: ["visual", "deepstack_merger_list", "lm_head"]
     generation_kwargs:
       repetition_penalty: 1.05
       no_repeat_ngram_size: 6
