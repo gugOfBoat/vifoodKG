@@ -1,0 +1,10 @@
+# Folders
+RP/
+slide/
+
+# Files
+*.tex
+.env
+
+# IDE
+.vscode/
