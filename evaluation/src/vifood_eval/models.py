@@ -110,6 +110,11 @@ class HFVisionModel(VisionModel):
         }
         if self.adapter == "phi3_vision":
             processor_kwargs["num_crops"] = cfg.get("num_crops", 16)
+        if self.adapter == "qwen3_vl":
+            if "min_pixels" in cfg:
+                processor_kwargs["min_pixels"] = cfg["min_pixels"]
+            if "max_pixels" in cfg:
+                processor_kwargs["max_pixels"] = cfg["max_pixels"]
         if "processor_use_fast" in cfg:
             processor_kwargs["use_fast"] = cfg["processor_use_fast"]
         self.processor = AutoProcessor.from_pretrained(cfg["model_id"], **processor_kwargs)

@@ -55,6 +55,8 @@ models:
     adapter: qwen3_vl
     device_map: auto
     torch_dtype: auto
+    min_pixels: 3136
+    max_pixels: 200704
     quantization_config:
       load_in_4bit: true
       bnb_4bit_quant_type: nf4
